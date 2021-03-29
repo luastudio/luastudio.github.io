@@ -118,11 +118,11 @@ on Windows: use Alt + Enter keys combination for switching
     3 - standalon windows (+JIT)<br/>
     4 - standalon mac os (+JIT)<br/>
     Install(copy) Exporter project to user document folder on your device. Location to this folder can be printed from Lua code: <b>print(Lib.Media.FileSystem.File.documentsDirectory.nativePath)</b><br/>
-    As an option, simply run script:<br/>
+    <!--As an option, simply run script:<br/>
     <code>
 r = Lib.Sys.Net.Http.new( "https://raw.githubusercontent.com/luastudio/Exporter/main/Exporter_v13_0_installer.lua" )
 r.onData = function(s)fn=load(s) fn()end r.onError = print r.request(false)
-    </code>
+    </code-->
   </td>
 </tr>
 <tr>
