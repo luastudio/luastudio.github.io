@@ -1,35 +1,11 @@
 body
 {
-    text-align: center;
+    text-align: left;
     font-family: arial,sans-serif;
-    font-size:small;
 }
 
-.centeredContent {
-    width: 100% ;
-    margin-left: auto ;
-    margin-right: auto ;
-    margin-top: 70px;
-}
-        
-.inputField {
-    font:17px arial,sans-serif;
-    margin-bottom:0.2em;
-    vertical-align:bottom;
-}
-        
 input {
     font-family:inherit;
-}
-        
-.inputButton {
-    font-size:15px;
-    height:1.85em !important;
-    margin:0.2em;
-}
-
-.highlight {
-    font-weight:bold;
 }
 
 a:visited  {
@@ -39,88 +15,18 @@ a:visited  {
 h2 {
     font-weight:normal;
     margin:0;
-    font-size:large;
     color:#4C9FE1;
 }
 
 h3 {
     font-weight:normal;
     margin:0;
-    font-size:medium;
 }
 
 code {
     color:Green;
-    font-size:small;
 }
 
 strong {
     font-weight:bold;
-    font-size:small;
-}
-
-A.pageLink:link
-{
-	color: #0000FF;
-}
-
-A.pageLink:visited
-{
-	color: #0000FF;
-}
-
-A.pageLink:hover
-{
-	color: #0000FF;
-}
-
-A.pageLink:active
-{
-	color: #0000FF;
-}
-
-A.menuLink:link
-{
-	color: #0000FF;
-}
-
-A.menuLink:visited
-{
-	color: #0000FF;
-}
-
-A.menuLink:hover
-{
-	color: #0000FF;
-}
-
-A.menuLink:active
-{
-	color: #0000FF;
-}
-
-.defContainer 
-{
-	text-align:left;
-	margin-left:auto;
-	margin-right:auto;
-	margin-top:25px;
-	width:566px;
-}
-
-.defEmbContainer 
-{
-	text-align:left;
-}
-
-#footer 
-{
-	text-align: center;
-	position: absolute;
-	bottom: 0px;
-	left: 0px;
-	width: 100%;
-	height: 20px;
-	visibility: visible;
-	display: block;
 }
