@@ -1,0 +1,408 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="generator" content="HelpNDoc Personal Edition 7.1.2.266">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" href="favicon.ico"/>
+
+  <title>EReg</title>
+  <meta name="description" content="" /> 
+  <meta name="keywords" content="">
+
+
+
+  
+
+  <!-- Twitter Card data -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="EReg">
+  <meta name="twitter:description" content="">
+
+  <!-- Open Graph data -->
+  <meta property="og:title" content="EReg" />
+  <meta property="og:type" content="article" />
+  <meta property="og:description" content="" />
+  <meta property="og:site_name" content="LuaStudio API documentation" /> 
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendors/bootstrap-3.4.1/css/bootstrap.min.css" rel="stylesheet"/>
+
+  <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+  <link href="vendors/bootstrap-3.4.1/css/ie10-viewport-bug-workaround.css" rel="stylesheet"/>
+
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+      <script src="vendors/html5shiv-3.7.3/html5shiv.min.js"></script>
+      <script src="vendors/respond-1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+  <!-- JsTree styles -->
+  <link href="vendors/jstree-3.3.10/themes/default/style.min.css" rel="stylesheet"/>
+
+  <!-- Hnd styles -->
+  <link href="css/layout.min.css" rel="stylesheet" />
+  <link href="css/effects.min.css" rel="stylesheet" />
+  <link href="css/theme-light-blue.min.css" rel="stylesheet" />
+  <link href="css/print.min.css" rel="stylesheet" media="print" />
+  <style type="text/css">nav { width: 350px} @media screen and (min-width:769px) { body.md-nav-expanded div#main { margin-left: 350px} body.md-nav-expanded header { padding-left: 364px} }</style>
+
+  <!-- Content style -->
+  <link href="css/hnd.content.css" rel="stylesheet" />
+
+  
+
+
+
+</head>
+
+<body class="md-nav-expanded">
+
+
+
+  <div id="skip-link">
+    <a href="#main-content" class="element-invisible">Skip to main content</a>
+  </div>
+
+  <header class="headroom">
+    <button class="hnd-toggle btn btn-default">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>        
+    </button>
+    <h1>LuaStudio API documentation</h1>
+    
+  </header>
+
+  <nav id="panel-left" class="md-nav-expanded">
+    <!-- Nav tabs -->
+    <ul class="tab-tabs nav nav-tabs" role="tablist">
+      <li id="nav-close"> 
+        <button class="hnd-toggle btn btn-default">
+          <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+        </button>
+      </li>
+      
+	  
+        <li role="presentation" class="tab active">
+            <a href="#contents" id="tab-contents" aria-controls="contents" role="tab" data-toggle="tab">
+                <i class="glyphicon glyphicon-list"></i>
+                Contents
+            </a>
+        </li>
+      
+        <li role="presentation" class="tab">
+            <a href="#index" id="tab-index" aria-controls="index" role="tab" data-toggle="tab">
+                <i class="glyphicon glyphicon-asterisk"></i>
+                Index
+            </a>
+        </li>
+      
+        <li role="presentation" class="tab">
+            <a href="#search" id="tab-search" aria-controls="search" role="tab" data-toggle="tab">
+                <i class="glyphicon glyphicon-search"></i>
+                Search
+            </a>
+        </li>
+      
+    </ul>  <!-- /Nav tabs -->
+
+    <!-- Tab panes -->
+    <div class="tab-content">
+	  
+      <div role="tabpanel" class="tab-pane active" id="contents">
+        <div id="toc" class="tree-container unselectable"
+            data-url="_toc.json"
+            data-openlvl="1"
+        >
+            
+        </div>
+      </div>  <!-- /contents-->
+      
+      <div role="tabpanel" class="tab-pane" id="index">
+        <div id="keywords" class="tree-container unselectable"
+            data-url="_keywords.json"
+            data-openlvl="1"
+        >
+            
+        </div>
+      </div>  <!-- /index-->
+      
+      <div role="tabpanel" class="tab-pane" id="search">
+        <div class="search-content">
+          <div class="search-input">
+            <form id="search-form">
+              <div class="form-group">
+                <div class="input-group">
+                  <input type="text" class="form-control" id="input-search" name="input-search" placeholder="Search..." />
+                  <span class="input-group-btn">
+                    <button class="btn btn-default" type="submit">
+                      <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+                    </button>
+                  </span>
+                </div>
+              </div>
+            </form>
+          </div>  <!-- /search-input -->
+          <div class="search-result">
+            <div id="search-info"></div>
+            <div class="tree-container unselectable" id="search-tree"></div>
+          </div>  <!-- /search-result -->
+        </div>  <!-- /search-content -->
+      </div>  <!-- /search-->
+      
+    </div>  <!-- /Tab panes -->
+
+  </nav>
+
+  <div id="main">
+
+    <article>
+        <div id="topic-content" class="container-fluid" 
+		  data-hnd-id="EReg"
+		  data-hnd-context="17"
+		  data-hnd-title="EReg"
+		>
+            
+                <div class="navigation">
+                    <ol class="breadcrumb">
+                        <li><a href="Librarystructure.html">Library structure</a></li><li><a href="Sys.html">Sys</a></li>
+                    </ol>
+                    <div class="nav-arrows">
+                        <div class="btn-group btn-group-xs" role="group"><a class="btn btn-default" href="Sys.html" title="Sys" role="button"><span class="glyphicon glyphicon-menu-up" aria-hidden="true"></span></a><a class="btn btn-default" href="Json.html" title="Json" role="button"><span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span></a><a class="btn btn-default" href="FileSystem.html" title="FileSystem" role="button"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span></a></div>
+                    </div>
+                </div> 
+            
+
+            <a id="main-content"></a>
+
+            <h2>EReg</h2>
+
+            <div class="main-content">
+                
+<p></p>
+<p class="rvps2"><span class="rvts6">EReg object represents regular expressions. Based on PCRE (</span><a class="rvts13" href="http://www.pcre.org/" target="_blank">http://www.pcre.org/</a><span class="rvts6">)</span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts6">Can be created using </span><span class="rvts12">new</span><span class="rvts6"> method:</span></p>
+<div class="rvps2">
+<table width="100%" border="1" cellpadding="1" cellspacing="2" style="border-color: #000000; border-style: solid; border-spacing: 2px;">
+ <tr valign="top">
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">Lib.Sys.</span><span class="rvts18">EReg.</span><span class="rvts19">new</span><span class="rvts6">(</span><span class="rvts12">r</span><span class="rvts6">, </span><span class="rvts12">opt</span><span class="rvts6">)</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps7"><span class="rvts37">Creates a new regular expression with pattern </span><span class="rvts38">r</span><span class="rvts37"> and modifiers </span><span class="rvts38">opt</span><span class="rvts37">.</span><br/><span class="rvts37">This is equivalent to the shorthand syntax ~/</span><span class="rvts38">r</span><span class="rvts37">/</span><span class="rvts38">opt</span><br/><span class="rvts37">If </span><span class="rvts38">r</span><span class="rvts37"> or </span><span class="rvts38">opt</span><span class="rvts37"> are nil, the result is unspecified.</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts12">r</span><span class="rvts6"> - regular expression</span></p>
+   <p class="rvps2"><span class="rvts12">opt</span><span class="rvts6"> - modifiers, options</span></p>
+  </td>
+ </tr>
+</table>
+</div>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts6">Created EReg object has methods:</span></p>
+<div class="rvps2">
+<table width="100%" border="1" cellpadding="1" cellspacing="2" style="border-color: #000000; border-style: solid; border-spacing: 2px;">
+ <tr valign="top">
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps7"><span class="rvts39">match</span><span class="rvts37">(</span><span class="rvts38">s</span><span class="rvts37">)</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps7"><span class="rvts37">Tells if this regular expression matches string </span><span class="rvts38">s</span><span class="rvts37">.</span><br/><span class="rvts37">This method modifies the internal state.</span><br/><span class="rvts37">If </span><span class="rvts38">s</span><span class="rvts37"> is nil, the result is unspecified.</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts38">s</span><span class="rvts37"> - text for matching</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps7"><span class="rvts39">matched</span><span class="rvts37">(</span><span class="rvts38">n</span><span class="rvts37">)</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps7"><span class="rvts37">Returns the matched sub-group </span><span class="rvts38">n</span><span class="rvts37"> of EReg.</span><br/><span class="rvts37">This method should only be called after .</span><span class="rvts39">match</span><span class="rvts37"> or .</span><span class="rvts39">matchSub</span><span class="rvts37">, and then operates on the string of that operation.</span><br/><span class="rvts37">The index </span><span class="rvts38">n</span><span class="rvts37"> corresponds to the n-th set of parentheses in the pattern</span><br/><span class="rvts37">of this EReg. If no such sub-group exists, an exception is thrown.</span><br/><span class="rvts37">If </span><span class="rvts38">n</span><span class="rvts37"> equals 0, the whole matched substring is returned.</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts38">n</span><span class="rvts37"> - sub-group number, index</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps7"><span class="rvts39">matchedLeft</span><span class="rvts37">()</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps7"><span class="rvts37">Returns the part to the left of the last matched substring.</span><br/><span class="rvts37">If the most recent call to .</span><span class="rvts39">match</span><span class="rvts37"> or .</span><span class="rvts39">matchSub</span><span class="rvts37"> did not match anything, the result is unspecified.</span><br/><span class="rvts37">If the global g modifier was in place for the matching, only the substring to the left of the leftmost match is returned.</span><br/><span class="rvts37">The result does not include the matched part.</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts37"><br/></span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps7"><span class="rvts39">matchedRight</span><span class="rvts37">()</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps7"><span class="rvts37">Returns the part to the right of the last matched substring.</span><br/><span class="rvts37">If the most recent call to .</span><span class="rvts39">match</span><span class="rvts37"> or .</span><span class="rvts39">matchSub</span><span class="rvts37"> did not match anything, the result is unspecified.</span><br/><span class="rvts37">If the global g modifier was in place for the matching, only the substring to the right of the leftmost match is returned.</span><br/><span class="rvts37">The result does not include the matched part.</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts37"><br/></span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps7"><span class="rvts39">matchedPos</span><span class="rvts37">()</span></p>
+   <p class="rvps7"><span class="rvts37"><br/></span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps7"><span class="rvts37">Returns the position and length of the last matched substring, within</span><br/><span class="rvts37">the string which was last used as argument to .</span><span class="rvts39">match</span><span class="rvts37"> or</span><br/><span class="rvts39">.matchSub</span><span class="rvts37">.</span><br/><span class="rvts37">If the most recent call to </span><span class="rvts39">.match</span><span class="rvts37"> or </span><span class="rvts39">.matchSub</span><span class="rvts37"> did not match anything, the result is unspecified.</span><br/><span class="rvts37">If the global g modifier was in place for the matching, the position and</span><br/><span class="rvts37">length of the leftmost substring is returned.</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts37"><br/></span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps7"><span class="rvts39">matchSub</span><span class="rvts37">(</span><span class="rvts38">s</span><span class="rvts37">, </span><span class="rvts38">pos</span><span class="rvts37">, </span><span class="rvts38">len</span><span class="rvts37">)</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps7"><span class="rvts37">Tells if this regular expression matches a substring of String </span><span class="rvts38">s</span><span class="rvts37">.</span><br/><span class="rvts37">This function expects </span><span class="rvts38">pos</span><span class="rvts37"> and </span><span class="rvts38">len</span><span class="rvts37"> to describe a valid substring of</span><br/><span class="rvts38">s</span><span class="rvts37">, or else the result is unspecified. To get more robust behavior,</span><br/><span class="rvts37">.</span><span class="rvts39">match</span><span class="rvts37">(string.sub(s, pos, pos+len)) can be used instead.</span><br/><span class="rvts37">This method modifies the internal state.</span><br/><span class="rvts37">If </span><span class="rvts38">s</span><span class="rvts37"> is nil, the result is unspecified.</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts38">s</span><span class="rvts37"> - text for matching</span></p>
+   <p class="rvps2"><span class="rvts38">pos</span><span class="rvts37"> - position for substring of </span><span class="rvts38">s</span></p>
+   <p class="rvps2"><span class="rvts38">len</span><span class="rvts37"> - size for substring of </span><span class="rvts38">s</span><span class="rvts37"> &nbsp;</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps7"><span class="rvts39">split</span><span class="rvts37">(</span><span class="rvts38">s</span><span class="rvts37">)</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps7"><span class="rvts37">Splits string </span><span class="rvts38">s</span><span class="rvts37"> at all substrings EReg matches.</span><br/><span class="rvts37">If a match is found at the start of </span><span class="rvts38">s</span><span class="rvts37">, the result contains a leading empty string "" entry.</span><br/><span class="rvts37">If a match is found at the end of </span><span class="rvts38">s</span><span class="rvts37">, the result contains a trailing empty string "" entry.</span><br/><span class="rvts37">If two matching substrings appear next to each other, the result contains the empty string "" between them.</span><br/><span class="rvts37">By default, this method splits </span><span class="rvts38">s</span><span class="rvts37"> into two parts at the first matched</span><br/><span class="rvts37">substring. If the global g modifier is in place, </span><span class="rvts38">s</span><span class="rvts37"> is split at each matched substring.</span><br/><span class="rvts37">If </span><span class="rvts38">s</span><span class="rvts37"> is nil, the result is unspecified.</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts38">s</span><span class="rvts37"> - text for splitting</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps7"><span class="rvts39">replace</span><span class="rvts37">(</span><span class="rvts38">s</span><span class="rvts37">, </span><span class="rvts38">by</span><span class="rvts37">)</span></p>
+   <p class="rvps7"><span class="rvts37"><br/></span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps7"><span class="rvts37">Replaces the first substring of </span><span class="rvts38">s</span><span class="rvts37"> which &nbsp;EReg matches with </span><span class="rvts38">by</span><span class="rvts37">.</span><br/><span class="rvts37">If EReg does not match any substring, the result is </span><span class="rvts38">s</span><span class="rvts37">.</span><br/><span class="rvts37">By default, this method replaces only the first matched substring. If</span><br/><span class="rvts37">the global g modifier is in place, all matched substrings are replaced.</span><br/><span class="rvts37">If </span><span class="rvts38">by</span><span class="rvts37"> contains </span><span class="rvts50">$1</span><span class="rvts37"> to </span><span class="rvts50">$9</span><span class="rvts37">, the digit corresponds to number of a</span><br/><span class="rvts37">matched sub-group and its value is used instead. If no such sub-group</span><br/><span class="rvts37">exists, the replacement is unspecified. The string </span><span class="rvts50">$$</span><span class="rvts37"> becomes </span><span class="rvts50">$</span><span class="rvts37">.</span><br/><span class="rvts37">If </span><span class="rvts38">s</span><span class="rvts37"> or </span><span class="rvts38">by</span><span class="rvts37"> are nil, the result is unspecified.</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts38">s</span><span class="rvts37"> - replacing text</span></p>
+   <p class="rvps2"><span class="rvts38">by</span><span class="rvts37"> - matches text</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps7"><span class="rvts39">map</span><span class="rvts37">(</span><span class="rvts38">s</span><span class="rvts37">, </span><span class="rvts38">f</span><span class="rvts37">)</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps7"><span class="rvts37">Calls the function </span><span class="rvts38">f</span><span class="rvts37"> for the substring of </span><span class="rvts38">s</span><span class="rvts37"> which EReg matches and replaces that substring with the result of </span><span class="rvts38">f</span><span class="rvts37"> call.</span><br/><span class="rvts37">The </span><span class="rvts38">f</span><span class="rvts37"> function takes EReg object as its first argument and should return a replacement string for the substring matched.</span><br/><span class="rvts37">If EReg does not match any substring, the result is </span><span class="rvts38">s</span><span class="rvts37">.</span><br/><span class="rvts37">By default, this method replaces only the first matched substring. If the global g modifier is in place, all matched substrings are replaced.</span><br/><span class="rvts37">If </span><span class="rvts38">s</span><span class="rvts37"> or </span><span class="rvts38">f</span><span class="rvts37"> are nil, the result is unspecified.</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts38">s</span><span class="rvts37"> - text for matching</span></p>
+   <p class="rvps2"><span class="rvts38">f</span><span class="rvts37"> - function with string result for replacement</span></p>
+  </td>
+ </tr>
+</table>
+</div>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts22">Examples:</span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts6">ereg = Lib.Sys.</span><span class="rvts18">EReg.</span><span class="rvts19">new</span><span class="rvts6">("('(?:\\\\.|[^\\\\\\n'])*')", "")</span></p>
+<p class="rvps2"><span class="rvts6">text = "123'test1' 456 'test2'end"</span></p>
+<p class="rvps2"><span class="rvts6">len = string.len(text)</span></p>
+<p class="rvps2"><span class="rvts6">if ereg.</span><span class="rvts18">matchSub</span><span class="rvts6">(text, 0, len) then</span></p>
+<p class="rvps2"><span class="rvts6">&nbsp; &nbsp; pos = ereg.</span><span class="rvts18">matchedPos</span><span class="rvts6">();</span></p>
+<p class="rvps2"><span class="rvts6">&nbsp; &nbsp; value = ereg.</span><span class="rvts18">matched</span><span class="rvts6">(0);</span></p>
+<p class="rvps2"><span class="rvts6">&nbsp; &nbsp; print(pos.pos.." "..pos.len)</span></p>
+<p class="rvps2"><span class="rvts6"></span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">print(value)</span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts6"></span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">if ereg.</span><span class="rvts18">matchSub</span><span class="rvts6">(text, pos.pos + pos.len, len - (pos.pos + pos.len)) then</span></p>
+<p class="rvps2"><span class="rvts6"></span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">print(ereg.</span><span class="rvts18">matched</span><span class="rvts6">(0))</span></p>
+<p class="rvps2"><span class="rvts6">&nbsp; &nbsp; end</span></p>
+<p class="rvps2"><span class="rvts6">end</span></p>
+<p></p>
+<p class="rvps4" style="clear: both;"><span class="rvts16">Created with the Personal Edition of HelpNDoc: </span><a class="rvts17" href="https://www.helpndoc.com">Free Web Help generator</a></p>
+
+            </div>
+            
+            <div id="topic_footer"><div id="topic_footer_content">Copyright &copy; &lt;Dates&gt; by &lt;Authors&gt;. All Rights Reserved.</div></div>
+        </div>  <!-- /#topic-content -->
+    </article>
+
+    <footer></footer>
+
+  </div>  <!-- /#main -->
+
+  <div class="mask" data-toggle="sm-nav-expanded"></div>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="hndModal" tabindex="-1" role="dialog" aria-labelledby="hndModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="hndModalLabel"></h4>
+        </div>
+        <div class="modal-body">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary modal-btn-close" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Splitter -->
+  <div id="hnd-splitter" style="left: 350px"></div>  
+
+  <!-- Scripts -->
+  <script src="vendors/jquery-3.5.1/jquery.min.js"></script>
+  <script src="vendors/bootstrap-3.4.1/js/bootstrap.min.js"></script>
+  <script src="vendors/bootstrap-3.4.1/js/ie10-viewport-bug-workaround.js"></script>
+  <script src="vendors/markjs-8.11.1/jquery.mark.min.js"></script>
+  <script src="vendors/uri-1.19.2/uri.min.js"></script>
+  <script src="vendors/imageMapResizer-1.0.10/imageMapResizer.min.js"></script>
+  <script src="vendors/headroom-0.11.0/headroom.min.js"></script>
+  <script src="vendors/jstree-3.3.10/jstree.min.js"></script>  
+  <script src="vendors/interactjs-1.9.22/interact.min.js"></script>  
+
+  <!-- HelpNDoc scripts -->
+  <script src="js/polyfill.object.min.js"></script>
+  <script src="_translations.js"></script>
+  <script src="js/hndsd.min.js"></script>
+  <script src="js/hndse.min.js"></script>
+  <script src="js/app.min.js"></script>
+
+  <!-- Init script -->
+  <script>
+    $(function() {
+      // Create the app
+      var app = new Hnd.App();
+      // Update translations
+      hnd_ut(app);
+	  // Instanciate imageMapResizer
+	  imageMapResize();
+	  // Custom JS
+	  
+      // Boot the app
+      app.Boot();
+    });
+  </script>
+
+
+
+</body>
+
+</html>
+

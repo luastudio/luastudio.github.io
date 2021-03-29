@@ -1,0 +1,667 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="generator" content="HelpNDoc Personal Edition 7.1.2.266">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" href="favicon.ico"/>
+
+  <title>Matrix3D</title>
+  <meta name="description" content="" /> 
+  <meta name="keywords" content="">
+
+
+
+  
+
+  <!-- Twitter Card data -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Matrix3D">
+  <meta name="twitter:description" content="">
+
+  <!-- Open Graph data -->
+  <meta property="og:title" content="Matrix3D" />
+  <meta property="og:type" content="article" />
+  <meta property="og:description" content="" />
+  <meta property="og:site_name" content="LuaStudio API documentation" /> 
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendors/bootstrap-3.4.1/css/bootstrap.min.css" rel="stylesheet"/>
+
+  <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+  <link href="vendors/bootstrap-3.4.1/css/ie10-viewport-bug-workaround.css" rel="stylesheet"/>
+
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+      <script src="vendors/html5shiv-3.7.3/html5shiv.min.js"></script>
+      <script src="vendors/respond-1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+  <!-- JsTree styles -->
+  <link href="vendors/jstree-3.3.10/themes/default/style.min.css" rel="stylesheet"/>
+
+  <!-- Hnd styles -->
+  <link href="css/layout.min.css" rel="stylesheet" />
+  <link href="css/effects.min.css" rel="stylesheet" />
+  <link href="css/theme-light-blue.min.css" rel="stylesheet" />
+  <link href="css/print.min.css" rel="stylesheet" media="print" />
+  <style type="text/css">nav { width: 350px} @media screen and (min-width:769px) { body.md-nav-expanded div#main { margin-left: 350px} body.md-nav-expanded header { padding-left: 364px} }</style>
+
+  <!-- Content style -->
+  <link href="css/hnd.content.css" rel="stylesheet" />
+
+  
+
+
+
+</head>
+
+<body class="md-nav-expanded">
+
+
+
+  <div id="skip-link">
+    <a href="#main-content" class="element-invisible">Skip to main content</a>
+  </div>
+
+  <header class="headroom">
+    <button class="hnd-toggle btn btn-default">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>        
+    </button>
+    <h1>LuaStudio API documentation</h1>
+    
+  </header>
+
+  <nav id="panel-left" class="md-nav-expanded">
+    <!-- Nav tabs -->
+    <ul class="tab-tabs nav nav-tabs" role="tablist">
+      <li id="nav-close"> 
+        <button class="hnd-toggle btn btn-default">
+          <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+        </button>
+      </li>
+      
+	  
+        <li role="presentation" class="tab active">
+            <a href="#contents" id="tab-contents" aria-controls="contents" role="tab" data-toggle="tab">
+                <i class="glyphicon glyphicon-list"></i>
+                Contents
+            </a>
+        </li>
+      
+        <li role="presentation" class="tab">
+            <a href="#index" id="tab-index" aria-controls="index" role="tab" data-toggle="tab">
+                <i class="glyphicon glyphicon-asterisk"></i>
+                Index
+            </a>
+        </li>
+      
+        <li role="presentation" class="tab">
+            <a href="#search" id="tab-search" aria-controls="search" role="tab" data-toggle="tab">
+                <i class="glyphicon glyphicon-search"></i>
+                Search
+            </a>
+        </li>
+      
+    </ul>  <!-- /Nav tabs -->
+
+    <!-- Tab panes -->
+    <div class="tab-content">
+	  
+      <div role="tabpanel" class="tab-pane active" id="contents">
+        <div id="toc" class="tree-container unselectable"
+            data-url="_toc.json"
+            data-openlvl="1"
+        >
+            
+        </div>
+      </div>  <!-- /contents-->
+      
+      <div role="tabpanel" class="tab-pane" id="index">
+        <div id="keywords" class="tree-container unselectable"
+            data-url="_keywords.json"
+            data-openlvl="1"
+        >
+            
+        </div>
+      </div>  <!-- /index-->
+      
+      <div role="tabpanel" class="tab-pane" id="search">
+        <div class="search-content">
+          <div class="search-input">
+            <form id="search-form">
+              <div class="form-group">
+                <div class="input-group">
+                  <input type="text" class="form-control" id="input-search" name="input-search" placeholder="Search..." />
+                  <span class="input-group-btn">
+                    <button class="btn btn-default" type="submit">
+                      <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+                    </button>
+                  </span>
+                </div>
+              </div>
+            </form>
+          </div>  <!-- /search-input -->
+          <div class="search-result">
+            <div id="search-info"></div>
+            <div class="tree-container unselectable" id="search-tree"></div>
+          </div>  <!-- /search-result -->
+        </div>  <!-- /search-content -->
+      </div>  <!-- /search-->
+      
+    </div>  <!-- /Tab panes -->
+
+  </nav>
+
+  <div id="main">
+
+    <article>
+        <div id="topic-content" class="container-fluid" 
+		  data-hnd-id="Matrix3D"
+		  data-hnd-context="136"
+		  data-hnd-title="Matrix3D"
+		>
+            
+                <div class="navigation">
+                    <ol class="breadcrumb">
+                        <li><a href="Librarystructure.html">Library structure</a></li><li><a href="Media.html">Media</a></li><li><a href="Geom.html">Geom</a></li>
+                    </ol>
+                    <div class="nav-arrows">
+                        <div class="btn-group btn-group-xs" role="group"><a class="btn btn-default" href="Geom.html" title="Geom" role="button"><span class="glyphicon glyphicon-menu-up" aria-hidden="true"></span></a><a class="btn btn-default" href="Matrix.html" title="Matrix" role="button"><span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span></a><a class="btn btn-default" href="Orientation3D.html" title="Orientation3D" role="button"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span></a></div>
+                    </div>
+                </div> 
+            
+
+            <a id="main-content"></a>
+
+            <h2>Matrix3D</h2>
+
+            <div class="main-content">
+                
+<p></p>
+<p class="rvps2"><span class="rvts34">The Matrix3D object represents a transformation matrix that determines the position and orientation of a three-dimensional (3D) display object. The matrix can perform transformation functions including translation (repositioning along the x, y, and z axes), rotation, and scaling (resizing). The Matrix3D class can also perform perspective projection, which maps points from the 3D coordinate space to a two-dimensional (2D) view.</span></p>
+<p class="rvps2"><span class="rvts34">A single matrix can combine multiple transformations and apply them at once to a 3D display object. For example, a matrix can be applied to 3D coordinates to perform a rotation followed by a translation.</span></p>
+<p class="rvps2"><span class="rvts34"><br/></span></p>
+<p class="rvps2"><span class="rvts34">When you explicitly set the z property or any of the rotation or scaling properties of a display object, a corresponding Matrix3D object is automatically created.</span></p>
+<p class="rvps2"><span class="rvts34"><br/></span></p>
+<p class="rvps2"><span class="rvts34">You can access a 3D display object's Matrix3D object through the transform.matrix3d property. 2D objects do not have a Matrix3D object.</span></p>
+<p class="rvps2"><span class="rvts34"><br/></span></p>
+<p class="rvps2"><span class="rvts34">The value of the z property of a 2D object is zero and the value of its matrix3D property is nil.</span></p>
+<p class="rvps2"><span class="rvts34"><br/></span></p>
+<p class="rvps2"><span class="rvts34">Note: If the same Matrix3D object is assigned to two different display objects, a runtime error is thrown.</span></p>
+<p class="rvps2"><span class="rvts34"><br/></span></p>
+<p class="rvps2"><span class="rvts34">The Matrix3D object uses a 4x4 square matrix: a table of four rows and columns of numbers that hold the data for the transformation. The first three rows of the matrix hold data for each 3D axis (x,y,z). The translation information is in the last column. The orientation and scaling data are in the first three columns. The scaling factors are the diagonal numbers in the first three columns.&nbsp;</span></p>
+<p class="rvps2"><span class="rvts34"><br/></span></p>
+<p class="rvps2"><span class="rvts34">You don't need to understand matrix mathematics to use the Matrix3D object. It offers specific methods that simplify the task of transformation and projection, such as the appendTranslation(), appendRotation(), or interpolateTo() methods. You also can use the decompose() and recompose() methods or the rawData property to access the underlying matrix elements.</span></p>
+<p class="rvps2"><span class="rvts34"><br/></span></p>
+<p class="rvps2"><span class="rvts34">Display objects cache their axis rotation properties to have separate rotation for each axis and to manage the different combinations of rotations. When a method of a Matrix3D object is called to transform a display object, the rotation cache of the object is invalidated.</span></p>
+<p class="rvps2"><span class="rvts34"><br/></span></p>
+<p class="rvps2"><span class="rvts34">Can be created with method </span><span class="rvts35">new</span><span class="rvts34">:</span></p>
+<div class="rvps2">
+<table width="100%" border="1" cellpadding="1" cellspacing="2" style="border-color: #000000; border-style: solid; border-spacing: 2px;">
+ <tr valign="top">
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">Lib.Media.Geom.</span><span class="rvts18">Matrix3D.</span><span class="rvts19">new</span><span class="rvts6">(</span><span class="rvts12">v</span><span class="rvts6">)</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">Creates a Matrix3D object</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">v - (default = nil) - A Vector array of 16 Numbers, where each four elements is a column of a 4x4 matrix.</span></p>
+   <p class="rvps2"><span class="rvts6"><br/></span></p>
+  </td>
+ </tr>
+</table>
+</div>
+<p class="rvps2"><span class="rvts34"><br/></span></p>
+<p class="rvps2"><span class="rvts34">Created Matrix3D object has properties:</span></p>
+<div class="rvps2">
+<table width="100%" border="1" cellpadding="1" cellspacing="2" style="border-color: #000000; border-style: solid; border-spacing: 2px;">
+ <tr valign="top">
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts18">determinant</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">[read-only] A Number that determines whether a matrix is invertible.</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts18">position</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">A </span><a class="rvts13" href="Vector3D.html">Vector3D</a><span class="rvts6"> object that holds the position, the 3D coordinate (x,y,z) of a display object within the transformation's frame of reference.</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts18">rawData</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">A Vector array of 16 Numbers, where every four elements is a column of a 4x4 matrix.</span></p>
+  </td>
+ </tr>
+</table>
+</div>
+<p class="rvps2"><span class="rvts34"><br/></span></p>
+<p class="rvps2"><span class="rvts34">methods:</span></p>
+<div class="rvps2">
+<table width="100%" border="1" cellpadding="1" cellspacing="2" style="border-color: #000000; border-style: solid; border-spacing: 2px;">
+ <tr valign="top">
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts18">append</span><span class="rvts6">(</span><span class="rvts12">lhs</span><span class="rvts6">)</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">Appends the matrix by multiplying another Matrix3D object by the current Matrix3D object.</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts12">lhs</span><span class="rvts6"> - A left-hand-side matrix that is multiplied by the current Matrix3D object.</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts18">appendRotation</span><span class="rvts6">(</span><span class="rvts12">degrees</span><span class="rvts6">, </span><span class="rvts12">axis</span><span class="rvts6">, </span><span class="rvts12">pivotPoint</span><span class="rvts6">)</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">Appends an incremental rotation to a Matrix3D object.</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts12">degrees</span><span class="rvts6"> - The degree of the rotation.</span></p>
+   <p class="rvps2"><span class="rvts12">axis</span><span class="rvts6"> - The axis or direction of rotation. The usual axes are the X_AXIS (</span><a class="rvts13" href="Vector3D.html">Vector3D</a><span class="rvts6">(1,0,0)), Y_AXIS (</span><a class="rvts13" href="Vector3D.html">Vector3D</a><span class="rvts6">(0,1,0)), and Z_AXIS (</span><a class="rvts13" href="Vector3D.html">Vector3D</a><span class="rvts6">(0,0,1)). This vector should have a length of one.</span></p>
+   <p class="rvps2"><span class="rvts12">pivotPoint</span><span class="rvts6"> - (default = nil) - A </span><a class="rvts13" href="Vector3D.html">Vector3D </a><span class="rvts6">point that determines the center of an object's rotation. The default pivot point for an object is its registration point.</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts18">appendScale</span><span class="rvts6">(</span><span class="rvts12">xScale</span><span class="rvts6">, </span><span class="rvts12">yScale</span><span class="rvts6">, </span><span class="rvts12">zScale</span><span class="rvts6">)</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">Appends an incremental scale change along the x, y, and z axes to a Matrix3D object.</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts12">xScale</span><span class="rvts6"> - A multiplier used to scale the object along the x axis.</span></p>
+   <p class="rvps2"><span class="rvts12">yScale</span><span class="rvts6"> - A multiplier used to scale the object along the y axis.</span></p>
+   <p class="rvps2"><span class="rvts12">zScale</span><span class="rvts6"> - A multiplier used to scale the object along the z axis.</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts18">appendTranslation</span><span class="rvts6">(</span><span class="rvts12">x</span><span class="rvts6">, </span><span class="rvts12">y</span><span class="rvts6">, </span><span class="rvts12">z</span><span class="rvts6">)</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">Appends an incremental translation, a repositioning along the x, y, and z axes, to a Matrix3D object.</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts12">x</span><span class="rvts6"> - An incremental translation along the x axis.</span></p>
+   <p class="rvps2"><span class="rvts12">y</span><span class="rvts6"> - An incremental translation along the y axis.</span></p>
+   <p class="rvps2"><span class="rvts12">z</span><span class="rvts6"> - An incremental translation along the z axis.</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts18">clone</span><span class="rvts6">()</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">Returns a new Matrix3D object that is an exact copy of the current Matrix3D object.</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <br/>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts18">copyColumnFrom</span><span class="rvts6">(</span><span class="rvts12">column</span><span class="rvts6">, </span><span class="rvts12">vector3D</span><span class="rvts6">)</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">Copies a </span><a class="rvts13" href="Vector3D.html">Vector3D</a><span class="rvts6"> object into specific column of the calling Matrix3D object.</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts12">column</span><span class="rvts6"> - The destination column of the copy.</span></p>
+   <p class="rvps2"><span class="rvts12">vector3D</span><span class="rvts6"> - The </span><a class="rvts13" href="Vector3D.html">Vector3D</a><span class="rvts6"> object from which to copy the data.</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts18">copyColumnTo</span><span class="rvts6">(</span><span class="rvts12">column</span><span class="rvts6">, </span><span class="rvts12">vector3D</span><span class="rvts6">)</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">Copies specific column of the calling Matrix3D object into the </span><a class="rvts13" href="Vector3D.html">Vector3D</a><span class="rvts6"> object.</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts12">column</span><span class="rvts6"> - The column from which to copy the data.</span></p>
+   <p class="rvps2"><span class="rvts12">vector3D</span><span class="rvts6"> - The destination </span><span class="rvts12">Vector3D</span><span class="rvts6"> object of the copy.</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts18">copyFrom</span><span class="rvts6">(</span><span class="rvts12">sourceMatrix3D</span><span class="rvts6">)</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">Copies all of the matrix data from the source Matrix3D object into the calling Matrix3D object.</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts12">sourceMatrix3D</span><span class="rvts6"> - The Matrix3D object from which to copy the data.</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts18">copyRawDataFrom</span><span class="rvts6">(</span><span class="rvts12">vector</span><span class="rvts6">, </span><span class="rvts12">index</span><span class="rvts6">, </span><span class="rvts12">transpose</span><span class="rvts6">)</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">Copies all of the vector data from the source vector object into the calling Matrix3D object.</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts12">vector</span><span class="rvts6"> - The vector array object from which to copy the data.</span></p>
+   <p class="rvps2"><span class="rvts12">index</span><span class="rvts6"> - (default = 0)</span></p>
+   <p class="rvps2"><span class="rvts12">transpose</span><span class="rvts6"> - (default = false)</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts18">copyRawDataTo</span><span class="rvts6">(</span><span class="rvts12">vector</span><span class="rvts6">, </span><span class="rvts12">index</span><span class="rvts6">, </span><span class="rvts12">transpose</span><span class="rvts6">)</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">Copies all of the matrix data from the calling Matrix3D object into the provided vector.</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts12">vector</span><span class="rvts6"> - The vector array object to which to copy the data.</span></p>
+   <p class="rvps2"><span class="rvts12">index</span><span class="rvts6"> - (default = 0)</span></p>
+   <p class="rvps2"><span class="rvts12">transpose</span><span class="rvts6"> - (default = false)</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts18">copyRowFrom</span><span class="rvts6">(</span><span class="rvts12">row</span><span class="rvts6">, </span><span class="rvts12">vector3D</span><span class="rvts6">)</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">Copies a </span><a class="rvts13" href="Vector3D.html">Vector3D</a><span class="rvts6"> object into specific row of the calling Matrix3D object.</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts12">row</span><span class="rvts6"> - The row from which to copy the data to.</span></p>
+   <p class="rvps2"><span class="rvts12">vector3D</span><span class="rvts6"> - The </span><a class="rvts13" href="Vector3D.html">Vector3D</a><span class="rvts6"> object from which to copy the data.</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts18">copyRowTo</span><span class="rvts6">(</span><span class="rvts12">row</span><span class="rvts6">, </span><span class="rvts12">vector3D</span><span class="rvts6">)</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">Copies specific row of the calling Matrix3D object into the </span><a class="rvts13" href="Vector3D.html">Vector3D</a><span class="rvts6"> object.</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts12">row</span><span class="rvts6"> - The row from which to copy the data from.&nbsp;</span></p>
+   <p class="rvps2"><span class="rvts12">vector3D</span><span class="rvts6"> - The </span><a class="rvts13" href="Vector3D.html">Vector3D</a><span class="rvts6"> object to copy the data into.</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts18">copyToMatrix3D</span><span class="rvts6">(</span><span class="rvts12">dest</span><span class="rvts6">)</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">Copies matrix to destination Matrix3D</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts12">dest</span><span class="rvts6"> - destination Matrix3D</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts18">decompose</span><span class="rvts6">(</span><span class="rvts12">orientationStyle</span><span class="rvts6">)</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">Returns the transformation matrix's translation, rotation, and scale settings as a Vector of three </span><a class="rvts13" href="Vector3D.html">Vector3D</a><span class="rvts6"> objects.</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts12">orientationStyle</span><span class="rvts6"> - (default = "eulerAngles") - parameter that determines the orientation style used for the matrix transformation. The three types of orientation style are eulerAngles (constant EULER_ANGLES), axisAngle (constant AXIS_ANGLE), and quaternion (constant QUATERNION). For additional information on the different orientation style, see the </span><a class="rvts13" href="Orientation3D.html">Orientation3D</a><span class="rvts6"> object.</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts18">deltaTransformVector</span><span class="rvts6">(</span><span class="rvts12">v</span><span class="rvts6">)</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">Uses the transformation matrix without its translation elements to transform a </span><a class="rvts13" href="Vector3D.html">Vector3D</a><span class="rvts6"> object from one space coordinate to another.</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts12">v</span><span class="rvts6"> - A </span><a class="rvts13" href="Vector3D.html">Vector3D</a><span class="rvts6"> object holding the coordinates that are going to be transformed.</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts18">identity</span><span class="rvts6">()</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">Converts the current matrix to an identity or unit matrix.</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <br/>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts18">interpolate</span><span class="rvts6">(</span><span class="rvts12">thisMat</span><span class="rvts6">, </span><span class="rvts12">toMat</span><span class="rvts6">, </span><span class="rvts12">percent</span><span class="rvts6">)</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">[static] Interpolates the translation, rotation, and scale transformation of one matrix toward those of the target matrix.</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts12">thisMat</span><span class="rvts6"> - The Matrix3D object that is to be interpolated.</span></p>
+   <p class="rvps2"><span class="rvts12">toMat</span><span class="rvts6"> - The target Matrix3D object.</span></p>
+   <p class="rvps2"><span class="rvts12">percent</span><span class="rvts6"> - A value between 0 and 1 that determines the percent the thisMat Matrix3D object is interpolated toward the target Matrix3D object.</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts18">interpolateTo</span><span class="rvts6">(</span><span class="rvts12">toMat</span><span class="rvts6">, </span><span class="rvts12">percent</span><span class="rvts6">)</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">Interpolates this matrix towards the translation, rotation, and scale transformations of the target matrix.</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts12">toMat</span><span class="rvts6"> - The target Matrix3D object.</span></p>
+   <p class="rvps2"><span class="rvts12">percent</span><span class="rvts6"> - A value between 0 and 1 that determines the location of the display object relative to the target. The closer the value is to 1.0, the closer the display object is to its current position. The closer the value is to 0, the closer the display object is to the target.</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts18">invert</span><span class="rvts6">()</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">Inverts the current matrix.</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <br/>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts18">pointAt</span><span class="rvts6">(</span><span class="rvts12">pos</span><span class="rvts6">, </span><span class="rvts12">at</span><span class="rvts6">, </span><span class="rvts12">up</span><span class="rvts6">)</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">Rotates the display object so that it faces a specified position.</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts12">pos</span><span class="rvts6"> - The world-relative </span><a class="rvts13" href="Vector3D.html">Vector3D </a><span class="rvts6">position of the target object. World-relative defines the object's transformation relative to the world space and coordinates, where all objects are positioned.</span></p>
+   <p class="rvps2"><span class="rvts12">at</span><span class="rvts6"> - (default = nil) - The object-relative vector that defines where the display object is pointing </span><a class="rvts13" href="Vector3D.html">Vector3D</a><span class="rvts6">. Object-relative defines the object's transformation relative to the object space, the object's own frame of reference and coordinate system. Default value is the +y axis (0,1,0).</span></p>
+   <p class="rvps2"><span class="rvts12">up</span><span class="rvts6"> - (default = nil) - The object-relative vector that defines "up" for the display object </span><a class="rvts13" href="Vector3D.html">Vector3D</a><span class="rvts6">. If the object is drawn looking down from above, the +z axis is its "up" vector. Object-relative defines the object's transformation relative to the object space, the object's own frame of reference and coordinate system. Default value is the +z-axis (0,0,1).</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts18">prepend</span><span class="rvts6">(</span><span class="rvts12">rhs</span><span class="rvts6">)</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">Prepends a matrix by multiplying the current Matrix3D object by another Matrix3D object.</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts12">rhs</span><span class="rvts6"> - A right-hand-side of the matrix by which the current Matrix3D is multiplied.</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts18">prependRotation</span><span class="rvts6">(</span><span class="rvts12">degrees</span><span class="rvts6">, </span><span class="rvts12">axis</span><span class="rvts6">, </span><span class="rvts12">pivotPoint</span><span class="rvts6">)</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">Prepends an incremental rotation to a Matrix3D object.</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts12">degrees</span><span class="rvts6"> - The degree of rotation.</span></p>
+   <p class="rvps2"><span class="rvts12">axis</span><span class="rvts6"> - The axis or direction of rotation </span><a class="rvts13" href="Vector3D.html">Vector3D</a><span class="rvts6">. The usual axes are the X_AXIS (Vector3D(1,0,0)), Y_AXIS (Vector3D(0,1,0)), and Z_AXIS (Vector3D(0,0,1)). This vector should have a length of one.</span></p>
+   <p class="rvps2"><span class="rvts12">pivotPoint</span><span class="rvts6"> - (default = nil) - A point that determines the center of rotation </span><a class="rvts13" href="Vector3D.html">Vector3D</a><span class="rvts6">. The default pivot point for an object is its registration point.</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts18">prependScale</span><span class="rvts6">(</span><span class="rvts12">xScale</span><span class="rvts6">, </span><span class="rvts12">yScale</span><span class="rvts6">, </span><span class="rvts12">zScale</span><span class="rvts6">)</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">Prepends an incremental scale change along the x, y, and z axes to a Matrix3D object.</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts12">xScale</span><span class="rvts6"> - A multiplier used to scale the object along the x axis.</span></p>
+   <p class="rvps2"><span class="rvts12">yScale</span><span class="rvts6"> - A multiplier used to scale the object along the y axis.</span></p>
+   <p class="rvps2"><span class="rvts12">zScale</span><span class="rvts6"> - A multiplier used to scale the object along the z axis.</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts18">prependTranslation</span><span class="rvts6">(</span><span class="rvts12">x</span><span class="rvts6">, </span><span class="rvts12">y</span><span class="rvts6">, </span><span class="rvts12">z</span><span class="rvts6">)</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">Prepends an incremental translation, a repositioning along the </span><span class="rvts12">x</span><span class="rvts6">, </span><span class="rvts12">y</span><span class="rvts6">, and </span><span class="rvts12">z</span><span class="rvts6"> axes, to a Matrix3D object.</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts12">x</span><span class="rvts6"> - An incremental translation along the x axis.</span></p>
+   <p class="rvps2"><span class="rvts12">y</span><span class="rvts6"> - An incremental translation along the y axis.</span></p>
+   <p class="rvps2"><span class="rvts12">z</span><span class="rvts6"> - An incremental translation along the z axis.</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts18">recompose</span><span class="rvts6">(</span><span class="rvts12">components</span><span class="rvts6">, </span><span class="rvts12">orientationStyle</span><span class="rvts6">)</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">Sets the transformation matrix's translation, rotation, and scale settings.</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts12">components</span><span class="rvts6"> - A Vector array of three </span><a class="rvts13" href="Vector3D.html">Vector3D</a><span class="rvts6"> objects that replace the Matrix3D object's translation, rotation, and scale elements.</span></p>
+   <p class="rvps2"><span class="rvts12">orientationStyle</span><span class="rvts6"> - (default = "eulerAngles") - parameter that determines the orientation style used for the matrix transformation. The three types of orientation styles are eulerAngles (constant EULER_ANGLES), axisAngle (constant AXIS_ANGLE), and quaternion (constant QUATERNION). For additional information on the different orientation style, see the geom.</span><a class="rvts13" href="Orientation3D.html">Orientation3D</a><span class="rvts6"> object.</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts18">transformVector</span><span class="rvts6">(</span><span class="rvts12">v</span><span class="rvts6">)</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">Uses the transformation matrix to transform a </span><a class="rvts13" href="Vector3D.html">Vector3D</a><span class="rvts6"> object from one space coordinate to another.</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts12">v</span><span class="rvts6"> - A </span><a class="rvts13" href="Vector3D.html">Vector3D</a><span class="rvts6"> object holding the coordinates that are going to be transformed.</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts18">transformVectors</span><span class="rvts6">(</span><span class="rvts12">vin</span><span class="rvts6">, </span><span class="rvts12">vout</span><span class="rvts6">)</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">Uses the transformation matrix to transform a Vector of Numbers from one coordinate space to another.</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts12">vin</span><span class="rvts6"> - A Vector array of Numbers, where every three Numbers are a 3D coordinate (x,y,z) that is going to be transformed.</span></p>
+   <p class="rvps2"><span class="rvts12">vout</span><span class="rvts6"> - A Vector array of Numbers, where every three Numbers are a 3D transformed coordinate (x,y,z).</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts18">transpose</span><span class="rvts6">()</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">Converts the current Matrix3D object to a matrix where the rows and columns are swapped.</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <br/>
+  </td>
+ </tr>
+</table>
+</div>
+<p></p>
+<p class="rvps4" style="clear: both;"><span class="rvts16">Created with the Personal Edition of HelpNDoc: </span><a class="rvts17" href="https://www.helpndoc.com/feature-tour">Easily create EPub books</a></p>
+
+            </div>
+            
+            <div id="topic_footer"><div id="topic_footer_content">Copyright &copy; &lt;Dates&gt; by &lt;Authors&gt;. All Rights Reserved.</div></div>
+        </div>  <!-- /#topic-content -->
+    </article>
+
+    <footer></footer>
+
+  </div>  <!-- /#main -->
+
+  <div class="mask" data-toggle="sm-nav-expanded"></div>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="hndModal" tabindex="-1" role="dialog" aria-labelledby="hndModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="hndModalLabel"></h4>
+        </div>
+        <div class="modal-body">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary modal-btn-close" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Splitter -->
+  <div id="hnd-splitter" style="left: 350px"></div>  
+
+  <!-- Scripts -->
+  <script src="vendors/jquery-3.5.1/jquery.min.js"></script>
+  <script src="vendors/bootstrap-3.4.1/js/bootstrap.min.js"></script>
+  <script src="vendors/bootstrap-3.4.1/js/ie10-viewport-bug-workaround.js"></script>
+  <script src="vendors/markjs-8.11.1/jquery.mark.min.js"></script>
+  <script src="vendors/uri-1.19.2/uri.min.js"></script>
+  <script src="vendors/imageMapResizer-1.0.10/imageMapResizer.min.js"></script>
+  <script src="vendors/headroom-0.11.0/headroom.min.js"></script>
+  <script src="vendors/jstree-3.3.10/jstree.min.js"></script>  
+  <script src="vendors/interactjs-1.9.22/interact.min.js"></script>  
+
+  <!-- HelpNDoc scripts -->
+  <script src="js/polyfill.object.min.js"></script>
+  <script src="_translations.js"></script>
+  <script src="js/hndsd.min.js"></script>
+  <script src="js/hndse.min.js"></script>
+  <script src="js/app.min.js"></script>
+
+  <!-- Init script -->
+  <script>
+    $(function() {
+      // Create the app
+      var app = new Hnd.App();
+      // Update translations
+      hnd_ut(app);
+	  // Instanciate imageMapResizer
+	  imageMapResize();
+	  // Custom JS
+	  
+      // Boot the app
+      app.Boot();
+    });
+  </script>
+
+
+
+</body>
+
+</html>
+

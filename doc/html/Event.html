@@ -1,0 +1,640 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="generator" content="HelpNDoc Personal Edition 7.1.2.266">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" href="favicon.ico"/>
+
+  <title>Event</title>
+  <meta name="description" content="" /> 
+  <meta name="keywords" content="">
+
+
+
+  
+
+  <!-- Twitter Card data -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Event">
+  <meta name="twitter:description" content="">
+
+  <!-- Open Graph data -->
+  <meta property="og:title" content="Event" />
+  <meta property="og:type" content="article" />
+  <meta property="og:description" content="" />
+  <meta property="og:site_name" content="LuaStudio API documentation" /> 
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendors/bootstrap-3.4.1/css/bootstrap.min.css" rel="stylesheet"/>
+
+  <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+  <link href="vendors/bootstrap-3.4.1/css/ie10-viewport-bug-workaround.css" rel="stylesheet"/>
+
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+      <script src="vendors/html5shiv-3.7.3/html5shiv.min.js"></script>
+      <script src="vendors/respond-1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+  <!-- JsTree styles -->
+  <link href="vendors/jstree-3.3.10/themes/default/style.min.css" rel="stylesheet"/>
+
+  <!-- Hnd styles -->
+  <link href="css/layout.min.css" rel="stylesheet" />
+  <link href="css/effects.min.css" rel="stylesheet" />
+  <link href="css/theme-light-blue.min.css" rel="stylesheet" />
+  <link href="css/print.min.css" rel="stylesheet" media="print" />
+  <style type="text/css">nav { width: 350px} @media screen and (min-width:769px) { body.md-nav-expanded div#main { margin-left: 350px} body.md-nav-expanded header { padding-left: 364px} }</style>
+
+  <!-- Content style -->
+  <link href="css/hnd.content.css" rel="stylesheet" />
+
+  
+
+
+
+</head>
+
+<body class="md-nav-expanded">
+
+
+
+  <div id="skip-link">
+    <a href="#main-content" class="element-invisible">Skip to main content</a>
+  </div>
+
+  <header class="headroom">
+    <button class="hnd-toggle btn btn-default">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>        
+    </button>
+    <h1>LuaStudio API documentation</h1>
+    
+  </header>
+
+  <nav id="panel-left" class="md-nav-expanded">
+    <!-- Nav tabs -->
+    <ul class="tab-tabs nav nav-tabs" role="tablist">
+      <li id="nav-close"> 
+        <button class="hnd-toggle btn btn-default">
+          <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+        </button>
+      </li>
+      
+	  
+        <li role="presentation" class="tab active">
+            <a href="#contents" id="tab-contents" aria-controls="contents" role="tab" data-toggle="tab">
+                <i class="glyphicon glyphicon-list"></i>
+                Contents
+            </a>
+        </li>
+      
+        <li role="presentation" class="tab">
+            <a href="#index" id="tab-index" aria-controls="index" role="tab" data-toggle="tab">
+                <i class="glyphicon glyphicon-asterisk"></i>
+                Index
+            </a>
+        </li>
+      
+        <li role="presentation" class="tab">
+            <a href="#search" id="tab-search" aria-controls="search" role="tab" data-toggle="tab">
+                <i class="glyphicon glyphicon-search"></i>
+                Search
+            </a>
+        </li>
+      
+    </ul>  <!-- /Nav tabs -->
+
+    <!-- Tab panes -->
+    <div class="tab-content">
+	  
+      <div role="tabpanel" class="tab-pane active" id="contents">
+        <div id="toc" class="tree-container unselectable"
+            data-url="_toc.json"
+            data-openlvl="1"
+        >
+            
+        </div>
+      </div>  <!-- /contents-->
+      
+      <div role="tabpanel" class="tab-pane" id="index">
+        <div id="keywords" class="tree-container unselectable"
+            data-url="_keywords.json"
+            data-openlvl="1"
+        >
+            
+        </div>
+      </div>  <!-- /index-->
+      
+      <div role="tabpanel" class="tab-pane" id="search">
+        <div class="search-content">
+          <div class="search-input">
+            <form id="search-form">
+              <div class="form-group">
+                <div class="input-group">
+                  <input type="text" class="form-control" id="input-search" name="input-search" placeholder="Search..." />
+                  <span class="input-group-btn">
+                    <button class="btn btn-default" type="submit">
+                      <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+                    </button>
+                  </span>
+                </div>
+              </div>
+            </form>
+          </div>  <!-- /search-input -->
+          <div class="search-result">
+            <div id="search-info"></div>
+            <div class="tree-container unselectable" id="search-tree"></div>
+          </div>  <!-- /search-result -->
+        </div>  <!-- /search-content -->
+      </div>  <!-- /search-->
+      
+    </div>  <!-- /Tab panes -->
+
+  </nav>
+
+  <div id="main">
+
+    <article>
+        <div id="topic-content" class="container-fluid" 
+		  data-hnd-id="Event"
+		  data-hnd-context="96"
+		  data-hnd-title="Event"
+		>
+            
+                <div class="navigation">
+                    <ol class="breadcrumb">
+                        <li><a href="Librarystructure.html">Library structure</a></li><li><a href="Media.html">Media</a></li><li><a href="Events.html">Events</a></li>
+                    </ol>
+                    <div class="nav-arrows">
+                        <div class="btn-group btn-group-xs" role="group"><a class="btn btn-default" href="Events.html" title="Events" role="button"><span class="glyphicon glyphicon-menu-up" aria-hidden="true"></span></a><a class="btn btn-default" href="AsyncErrorEvent.html" title="AsyncErrorEvent" role="button"><span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span></a><a class="btn btn-default" href="ErrorEvent.html" title="ErrorEvent" role="button"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span></a></div>
+                    </div>
+                </div> 
+            
+
+            <a id="main-content"></a>
+
+            <h2>Event</h2>
+
+            <div class="main-content">
+                
+<p></p>
+<p class="rvps2"><span class="rvts6">The Event object is used as as parameters to event listeners when an event occurs.</span></p>
+<p class="rvps2"><span class="rvts6">The properties of the Event object carry basic information about an event, such as the event's type or whether the event's default behavior can be canceled. For many events, such as the events represented by the Event class constants, this basic information is sufficient. Other events, however, may require more detailed information. Events associated with a mouse click, for example, need to include additional information about the location of the click event and whether any keys were pressed during the click event.&nbsp;</span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts6">The methods of the Event object can be used in event listener functions to affect the behavior of the event object. Some events have an associated default behavior. For example, the doubleClick event has an associated default behavior that highlights the word under the mouse pointer at the time of the event. Your event listener can cancel this behavior by calling the preventDefault() method. You can also make the current event listener the last one to process an event by calling the stopPropagation() or stopImmediatePropagation() method.</span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts6">Can be created using method </span><span class="rvts12">new</span><span class="rvts6">:</span></p>
+<div class="rvps2">
+<table width="100%" border="1" cellpadding="1" cellspacing="2" style="border-color: #000000; border-style: solid; border-spacing: 2px;">
+ <tr valign="top">
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">Lib.Media.Events.</span><span class="rvts18">Event.</span><span class="rvts19">new</span><span class="rvts6">(</span><span class="rvts12">type</span><span class="rvts6">, </span><span class="rvts12">bubbles</span><span class="rvts6">, </span><span class="rvts12">cancelable</span><span class="rvts6">)</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">Creates an Event object to pass as a parameter to event listeners</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts12">type</span><span class="rvts6"> - The type of the event, accessible as Event.type, string.</span></p>
+   <p class="rvps2"><span class="rvts12">bubbles</span><span class="rvts6"> - (default = false) - Determines whether the Event object participates in the bubbling stage of the event flow. The default value is false.&nbsp;</span></p>
+   <p class="rvps2"><span class="rvts12">cancelable</span><span class="rvts6"> - (default = false) - Determines whether the Event object can be canceled. The default values is false.</span></p>
+  </td>
+ </tr>
+</table>
+</div>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts6">Created Event object has properties:</span></p>
+<div class="rvps2">
+<table width="100%" border="1" cellpadding="1" cellspacing="2" style="border-color: #000000; border-style: solid; border-spacing: 2px;">
+ <tr valign="top">
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts18">bubbles</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">Indicates whether an event is a bubbling event.</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">read-only, true/false</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts18">cancelable</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">Indicates whether the behavior associated with the event can be prevented.</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">read-only, true/false</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts18">currentTarget</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">The object that is actively processing the Event object with an event listener.</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">read-only, object</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts18">eventPhase</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">The current phase in the event flow.</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">read-only, int</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts18">target</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">The event target.</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">read-only, object</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts18">type</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">The type of event.</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">read-only, string</span></p>
+  </td>
+ </tr>
+</table>
+</div>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts6">methods:</span></p>
+<div class="rvps2">
+<table width="100%" border="1" cellpadding="1" cellspacing="2" style="border-color: #000000; border-style: solid; border-spacing: 2px;">
+ <tr valign="top">
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts18">clone</span><span class="rvts6">()</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">Duplicates an instance of an Event subclass.</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <br/>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts18">stopImmediatePropagation</span><span class="rvts6">()</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">Prevents processing of any event listeners in the current node and any subsequent nodes in the event flow.</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <br/>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts18">stopPropagation</span><span class="rvts6">()</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">Prevents processing of any event listeners in nodes subsequent to the current node in the event flow.</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <br/>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts18">toString</span><span class="rvts6">()</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">Returns a string containing all the properties of the Event object.</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <br/>
+  </td>
+ </tr>
+</table>
+</div>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts6">Event types:</span></p>
+<div class="rvps2">
+<table width="100%" border="1" cellpadding="1" cellspacing="2" style="border-color: #000000; border-style: solid; border-spacing: 2px;">
+ <tr valign="top">
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">Lib.Media.Events.</span><span class="rvts18">Event.ACTIVATE</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">The ACTIVATE constant defines the value of the type property of an activate event object.</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">Lib.Media.Events.</span><span class="rvts18">Event.ADDED</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">The Event.ADDED constant defines the value of the type property of an added event object.</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">Lib.Media.Events.</span><span class="rvts18">Event.ADDED_TO_STAGE</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">The Event.ADDED_TO_STAGE constant defines the value of the type property of an addedToStage event object.</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">Lib.Media.Events.</span><span class="rvts18">Event.CANCEL</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">The Event.CANCEL constant defines the value of the type property of a cancel event object.</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">Lib.Media.Events.</span><span class="rvts18">Event.CHANGE</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">The Event.CHANGE constant defines the value of the type property of a change event object.</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">Lib.Media.Events.</span><span class="rvts18">Event.CLOSE</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">The Event.CLOSE constant defines the value of the type property of a close event object.</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">Lib.Media.Events.</span><span class="rvts18">Event.COMPLETE</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">The Event.COMPLETE constant defines the value of the type property of a complete event object.</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">Lib.Media.Events.</span><span class="rvts18">Event.CONNECT</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">The Event.CONNECT constant defines the value of the type property of a connect event object.</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">Lib.Media.Events.</span><span class="rvts18">Event.CONTEXT3D_CREATE</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">The Event.CONTEXT3D_CREATE constant defines the value of the type property of a context3Dcreate event object.</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">Lib.Media.Events.</span><span class="rvts18">Event.CONTEXT3D_LOST</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">The Event.CONTEXT3D_LOST constant defines the value of the type property of a context3D object.</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">Lib.Media.Events.</span><span class="rvts18">Event.DEACTIVATE</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">The Event.DEACTIVATE constant defines the value of the type property of a deactivate event object.</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">Lib.Media.Events.</span><span class="rvts18">Event.ENTER_FRAME</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">The Event.ENTER_FRAME constant defines the value of the type property of an enterFrame event object.</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">Lib.Media.Events.</span><span class="rvts18">Event.ID3</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">The Event.ID3 constant defines the value of the type property of an id3 event object.</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">Lib.Media.Events.</span><span class="rvts18">Event.INIT</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">The Event.INIT constant defines the value of the type property of an init event object.</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">Lib.Media.Events.</span><span class="rvts18">Event.MOUSE_LEAVE</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">The Event.MOUSE_LEAVE constant defines the value of the type property of a mouseLeave event object.</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">Lib.Media.Events.</span><span class="rvts18">Event.OPEN</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">The Event.OPEN constant defines the value of the type property of an open event object.</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">Lib.Media.Events.</span><span class="rvts18">Event.REMOVED</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">The Event.REMOVED constant defines the value of the type property of a removed event object.</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">Lib.Media.Events.</span><span class="rvts18">Event.REMOVED_FROM_STAGE</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">The Event.REMOVED_FROM_STAGE constant defines the value of the type property of a removedFromStage event object.</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">Lib.Media.Events.</span><span class="rvts18">Event.RENDER</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">The Event.RENDER constant defines the value of the type property of a render event object.</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">Lib.Media.Events.</span><span class="rvts18">Event.RESIZE</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">The Event.RESIZE constant defines the value of the type property of a resize event object.</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">Lib.Media.Events.</span><span class="rvts18">Event.SCROLL</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">The Event.SCROLL constant defines the value of the type property of a scroll event object.</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">Lib.Media.Events.</span><span class="rvts18">Event.SELECT</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">The Event.SELECT constant defines the value of the type property of a select event object.</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">Lib.Media.Events.</span><span class="rvts18">Event.SOUND_COMPLETE</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">The Event.SOUND_COMPLETE constant defines the value of the type property of a soundComplete event object.</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">Lib.Media.Events.</span><span class="rvts18">Event.TAB_CHILDREN_CHANGE</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">The Event.TAB_CHILDREN_CHANGE constant defines the value of the type property of a tabChildrenChange event object.</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">Lib.Media.Events.</span><span class="rvts18">Event.TAB_ENABLED_CHANGE</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">The Event.TAB_ENABLED_CHANGE constant defines the value of the type property of a tabEnabledChange event object.</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">Lib.Media.Events.</span><span class="rvts18">Event.TAB_INDEX_CHANGE</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">The Event.TAB_INDEX_CHANGE constant defines the value of the type property of a tabIndexChange event object.</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">Lib.Media.Events.</span><span class="rvts18">Event.UNLOAD</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">The Event.UNLOAD constant defines the value of the type property of an unload event object.</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">Lib.Media.Events.</span><span class="rvts18">Event.VIDEO_FRAME</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">The Event.VIDEO_FRAME constant defines the value of the type property of a videoFrame event object.</span></p>
+  </td>
+ </tr>
+</table>
+</div>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p></p>
+<p class="rvps4" style="clear: both;"><span class="rvts16">Created with the Personal Edition of HelpNDoc: </span><a class="rvts17" href="https://www.helpndoc.com/feature-tour">Easily create HTML Help documents</a></p>
+
+            </div>
+            
+            <div id="topic_footer"><div id="topic_footer_content">Copyright &copy; &lt;Dates&gt; by &lt;Authors&gt;. All Rights Reserved.</div></div>
+        </div>  <!-- /#topic-content -->
+    </article>
+
+    <footer></footer>
+
+  </div>  <!-- /#main -->
+
+  <div class="mask" data-toggle="sm-nav-expanded"></div>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="hndModal" tabindex="-1" role="dialog" aria-labelledby="hndModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="hndModalLabel"></h4>
+        </div>
+        <div class="modal-body">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary modal-btn-close" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Splitter -->
+  <div id="hnd-splitter" style="left: 350px"></div>  
+
+  <!-- Scripts -->
+  <script src="vendors/jquery-3.5.1/jquery.min.js"></script>
+  <script src="vendors/bootstrap-3.4.1/js/bootstrap.min.js"></script>
+  <script src="vendors/bootstrap-3.4.1/js/ie10-viewport-bug-workaround.js"></script>
+  <script src="vendors/markjs-8.11.1/jquery.mark.min.js"></script>
+  <script src="vendors/uri-1.19.2/uri.min.js"></script>
+  <script src="vendors/imageMapResizer-1.0.10/imageMapResizer.min.js"></script>
+  <script src="vendors/headroom-0.11.0/headroom.min.js"></script>
+  <script src="vendors/jstree-3.3.10/jstree.min.js"></script>  
+  <script src="vendors/interactjs-1.9.22/interact.min.js"></script>  
+
+  <!-- HelpNDoc scripts -->
+  <script src="js/polyfill.object.min.js"></script>
+  <script src="_translations.js"></script>
+  <script src="js/hndsd.min.js"></script>
+  <script src="js/hndse.min.js"></script>
+  <script src="js/app.min.js"></script>
+
+  <!-- Init script -->
+  <script>
+    $(function() {
+      // Create the app
+      var app = new Hnd.App();
+      // Update translations
+      hnd_ut(app);
+	  // Instanciate imageMapResizer
+	  imageMapResize();
+	  // Custom JS
+	  
+      // Boot the app
+      app.Boot();
+    });
+  </script>
+
+
+
+</body>
+
+</html>
+

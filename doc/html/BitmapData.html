@@ -1,0 +1,702 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="generator" content="HelpNDoc Personal Edition 7.1.2.266">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" href="favicon.ico"/>
+
+  <title>BitmapData</title>
+  <meta name="description" content="" /> 
+  <meta name="keywords" content="">
+
+
+
+  
+
+  <!-- Twitter Card data -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="BitmapData">
+  <meta name="twitter:description" content="">
+
+  <!-- Open Graph data -->
+  <meta property="og:title" content="BitmapData" />
+  <meta property="og:type" content="article" />
+  <meta property="og:description" content="" />
+  <meta property="og:site_name" content="LuaStudio API documentation" /> 
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendors/bootstrap-3.4.1/css/bootstrap.min.css" rel="stylesheet"/>
+
+  <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+  <link href="vendors/bootstrap-3.4.1/css/ie10-viewport-bug-workaround.css" rel="stylesheet"/>
+
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+      <script src="vendors/html5shiv-3.7.3/html5shiv.min.js"></script>
+      <script src="vendors/respond-1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+  <!-- JsTree styles -->
+  <link href="vendors/jstree-3.3.10/themes/default/style.min.css" rel="stylesheet"/>
+
+  <!-- Hnd styles -->
+  <link href="css/layout.min.css" rel="stylesheet" />
+  <link href="css/effects.min.css" rel="stylesheet" />
+  <link href="css/theme-light-blue.min.css" rel="stylesheet" />
+  <link href="css/print.min.css" rel="stylesheet" media="print" />
+  <style type="text/css">nav { width: 350px} @media screen and (min-width:769px) { body.md-nav-expanded div#main { margin-left: 350px} body.md-nav-expanded header { padding-left: 364px} }</style>
+
+  <!-- Content style -->
+  <link href="css/hnd.content.css" rel="stylesheet" />
+
+  
+
+
+
+</head>
+
+<body class="md-nav-expanded">
+
+
+
+  <div id="skip-link">
+    <a href="#main-content" class="element-invisible">Skip to main content</a>
+  </div>
+
+  <header class="headroom">
+    <button class="hnd-toggle btn btn-default">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>        
+    </button>
+    <h1>LuaStudio API documentation</h1>
+    
+  </header>
+
+  <nav id="panel-left" class="md-nav-expanded">
+    <!-- Nav tabs -->
+    <ul class="tab-tabs nav nav-tabs" role="tablist">
+      <li id="nav-close"> 
+        <button class="hnd-toggle btn btn-default">
+          <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+        </button>
+      </li>
+      
+	  
+        <li role="presentation" class="tab active">
+            <a href="#contents" id="tab-contents" aria-controls="contents" role="tab" data-toggle="tab">
+                <i class="glyphicon glyphicon-list"></i>
+                Contents
+            </a>
+        </li>
+      
+        <li role="presentation" class="tab">
+            <a href="#index" id="tab-index" aria-controls="index" role="tab" data-toggle="tab">
+                <i class="glyphicon glyphicon-asterisk"></i>
+                Index
+            </a>
+        </li>
+      
+        <li role="presentation" class="tab">
+            <a href="#search" id="tab-search" aria-controls="search" role="tab" data-toggle="tab">
+                <i class="glyphicon glyphicon-search"></i>
+                Search
+            </a>
+        </li>
+      
+    </ul>  <!-- /Nav tabs -->
+
+    <!-- Tab panes -->
+    <div class="tab-content">
+	  
+      <div role="tabpanel" class="tab-pane active" id="contents">
+        <div id="toc" class="tree-container unselectable"
+            data-url="_toc.json"
+            data-openlvl="1"
+        >
+            
+        </div>
+      </div>  <!-- /contents-->
+      
+      <div role="tabpanel" class="tab-pane" id="index">
+        <div id="keywords" class="tree-container unselectable"
+            data-url="_keywords.json"
+            data-openlvl="1"
+        >
+            
+        </div>
+      </div>  <!-- /index-->
+      
+      <div role="tabpanel" class="tab-pane" id="search">
+        <div class="search-content">
+          <div class="search-input">
+            <form id="search-form">
+              <div class="form-group">
+                <div class="input-group">
+                  <input type="text" class="form-control" id="input-search" name="input-search" placeholder="Search..." />
+                  <span class="input-group-btn">
+                    <button class="btn btn-default" type="submit">
+                      <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+                    </button>
+                  </span>
+                </div>
+              </div>
+            </form>
+          </div>  <!-- /search-input -->
+          <div class="search-result">
+            <div id="search-info"></div>
+            <div class="tree-container unselectable" id="search-tree"></div>
+          </div>  <!-- /search-result -->
+        </div>  <!-- /search-content -->
+      </div>  <!-- /search-->
+      
+    </div>  <!-- /Tab panes -->
+
+  </nav>
+
+  <div id="main">
+
+    <article>
+        <div id="topic-content" class="container-fluid" 
+		  data-hnd-id="BitmapData"
+		  data-hnd-context="98"
+		  data-hnd-title="BitmapData"
+		>
+            
+                <div class="navigation">
+                    <ol class="breadcrumb">
+                        <li><a href="Librarystructure.html">Library structure</a></li><li><a href="Media.html">Media</a></li><li><a href="Display.html">Display</a></li>
+                    </ol>
+                    <div class="nav-arrows">
+                        <div class="btn-group btn-group-xs" role="group"><a class="btn btn-default" href="Display.html" title="Display" role="button"><span class="glyphicon glyphicon-menu-up" aria-hidden="true"></span></a><a class="btn btn-default" href="Bitmap.html" title="Bitmap" role="button"><span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span></a><a class="btn btn-default" href="BitmapDataChannel.html" title="BitmapDataChannel" role="button"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span></a></div>
+                    </div>
+                </div> 
+            
+
+            <a id="main-content"></a>
+
+            <h2>BitmapData</h2>
+
+            <div class="main-content">
+                
+<p></p>
+<p class="rvps2"><span class="rvts6">The BitmapData object lets you work with the data(pixels) of a Bitmap object. You can use the methods of the BitmapData object to create arbitrarily sized transparent or opaque bitmap images and manipulate them in various ways at runtime. You can also access the BitmapData for a bitmap image that you load with the </span><a class="rvts13" href="Loader.html">Loader</a><span class="rvts6"> object.</span></p>
+<p class="rvps2"><span class="rvts6">This object lets you separate bitmap rendering operations from the internal display updating routines of Lib. By manipulating a BitmapData object directly, you can create complex images without incurring the per-frame overhead of constantly redrawing the content from vector data.</span></p>
+<p class="rvps2"><span class="rvts6">The methods of the BitmapData class support effects that are not available through the filters available to non-bitmap display objects.</span></p>
+<p class="rvps2"><span class="rvts6">A BitmapData object contains an array of pixel data. This data can represent either a fully opaque bitmap or a transparent bitmap that contains alpha channel data. Either type of BitmapData object is stored as a buffer of 32-bit integers. Each 32-bit integer determines the properties of a single pixel in the bitmap.</span></p>
+<p class="rvps2"><span class="rvts6">Each 32-bit integer is a combination of four 8-bit channel values(from 0 to 255) that describe the alpha transparency and the red, green, and blue (ARGB) values of the pixel.(For ARGB values, the most significant byte represents the alpha channel value, followed by red, green, and blue.)</span></p>
+<p class="rvps2"><span class="rvts6">The four channels(alpha, red, green, and blue) are represented as numbers when you use them with the BitmapData.copyChannel() method, and these numbers are represented by the following constants in the </span><a class="rvts13" href="BitmapDataChannel.html">BitmapDataChannel</a><span class="rvts6"> object:</span></p>
+<p class="rvps2"><span class="rvts6">BitmapDataChannel.ALPHA</span></p>
+<p class="rvps2"><span class="rvts6">BitmapDataChannel.RED</span></p>
+<p class="rvps2"><span class="rvts6">BitmapDataChannel.GREEN</span></p>
+<p class="rvps2"><span class="rvts6">BitmapDataChannel.BLUE</span></p>
+<p class="rvps2"><span class="rvts6">You can attach BitmapData objects to a </span><a class="rvts13" href="Bitmap.html">Bitmap</a><span class="rvts6"> object by using the bitmapData property of the Bitmap object.</span></p>
+<p class="rvps2"><span class="rvts6">You can use a BitmapData object to fill a </span><a class="rvts13" href="Graphics.html">Graphics</a><span class="rvts6"> object by using the Graphics.beginBitmapFill() method.</span></p>
+<p class="rvps2"><span class="rvts6">You can also use a BitmapData object to perform batch tile rendering using the </span><a class="rvts13" href="Tilesheet.html">Tilesheet</a><span class="rvts6">.</span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts6">Can be created using new method or load from bytes:</span></p>
+<div class="rvps2">
+<table width="100%" border="1" cellpadding="1" cellspacing="2" style="border-color: #000000; border-style: solid; border-spacing: 2px;">
+ <tr valign="top">
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">Lib.Media.Display.</span><span class="rvts18">BitmapData.</span><span class="rvts19">new</span><span class="rvts6">(</span><span class="rvts12">inWidth</span><span class="rvts6">, </span><span class="rvts12">inHeight</span><span class="rvts6">, </span><span class="rvts12">inTransparent</span><span class="rvts6">, </span><span class="rvts12">fillColor</span><span class="rvts6">, </span><span class="rvts12">inGPUMode</span><span class="rvts6">)</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">Creates a BitmapData object with a specified width </span><span class="rvts12">inWidth</span><span class="rvts6"> and height </span><span class="rvts12">inHeight</span><span class="rvts6">. If you specify a value for the </span><span class="rvts12">fillColor</span><span class="rvts6"> parameter, every pixel in the bitmap is set to that color. By default, the bitmap is created as transparent, unless you pass the value false for the transparent parameter. After you create an opaque bitmap, you cannot change it to a transparent bitmap. Every pixel in an opaque bitmap uses only 24 bits of color channel information. If you define the bitmap as transparent, every pixel uses 32 bits of color channel information, including an alpha transparency channel.</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts12">inWidth</span><span class="rvts6"> - The width of the bitmap image in pixels.</span></p>
+   <p class="rvps2"><span class="rvts12">inHeight</span><span class="rvts6"> - The height of the bitmap image in pixels.</span></p>
+   <p class="rvps2"><span class="rvts12">inTransparent</span><span class="rvts6"> - Specifies whether the bitmap image supports per-pixel transparency. The recommended default value is true(transparent). To create a fully transparent bitmap, set the value of the transparent parameter to true and the value of the </span><span class="rvts12">fillColor</span><span class="rvts6"> parameter to 0x00000000(or to 0). Setting the transparent property to false can result in minor improvements in rendering performance.</span></p>
+   <p class="rvps2"><span class="rvts12">fillColor</span><span class="rvts6"> - A 32-bit ARGB color value that you use to fill the bitmap image area. The recommended default value is 0xFFFFFFFF(solid white).</span></p>
+   <p class="rvps2"><span class="rvts12">inGPUMode</span><span class="rvts6"> - custom GPU pixel format, default recommended value is nil for autodetection or equal to:</span></p>
+   <p class="rvps2"><span class="rvts6">pfXRGB &nbsp; &nbsp; &nbsp; &nbsp;- 0x00,</span></p>
+   <p class="rvps2"><span class="rvts6">pfARGB &nbsp; &nbsp; &nbsp; &nbsp;- &nbsp;0x01,</span></p>
+   <p class="rvps2"><span class="rvts6">pfAlpha &nbsp; &nbsp; &nbsp; &nbsp; - 0x03,</span></p>
+   <p class="rvps2"><span class="rvts6">pfHardware &nbsp; &nbsp; - 0x10,</span></p>
+   <p class="rvps2"><span class="rvts6">pfARGB4444 &nbsp;- 0x11,</span></p>
+   <p class="rvps2"><span class="rvts6">pfRGB565 &nbsp; &nbsp; &nbsp;- 0x12,</span></p>
+   <p class="rvps2"><span class="rvts6">pfHasAlpha &nbsp; &nbsp; - 0x01</span></p>
+  </td>
+ </tr>
+</table>
+</div>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts6">load from bytes:</span></p>
+<div class="rvps2">
+<table width="100%" border="1" cellpadding="1" cellspacing="2" style="border-color: #000000; border-style: solid; border-spacing: 2px;">
+ <tr valign="top">
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">Lib.Media.Display.</span><span class="rvts18">BitmapData.loadFromBytes</span><span class="rvts6">(</span><span class="rvts12">bytes</span><span class="rvts6">, </span><span class="rvts12">rawAlpha</span><span class="rvts6">)</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">Creates BitmapData object from </span><a class="rvts13" href="ByteArray.html">ByteArray</a><span class="rvts6"> objects including </span><span class="rvts12">rawAlpha</span><span class="rvts6"> (can be nil)&nbsp;</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts12">bytes</span><span class="rvts6"> - </span><a class="rvts13" href="ByteArray.html">ByteArray</a><span class="rvts6"> object&nbsp;</span></p>
+   <p class="rvps2"><span class="rvts12">rawAlpha</span><span class="rvts6"> - </span><a class="rvts13" href="ByteArray.html">ByteArray</a><span class="rvts6"> object, can be nil</span></p>
+  </td>
+ </tr>
+</table>
+</div>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts6">created BitmapData object has properties:</span></p>
+<div class="rvps2">
+<table width="100%" border="1" cellpadding="1" cellspacing="2" style="border-color: #000000; border-style: solid; border-spacing: 2px;">
+ <tr valign="top">
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts18">height</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">The height of the bitmap image in pixels.</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">read-only</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts18">width</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">The width of the bitmap image in pixels.</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">read-only</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts18">rect</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">The </span><a class="rvts13" href="Rectangle.html">rectangle</a><span class="rvts6"> that defines the size and location of the bitmap image.</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">read-only</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts18">transparent</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">Defines whether the bitmap image supports per-pixel transparency.</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">read-only true/false</span></p>
+  </td>
+ </tr>
+</table>
+</div>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts6">methods:</span></p>
+<div class="rvps2">
+<table width="100%" border="1" cellpadding="1" cellspacing="2" style="border-color: #000000; border-style: solid; border-spacing: 2px;">
+ <tr valign="top">
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts18">applyFilter</span><span class="rvts6">(</span><span class="rvts12">sourceBitmapData</span><span class="rvts6">, </span><span class="rvts12">sourceRect</span><span class="rvts6">, </span><span class="rvts12">destPoint</span><span class="rvts6">, </span><span class="rvts12">filter</span><span class="rvts6">)</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">Takes a source image </span><span class="rvts12">sourceBitmapData</span><span class="rvts6"> and a filter object and generates the filtered image. This method relies on the behavior of built-in </span><a class="rvts13" href="Filters.html">filter</a><span class="rvts6"> objects, which determine the destination rectangle that is affected by an input source rectangle </span><span class="rvts12">sourceRect</span><span class="rvts6">. After a filter is applied, the resulting image can be larger than the input image. For example, if you use a </span><a class="rvts13" href="BlurFilter.html">BlurFilter</a><span class="rvts6"> class to blur a source rectangle of(50,50,100,100) and a destination point of(10,10), the area that changes in the destination image is larger than(10,10,60,60) because of the blurring. This happens internally during the applyFilter() call. If the </span><span class="rvts12">sourceRect</span><span class="rvts6"> parameter of the </span><span class="rvts12">sourceBitmapData</span><span class="rvts6"> parameter is an interior region, such as(50,50,100,100) in a 200 x 200 image, the filter uses the source pixels outside the </span><span class="rvts12">sourceRect</span><span class="rvts6"> parameter to generate the destination rectangle. If the BitmapData object and the object specified as the </span><span class="rvts12">sourceBitmapData</span><span class="rvts6"> parameter are the same object, the application uses a temporary copy of the object to perform the filter. For best performance, avoid this situation.</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts12">sourceBitmapData</span><span class="rvts6"> - The input bitmap image to use. The source image can be a different BitmapData object or it can refer to the current BitmapData instance.</span></p>
+   <p class="rvps2"><span class="rvts12">sourceRect</span><span class="rvts6"> - A </span><a class="rvts13" href="Rectangle.html">rectangle</a><span class="rvts6"> that defines the area of the source image to use as input.</span></p>
+   <p class="rvps2"><span class="rvts12">destPoint</span><span class="rvts6"> - The </span><a class="rvts13" href="Point.html">point</a><span class="rvts6"> within the destination image(the current BitmapData instance) that corresponds to the upper-left corner of the source rectangle.</span></p>
+   <p class="rvps2"><span class="rvts12">filter</span><span class="rvts6"> - The </span><a class="rvts13" href="Filters.html">filter</a><span class="rvts6"> object that you use to perform the filtering operation.</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts18">clone</span><span class="rvts6">()</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">Returns a new BitmapData object that is a clone of the original instance with an exact copy of the contained bitmap.</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <br/>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts18">colorTransform</span><span class="rvts6">(</span><span class="rvts12">rect</span><span class="rvts6">, </span><span class="rvts12">colorTransform</span><span class="rvts6">)&nbsp;</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">Adjusts the color values in a specified area of a bitmap image by using a </span><a class="rvts13" href="ColorTransform.html">ColorTransform</a><span class="rvts6"> object. If the rectangle matches the boundaries of the bitmap image, this method transforms the color values of the entire image.</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts12">rect</span><span class="rvts6"> - A </span><a class="rvts13" href="Rectangle.html">Rectangle</a><span class="rvts6"> object that defines the area of the image in which the </span><a class="rvts13" href="ColorTransform.html">ColorTransform</a><span class="rvts6"> object is applied.</span></p>
+   <p class="rvps2"><span class="rvts12">colorTransform</span><span class="rvts6"> - A </span><a class="rvts13" href="ColorTransform.html">ColorTransform</a><span class="rvts6"> object that describes the color transformation values to apply.</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts18">copyChannel</span><span class="rvts6">(</span><span class="rvts12">sourceBitmapData</span><span class="rvts6">, </span><span class="rvts12">sourceRect</span><span class="rvts6">, </span><span class="rvts12">destPoint</span><span class="rvts6">, </span><span class="rvts12">inSourceChannel</span><span class="rvts6">, </span><span class="rvts12">inDestChannel</span><span class="rvts6">)</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">Transfers data from one channel of another BitmapData object or the current BitmapData object into a channel of the current BitmapData object. All of the data in the other channels in the destination BitmapData object are preserved.</span></p>
+   <p class="rvps2"><span class="rvts6">The source channel value and destination channel value can be one of following values:</span></p>
+   <p class="rvps2"><span class="rvts6">BitmapDataChannel.RED</span></p>
+   <p class="rvps2"><span class="rvts6">BitmapDataChannel.GREEN</span></p>
+   <p class="rvps2"><span class="rvts6">BitmapDataChannel.BLUE</span></p>
+   <p class="rvps2"><span class="rvts6">BitmapDataChannel.ALPHA</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts12">sourceBitmapData</span><span class="rvts6"> - The input bitmap image to use. The source image can be a different BitmapData object or it can refer to the current BitmapData object.</span></p>
+   <p class="rvps2"><span class="rvts12">sourceRect</span><span class="rvts6"> - The source </span><a class="rvts13" href="Rectangle.html">Rectangle</a><span class="rvts6"> object. To copy only channel data from a smaller area within the bitmap, specify a source rectangle that is smaller than the overall size of the BitmapData object.</span></p>
+   <p class="rvps2"><span class="rvts12">destPoint</span><span class="rvts6"> - The destination </span><a class="rvts13" href="Point.html">Point</a><span class="rvts6"> object that represents the upper-left corner of the rectangular area where the new channel data is placed. To copy only channel data from one area to a different area in the destination image, specify a point other than (0,0).</span></p>
+   <p class="rvps2"><span class="rvts12">sourceChannel</span><span class="rvts6"> - The source channel. Use a value from the </span><a class="rvts13" href="BitmapDataChannel.html">BitmapDataChannel</a><span class="rvts6"> object (BitmapDataChannel.RED, BitmapDataChannel.BLUE, BitmapDataChannel.GREEN, BitmapDataChannel.ALPHA).</span></p>
+   <p class="rvps2"><span class="rvts12">destChannel</span><span class="rvts6"> - The destination channel. Use a value from the </span><a class="rvts13" href="BitmapDataChannel.html">BitmapDataChannel</a><span class="rvts6"> object (BitmapDataChannel.RED, BitmapDataChannel.BLUE, BitmapDataChannel.GREEN, BitmapDataChannel.ALPHA).</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts18">copyPixels</span><span class="rvts6">(</span><span class="rvts12">sourceBitmapData</span><span class="rvts6">, </span><span class="rvts12">sourceRect</span><span class="rvts6">, </span><span class="rvts12">destPoint</span><span class="rvts6">, </span><span class="rvts12">alphaBitmapData</span><span class="rvts6">, </span><span class="rvts12">alphaPoint</span><span class="rvts6">, </span><span class="rvts12">mergeAlpha</span><span class="rvts6">)</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">Provides a fast routine to perform pixel manipulation between images with no stretching, rotation, or color effects. This method copies a rectangular area of a source image to a rectangular area of the same size at the destination point of the destination BitmapData object.</span></p>
+   <p class="rvps2"><span class="rvts6">If you include the </span><span class="rvts12">alphaBitmapData</span><span class="rvts6"> and </span><span class="rvts12">alphaPoint</span><span class="rvts6"> parameters, you can use a secondary image as an alpha source for the source image. If the source image has alpha data, both sets of alpha data are used to composite pixels from the source image to the destination image. The </span><span class="rvts12">alphaPoint</span><span class="rvts6"> parameter is the point in the alpha image that corresponds to the upper-left corner of the source rectangle. Any pixels outside the intersection of the source image and alpha image are not copied to the destination image.</span></p>
+   <p class="rvps2"><span class="rvts6">The </span><span class="rvts12">mergeAlpha</span><span class="rvts6"> property controls whether or not the alpha channel is used when a transparent image is copied onto another transparent image. To copy pixels with the alpha channel data, set the </span><span class="rvts12">mergeAlpha</span><span class="rvts6"> property to true. By recommended default, the </span><span class="rvts12">mergeAlpha</span><span class="rvts6"> property is false.</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts12">sourceBitmapData</span><span class="rvts6"> - The input bitmap image from which to copy pixels. The source image can be a different BitmapData instance, or it can refer to the current BitmapData instance.</span></p>
+   <p class="rvps2"><span class="rvts12">sourceRect</span><span class="rvts6"> - A </span><a class="rvts13" href="Rectangle.html">rectangle</a><span class="rvts6"> that defines the area of the source image to use as input.</span></p>
+   <p class="rvps2"><span class="rvts12">destPoint</span><span class="rvts6"> - The destination </span><a class="rvts13" href="Point.html">point</a><span class="rvts6"> that represents the upper-left corner of the rectangular area where the new pixels are placed.</span></p>
+   <p class="rvps2"><span class="rvts12">alphaBitmapData</span><span class="rvts6"> - A secondary, alpha BitmapData object source.</span></p>
+   <p class="rvps2"><span class="rvts12">alphaPoint</span><span class="rvts6"> - The </span><a class="rvts13" href="Point.html">point</a><span class="rvts6"> in the alpha BitmapData object source that corresponds to the upper-left corner of the </span><span class="rvts12">sourceRect</span><span class="rvts6"> parameter.</span></p>
+   <p class="rvps2"><span class="rvts12">mergeAlpha</span><span class="rvts6"> - To use the alpha channel, set the value to true. To copy pixels with no alpha channel, set the value to false.</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts18">dispose</span><span class="rvts6">()</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">Frees memory that is used to store the BitmapData object.</span></p>
+   <p class="rvps2"><span class="rvts6">When the dispose() method is called on an image, the width and height of the image are set to 0. All subsequent calls to methods or properties of this BitmapData instance fail, and an exception is thrown.</span></p>
+   <p class="rvps2"><span class="rvts6">BitmapData.dispose() releases the memory occupied by the actual bitmap data, immediately(a bitmap can consume up to 64 MB of memory). After using BitmapData.dispose(), the BitmapData object is no longer usable and an exception may be thrown if you call functions on the BitmapData object. However, BitmapData.dispose() does not garbage collect the BitmapData object(approximately 128 bytes); the memory occupied by the actual BitmapData object is released at the time the BitmapData object is collected by the garbage collector.</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <br/>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts18">draw</span><span class="rvts6">(</span><span class="rvts12">source</span><span class="rvts6">, </span><span class="rvts12">matrix</span><span class="rvts6">, </span><span class="rvts12">colorTransform</span><span class="rvts6">, </span><span class="rvts12">blendMode</span><span class="rvts6">, </span><span class="rvts12">clipRect</span><span class="rvts6">, </span><span class="rvts12">smoothing</span><span class="rvts6">)</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">Draws the source </span><a class="rvts13" href="DisplayObject.html">display object</a><span class="rvts6"> onto the bitmap image, using the Lib software renderer. You can specify </span><span class="rvts12">matrix</span><span class="rvts6">, </span><span class="rvts12">colorTransform</span><span class="rvts6">, </span><span class="rvts12">blendMode</span><span class="rvts6">, and a destination </span><span class="rvts12">clipRect</span><span class="rvts6"> parameter to control how the rendering performs, you can specify whether the bitmap should be smoothed when scaled.</span></p>
+   <p class="rvps2"><span class="rvts6">The source display object does not use any of its applied transformations for this call. It is treated as it exists in the library or file, with no matrix transform, no color transform, and no blend mode. To draw a display object(such as a movie clip) by using its own transform properties, you can copy its transform property object to the transform property of the Bitmap object that uses the BitmapData object.</span></p>
+   <p class="rvps2"><span class="rvts6"><br/></span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts12">source</span><span class="rvts6"> - The </span><a class="rvts13" href="DisplayObject.html">display object</a><span class="rvts6"> or BitmapData object to draw to the BitmapData object.</span></p>
+   <p class="rvps2"><span class="rvts12">matrix</span><span class="rvts6"> - A </span><a class="rvts13" href="Matrix.html">Matrix</a><span class="rvts6"> object used to scale, rotate, or translate the coordinates of the bitmap. If you do not want to apply a matrix transformation to the image, set this parameter to an identity matrix, created with the default Matrix.new() constructor, or pass a nil value.</span></p>
+   <p class="rvps2"><span class="rvts12">colorTransform</span><span class="rvts6"> - A </span><a class="rvts13" href="ColorTransform.html">ColorTransform</a><span class="rvts6"> object that you use to adjust the color values of the bitmap. If no object is supplied (nil), the bitmap image's colors are not transformed. If you must pass this parameter but you do not want to transform the image, set this parameter to a ColorTransform object created with the default ColorTransform.new() constructor.</span></p>
+   <p class="rvps2"><span class="rvts12">blendMode</span><span class="rvts6"> - A string value, from the </span><a class="rvts13" href="BlendMode.html">BlendMode</a><span class="rvts6"> object, specifying the blend mode to be applied to the resulting bitmap.</span></p>
+   <p class="rvps2"><span class="rvts12">clipRect</span><span class="rvts6"> - A </span><a class="rvts13" href="Rectangle.html">Rectangle</a><span class="rvts6"> object that defines the area of the source object to draw. If you do not supply this value (nil), no clipping occurs and the entire source object is drawn.</span></p>
+   <p class="rvps2"><span class="rvts12">smoothing</span><span class="rvts6"> - A Boolean value that determines whether a BitmapData object is smoothed when scaled or rotated, due to a scaling or rotation in the matrix parameter. With smoothing set to false, the rotated or scaled BitmapData image can appear pixelated or jagged. For example, the following two images use the same BitmapData object for the source parameter, but the smoothing parameter is set to true on the left and false on the right:</span></p>
+   <p class="rvps2"><span class="rvts6">Drawing a bitmap with smoothing set to true takes longer than doing so with smoothing set to false.</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts18">encode</span><span class="rvts6">(</span><span class="rvts12">format</span><span class="rvts6">, </span><span class="rvts12">quality</span><span class="rvts6">)</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">Encodes the current image as a JPG or PNG format ByteArray.</span></p>
+   <p class="rvps2"><span class="rvts6">Returns a ByteArray in the specified encoding format</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts12">format</span><span class="rvts6"> - The encoding format, either "png" or "jpg" string:</span></p>
+   <p class="rvps2"><span class="rvts6">Lib.Media.Display.BitmapData.PNG</span></p>
+   <p class="rvps2"><span class="rvts6">Lib.Media.Display.BitmapData.JPG</span></p>
+   <p class="rvps2"><span class="rvts12">quality</span><span class="rvts6"> - The encoding quality, when encoding with the JPG format. (recommended default value 0.9)</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts18">fillRect</span><span class="rvts6">(</span><span class="rvts12">rect</span><span class="rvts6">, </span><span class="rvts12">colour</span><span class="rvts6">)</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">Fills a </span><a class="rvts13" href="Rectangle.html">rectangular</a><span class="rvts6"> area </span><span class="rvts12">rect</span><span class="rvts6"> of pixels with a specified ARGB </span><span class="rvts12">color</span><span class="rvts6">.</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts12">rect</span><span class="rvts6"> - The </span><a class="rvts13" href="Rectangle.html">rectangular</a><span class="rvts6"> area to fill.</span></p>
+   <p class="rvps2"><span class="rvts12">color</span><span class="rvts6"> - The ARGB color value that fills the area. ARGB colors are often specified in hexadecimal format; for example, 0xFF336699.</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts18">fillRectEx</span><span class="rvts6">(</span><span class="rvts12">rect</span><span class="rvts6">, </span><span class="rvts12">colour</span><span class="rvts6">, </span><span class="rvts12">alpha</span><span class="rvts6">)</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">Fills a </span><a class="rvts13" href="Rectangle.html">rectangular</a><span class="rvts6"> area </span><span class="rvts12">rect</span><span class="rvts6"> of pixels with a specified ARGB </span><span class="rvts12">color</span><span class="rvts6">, using</span><span class="rvts12"> alpha</span><span class="rvts6">.</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts12">rect</span><span class="rvts6"> - The </span><a class="rvts13" href="Rectangle.html">rectangular</a><span class="rvts6"> area to fill.</span></p>
+   <p class="rvps2"><span class="rvts12">color</span><span class="rvts6"> - The ARGB color value that fills the area. ARGB colors are often specified in hexadecimal format; for example, 0xFF336699.</span></p>
+   <p class="rvps2"><span class="rvts12">alpha</span><span class="rvts6"> - alpha value, recommended default 255</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts18">floodFill</span><span class="rvts6">(</span><span class="rvts12">x</span><span class="rvts6">, </span><span class="rvts12">y</span><span class="rvts6">, </span><span class="rvts12">color</span><span class="rvts6">)</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">Performs a flood fill operation on an image starting at an (</span><span class="rvts12">x</span><span class="rvts6">, </span><span class="rvts12">y</span><span class="rvts6">) coordinate and filling with a certain </span><span class="rvts12">color</span><span class="rvts6">.</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts12">x</span><span class="rvts6"> - start coordinate x</span></p>
+   <p class="rvps2"><span class="rvts12">y</span><span class="rvts6"> - start coordinate y</span></p>
+   <p class="rvps2"><span class="rvts12">color</span><span class="rvts6"> - color value</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts18">getColorBoundsRect</span><span class="rvts6">(</span><span class="rvts12">mask</span><span class="rvts6">, </span><span class="rvts12">color</span><span class="rvts6">, </span><span class="rvts12">findColor</span><span class="rvts6">)</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">Determines a rectangular region that either fully encloses all pixels of a specified </span><span class="rvts12">color</span><span class="rvts6"> within the bitmap image(if the </span><span class="rvts12">findColor</span><span class="rvts6"> parameter is set to true) or fully encloses all pixels that do not include the specified color(if the </span><span class="rvts12">findColor</span><span class="rvts6"> parameter is set to false).</span></p>
+   <p class="rvps2"><span class="rvts6">For example, if you have a source image and you want to determine the rectangle of the image that contains a nonzero alpha channel, pass {</span><span class="rvts12">mask</span><span class="rvts6">: 0xFF000000, </span><span class="rvts12">color</span><span class="rvts6">: 0x00000000} as parameters. If the </span><span class="rvts12">findColor</span><span class="rvts6"> parameter is set to true, the entire image is searched for the bounds of pixels for which (value AND mask) == color(where value is the color value of the pixel). If the </span><span class="rvts12">findColor</span><span class="rvts6"> parameter is set to false, the entire image is searched for the bounds of pixels for which (value AND mask) ~= color(where value is the color value of the pixel). To determine white space around an image, pass {</span><span class="rvts12">mask</span><span class="rvts6">: 0xFFFFFFFF, </span><span class="rvts12">color</span><span class="rvts6">: 0xFFFFFFFF} to find the bounds of nonwhite pixels.</span></p>
+   <p class="rvps2"><span class="rvts6">Returns the region of the image that is the specified </span><span class="rvts12">color</span><span class="rvts6">.</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts12">mask</span><span class="rvts6"> &nbsp;- A hexadecimal value, specifying the bits of the ARGB color to consider. The color value is combined with this hexadecimal value, by using the (bitwise AND) operator.</span></p>
+   <p class="rvps2"><span class="rvts12">color</span><span class="rvts6"> - A hexadecimal value, specifying the ARGB color to match (if </span><span class="rvts12">findColor</span><span class="rvts6"> is set to true) or not to match(if </span><span class="rvts12">findColor</span><span class="rvts6"> is set to false).</span></p>
+   <p class="rvps2"><span class="rvts12">findColor</span><span class="rvts6"> - If the value is set to true, returns the bounds of a color value in an image. If the value is set to false, returns the bounds of where this color doesn't exist in an image. (default recommended value is true)</span></p>
+   <p class="rvps2"><span class="rvts6"><br/></span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts18">getPixel</span><span class="rvts6">(</span><span class="rvts12">x</span><span class="rvts6">, </span><span class="rvts12">y</span><span class="rvts6">)</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">Returns an ARGB color value that contains alpha channel data and RGB data. This method is similar to the getPixel() method, which returns an RGB color without alpha channel data. If the(</span><span class="rvts12">x</span><span class="rvts6">, </span><span class="rvts12">y</span><span class="rvts6">) coordinates are outside the bounds of the image, 0 is returned.</span></p>
+   <p class="rvps2"><span class="rvts6">All pixels in a BitmapData object are stored as premultiplied color values. A premultiplied image pixel has the red, green, and blue color channel values already multiplied by the alpha data. For example, if the alpha value is 0, the values for the RGB channels are also 0, independent of their unmultiplied values. This loss of data can cause some problems when you perform operations. All BitmapData methods take and return unmultiplied values. The internal pixel representation is converted from premultiplied to unmultiplied before it is returned as a value. During a set operation, the pixel value is premultiplied before the raw image pixel is set.</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts12">x</span><span class="rvts6"> - The x position of the pixel.</span></p>
+   <p class="rvps2"><span class="rvts12">y</span><span class="rvts6"> - The y position of the pixel.</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts18">getPixel32</span><span class="rvts6">(</span><span class="rvts12">x</span><span class="rvts6">, </span><span class="rvts12">y</span><span class="rvts6">)</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">Returns an ARGB color value that contains alpha channel data and RGB data. This method is similar to the getPixel() method, which returns an RGB color without alpha channel data. If the(</span><span class="rvts12">x</span><span class="rvts6">, </span><span class="rvts12">y</span><span class="rvts6">) coordinates are outside the bounds of the image, 0 is returned.</span></p>
+   <p class="rvps2"><span class="rvts6">All pixels in a BitmapData object are stored as premultiplied color values. A premultiplied image pixel has the red, green, and blue color channel values already multiplied by the alpha data. For example, if the alpha value is 0, the values for the RGB channels are also 0, independent of their unmultiplied values. This loss of data can cause some problems when you perform operations. All BitmapData methods take and return unmultiplied values. The internal pixel representation is converted from premultiplied to unmultiplied before it is returned as a value. During a set operation, the pixel value is premultiplied before the raw image pixel is set.</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts12">x</span><span class="rvts6"> - The x position of the pixel.</span></p>
+   <p class="rvps2"><span class="rvts12">y</span><span class="rvts6"> - The y position of the pixel.</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts18">getPixels</span><span class="rvts6">(</span><span class="rvts12">rect</span><span class="rvts6">)</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">Generates a byte array from a rectangular region of pixel data. Writes an unsigned integer(a 32-bit unmultiplied pixel value) for each pixel into the byte array.</span></p>
+   <p class="rvps2"><span class="rvts6">Returns a </span><a class="rvts13" href="ByteArray.html">ByteArray</a><span class="rvts6"> representing the pixels in the given </span><a class="rvts13" href="Rectangle.html">Rectangle</a><span class="rvts6">.</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts12">rect</span><span class="rvts6"> - A </span><a class="rvts13" href="Rectangle.html">rectangular</a><span class="rvts6"> area in the current BitmapData object.</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts18">getVector</span><span class="rvts6">(</span><span class="rvts12">rect</span><span class="rvts6">)</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">Generates a vector array from a rectangular region of pixel data. Returns a vector array of unsigned integers(a 32-bit unmultiplied pixel value) for the specified rectangle.</span></p>
+   <p class="rvps2"><span class="rvts6">Returns a vector array representing the given </span><a class="rvts13" href="Rectangle.html">Rectangle</a><span class="rvts6">.</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts12">rect</span><span class="rvts6"> - A </span><a class="rvts13" href="Rectangle.html">rectangular</a><span class="rvts6"> area in the current BitmapData object.</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts18">noise</span><span class="rvts6">(</span><span class="rvts12">randomSeed</span><span class="rvts6">, </span><span class="rvts12">low</span><span class="rvts6">, </span><span class="rvts12">high</span><span class="rvts6">, </span><span class="rvts12">channelOptions</span><span class="rvts6">, </span><span class="rvts12">grayScale</span><span class="rvts6">)</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">Fills an image with pixels representing random noise.</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts12">randomSeed</span><span class="rvts6"> - The random seed number to use. If you keep all other parameters the same, you can generate different pseudo-random results by varying the random seed value. The noise function is a mapping function, not a true random-number generation function, so it creates the same results each time from the same random seed.</span></p>
+   <p class="rvps2"><span class="rvts12">low</span><span class="rvts6"> - The lowest value to generate for each channel(0 to 255) Default recommended value is 0.&nbsp;</span></p>
+   <p class="rvps2"><span class="rvts12">high</span><span class="rvts6"> - The highest value to generate for each channel(0 to 255). Default recommended value is 255.&nbsp;</span></p>
+   <p class="rvps2"><span class="rvts12">channelOptions</span><span class="rvts6"> - A number that can be a combination of any of the four </span><a class="rvts13" href="BitmapDataChannel.html">color channel</a><span class="rvts6"> values (BitmapDataChannel.RED, BitmapDataChannel.BLUE, BitmapDataChannel.GREEN, and BitmapDataChannel.ALPHA). You can use the logical OR operator to combine channel values. Default recommended value is 7.&nbsp;</span></p>
+   <p class="rvps2"><span class="rvts12">grayScale</span><span class="rvts6"> - A Boolean value. If the value is true, a grayscale image is created by setting all of the color channels to the same value. The alpha channel selection is not affected by setting this parameter to true. Default recommended value is false.&nbsp;</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts18">scroll</span><span class="rvts6">(</span><span class="rvts12">x</span><span class="rvts6">, </span><span class="rvts12">y</span><span class="rvts6">)&nbsp;</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">Scrolls an image by a certain(</span><span class="rvts12">x</span><span class="rvts6">, </span><span class="rvts12">y</span><span class="rvts6">) pixel amount. Edge regions outside the scrolling area are left unchanged.</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts12">x</span><span class="rvts6"> - The amount by which to scroll horizontally.</span></p>
+   <p class="rvps2"><span class="rvts12">y</span><span class="rvts6"> - The amount by which to scroll vertically.</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts18">setPixel</span><span class="rvts6">(</span><span class="rvts12">x</span><span class="rvts6">, </span><span class="rvts12">y</span><span class="rvts6">, </span><span class="rvts12">color</span><span class="rvts6">)</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">Sets a single pixel of a BitmapData object. The current alpha channel value of the image pixel is preserved during this operation. The value of the RGB color parameter is treated as an unmultiplied color value.</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts12">x</span><span class="rvts6"> - The x position of the pixel whose value changes.</span></p>
+   <p class="rvps2"><span class="rvts12">y</span><span class="rvts6"> - The y position of the pixel whose value changes.</span></p>
+   <p class="rvps2"><span class="rvts12">color</span><span class="rvts6"> - The resulting RGB color for the pixel.</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts18">setPixel32</span><span class="rvts6">(</span><span class="rvts12">x</span><span class="rvts6">, </span><span class="rvts12">y</span><span class="rvts6">, </span><span class="rvts12">color</span><span class="rvts6">)</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">Sets the </span><span class="rvts12">color</span><span class="rvts6"> and alpha transparency values of a single pixel of a BitmapData object. This method is similar to the setPixel() method; the main difference is that the setPixel32() method takes an ARGB color value that contains alpha channel information.</span></p>
+   <p class="rvps2"><span class="rvts6">All pixels in a BitmapData object are stored as premultiplied color values. A premultiplied image pixel has the red, green, and blue color channel values already multiplied by the alpha data. For example, if the alpha value is 0, the values for the RGB channels are also 0, independent of their unmultiplied values. This loss of data can cause some problems when you perform operations. All BitmapData methods take and return unmultiplied values. The internal pixel representation is converted from premultiplied to unmultiplied before it is returned as a value. During a set operation, the pixel value is premultiplied before the raw image pixel is set.</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts12">x</span><span class="rvts6"> - The x position of the pixel whose value changes.</span></p>
+   <p class="rvps2"><span class="rvts12">y</span><span class="rvts6"> - The y position of the pixel whose value changes.</span></p>
+   <p class="rvps2"><span class="rvts12">color</span><span class="rvts6"> - The resulting ARGB color for the pixel. If the bitmap is opaque(not transparent), the alpha transparency portion of this color value is ignored.</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts18">setPixels</span><span class="rvts6">(</span><span class="rvts12">rect</span><span class="rvts6">, </span><span class="rvts12">inputByteArray</span><span class="rvts6">)</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">Converts a byte array into a rectangular region of pixel data. For each pixel, the ByteArray.readUnsignedInt() method is called and the return value is written into the pixel. If the byte array ends before the full rectangle is written, the function returns. The data in the byte array is expected to be 32-bit ARGB pixel values. No seeking is performed on the byte array before or after the pixels are read.</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts12">rect</span><span class="rvts6"> - Specifies the </span><a class="rvts13" href="Rectangle.html">rectangular</a><span class="rvts6"> region of the BitmapData object.</span></p>
+   <p class="rvps2"><span class="rvts12">inputByteArray</span><span class="rvts6"> - A </span><a class="rvts13" href="ByteArray.html">ByteArray</a><span class="rvts6"> object that consists of 32-bit unmultiplied pixel values to be used in the rectangular region.</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts18">setVector</span><span class="rvts6">(</span><span class="rvts12">rect</span><span class="rvts6">, </span><span class="rvts12">inputVector</span><span class="rvts6">)</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">Converts a vector array </span><span class="rvts12">inputVector</span><span class="rvts6"> into a rectangular region of pixel data. For each pixel, a vector element is read and written into the BitmapData pixel. The data in the vector is expected to be 32-bit ARGB pixel values.</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts12">rect</span><span class="rvts6"> - Specifies the rectangular region of the BitmapData object.</span></p>
+   <p class="rvps2"><span class="rvts12">inputVector</span><span class="rvts6"> - vector array with 32-bit ARGB pixels</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts18">threshold</span><span class="rvts6">(</span><span class="rvts12">sourceBitmapData</span><span class="rvts6">, </span><span class="rvts12">sourceRect</span><span class="rvts6">, </span><span class="rvts12">destPoint</span><span class="rvts6">, </span><span class="rvts12">operation</span><span class="rvts6">, </span><span class="rvts12">threshold</span><span class="rvts6">, </span><span class="rvts12">color</span><span class="rvts6">, </span><span class="rvts12">mask</span><span class="rvts6">, </span><span class="rvts12">copySource</span><span class="rvts6">)</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">Tests pixel values in an image against a specified threshold and sets pixels that pass the test to new color values.&nbsp;</span></p>
+   <p class="rvps2"><span class="rvts6">Returns number of pixels that were changed.</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts12">sourceBitmapData</span><span class="rvts6"> - The input bitmap image to use. The source image can be a different BitmapData object or it can refer to the current BitmapData instance.</span></p>
+   <p class="rvps2"><span class="rvts12">sourceRect</span><span class="rvts6"> - A </span><a class="rvts13" href="Rectangle.html">rectangle</a><span class="rvts6"> that defines the area of the source image to use as input.</span><span class="rvts12">&nbsp;</span></p>
+   <p class="rvps2"><span class="rvts12">destPoint</span><span class="rvts6"> - The </span><a class="rvts13" href="Point.html">point</a><span class="rvts6"> within the destination image (the current BitmapData instance) that corresponds to the upper-left corner of the source rectangle.</span><span class="rvts12">&nbsp;</span></p>
+   <p class="rvps2"><span class="rvts12">operation</span><span class="rvts6"> - One of the following comparison operators, passed as a String: "&lt;", "&lt;=", "&gt;", "&gt;=", "==", "!="</span></p>
+   <p class="rvps2"><span class="rvts12">threshold</span><span class="rvts6"> - The value that each pixel is tested against to see if it meets or exceeds the threshhold.</span></p>
+   <p class="rvps2"><span class="rvts12">color</span><span class="rvts6"> - The color value that a pixel is set to if the threshold test succeeds. The default recommended value is 0x00000000.</span><span class="rvts12">&nbsp;</span></p>
+   <p class="rvps2"><span class="rvts12">mask</span><span class="rvts6"> - The mask to use to isolate a color component.</span><span class="rvts12"> </span><span class="rvts6">Default recommended value is 0xFFFFFFFF</span></p>
+   <p class="rvps2"><span class="rvts12">copySource</span><span class="rvts6"> - If the value is true, pixel values from the source image are copied to the destination when the threshold test fails. If the value is false, the source image is not copied when the threshold test fails. Default recommended value is false</span></p>
+  </td>
+ </tr>
+</table>
+</div>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p></p>
+<p class="rvps4" style="clear: both;"><span class="rvts16">Created with the Personal Edition of HelpNDoc: </span><a class="rvts17" href="https://www.helpndoc.com/feature-tour">Easily create CHM Help documents</a></p>
+
+            </div>
+            
+            <div id="topic_footer"><div id="topic_footer_content">Copyright &copy; &lt;Dates&gt; by &lt;Authors&gt;. All Rights Reserved.</div></div>
+        </div>  <!-- /#topic-content -->
+    </article>
+
+    <footer></footer>
+
+  </div>  <!-- /#main -->
+
+  <div class="mask" data-toggle="sm-nav-expanded"></div>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="hndModal" tabindex="-1" role="dialog" aria-labelledby="hndModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="hndModalLabel"></h4>
+        </div>
+        <div class="modal-body">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary modal-btn-close" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Splitter -->
+  <div id="hnd-splitter" style="left: 350px"></div>  
+
+  <!-- Scripts -->
+  <script src="vendors/jquery-3.5.1/jquery.min.js"></script>
+  <script src="vendors/bootstrap-3.4.1/js/bootstrap.min.js"></script>
+  <script src="vendors/bootstrap-3.4.1/js/ie10-viewport-bug-workaround.js"></script>
+  <script src="vendors/markjs-8.11.1/jquery.mark.min.js"></script>
+  <script src="vendors/uri-1.19.2/uri.min.js"></script>
+  <script src="vendors/imageMapResizer-1.0.10/imageMapResizer.min.js"></script>
+  <script src="vendors/headroom-0.11.0/headroom.min.js"></script>
+  <script src="vendors/jstree-3.3.10/jstree.min.js"></script>  
+  <script src="vendors/interactjs-1.9.22/interact.min.js"></script>  
+
+  <!-- HelpNDoc scripts -->
+  <script src="js/polyfill.object.min.js"></script>
+  <script src="_translations.js"></script>
+  <script src="js/hndsd.min.js"></script>
+  <script src="js/hndse.min.js"></script>
+  <script src="js/app.min.js"></script>
+
+  <!-- Init script -->
+  <script>
+    $(function() {
+      // Create the app
+      var app = new Hnd.App();
+      // Update translations
+      hnd_ut(app);
+	  // Instanciate imageMapResizer
+	  imageMapResize();
+	  // Custom JS
+	  
+      // Boot the app
+      app.Boot();
+    });
+  </script>
+
+
+
+</body>
+
+</html>
+

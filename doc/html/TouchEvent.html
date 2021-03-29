@@ -1,0 +1,537 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="generator" content="HelpNDoc Personal Edition 7.1.2.266">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" href="favicon.ico"/>
+
+  <title>TouchEvent</title>
+  <meta name="description" content="" /> 
+  <meta name="keywords" content="">
+
+
+
+  
+
+  <!-- Twitter Card data -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="TouchEvent">
+  <meta name="twitter:description" content="">
+
+  <!-- Open Graph data -->
+  <meta property="og:title" content="TouchEvent" />
+  <meta property="og:type" content="article" />
+  <meta property="og:description" content="" />
+  <meta property="og:site_name" content="LuaStudio API documentation" /> 
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendors/bootstrap-3.4.1/css/bootstrap.min.css" rel="stylesheet"/>
+
+  <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+  <link href="vendors/bootstrap-3.4.1/css/ie10-viewport-bug-workaround.css" rel="stylesheet"/>
+
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+      <script src="vendors/html5shiv-3.7.3/html5shiv.min.js"></script>
+      <script src="vendors/respond-1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+  <!-- JsTree styles -->
+  <link href="vendors/jstree-3.3.10/themes/default/style.min.css" rel="stylesheet"/>
+
+  <!-- Hnd styles -->
+  <link href="css/layout.min.css" rel="stylesheet" />
+  <link href="css/effects.min.css" rel="stylesheet" />
+  <link href="css/theme-light-blue.min.css" rel="stylesheet" />
+  <link href="css/print.min.css" rel="stylesheet" media="print" />
+  <style type="text/css">nav { width: 350px} @media screen and (min-width:769px) { body.md-nav-expanded div#main { margin-left: 350px} body.md-nav-expanded header { padding-left: 364px} }</style>
+
+  <!-- Content style -->
+  <link href="css/hnd.content.css" rel="stylesheet" />
+
+  
+
+
+
+</head>
+
+<body class="md-nav-expanded">
+
+
+
+  <div id="skip-link">
+    <a href="#main-content" class="element-invisible">Skip to main content</a>
+  </div>
+
+  <header class="headroom">
+    <button class="hnd-toggle btn btn-default">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>        
+    </button>
+    <h1>LuaStudio API documentation</h1>
+    
+  </header>
+
+  <nav id="panel-left" class="md-nav-expanded">
+    <!-- Nav tabs -->
+    <ul class="tab-tabs nav nav-tabs" role="tablist">
+      <li id="nav-close"> 
+        <button class="hnd-toggle btn btn-default">
+          <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+        </button>
+      </li>
+      
+	  
+        <li role="presentation" class="tab active">
+            <a href="#contents" id="tab-contents" aria-controls="contents" role="tab" data-toggle="tab">
+                <i class="glyphicon glyphicon-list"></i>
+                Contents
+            </a>
+        </li>
+      
+        <li role="presentation" class="tab">
+            <a href="#index" id="tab-index" aria-controls="index" role="tab" data-toggle="tab">
+                <i class="glyphicon glyphicon-asterisk"></i>
+                Index
+            </a>
+        </li>
+      
+        <li role="presentation" class="tab">
+            <a href="#search" id="tab-search" aria-controls="search" role="tab" data-toggle="tab">
+                <i class="glyphicon glyphicon-search"></i>
+                Search
+            </a>
+        </li>
+      
+    </ul>  <!-- /Nav tabs -->
+
+    <!-- Tab panes -->
+    <div class="tab-content">
+	  
+      <div role="tabpanel" class="tab-pane active" id="contents">
+        <div id="toc" class="tree-container unselectable"
+            data-url="_toc.json"
+            data-openlvl="1"
+        >
+            
+        </div>
+      </div>  <!-- /contents-->
+      
+      <div role="tabpanel" class="tab-pane" id="index">
+        <div id="keywords" class="tree-container unselectable"
+            data-url="_keywords.json"
+            data-openlvl="1"
+        >
+            
+        </div>
+      </div>  <!-- /index-->
+      
+      <div role="tabpanel" class="tab-pane" id="search">
+        <div class="search-content">
+          <div class="search-input">
+            <form id="search-form">
+              <div class="form-group">
+                <div class="input-group">
+                  <input type="text" class="form-control" id="input-search" name="input-search" placeholder="Search..." />
+                  <span class="input-group-btn">
+                    <button class="btn btn-default" type="submit">
+                      <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+                    </button>
+                  </span>
+                </div>
+              </div>
+            </form>
+          </div>  <!-- /search-input -->
+          <div class="search-result">
+            <div id="search-info"></div>
+            <div class="tree-container unselectable" id="search-tree"></div>
+          </div>  <!-- /search-result -->
+        </div>  <!-- /search-content -->
+      </div>  <!-- /search-->
+      
+    </div>  <!-- /Tab panes -->
+
+  </nav>
+
+  <div id="main">
+
+    <article>
+        <div id="topic-content" class="container-fluid" 
+		  data-hnd-id="TouchEvent"
+		  data-hnd-context="332"
+		  data-hnd-title="TouchEvent"
+		>
+            
+                <div class="navigation">
+                    <ol class="breadcrumb">
+                        <li><a href="Librarystructure.html">Library structure</a></li><li><a href="Media.html">Media</a></li><li><a href="Events.html">Events</a></li>
+                    </ol>
+                    <div class="nav-arrows">
+                        <div class="btn-group btn-group-xs" role="group"><a class="btn btn-default" href="Events.html" title="Events" role="button"><span class="glyphicon glyphicon-menu-up" aria-hidden="true"></span></a><a class="btn btn-default" href="TextEvent.html" title="TextEvent" role="button"><span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span></a><a class="btn btn-default" href="Filters.html" title="Filters" role="button"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span></a></div>
+                    </div>
+                </div> 
+            
+
+            <a id="main-content"></a>
+
+            <h2>TouchEvent</h2>
+
+            <div class="main-content">
+                
+<p></p>
+<p class="rvps2"><span class="rvts6">The TouchEvent object lets you handle events on devices that detect user contact with the device (such as a finger on a touch screen).&nbsp;</span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts6">When a user interacts with a device such as a mobile phone or tablet with a touch screen, the user typically touches the screen with his or her fingers or a pointing device. You can develop applications that respond to basic touch events (such as a single finger tap) with the TouchEvent object. Create event listeners using the event types defined in this object.</span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts6">Use the </span><a class="rvts13" href="Multitouch.html">Multitouch</a><span class="rvts6"> object to determine the current environment's support for touch interaction, and to manage the support of touch interaction if the current environment supports it.</span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts6">Note: When objects are nested on the display list, touch events target the deepest possible nested object that is visible in the display list. This object is called the target node. To have a target node's ancestor (an object containing the target node in the display list) receive notification of a touch event, use </span><a class="rvts13" href="EventDispatcher.html">EventDispatcher</a><span class="rvts6">.addEventListener() on the ancestor node with the type parameter set to the specific touch event you want to detect.</span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts6">Inherited from </span><a class="rvts13" href="MouseEvent.html">MouseEvent</a><span class="rvts6"> -&gt; </span><a class="rvts13" href="Event.html">Event</a><span class="rvts6">.</span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts6">Can be created with method </span><span class="rvts12">new</span><span class="rvts6">:</span></p>
+<div class="rvps2">
+<table width="100%" border="1" cellpadding="1" cellspacing="2" style="border-color: #000000; border-style: solid; border-spacing: 2px;">
+ <tr valign="top">
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">Lib.Media.Events.</span><span class="rvts18">TouchEvent.</span><span class="rvts19">new</span><span class="rvts6">(</span><span class="rvts12">type</span><span class="rvts6">, </span><span class="rvts12">bubbles</span><span class="rvts6">, </span><span class="rvts12">cancelable</span><span class="rvts6">, </span><span class="rvts12">touchPointID</span><span class="rvts6">, </span><span class="rvts12">isPrimaryTouchPoint</span><span class="rvts6">, </span><span class="rvts12">localX</span><span class="rvts6">, </span><span class="rvts12">localY</span><span class="rvts6">, </span><span class="rvts12">sizeX</span><span class="rvts6">, </span><span class="rvts12">sizeY</span><span class="rvts6">, </span><span class="rvts12">relatedObject</span><span class="rvts6">, </span><span class="rvts12">ctrlKey</span><span class="rvts6">, </span><span class="rvts12">altKey</span><span class="rvts6">, </span><span class="rvts12">shiftKey</span><span class="rvts6">, </span><span class="rvts12">buttonDown</span><span class="rvts6">, </span><span class="rvts12">delta</span><span class="rvts6">, </span><span class="rvts12">commandKey</span><span class="rvts6">, </span><span class="rvts12">clickCount</span><span class="rvts6">)</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">Creates an Event object that contains information about touch events.</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts12">type</span><span class="rvts6"> - The type of the event. Possible values are:&nbsp;</span></p>
+   <p class="rvps2"><span class="rvts6">TouchEvent.TOUCH_BEGIN, TouchEvent.TOUCH_END, TouchEvent.TOUCH_MOVE, TouchEvent.TOUCH_OUT, TouchEvent.TOUCH_OVER, TouchEvent.TOUCH_ROLL_OUT, TouchEvent.TOUCH_ROLL_OVER, TouchEvent.TOUCH_TAP</span></p>
+   <p class="rvps2"><span class="rvts12">bubbles</span><span class="rvts6"> - (default = true) - Determines whether the Event object participates in the bubbling phase of the event flow.</span></p>
+   <p class="rvps2"><span class="rvts12">cancelable</span><span class="rvts6"> - (default = false) - Determines whether the Event object can be canceled.</span></p>
+   <p class="rvps2"><span class="rvts12">touchPointID</span><span class="rvts6"> - (default 0) A unique identification number (as an int) assigned to the touch point.&nbsp;</span></p>
+   <p class="rvps2"><span class="rvts12">isPrimaryTouchPoint</span><span class="rvts6"> - (default false) Indicates whether the first point of contact is mapped to mouse events.</span></p>
+   <p class="rvps2"><span class="rvts12">localX</span><span class="rvts6"> - (default = 0) - The horizontal coordinate at which the event occurred relative to the containing sprite.</span></p>
+   <p class="rvps2"><span class="rvts12">localY</span><span class="rvts6"> - (default = 0) - The vertical coordinate at which the event occurred relative to the containing sprite.</span></p>
+   <p class="rvps2"><span class="rvts12">sizeX</span><span class="rvts6"> - Width of the contact area.</span></p>
+   <p class="rvps2"><span class="rvts12">sizeY</span><span class="rvts6"> - Height of the contact area.&nbsp;</span></p>
+   <p class="rvps2"><span class="rvts12">relatedObject</span><span class="rvts6"> - (default = nil) - The complementary </span><a class="rvts13" href="InteractiveObject.html">InteractiveObject</a><span class="rvts6"> instance that is affected by the event. For example, when a touchOut event occurs, relatedObject represents the display list object to which the pointing device now points.</span></p>
+   <p class="rvps2"><span class="rvts12">ctrlKey</span><span class="rvts6"> - (default = false) - On Windows, indicates whether the Ctrl key is activated. On Mac, indicates whether either the Ctrl key or the Command key is activated.&nbsp;</span></p>
+   <p class="rvps2"><span class="rvts12">altKey</span><span class="rvts6"> - (default = false) - Indicates whether the Alt key is activated (Windows).</span></p>
+   <p class="rvps2"><span class="rvts12">shiftKey</span><span class="rvts6"> - (default = false) - Indicates whether the Shift key is activated.</span></p>
+   <p class="rvps2"><span class="rvts12">buttonDown</span><span class="rvts6"> - (default = false) - ignored</span></p>
+   <p class="rvps2"><span class="rvts12">delta</span><span class="rvts6"> - (default = 0) - ignored</span></p>
+   <p class="rvps2"><span class="rvts12">commandKey</span><span class="rvts6"> - (default = false) - Indicates whether the Command key is activated (Mac).&nbsp;</span></p>
+   <p class="rvps2"><span class="rvts12">clickCount</span><span class="rvts6"> - (default = 0) - ignored</span></p>
+  </td>
+ </tr>
+</table>
+</div>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts6">Created MouseEvent object has properties:</span></p>
+<div class="rvps2">
+<table width="100%" border="1" cellpadding="1" cellspacing="2" style="border-color: #000000; border-style: solid; border-spacing: 2px;">
+ <tr valign="top">
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts18">altKey</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">Indicates whether the Alt key is active (true) or inactive (false).</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts18">buttonDown</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">ignored (false).</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts18">clickCount</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">[read-only] ignored</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts18">commandKey</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">Indicates whether the command key is activated (Mac) The value of property commandKey will have the same value as property ctrlKey on the Mac.</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts18">ctrlKey</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">On Windows, indicates whether the Ctrl key is active (true) or inactive (false).</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts18">delta</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">ignored</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts18">isPrimaryTouchPoint</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">(default false) Indicates whether the first point of contact is mapped to mouse events.</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts18">localX</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">When mouse locking is disabled, the horizontal coordinate at which the event occurred relative to the containing sprite.</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts18">localY</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">When mouse locking is disabled, the vertical coordinate at which the event occurred relative to the containing sprite.</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts18">relatedObject</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">A reference to a display list object that is related to the event.</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts18">shiftKey</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">Indicates whether the Shift key is active (true) or inactive (false).</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts18">sizeX</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">Width of the contact area.</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts18">sizeY</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">Height of the contact area.</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts18">stageX</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">[read-only] The horizontal coordinate at which the event occurred in global Stage coordinates.</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts18">stageY</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">[read-only] The vertical coordinate at which the event occurred in global Stage coordinates.</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts18">touchPointID</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">A unique identification number (as an int) assigned to the touch point.</span></p>
+  </td>
+ </tr>
+</table>
+</div>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts6">methods:</span></p>
+<div class="rvps2">
+<table width="100%" border="1" cellpadding="1" cellspacing="2" style="border-color: #000000; border-style: solid; border-spacing: 2px;">
+ <tr valign="top">
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts18">clone</span><span class="rvts6">()</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">Creates a copy of the TouchEvent object and sets the value of each property to match that of the original.</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <br/>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts18">toString</span><span class="rvts6">()</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">Returns a string that contains all the properties of the TouchEvent object.</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <br/>
+  </td>
+ </tr>
+</table>
+</div>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts6">Event types (some events may not currently supported):</span></p>
+<div class="rvps2">
+<table width="100%" border="1" cellpadding="1" cellspacing="2" style="border-color: #000000; border-style: solid; border-spacing: 2px;">
+ <tr valign="top">
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">Lib.Media.Events.</span><span class="rvts18">TouchEvent.TOUCH_BEGIN</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">Defines the value of the type property of a TOUCH_BEGIN touch event object.&nbsp;</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">Lib.Media.Events.</span><span class="rvts18">TouchEvent.TOUCH_END</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">Defines the value of the type property of a TOUCH_END touch event object.&nbsp;</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">Lib.Media.Events.</span><span class="rvts18">TouchEvent.TOUCH_MOVE</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">Defines the value of the type property of a TOUCH_MOVE touch event object.&nbsp;</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">Lib.Media.Events.</span><span class="rvts18">TouchEvent.TOUCH_OUT</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">Defines the value of the type property of a TOUCH_OUT touch event object.&nbsp;</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">Lib.Media.Events.</span><span class="rvts18">TouchEvent.TOUCH_OVER</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">Defines the value of the type property of a TOUCH_OVER touch event object.&nbsp;</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">Lib.Media.Events.</span><span class="rvts18">TouchEvent.TOUCH_ROLL_OUT</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">Defines the value of the type property of a TOUCH_ROLL_OUT touch event object.&nbsp;</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">Lib.Media.Events.</span><span class="rvts18">TouchEvent.TOUCH_ROLL_OVER</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">Defines the value of the type property of a TOUCH_ROLL_OVER touch event object.&nbsp;</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">Lib.Media.Events.</span><span class="rvts18">TouchEvent.TOUCH_TAP</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">Defines the value of the type property of a TOUCH_TAP touch event object.&nbsp;</span></p>
+  </td>
+ </tr>
+</table>
+</div>
+<p></p>
+<p class="rvps4" style="clear: both;"><span class="rvts16">Created with the Personal Edition of HelpNDoc: </span><a class="rvts17" href="https://www.helpndoc.com/feature-tour/create-help-files-for-the-qt-help-framework">Produce online help for Qt applications</a></p>
+
+            </div>
+            
+            <div id="topic_footer"><div id="topic_footer_content">Copyright &copy; &lt;Dates&gt; by &lt;Authors&gt;. All Rights Reserved.</div></div>
+        </div>  <!-- /#topic-content -->
+    </article>
+
+    <footer></footer>
+
+  </div>  <!-- /#main -->
+
+  <div class="mask" data-toggle="sm-nav-expanded"></div>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="hndModal" tabindex="-1" role="dialog" aria-labelledby="hndModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="hndModalLabel"></h4>
+        </div>
+        <div class="modal-body">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary modal-btn-close" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Splitter -->
+  <div id="hnd-splitter" style="left: 350px"></div>  
+
+  <!-- Scripts -->
+  <script src="vendors/jquery-3.5.1/jquery.min.js"></script>
+  <script src="vendors/bootstrap-3.4.1/js/bootstrap.min.js"></script>
+  <script src="vendors/bootstrap-3.4.1/js/ie10-viewport-bug-workaround.js"></script>
+  <script src="vendors/markjs-8.11.1/jquery.mark.min.js"></script>
+  <script src="vendors/uri-1.19.2/uri.min.js"></script>
+  <script src="vendors/imageMapResizer-1.0.10/imageMapResizer.min.js"></script>
+  <script src="vendors/headroom-0.11.0/headroom.min.js"></script>
+  <script src="vendors/jstree-3.3.10/jstree.min.js"></script>  
+  <script src="vendors/interactjs-1.9.22/interact.min.js"></script>  
+
+  <!-- HelpNDoc scripts -->
+  <script src="js/polyfill.object.min.js"></script>
+  <script src="_translations.js"></script>
+  <script src="js/hndsd.min.js"></script>
+  <script src="js/hndse.min.js"></script>
+  <script src="js/app.min.js"></script>
+
+  <!-- Init script -->
+  <script>
+    $(function() {
+      // Create the app
+      var app = new Hnd.App();
+      // Update translations
+      hnd_ut(app);
+	  // Instanciate imageMapResizer
+	  imageMapResize();
+	  // Custom JS
+	  
+      // Boot the app
+      app.Boot();
+    });
+  </script>
+
+
+
+</body>
+
+</html>
+

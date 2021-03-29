@@ -1,5 +1,144 @@
 <html>
-  <body>
-    <b>test</b>
-  </body>
+<head>
+<title>LuaStudio</title>
+    <link rel="stylesheet" href="/main.css" type="text/css" />
+</head>
+<body>
+
+<h1>LuaStudio</h1>
+<p>
+This application allows you create and launch Lua code. Check samples for more details.
+Save and load files to/from cloud. <a href="image/Gestures_Long_Press.png" target="_blank">Long press</a> on file/folder/project gives you more options.
+Wide range of available libraries.
+</p>
+
+<p>
+LuaStudio<sup>*</sup> based on Lua programming language<sup>**</sup> version 5.2. You can read more about Lua here: <a href="http://www.lua.org" target="_blank">http://www.lua.org</a>.<br/>
+Lua 5.2 Reference Manual available from this url: <a href="https://www.lua.org/manual/5.2/" target="_blank">https://www.lua.org/manual/5.2/</a>.
+</p>
+<p>
+LuaStudio JIT based on LuaJIT<sup>***</sup> version 2.1.0-beta3 (latest from <a href="https://github.com/LuaJIT/LuaJIT" target="_blank">https://github.com/LuaJIT/LuaJIT</a>). You can read more about luaJIT here: <a href="http://luajit.org/" target="_blank">http://luajit.org/</a>.
+</p>
+
+<p>
+Project file has extension *.luastudio. You can open it as SQLite data base. Project Samples.luastudio hold this name for default examples. Delete or rename old samples if you want restore original version. Samples available on <a href="https://github.com/luastudio/samples" target="_blank">GitHub</a> 
+</p>
+
+<p>
+You can run LuaStudio in application mode using command line arguments:<br/>
+on Mac: <b>open -na LuaStudio.app --args -a Samples.luastudio /HelloWorld.lua "Custom Window Title"</b><br/>
+on Windows: <b>LuaStudio.exe -a Samples.luastudio /HelloWorld.lua "Custom Window Title"</b><br/>
+Parameter <b>-a</b> and next two: <b>project_file_path</b> and <b>executable_lua_script_path</b> force LuaStudio open and immediately launch Lua file from specific location instead of displaying whole list of available projects. Last parameter <b>window_title</b> responsible for new custom window title, can be omitted.
+</p>
+
+<p>
+Full screen mode:<br/>
+on Mac: use default top left icon for full screen resizing<br/>
+on Windows: use Alt + Enter keys combination for switching 
+</p>
+
+<p style="color:navy;'">Current version <b>2.2.0</b></p>
+<table>
+<tr>
+  <td valign="top"><b>Mobile version</b></td>
+  <td width="3">&nbsp;</td>
+  <td>
+    <table>
+     <tr>
+      <td>
+         <a href="https://itunes.apple.com/us/app/lua-studio/id1161260887?mt=8" target="_blank"><img src="/search/images/available_on_the_appstore_small.gif" border="0" alt="Available on the appstore" width="120" height="43"></a>
+      </td>
+      <td>  
+         <a href="https://play.google.com/store/apps/details?id=com.codeservice.app.luastudio" target="_blank"><img src="/search/images/google_play.png" border="0" alt="Available on the Google Play" width="127" height="43"></a>
+      </td>
+     </tr>
+     <tr>
+       <td></td>
+       <td>
+         <a href="download/LuaStudio-release_v2_2_0.apk">LuaStudio-release_v2_2_0.apk</a>
+       </td>
+     </tr>
+    </table>
+  </td>
+</tr>
+<tr>
+  <td valign="top"><b>Desktop version</b></td>
+  <td width="3">&nbsp;</td>
+  <td>
+    <table>
+      <tr>
+          <td>Mac OS 64-bit<td>
+          <td><a href="download/LuaStudio_v2_2_0_Mac.zip" target="_blank">LuaStudio_v2_2_0_Mac.zip</a></td>
+          <td>&nbsp;</td>
+          <td>Mac OS JIT 64-bit<td>
+          <td><a href="download/LuaStudioJIT_v2_2_0_Mac.zip" target="_blank">LuaStudioJIT_v2_2_0_Mac.zip</a></td>         
+      </tr>
+      <tr>
+          <td>Windows 32-bit<td>
+          <td><a href="download/LuaStudio_v2_2_0_Win_x86.zip" target="_blank">LuaStudio_v2_2_0_Win_x86.zip</a></td>
+          <td>&nbsp;</td>
+          <td>Windows JIT 32-bit<td>
+          <td><a href="download/LuaStudioJIT_v2_2_0_Win_x86.zip" target="_blank">LuaStudioJIT_v2_2_0_Win_x86.zip</a></td>
+      </tr>
+      <tr>
+          <td>Windows 64-bit<td>
+          <td><a href="download/LuaStudio_v2_2_0_Win_x64.zip" target="_blank">LuaStudio_v2_2_0_Win_x64.zip</a></td>
+          <td>&nbsp;</td>
+          <td>Windows JIT 64-bit<td>
+          <td><a href="download/LuaStudioJIT_v2_2_0_Win_x64.zip" target="_blank">LuaStudioJIT_v2_2_0_Win_x64.zip</a></td>
+      </tr>
+    </table>
+  </td>
+	
+</tr>
+<tr>
+  <td valign="top"><b>Documentation</b></td>
+  <td width="3">&nbsp;</td>
+  <td>
+    <a href="doc/html/LuaStudio API documentation.html" target="_blank">HTML version</a>&nbsp;
+    <a href="doc/LuaStudio API documentation.zip">CHM version (zip)</a><br/>
+    <a href="doc/info/IntelliJandLS.html" target="_blank">Instruction how to integrate LS with IntelliJ IDEA</a>
+  </td>
+</tr>
+<tr>
+  <td valign="top"><b>Exporter</b></td>
+  <td width="3">&nbsp;</td>
+  <td>
+    <a href="download/Exporter_v13_0.luastudio" target="_blank">Exporter_v13_0.luastudio</a> (215MB)
+  </td>
+</tr>
+<tr>
+  <td valign="top"></td>
+  <td width="3">&nbsp;</td>
+  <td>
+    This project can export any LuaStudio projects to standalon app directly or to native target projects.<br/>
+    Available targets:<br/>
+    1 - android gradle / importable to android studio<br/>
+    2 - xcode iOS (based on v12.4)<br/>
+    3 - standalon windows (+JIT)<br/>
+    4 - standalon mac os (+JIT)<br/>
+    Install(copy) Exporter project to user document folder on your device. Location to this folder can be printed from Lua code: <b>print(Lib.Media.FileSystem.File.documentsDirectory.nativePath)</b><br/>
+    As an option, simply run script:<br/>
+    <code>
+r = Lib.Sys.Net.Http.new( "https://scormpool.com/luastudio/download/Exporter_v13_0_installer.lua" )
+r.onData = function(s)fn=load(s) fn()end r.onError = print r.request(false)
+    </code>
+  </td>
+</tr>
+<tr>
+  <td valign="top"><b>Privacy Policy</b></td>
+  <td width="3">&nbsp;</td>
+  <td>
+    <a href="policy.html" target="_blank">click here</a>&nbsp;
+  </td>
+</tr>
+</table>
+
+<p>
+<sup>*</sup> LuaStudio free for all purpose and distributed on AS IS basis with no warranty. You can use it on your own risk with no compensation for any damage or lost.<br/>
+<sup>**</sup> Lua 5.2 - Copyright © 1994–2021 Lua.org, PUC-Rio.<br/>
+<sup>***</sup> LuaJIT 2.1.0-beta3 - Copyright © 2005-2021 Mike Pall, released under the MIT open source license. 
+</p>
+
+</body>
 </html>

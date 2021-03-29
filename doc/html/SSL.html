@@ -1,0 +1,530 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="generator" content="HelpNDoc Personal Edition 7.1.2.266">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" href="favicon.ico"/>
+
+  <title>SSL</title>
+  <meta name="description" content="" /> 
+  <meta name="keywords" content="">
+
+
+
+  
+
+  <!-- Twitter Card data -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="SSL">
+  <meta name="twitter:description" content="">
+
+  <!-- Open Graph data -->
+  <meta property="og:title" content="SSL" />
+  <meta property="og:type" content="article" />
+  <meta property="og:description" content="" />
+  <meta property="og:site_name" content="LuaStudio API documentation" /> 
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendors/bootstrap-3.4.1/css/bootstrap.min.css" rel="stylesheet"/>
+
+  <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+  <link href="vendors/bootstrap-3.4.1/css/ie10-viewport-bug-workaround.css" rel="stylesheet"/>
+
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+      <script src="vendors/html5shiv-3.7.3/html5shiv.min.js"></script>
+      <script src="vendors/respond-1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+  <!-- JsTree styles -->
+  <link href="vendors/jstree-3.3.10/themes/default/style.min.css" rel="stylesheet"/>
+
+  <!-- Hnd styles -->
+  <link href="css/layout.min.css" rel="stylesheet" />
+  <link href="css/effects.min.css" rel="stylesheet" />
+  <link href="css/theme-light-blue.min.css" rel="stylesheet" />
+  <link href="css/print.min.css" rel="stylesheet" media="print" />
+  <style type="text/css">nav { width: 350px} @media screen and (min-width:769px) { body.md-nav-expanded div#main { margin-left: 350px} body.md-nav-expanded header { padding-left: 364px} }</style>
+
+  <!-- Content style -->
+  <link href="css/hnd.content.css" rel="stylesheet" />
+
+  
+
+
+
+</head>
+
+<body class="md-nav-expanded">
+
+
+
+  <div id="skip-link">
+    <a href="#main-content" class="element-invisible">Skip to main content</a>
+  </div>
+
+  <header class="headroom">
+    <button class="hnd-toggle btn btn-default">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>        
+    </button>
+    <h1>LuaStudio API documentation</h1>
+    
+  </header>
+
+  <nav id="panel-left" class="md-nav-expanded">
+    <!-- Nav tabs -->
+    <ul class="tab-tabs nav nav-tabs" role="tablist">
+      <li id="nav-close"> 
+        <button class="hnd-toggle btn btn-default">
+          <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+        </button>
+      </li>
+      
+	  
+        <li role="presentation" class="tab active">
+            <a href="#contents" id="tab-contents" aria-controls="contents" role="tab" data-toggle="tab">
+                <i class="glyphicon glyphicon-list"></i>
+                Contents
+            </a>
+        </li>
+      
+        <li role="presentation" class="tab">
+            <a href="#index" id="tab-index" aria-controls="index" role="tab" data-toggle="tab">
+                <i class="glyphicon glyphicon-asterisk"></i>
+                Index
+            </a>
+        </li>
+      
+        <li role="presentation" class="tab">
+            <a href="#search" id="tab-search" aria-controls="search" role="tab" data-toggle="tab">
+                <i class="glyphicon glyphicon-search"></i>
+                Search
+            </a>
+        </li>
+      
+    </ul>  <!-- /Nav tabs -->
+
+    <!-- Tab panes -->
+    <div class="tab-content">
+	  
+      <div role="tabpanel" class="tab-pane active" id="contents">
+        <div id="toc" class="tree-container unselectable"
+            data-url="_toc.json"
+            data-openlvl="1"
+        >
+            
+        </div>
+      </div>  <!-- /contents-->
+      
+      <div role="tabpanel" class="tab-pane" id="index">
+        <div id="keywords" class="tree-container unselectable"
+            data-url="_keywords.json"
+            data-openlvl="1"
+        >
+            
+        </div>
+      </div>  <!-- /index-->
+      
+      <div role="tabpanel" class="tab-pane" id="search">
+        <div class="search-content">
+          <div class="search-input">
+            <form id="search-form">
+              <div class="form-group">
+                <div class="input-group">
+                  <input type="text" class="form-control" id="input-search" name="input-search" placeholder="Search..." />
+                  <span class="input-group-btn">
+                    <button class="btn btn-default" type="submit">
+                      <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+                    </button>
+                  </span>
+                </div>
+              </div>
+            </form>
+          </div>  <!-- /search-input -->
+          <div class="search-result">
+            <div id="search-info"></div>
+            <div class="tree-container unselectable" id="search-tree"></div>
+          </div>  <!-- /search-result -->
+        </div>  <!-- /search-content -->
+      </div>  <!-- /search-->
+      
+    </div>  <!-- /Tab panes -->
+
+  </nav>
+
+  <div id="main">
+
+    <article>
+        <div id="topic-content" class="container-fluid" 
+		  data-hnd-id="SSL"
+		  data-hnd-context="334"
+		  data-hnd-title="SSL"
+		>
+            
+                <div class="navigation">
+                    <ol class="breadcrumb">
+                        <li><a href="Librarystructure.html">Library structure</a></li><li><a href="Sys.html">Sys</a></li>
+                    </ol>
+                    <div class="nav-arrows">
+                        <div class="btn-group btn-group-xs" role="group"><a class="btn btn-default" href="Sys.html" title="Sys" role="button"><span class="glyphicon glyphicon-menu-up" aria-hidden="true"></span></a><a class="btn btn-default" href="Socket.html" title="Socket" role="button"><span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span></a><a class="btn btn-default" href="Utf8.html" title="Utf8" role="button"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span></a></div>
+                    </div>
+                </div> 
+            
+
+            <a id="main-content"></a>
+
+            <h2>SSL</h2>
+
+            <div class="main-content">
+                
+<p></p>
+<p class="rvps7"><span class="rvts6">A TCP SSL socket object : allow you to both connect to a given server and exchange messages or start your own server and wait for connections. If you need non SSL socket, use </span><a class="rvts13" href="Socket.html">Lib.Sys.Net.Socket</a><span class="rvts6"> library object.</span></p>
+<p class="rvps7"><span class="rvts6"><br/></span></p>
+<p class="rvps7"><span class="rvts6">Can be created using </span><span class="rvts12">new</span><span class="rvts6"> method:</span></p>
+<div class="rvps2">
+<table width="100%" border="1" cellpadding="1" cellspacing="2" style="border-color: #000000; border-style: solid; border-spacing: 2px;">
+ <tr valign="top">
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">Lib.Sys.</span><span class="rvts18">SSL.Socket.</span><span class="rvts19">new</span><span class="rvts6">()</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">create socket object</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <br/>
+  </td>
+ </tr>
+</table>
+</div>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts6">Created socket object has properties:</span></p>
+<div class="rvps2">
+<table width="100%" border="1" cellpadding="1" cellspacing="2" style="border-color: #000000; border-style: solid; border-spacing: 2px;">
+ <tr valign="top">
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts18">custom</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps7"><span class="rvts6">A </span><span class="rvts18">custom</span><span class="rvts6"> value that can be associated with the socket. Can be used to retrieve your custom infos after a </span><span class="rvts18">select</span><span class="rvts6">.</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">any object, string, etc.</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts18">input</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts52">The stream on which you can read available data. By default the stream is blocking until the requested data is available, use&nbsp;</span><span class="rvts55">setBlocking</span><span class="rvts54">(false)</span><span class="rvts52">&nbsp;or&nbsp;</span><span class="rvts55">setTimeout</span><span class="rvts52">&nbsp;to prevent infinite waiting.</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><a class="rvts13" href="Input.html">Input</a><span class="rvts6"> Object, read-only</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts18">output</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts52">The stream on which you can send data. Please note that in case the output buffer you will block while writing the data, use&nbsp;</span><span class="rvts55">setBlocking</span><span class="rvts54">(false)</span><span class="rvts52">&nbsp;or&nbsp;</span><span class="rvts55">setTimeout</span><span class="rvts52">&nbsp;to prevent that.</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><a class="rvts13" href="Output.html">Output</a><span class="rvts6"> object. read-only</span></p>
+  </td>
+ </tr>
+</table>
+</div>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts6">Methods:</span></p>
+<div class="rvps2">
+<table width="100%" border="1" cellpadding="1" cellspacing="2" style="border-color: #000000; border-style: solid; border-spacing: 2px;">
+ <tr valign="top">
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><a class="rvts48" href="http://api.haxe.org/sys/net/Socket.html#accept">accept</a><span class="rvts37">()</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts37">Accept a new connected client. This will return a connected socket on which you can read/write some data.</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <br/>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><a class="rvts48" href="http://api.haxe.org/sys/net/Socket.html#bind">bind</a><span class="rvts37">(</span><span class="rvts38">host</span><span class="rvts37">,&nbsp;</span><span class="rvts38">port</span><span class="rvts37">)</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts37">Bind the socket to the given </span><span class="rvts38">host</span><span class="rvts37">/</span><span class="rvts38">port</span><span class="rvts37"> so it can afterwards listen for connections there.</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts12">host</span><span class="rvts6"> - </span><a class="rvts13" href="Host.html">host</a><span class="rvts6"> object</span></p>
+   <p class="rvps2"><span class="rvts12">port</span><span class="rvts6"> - port number</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><a class="rvts48" href="http://api.haxe.org/sys/net/Socket.html#close">close</a><span class="rvts37">()</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts37">Closes the socket : make sure to properly close all your sockets or you will crash when you run out of file descriptors.</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <br/>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><a class="rvts48" href="http://api.haxe.org/sys/net/Socket.html#connect">connect</a><span class="rvts37">(</span><span class="rvts38">host</span><span class="rvts37">,&nbsp;</span><span class="rvts38">port</span><span class="rvts37">)</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts37">Connect to the given server </span><span class="rvts38">host</span><span class="rvts37">/</span><span class="rvts38">port</span><span class="rvts37">. Throw an exception in case we couldn't successfully connect.</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts12">host</span><span class="rvts6"> - </span><a class="rvts13" href="Host.html">host</a><span class="rvts6"> object</span></p>
+   <p class="rvps2"><span class="rvts12">port</span><span class="rvts6"> - port number</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><a class="rvts48" href="http://api.haxe.org/sys/net/Socket.html#host">host</a><span class="rvts37">()</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts37">Return the information about our side of a connected socket. Info structure:</span></p>
+   <p class="rvps2"><span class="rvts37">{port:</span><a class="rvts58" href="http://api.haxe.org/Int.html">Int</a><span class="rvts37">, host:</span><a class="rvts58" href="http://api.haxe.org/sys/net/Host.html">Host</a><span class="rvts37">}</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <br/>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><a class="rvts48" href="http://api.haxe.org/sys/net/Socket.html#listen">listen</a><span class="rvts37">(</span><span class="rvts38">connections</span><span class="rvts37">)</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts37">Allow the socket to listen for incoming questions. The parameter tells how many pending </span><span class="rvts38">connections</span><span class="rvts37"> we can have until they get refused. Use&nbsp;</span><span class="rvts39">accept</span><span class="rvts37">()&nbsp;to accept incoming connections.</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts12">connections</span><span class="rvts6"> - number of connections</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><a class="rvts48" href="http://api.haxe.org/sys/net/Socket.html#peer">peer</a><span class="rvts37">()</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts37">Return the information about the other side of a connected socket. Info structure:</span></p>
+   <p class="rvps2"><span class="rvts37">{port:</span><a class="rvts58" href="http://api.haxe.org/Int.html">Int</a><span class="rvts37">, host:</span><a class="rvts58" href="http://api.haxe.org/sys/net/Host.html">Host</a><span class="rvts37">}</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <br/>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><a class="rvts48" href="http://api.haxe.org/sys/net/Socket.html#read">read</a><span class="rvts37">()</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts37">Read the whole data available on the socket.</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <br/>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><a class="rvts48" href="http://api.haxe.org/sys/net/Socket.html#setBlocking">setBlocking</a><span class="rvts37">(</span><span class="rvts38">b</span><span class="rvts37">)</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts37">Change the blocking mode of the socket. A blocking socket is the default behavior. A non-blocking socket will abort blocking operations immediately by throwing a error.</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts12">b</span><span class="rvts6"> - true/false</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><a class="rvts48" href="http://api.haxe.org/sys/net/Socket.html#setFastSend">setFastSend</a><span class="rvts37">(</span><span class="rvts38">b</span><span class="rvts37">)</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts37">Allows the socket to immediately send the data when written to its output : this will cause less ping but might increase the number of packets / data size, especially when doing a lot of small writes.</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts12">b</span><span class="rvts6"> - true/false</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><a class="rvts48" href="http://api.haxe.org/sys/net/Socket.html#setTimeout">setTimeout</a><span class="rvts37">(</span><span class="rvts38">timeout</span><span class="rvts37">)</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts37">Gives a </span><span class="rvts38">timeout</span><span class="rvts37"> after which blocking socket operations (such as reading and writing) will abort and throw an exception.</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts38">timeout</span><span class="rvts37"> - time out value in seconds, float</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><a class="rvts48" href="http://api.haxe.org/sys/net/Socket.html#shutdown">shutdown</a><span class="rvts37">(</span><span class="rvts38">read</span><span class="rvts37">,&nbsp;</span><span class="rvts38">write</span><span class="rvts37">)</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts37">Shutdown the socket, either for reading or writing.</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts38">read</span><span class="rvts37"> - true/false</span></p>
+   <p class="rvps2"><span class="rvts38">write</span><span class="rvts37"> - true/false</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><a class="rvts48" href="http://api.haxe.org/sys/net/Socket.html#waitForRead">waitForRead</a><span class="rvts37">()</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts37">Block until some data is available for read on the socket.</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <br/>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><a class="rvts48" href="http://api.haxe.org/sys/net/Socket.html#write">write</a><span class="rvts37">(</span><span class="rvts38">content</span><span class="rvts37">)</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts37">Write the whole data to the socket output.</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts12">content</span><span class="rvts6"> - text content to write</span></p>
+  </td>
+ </tr>
+</table>
+</div>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts6">Static methods:</span></p>
+<div class="rvps2">
+<table width="100%" border="1" cellpadding="1" cellspacing="2" style="border-color: #000000; border-style: solid; border-spacing: 2px;">
+ <tr valign="top">
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><a class="rvts58" href="http://api.haxe.org/sys/net/Socket.html#select">Lib.Sys.SSL.Socket.</a><a class="rvts48" href="http://api.haxe.org/sys/net/Socket.html#select">select</a><span class="rvts37">(</span><span class="rvts38">read</span><span class="rvts37">,&nbsp;</span><span class="rvts38">write</span><span class="rvts37">,&nbsp;</span><span class="rvts38">others</span><span class="rvts37">,&nbsp;</span><span class="rvts38">timeout</span><span class="rvts37">)</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts37">Wait until one of the sockets groups is ready for the given operation:</span></p>
+   <p class="rvps2"><span class="rvts37">-&nbsp;</span><span class="rvts38">read</span><span class="rvts37"> contains sockets on which we want to wait for available data to be read, -&nbsp;</span><span class="rvts38">write</span><span class="rvts37">&nbsp;contains sockets on which we want to wait until we are allowed to write some data to their output buffers,&nbsp;</span></p>
+   <p class="rvps2"><span class="rvts37">-&nbsp;</span><span class="rvts38">others</span><span class="rvts37">&nbsp;contains sockets on which we want to wait for exceptional conditions.</span></p>
+   <p class="rvps2"><span class="rvts39">select</span><span class="rvts37">&nbsp;will block until one of the condition is met, in which case it will return the sockets for which the condition was true.</span></p>
+   <p class="rvps2"><span class="rvts37">In case a </span><span class="rvts38">timeout</span><span class="rvts37"> (in seconds) is specified, </span><span class="rvts39">select</span><span class="rvts37"> might wait at worse until the timeout expires.</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts12">read</span><span class="rvts6"> - array of sockets</span></p>
+   <p class="rvps2"><span class="rvts12">write</span><span class="rvts6"> - array of sockets</span></p>
+   <p class="rvps2"><span class="rvts12">others</span><span class="rvts6"> - array of sockets</span></p>
+  </td>
+ </tr>
+</table>
+</div>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts22">Examples:</span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts6">socket = Lib.Sys.</span><span class="rvts18">SSL.Socket.</span><span class="rvts19">new</span><span class="rvts6">()</span></p>
+<p class="rvps2"><span class="rvts6">print("Connecting to talk.google.com")</span></p>
+<p class="rvps2"><span class="rvts6">socket.</span><span class="rvts18">connect</span><span class="rvts6">( Lib.Sys.Net.Host.new( "talk.google.com" ), 5223 )</span></p>
+<p class="rvps2"><span class="rvts6">print("Connected")</span></p>
+<p class="rvps2"><span class="rvts6">print("Writing data")</span></p>
+<p class="rvps2"><span class="rvts6">socket.</span><span class="rvts18">write</span><span class="rvts6">( '&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;stream:stream xmlns:stream="http://etherx.jabber.org/streams" xmlns="jabber:client" to="talk.google.com" xml:lang="en" version="1.0"&gt;' )</span></p>
+<p class="rvps2"><span class="rvts6">print( "Waiting for incoming XMPP stream ...." )</span></p>
+<p class="rvps2"><span class="rvts6">bufSize = 32</span></p>
+<p class="rvps2"><span class="rvts6">buf = Lib.Sys.IO.Bytes.alloc( 4096 )</span></p>
+<p class="rvps2"><span class="rvts6">pos = 0</span></p>
+<p class="rvps2"><span class="rvts6">len = -1</span></p>
+<p class="rvps2"><span class="rvts6">while true do</span></p>
+<p class="rvps2"><span class="rvts6">&nbsp; &nbsp; len = socket.</span><span class="rvts18">input</span><span class="rvts6">.readBytes( buf, pos, bufSize )</span></p>
+<p class="rvps2"><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">if( len &lt; bufSize ) then break else pos = pos + len end</span></p>
+<p class="rvps2"><span class="rvts6">end</span></p>
+<p class="rvps2"><span class="rvts6">result = buf.toString()</span></p>
+<p class="rvps2"><span class="rvts6">print( 'Recieved xmpp stream: '..result )</span></p>
+<p class="rvps2"><span class="rvts6">--Should be something like: &lt;stream:stream from="talk.google.com" id="E0F18D0BDA98612A" version="1.0" xmlns:stream="http://etherx.jabber.org/streams" xmlns="jabber:client"&gt;</span></p>
+<p class="rvps2"><span class="rvts6">socket.</span><span class="rvts18">write</span><span class="rvts6">( '&lt;/stream&gt;' )</span></p>
+<p class="rvps2"><span class="rvts6">socket.</span><span class="rvts18">close</span><span class="rvts6">()</span></p>
+<p></p>
+<p class="rvps4" style="clear: both;"><span class="rvts16">Created with the Personal Edition of HelpNDoc: </span><a class="rvts17" href="https://www.helpndoc.com">Full-featured Documentation generator</a></p>
+
+            </div>
+            
+            <div id="topic_footer"><div id="topic_footer_content">Copyright &copy; &lt;Dates&gt; by &lt;Authors&gt;. All Rights Reserved.</div></div>
+        </div>  <!-- /#topic-content -->
+    </article>
+
+    <footer></footer>
+
+  </div>  <!-- /#main -->
+
+  <div class="mask" data-toggle="sm-nav-expanded"></div>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="hndModal" tabindex="-1" role="dialog" aria-labelledby="hndModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="hndModalLabel"></h4>
+        </div>
+        <div class="modal-body">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary modal-btn-close" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Splitter -->
+  <div id="hnd-splitter" style="left: 350px"></div>  
+
+  <!-- Scripts -->
+  <script src="vendors/jquery-3.5.1/jquery.min.js"></script>
+  <script src="vendors/bootstrap-3.4.1/js/bootstrap.min.js"></script>
+  <script src="vendors/bootstrap-3.4.1/js/ie10-viewport-bug-workaround.js"></script>
+  <script src="vendors/markjs-8.11.1/jquery.mark.min.js"></script>
+  <script src="vendors/uri-1.19.2/uri.min.js"></script>
+  <script src="vendors/imageMapResizer-1.0.10/imageMapResizer.min.js"></script>
+  <script src="vendors/headroom-0.11.0/headroom.min.js"></script>
+  <script src="vendors/jstree-3.3.10/jstree.min.js"></script>  
+  <script src="vendors/interactjs-1.9.22/interact.min.js"></script>  
+
+  <!-- HelpNDoc scripts -->
+  <script src="js/polyfill.object.min.js"></script>
+  <script src="_translations.js"></script>
+  <script src="js/hndsd.min.js"></script>
+  <script src="js/hndse.min.js"></script>
+  <script src="js/app.min.js"></script>
+
+  <!-- Init script -->
+  <script>
+    $(function() {
+      // Create the app
+      var app = new Hnd.App();
+      // Update translations
+      hnd_ut(app);
+	  // Instanciate imageMapResizer
+	  imageMapResize();
+	  // Custom JS
+	  
+      // Boot the app
+      app.Boot();
+    });
+  </script>
+
+
+
+</body>
+
+</html>
+

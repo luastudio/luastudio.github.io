@@ -1,0 +1,378 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="generator" content="HelpNDoc Personal Edition 7.1.2.266">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" href="favicon.ico"/>
+
+  <title>Loader</title>
+  <meta name="description" content="" /> 
+  <meta name="keywords" content="">
+
+
+
+  
+
+  <!-- Twitter Card data -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Loader">
+  <meta name="twitter:description" content="">
+
+  <!-- Open Graph data -->
+  <meta property="og:title" content="Loader" />
+  <meta property="og:type" content="article" />
+  <meta property="og:description" content="" />
+  <meta property="og:site_name" content="LuaStudio API documentation" /> 
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendors/bootstrap-3.4.1/css/bootstrap.min.css" rel="stylesheet"/>
+
+  <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+  <link href="vendors/bootstrap-3.4.1/css/ie10-viewport-bug-workaround.css" rel="stylesheet"/>
+
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+      <script src="vendors/html5shiv-3.7.3/html5shiv.min.js"></script>
+      <script src="vendors/respond-1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+  <!-- JsTree styles -->
+  <link href="vendors/jstree-3.3.10/themes/default/style.min.css" rel="stylesheet"/>
+
+  <!-- Hnd styles -->
+  <link href="css/layout.min.css" rel="stylesheet" />
+  <link href="css/effects.min.css" rel="stylesheet" />
+  <link href="css/theme-light-blue.min.css" rel="stylesheet" />
+  <link href="css/print.min.css" rel="stylesheet" media="print" />
+  <style type="text/css">nav { width: 350px} @media screen and (min-width:769px) { body.md-nav-expanded div#main { margin-left: 350px} body.md-nav-expanded header { padding-left: 364px} }</style>
+
+  <!-- Content style -->
+  <link href="css/hnd.content.css" rel="stylesheet" />
+
+  
+
+
+
+</head>
+
+<body class="md-nav-expanded">
+
+
+
+  <div id="skip-link">
+    <a href="#main-content" class="element-invisible">Skip to main content</a>
+  </div>
+
+  <header class="headroom">
+    <button class="hnd-toggle btn btn-default">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>        
+    </button>
+    <h1>LuaStudio API documentation</h1>
+    
+  </header>
+
+  <nav id="panel-left" class="md-nav-expanded">
+    <!-- Nav tabs -->
+    <ul class="tab-tabs nav nav-tabs" role="tablist">
+      <li id="nav-close"> 
+        <button class="hnd-toggle btn btn-default">
+          <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+        </button>
+      </li>
+      
+	  
+        <li role="presentation" class="tab active">
+            <a href="#contents" id="tab-contents" aria-controls="contents" role="tab" data-toggle="tab">
+                <i class="glyphicon glyphicon-list"></i>
+                Contents
+            </a>
+        </li>
+      
+        <li role="presentation" class="tab">
+            <a href="#index" id="tab-index" aria-controls="index" role="tab" data-toggle="tab">
+                <i class="glyphicon glyphicon-asterisk"></i>
+                Index
+            </a>
+        </li>
+      
+        <li role="presentation" class="tab">
+            <a href="#search" id="tab-search" aria-controls="search" role="tab" data-toggle="tab">
+                <i class="glyphicon glyphicon-search"></i>
+                Search
+            </a>
+        </li>
+      
+    </ul>  <!-- /Nav tabs -->
+
+    <!-- Tab panes -->
+    <div class="tab-content">
+	  
+      <div role="tabpanel" class="tab-pane active" id="contents">
+        <div id="toc" class="tree-container unselectable"
+            data-url="_toc.json"
+            data-openlvl="1"
+        >
+            
+        </div>
+      </div>  <!-- /contents-->
+      
+      <div role="tabpanel" class="tab-pane" id="index">
+        <div id="keywords" class="tree-container unselectable"
+            data-url="_keywords.json"
+            data-openlvl="1"
+        >
+            
+        </div>
+      </div>  <!-- /index-->
+      
+      <div role="tabpanel" class="tab-pane" id="search">
+        <div class="search-content">
+          <div class="search-input">
+            <form id="search-form">
+              <div class="form-group">
+                <div class="input-group">
+                  <input type="text" class="form-control" id="input-search" name="input-search" placeholder="Search..." />
+                  <span class="input-group-btn">
+                    <button class="btn btn-default" type="submit">
+                      <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+                    </button>
+                  </span>
+                </div>
+              </div>
+            </form>
+          </div>  <!-- /search-input -->
+          <div class="search-result">
+            <div id="search-info"></div>
+            <div class="tree-container unselectable" id="search-tree"></div>
+          </div>  <!-- /search-result -->
+        </div>  <!-- /search-content -->
+      </div>  <!-- /search-->
+      
+    </div>  <!-- /Tab panes -->
+
+  </nav>
+
+  <div id="main">
+
+    <article>
+        <div id="topic-content" class="container-fluid" 
+		  data-hnd-id="Loader"
+		  data-hnd-context="142"
+		  data-hnd-title="Loader"
+		>
+            
+                <div class="navigation">
+                    <ol class="breadcrumb">
+                        <li><a href="Librarystructure.html">Library structure</a></li><li><a href="Media.html">Media</a></li><li><a href="Display.html">Display</a></li>
+                    </ol>
+                    <div class="nav-arrows">
+                        <div class="btn-group btn-group-xs" role="group"><a class="btn btn-default" href="Display.html" title="Display" role="button"><span class="glyphicon glyphicon-menu-up" aria-hidden="true"></span></a><a class="btn btn-default" href="LineScaleMode.html" title="LineScaleMode" role="button"><span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span></a><a class="btn btn-default" href="LoaderInfo.html" title="LoaderInfo" role="button"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span></a></div>
+                    </div>
+                </div> 
+            
+
+            <a id="main-content"></a>
+
+            <h2>Loader</h2>
+
+            <div class="main-content">
+                
+<p></p>
+<p class="rvps2"><span class="rvts6">The Loader object is used to load image(JPG, PNG, or GIF) files. Use the load() method to initiate loading. The loaded display object is added as a child of the Loader object.</span></p>
+<p class="rvps2"><span class="rvts6">Use the </span><a class="rvts13" href="URLLoader.html">URLLoader</a><span class="rvts6"> object to load text or binary data.</span></p>
+<p class="rvps2"><span class="rvts6">The Loader object overrides the following methods that it inherits, because a Loader object can only have one child display object - the display object that it loads. Calling the following methods throws an exception: addChild(), addChildAt(), removeChild(), removeChildAt(), and setChildIndex(). To remove a loaded display object, you must remove the Loader object from its parent </span><a class="rvts13" href="DisplayObjectContainer.html">DisplayObjectContainer</a><span class="rvts6"> child array.</span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts6">Inherited from </span><a class="rvts13" href="Sprite.html">Sprite</a><span class="rvts6"> -&gt; </span><a class="rvts13" href="DisplayObjectContainer.html">DisplayObjectContainer</a><span class="rvts6"> -&gt; </span><a class="rvts13" href="InteractiveObject.html">InteractiveObject</a><span class="rvts6"> -&gt; </span><a class="rvts13" href="DisplayObject.html">DisplayObject</a><span class="rvts6"> -&gt; </span><a class="rvts13" href="EventDispatcher.html">EventDispatcher</a></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts6">Loader can be created with method </span><span class="rvts12">new</span><span class="rvts6">:</span></p>
+<div class="rvps2">
+<table width="100%" border="1" cellpadding="1" cellspacing="2" style="border-color: #000000; border-style: solid; border-spacing: 2px;">
+ <tr valign="top">
+  <td width="205" style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">Lib.Media.Display.</span><span class="rvts18">Loader.</span><span class="rvts19">new</span><span class="rvts6">()</span></p>
+  </td>
+  <td width="573" style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">Creates a Loader object that you can use to load files, such as JPEG, GIF, or PNG files. Call the load() method to load the asset as a child of the Loader instance. You can then add the Loader object to the display list(for instance, by using the addChild() method of a </span><a class="rvts13" href="DisplayObjectContainer.html">DisplayObjectContainer</a><span class="rvts6"> instance). The asset appears on the Stage as it loads.</span></p>
+   <p class="rvps2"><span class="rvts6">You can also use a Loader instance "offlist," that is without adding it to a display object container on the display list.</span></p>
+   <p class="rvps2"><span class="rvts6">To detect when the file is finished loading, you can use the events of the </span><a class="rvts13" href="LoaderInfo.html">LoaderInfo</a><span class="rvts6"> object associated with the contentLoaderInfo property of the Loader object. In the offlist mode, a Loader instance might also be used to load a file that contains assets. Again, you can use the LoaderInfo object event notifications to detect when the file are finished loading. At that point, the application can start using the media assets in the library.</span></p>
+   <p class="rvps2"><span class="rvts6">To determine the status of a Loader object, monitor the following events that the LoaderInfo object associated with the contentLoaderInfo property of the Loader object:</span></p>
+   <p class="rvps2"><span class="rvts6">The open event is dispatched when loading begins.</span></p>
+   <p class="rvps2"><span class="rvts6">The ioError or securityError event is dispatched if the file cannot be loaded or if an error occured during the load process.</span></p>
+   <p class="rvps2"><span class="rvts6">The progress event fires continuously while the file is being loaded.</span></p>
+   <p class="rvps2"><span class="rvts6">The complete event is dispatched when a file completes downloading, but before the loaded movie clip's methods and properties are available.</span></p>
+   <p class="rvps2"><span class="rvts6">The init event is dispatched after the properties and methods of the loaded file are accessible, so you can begin manipulating the loaded file. This event is dispatched before the complete handler. In streaming files, the init event can occur significantly earlier than the complete event. For most purposes, use the init handler.</span></p>
+  </td>
+ </tr>
+</table>
+</div>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts6">created Loader object has properties:</span></p>
+<div class="rvps2">
+<table width="100%" border="1" cellpadding="1" cellspacing="2" style="border-color: #000000; border-style: solid; border-spacing: 2px;">
+ <tr valign="top">
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts18">content</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">Contains the image(JPG, PNG, or GIF) file that was loaded by using the load() or loadBytes() methods.</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><a class="rvts13" href="DisplayObject.html">DisplayObject</a><span class="rvts6"> or nil (read-only)</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts18">contentLoaderInfo</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">Returns a </span><a class="rvts13" href="LoaderInfo.html">LoaderInfo</a><span class="rvts6"> object corresponding to the object being loaded. LoaderInfo objects are shared between the Loader object and the loaded content object. The LoaderInfo object supplies loading progress information and statistics about the loaded file.</span></p>
+   <p class="rvps2"><span class="rvts6">Events related to the load are dispatched by the </span><a class="rvts13" href="LoaderInfo.html">LoaderInfo</a><span class="rvts6"> object referenced by the contentLoaderInfo property of the Loader object. The contentLoaderInfo property is set to a valid </span><a class="rvts13" href="LoaderInfo.html">LoaderInfo</a><span class="rvts6"> object, even before the content is loaded, so that you can add event listeners to the object prior to the load.</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><a class="rvts13" href="LoaderInfo.html">LoaderInfo</a><span class="rvts6"> object or nil (read-only)</span></p>
+  </td>
+ </tr>
+</table>
+</div>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts6">methods:</span></p>
+<div class="rvps2">
+<table width="100%" border="1" cellpadding="1" cellspacing="2" style="border-color: #000000; border-style: solid; border-spacing: 2px;">
+ <tr valign="top">
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts18">load</span><span class="rvts6">(</span><span class="rvts12">request</span><span class="rvts6">, </span><span class="rvts12">context</span><span class="rvts6">)</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">Loads a JPEG, progressive JPEG, unanimated GIF, or PNG file into an object that is a child of this Loader object. If you load an animated GIF file, only the first frame is displayed. As the Loader object can contain only a single child, issuing a subsequent load() request terminates the previous request, if still pending, and commences a new load.</span></p>
+   <p class="rvps2"><span class="rvts6">A image loaded into a Loader object inherits the position, rotation, and scale properties of the parent display objects of the Loader object.</span></p>
+   <p class="rvps2"><span class="rvts6">Use the unload() method to remove movies or images loaded with this method, or to cancel a load operation that is in progress.</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts12">request</span><span class="rvts6"> - </span><a class="rvts13" href="URLRequest.html">URLRequest</a><span class="rvts6"> object with absolute or relative URL of the JPEG, GIF, or PNG file to be loaded. A relative path must be relative to the main app file. Absolute URLs must include the protocol reference, such as http:// or file:///. Filenames cannot include disk drive specifications.</span></p>
+   <p class="rvps2"><span class="rvts12">context</span><span class="rvts6"> - LoaderContext object, not supported, use nil value</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts18">loadBytes</span><span class="rvts6">(</span><span class="rvts12">bytes</span><span class="rvts6">, </span><span class="rvts12">context</span><span class="rvts6">)&nbsp;</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">Loads from binary data stored in a </span><a class="rvts13" href="ByteArray.html">ByteArray</a><span class="rvts6"> object.</span></p>
+   <p class="rvps2"><span class="rvts6">The loadBytes() method is asynchronous. You must wait for the "init" event before accessing the properties of a loaded object.</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts12">bytes</span><span class="rvts6"> - A </span><a class="rvts13" href="ByteArray.html">ByteArray</a><span class="rvts6"> object. The contents of the ByteArray can be any of the file formats supported by the Loader class: GIF, JPEG, or PNG.</span></p>
+   <p class="rvps2"><span class="rvts12">context</span><span class="rvts6"> - LoaderContext object, not supported, use nil value</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts18">unload</span><span class="rvts6">()</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">Removes a child of this Loader object that was loaded by using the load() method. The property of the associated </span><a class="rvts13" href="LoaderInfo.html">LoaderInfo</a><span class="rvts6"> object is reset to nil. The child is not necessarily destroyed because other objects might have references to it; however, it is no longer a child of the Loader object.</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <br/>
+  </td>
+ </tr>
+</table>
+</div>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts22">Examples:</span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts6">Events = Lib.Media.Events</span></p>
+<p class="rvps2"><span class="rvts6">Display = Lib.Media.Display</span></p>
+<p class="rvps2"><span class="rvts6">Net = Lib.Media.Net</span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts6">loader1 = Display.Loader.new()</span></p>
+<p class="rvps2"><span class="rvts6">loader1.contentLoaderInfo.addEventListener(Events.Event.COMPLETE,&nbsp;</span></p>
+<p class="rvps2"><span class="rvts6">function(e)</span></p>
+<p class="rvps2"><span class="rvts6"></span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">local bmp1 = loader1.content</span></p>
+<p class="rvps2"><span class="rvts6"></span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">image1 = bmp1.bitmapData</span></p>
+<p class="rvps2"><span class="rvts6">end, false, 0, false)</span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts6">root = Lib.Media.FileSystem.File.applicationStorageDirectory.nativePath</span></p>
+<p class="rvps2"><span class="rvts6">loader1.load(Net.URLRequest.new(root.."/Image.jpg"), nil)</span></p>
+<p></p>
+<p class="rvps4" style="clear: both;"><span class="rvts16">Created with the Personal Edition of HelpNDoc: </span><a class="rvts17" href="https://www.helpauthoringsoftware.com">News and information about help authoring tools and software</a></p>
+
+            </div>
+            
+            <div id="topic_footer"><div id="topic_footer_content">Copyright &copy; &lt;Dates&gt; by &lt;Authors&gt;. All Rights Reserved.</div></div>
+        </div>  <!-- /#topic-content -->
+    </article>
+
+    <footer></footer>
+
+  </div>  <!-- /#main -->
+
+  <div class="mask" data-toggle="sm-nav-expanded"></div>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="hndModal" tabindex="-1" role="dialog" aria-labelledby="hndModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="hndModalLabel"></h4>
+        </div>
+        <div class="modal-body">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary modal-btn-close" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Splitter -->
+  <div id="hnd-splitter" style="left: 350px"></div>  
+
+  <!-- Scripts -->
+  <script src="vendors/jquery-3.5.1/jquery.min.js"></script>
+  <script src="vendors/bootstrap-3.4.1/js/bootstrap.min.js"></script>
+  <script src="vendors/bootstrap-3.4.1/js/ie10-viewport-bug-workaround.js"></script>
+  <script src="vendors/markjs-8.11.1/jquery.mark.min.js"></script>
+  <script src="vendors/uri-1.19.2/uri.min.js"></script>
+  <script src="vendors/imageMapResizer-1.0.10/imageMapResizer.min.js"></script>
+  <script src="vendors/headroom-0.11.0/headroom.min.js"></script>
+  <script src="vendors/jstree-3.3.10/jstree.min.js"></script>  
+  <script src="vendors/interactjs-1.9.22/interact.min.js"></script>  
+
+  <!-- HelpNDoc scripts -->
+  <script src="js/polyfill.object.min.js"></script>
+  <script src="_translations.js"></script>
+  <script src="js/hndsd.min.js"></script>
+  <script src="js/hndse.min.js"></script>
+  <script src="js/app.min.js"></script>
+
+  <!-- Init script -->
+  <script>
+    $(function() {
+      // Create the app
+      var app = new Hnd.App();
+      // Update translations
+      hnd_ut(app);
+	  // Instanciate imageMapResizer
+	  imageMapResize();
+	  // Custom JS
+	  
+      // Boot the app
+      app.Boot();
+    });
+  </script>
+
+
+
+</body>
+
+</html>
+

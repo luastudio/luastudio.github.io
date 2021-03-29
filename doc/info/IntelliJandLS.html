@@ -1,0 +1,32 @@
+<html>
+<body>
+
+<h2>LuaStudio custom IDE integration (IntelliJ IDEA)</h2>
+
+
+
+<p>1. Install IntelliJ IDEA from: <a href="https://www.jetbrains.com/" target="_blank">https://www.jetbrains.com/</a></p>
+<img src="img/screen1.png"/> 
+
+<p>2. Configure IDEA plugins and install EmmyLua plugin.</p>
+<img src="img/screen2.png"/> 
+ 
+<p>3. Export selected sample using LuaStudio(LS) exporter or upload template zip from LS exporter and unpack it to new folder (D:\1 for example).</p>
+<img src="img/screen3.png"/> 
+<p>4. Import unpacked/exported project asset folder to ItelliJ IDE. (D:\1\assets)</p>
+<img src="img/screen4.png"/> 
+<p>5. Configure IDE Run. Use Template.exe or TemplateJIT.exe file from unpacked project as launcher:</p>
+<img src="img/screen5.png"/> 
+<p>6. Mark /assets/project folder as "Sources Root" (<a href="https://www.jetbrains.com/help/idea/creating-and-managing-modules.html" target="_blank">Configure folder categories doc</a>)</p>
+- Right-click a folder(/assets/project) in the Project tool window.<br/>
+- Select Mark Directory as from the context menu<br/>
+- Select "Sources Root"<br/>
+NOTE: This step important if you need debugging<br/>
+<p>7. Edit project config.xml file <b>startPath</b>="/HelloWorld.lua" or <b>title</b>="Any title ..." attributes if you want different start script or window title</p> 
+<p>8. Run or Debug configured script.</p>
+
+<img src="img/screen6.png"/> 
+
+
+</body>
+</html>

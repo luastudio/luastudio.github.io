@@ -1,0 +1,405 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="generator" content="HelpNDoc Personal Edition 7.1.2.266">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" href="favicon.ico"/>
+
+  <title>BlendMode</title>
+  <meta name="description" content="" /> 
+  <meta name="keywords" content="">
+
+
+
+  
+
+  <!-- Twitter Card data -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="BlendMode">
+  <meta name="twitter:description" content="">
+
+  <!-- Open Graph data -->
+  <meta property="og:title" content="BlendMode" />
+  <meta property="og:type" content="article" />
+  <meta property="og:description" content="" />
+  <meta property="og:site_name" content="LuaStudio API documentation" /> 
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendors/bootstrap-3.4.1/css/bootstrap.min.css" rel="stylesheet"/>
+
+  <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+  <link href="vendors/bootstrap-3.4.1/css/ie10-viewport-bug-workaround.css" rel="stylesheet"/>
+
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+      <script src="vendors/html5shiv-3.7.3/html5shiv.min.js"></script>
+      <script src="vendors/respond-1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+  <!-- JsTree styles -->
+  <link href="vendors/jstree-3.3.10/themes/default/style.min.css" rel="stylesheet"/>
+
+  <!-- Hnd styles -->
+  <link href="css/layout.min.css" rel="stylesheet" />
+  <link href="css/effects.min.css" rel="stylesheet" />
+  <link href="css/theme-light-blue.min.css" rel="stylesheet" />
+  <link href="css/print.min.css" rel="stylesheet" media="print" />
+  <style type="text/css">nav { width: 350px} @media screen and (min-width:769px) { body.md-nav-expanded div#main { margin-left: 350px} body.md-nav-expanded header { padding-left: 364px} }</style>
+
+  <!-- Content style -->
+  <link href="css/hnd.content.css" rel="stylesheet" />
+
+  
+
+
+
+</head>
+
+<body class="md-nav-expanded">
+
+
+
+  <div id="skip-link">
+    <a href="#main-content" class="element-invisible">Skip to main content</a>
+  </div>
+
+  <header class="headroom">
+    <button class="hnd-toggle btn btn-default">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>        
+    </button>
+    <h1>LuaStudio API documentation</h1>
+    
+  </header>
+
+  <nav id="panel-left" class="md-nav-expanded">
+    <!-- Nav tabs -->
+    <ul class="tab-tabs nav nav-tabs" role="tablist">
+      <li id="nav-close"> 
+        <button class="hnd-toggle btn btn-default">
+          <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+        </button>
+      </li>
+      
+	  
+        <li role="presentation" class="tab active">
+            <a href="#contents" id="tab-contents" aria-controls="contents" role="tab" data-toggle="tab">
+                <i class="glyphicon glyphicon-list"></i>
+                Contents
+            </a>
+        </li>
+      
+        <li role="presentation" class="tab">
+            <a href="#index" id="tab-index" aria-controls="index" role="tab" data-toggle="tab">
+                <i class="glyphicon glyphicon-asterisk"></i>
+                Index
+            </a>
+        </li>
+      
+        <li role="presentation" class="tab">
+            <a href="#search" id="tab-search" aria-controls="search" role="tab" data-toggle="tab">
+                <i class="glyphicon glyphicon-search"></i>
+                Search
+            </a>
+        </li>
+      
+    </ul>  <!-- /Nav tabs -->
+
+    <!-- Tab panes -->
+    <div class="tab-content">
+	  
+      <div role="tabpanel" class="tab-pane active" id="contents">
+        <div id="toc" class="tree-container unselectable"
+            data-url="_toc.json"
+            data-openlvl="1"
+        >
+            
+        </div>
+      </div>  <!-- /contents-->
+      
+      <div role="tabpanel" class="tab-pane" id="index">
+        <div id="keywords" class="tree-container unselectable"
+            data-url="_keywords.json"
+            data-openlvl="1"
+        >
+            
+        </div>
+      </div>  <!-- /index-->
+      
+      <div role="tabpanel" class="tab-pane" id="search">
+        <div class="search-content">
+          <div class="search-input">
+            <form id="search-form">
+              <div class="form-group">
+                <div class="input-group">
+                  <input type="text" class="form-control" id="input-search" name="input-search" placeholder="Search..." />
+                  <span class="input-group-btn">
+                    <button class="btn btn-default" type="submit">
+                      <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+                    </button>
+                  </span>
+                </div>
+              </div>
+            </form>
+          </div>  <!-- /search-input -->
+          <div class="search-result">
+            <div id="search-info"></div>
+            <div class="tree-container unselectable" id="search-tree"></div>
+          </div>  <!-- /search-result -->
+        </div>  <!-- /search-content -->
+      </div>  <!-- /search-->
+      
+    </div>  <!-- /Tab panes -->
+
+  </nav>
+
+  <div id="main">
+
+    <article>
+        <div id="topic-content" class="container-fluid" 
+		  data-hnd-id="BlendMode"
+		  data-hnd-context="99"
+		  data-hnd-title="BlendMode"
+		>
+            
+                <div class="navigation">
+                    <ol class="breadcrumb">
+                        <li><a href="Librarystructure.html">Library structure</a></li><li><a href="Media.html">Media</a></li><li><a href="Display.html">Display</a></li>
+                    </ol>
+                    <div class="nav-arrows">
+                        <div class="btn-group btn-group-xs" role="group"><a class="btn btn-default" href="Display.html" title="Display" role="button"><span class="glyphicon glyphicon-menu-up" aria-hidden="true"></span></a><a class="btn btn-default" href="BitmapDataChannel.html" title="BitmapDataChannel" role="button"><span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span></a><a class="btn btn-default" href="CapsStyle.html" title="CapsStyle" role="button"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span></a></div>
+                    </div>
+                </div> 
+            
+
+            <a id="main-content"></a>
+
+            <h2>BlendMode</h2>
+
+            <div class="main-content">
+                
+<p></p>
+<p class="rvps2"><span class="rvts6">A object that provides constant values for visual blend mode effects. These constants are used in the following:</span></p>
+<p class="rvps2"><span class="rvts6">The blendMode property of the </span><a class="rvts13" href="DisplayObject.html">DisplayObject</a><span class="rvts6"> object.</span></p>
+<p class="rvps2"><span class="rvts6">The blendMode parameter of the draw() method of the Lib.Display.</span><a class="rvts13" href="BitmapData.html">BitmapData</a><span class="rvts6"> object</span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<div class="rvps2">
+<table width="100%" border="1" cellpadding="1" cellspacing="2" style="border-color: #000000; border-style: solid; border-spacing: 2px;">
+ <tr valign="top">
+  <td width="242" style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">Lib.Media.Display.</span><span class="rvts18">BlendMode.ADD</span></p>
+  </td>
+  <td width="536" style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">Adds the values of the constituent colors of the display object to the colors of its background, applying a ceiling of 0xFF. This setting is commonly used for animating a lightening dissolve between two objects.</span></p>
+   <p class="rvps2"><span class="rvts6">For example, if the display object has a pixel with an RGB value of 0xAAA633, and the background pixel has an RGB value of 0xDD2200, the resulting RGB value for the displayed pixel is 0xFFC833(because 0xAA + 0xDD &gt; 0xFF, 0xA6 + 0x22 = 0xC8, and 0x33 + 0x00 = 0x33).</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td width="242" style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">Lib.Media.Display.</span><span class="rvts18">BlendMode.ALPHA</span></p>
+  </td>
+  <td width="536" style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">Applies the alpha value of each pixel of the display object to the background. This requires the blendMode property of the parent display object be set to BlendMode.LAYER.</span></p>
+   <p class="rvps2"><span class="rvts6">Not supported under GPU rendering.</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td width="242" style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">Lib.Media.Display.</span><span class="rvts18">BlendMode.DARKEN</span></p>
+  </td>
+  <td width="536" style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">Selects the darker of the constituent colors of the display object and the colors of the background(the colors with the smaller values). This setting is commonly used for superimposing type.</span></p>
+   <p class="rvps2"><span class="rvts6">For example, if the display object has a pixel with an RGB value of 0xFFCC33, and the background pixel has an RGB value of 0xDDF800, the resulting RGB value for the displayed pixel is 0xDDCC00(because 0xFF &gt; 0xDD, 0xCC &lt; 0xF8, and 0x33 &gt; 0x00 = 33).</span></p>
+   <p class="rvps2"><span class="rvts6">Not supported under GPU rendering.</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td width="242" style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">Lib.Media.Display.</span><span class="rvts18">BlendMode.DIFFERENCE</span></p>
+  </td>
+  <td width="536" style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">Compares the constituent colors of the display object with the colors of its background, and subtracts the darker of the values of the two constituent colors from the lighter value. This setting is commonly used for more vibrant colors.</span></p>
+   <p class="rvps2"><span class="rvts6">For example, if the display object has a pixel with an RGB value of 0xFFCC33, and the background pixel has an RGB value of 0xDDF800, the resulting RGB value for the displayed pixel is 0x222C33(because 0xFF - 0xDD = 0x22, 0xF8 - 0xCC = 0x2C, and 0x33 - 0x00 = 0x33).</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td width="242" style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">Lib.Media.Display.</span><span class="rvts18">BlendMode.ERASE</span></p>
+  </td>
+  <td width="536" style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">Erases the background based on the alpha value of the display object. This process requires that the blendMode property of the parent display object be set to BlendMode.LAYER.</span></p>
+   <p class="rvps2"><span class="rvts6">Not supported under GPU rendering.</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td width="242" style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">Lib.Media.Display.</span><span class="rvts18">BlendMode.HARDLIGHT</span></p>
+  </td>
+  <td width="536" style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">Adjusts the color of each pixel based on the darkness of the display object. If the display object is lighter than 50% gray, the display object and background colors are screened, which results in a lighter color. If the display object is darker than 50% gray, the colors are multiplied, which results in a darker color. This setting is commonly used for shading effects.</span></p>
+   <p class="rvps2"><span class="rvts6">Not supported under GPU rendering.</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td width="242" style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">Lib.Media.Display.</span><span class="rvts18">BlendMode.INVERT</span></p>
+  </td>
+  <td width="536" style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">Inverts the background.</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td width="242" style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">Lib.Media.Display.</span><span class="rvts18">BlendMode.LAYER</span></p>
+  </td>
+  <td width="536" style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">Forces the creation of a transparency group for the display object. This means that the display object is precomposed in a temporary buffer before it is processed further. The precomposition is done automatically if the display object is precached by means of bitmap caching or if the display object is a display object container that has at least one child object with a blendMode setting other than "normal".</span></p>
+   <p class="rvps2"><span class="rvts6">Not supported under GPU rendering.</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td width="242" style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">Lib.Media.Display.</span><span class="rvts18">BlendMode.LIGHTEN</span></p>
+  </td>
+  <td width="536" style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">Selects the lighter of the constituent colors of the display object and the colors of the background(the colors with the larger values). This setting is commonly used for superimposing type.</span></p>
+   <p class="rvps2"><span class="rvts6">For example, if the display object has a pixel with an RGB value of 0xFFCC33, and the background pixel has an RGB value of 0xDDF800, the resulting RGB value for the displayed pixel is 0xFFF833(because 0xFF &gt; 0xDD, 0xCC &lt; 0xF8, and 0x33 &gt; 0x00 = 33).</span></p>
+   <p class="rvps2"><span class="rvts6">Not supported under GPU rendering.</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td width="242" height="16" style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">Lib.Media.Display.</span><span class="rvts18">BlendMode.MULTIPLY</span></p>
+  </td>
+  <td width="536" height="16" style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">Multiplies the values of the display object constituent colors by the constituent colors of the background color, and normalizes by dividing by 0xFF, resulting in darker colors. This setting is commonly used for shadows and depth effects.</span></p>
+   <p class="rvps2"><span class="rvts6">For example, if a constituent color(such as red) of one pixel in the display object and the corresponding color of the pixel in the background both have the value 0x88, the multiplied result is 0x4840. Dividing by 0xFF yields a value of 0x48 for that constituent color, which is a darker shade than the color of the display object or the color of the background.</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td width="242" style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">Lib.Media.Display.</span><span class="rvts18">BlendMode.NORMAL</span></p>
+  </td>
+  <td width="536" style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">The display object appears in front of the background. Pixel values of the display object override the pixel values of the background. Where the display object is transparent, the background is visible.</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td width="242" style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">Lib.Media.Display.</span><span class="rvts18">BlendMode.OVERLAY</span></p>
+  </td>
+  <td width="536" style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">Adjusts the color of each pixel based on the darkness of the background. If the background is lighter than 50% gray, the display object and background colors are screened, which results in a lighter color. If the background is darker than 50% gray, the colors are multiplied, which results in a darker color. This setting is commonly used for shading effects.</span></p>
+   <p class="rvps2"><span class="rvts6">Not supported under GPU rendering.</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td width="242" style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">Lib.Media.Display.</span><span class="rvts18">BlendMode.SCREEN</span></p>
+  </td>
+  <td width="536" style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">Multiplies the complement(inverse) of the display object color by the complement of the background color, resulting in a bleaching effect. This setting is commonly used for highlights or to remove black areas of the display object.</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td width="242" style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">Lib.Media.Display.</span><span class="rvts18">BlendMode.SHADER</span></p>
+  </td>
+  <td width="536" style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">Uses a shader to define the blend between objects.</span></p>
+   <p class="rvps2"><span class="rvts6">Setting the blendShader property to a Shader instance automatically sets the display object's blendMode property to BlendMode.SHADER. If the blendMode property is set to BlendMode.SHADER without first setting the blendShader property, the blendMode property is set to BlendMode.NORMAL instead. If the blendShader property is set(which sets the blendMode property to BlendMode.SHADER), then later the value of the blendMode property is changed, the blend mode can be reset to use the blend shader simply by setting the blendMode property to BlendMode.SHADER. The blendShader property does not need to be set again except to change the shader that's used to define the blend mode.</span></p>
+   <p class="rvps2"><span class="rvts6">Not supported under GPU rendering.</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td width="242" style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">Lib.Media.Display.</span><span class="rvts18">BlendMode.SUBTRACT</span></p>
+  </td>
+  <td width="536" style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">Subtracts the values of the constituent colors in the display object from the values of the background color, applying a floor of 0. This setting is commonly used for animating a darkening dissolve between two objects.</span></p>
+   <p class="rvps2"><span class="rvts6">For example, if the display object has a pixel with an RGB value of 0xAA2233, and the background pixel has an RGB value of 0xDDA600, the resulting RGB value for the displayed pixel is 0x338400(because 0xDD - 0xAA = 0x33, 0xA6 - 0x22 = 0x84, and 0x00 - 0x33 &lt; 0x00).</span></p>
+  </td>
+ </tr>
+</table>
+</div>
+<p></p>
+<p class="rvps4" style="clear: both;"><span class="rvts16">Created with the Personal Edition of HelpNDoc: </span><a class="rvts17" href="https://www.helpndoc.com/create-epub-ebooks">Produce electronic books easily</a></p>
+
+            </div>
+            
+            <div id="topic_footer"><div id="topic_footer_content">Copyright &copy; &lt;Dates&gt; by &lt;Authors&gt;. All Rights Reserved.</div></div>
+        </div>  <!-- /#topic-content -->
+    </article>
+
+    <footer></footer>
+
+  </div>  <!-- /#main -->
+
+  <div class="mask" data-toggle="sm-nav-expanded"></div>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="hndModal" tabindex="-1" role="dialog" aria-labelledby="hndModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="hndModalLabel"></h4>
+        </div>
+        <div class="modal-body">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary modal-btn-close" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Splitter -->
+  <div id="hnd-splitter" style="left: 350px"></div>  
+
+  <!-- Scripts -->
+  <script src="vendors/jquery-3.5.1/jquery.min.js"></script>
+  <script src="vendors/bootstrap-3.4.1/js/bootstrap.min.js"></script>
+  <script src="vendors/bootstrap-3.4.1/js/ie10-viewport-bug-workaround.js"></script>
+  <script src="vendors/markjs-8.11.1/jquery.mark.min.js"></script>
+  <script src="vendors/uri-1.19.2/uri.min.js"></script>
+  <script src="vendors/imageMapResizer-1.0.10/imageMapResizer.min.js"></script>
+  <script src="vendors/headroom-0.11.0/headroom.min.js"></script>
+  <script src="vendors/jstree-3.3.10/jstree.min.js"></script>  
+  <script src="vendors/interactjs-1.9.22/interact.min.js"></script>  
+
+  <!-- HelpNDoc scripts -->
+  <script src="js/polyfill.object.min.js"></script>
+  <script src="_translations.js"></script>
+  <script src="js/hndsd.min.js"></script>
+  <script src="js/hndse.min.js"></script>
+  <script src="js/app.min.js"></script>
+
+  <!-- Init script -->
+  <script>
+    $(function() {
+      // Create the app
+      var app = new Hnd.App();
+      // Update translations
+      hnd_ut(app);
+	  // Instanciate imageMapResizer
+	  imageMapResize();
+	  // Custom JS
+	  
+      // Boot the app
+      app.Boot();
+    });
+  </script>
+
+
+
+</body>
+
+</html>
+

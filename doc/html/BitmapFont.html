@@ -1,0 +1,483 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="generator" content="HelpNDoc Personal Edition 7.1.2.266">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" href="favicon.ico"/>
+
+  <title>BitmapFont</title>
+  <meta name="description" content="" /> 
+  <meta name="keywords" content="">
+
+
+
+  
+
+  <!-- Twitter Card data -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="BitmapFont">
+  <meta name="twitter:description" content="">
+
+  <!-- Open Graph data -->
+  <meta property="og:title" content="BitmapFont" />
+  <meta property="og:type" content="article" />
+  <meta property="og:description" content="" />
+  <meta property="og:site_name" content="LuaStudio API documentation" /> 
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendors/bootstrap-3.4.1/css/bootstrap.min.css" rel="stylesheet"/>
+
+  <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+  <link href="vendors/bootstrap-3.4.1/css/ie10-viewport-bug-workaround.css" rel="stylesheet"/>
+
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+      <script src="vendors/html5shiv-3.7.3/html5shiv.min.js"></script>
+      <script src="vendors/respond-1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+  <!-- JsTree styles -->
+  <link href="vendors/jstree-3.3.10/themes/default/style.min.css" rel="stylesheet"/>
+
+  <!-- Hnd styles -->
+  <link href="css/layout.min.css" rel="stylesheet" />
+  <link href="css/effects.min.css" rel="stylesheet" />
+  <link href="css/theme-light-blue.min.css" rel="stylesheet" />
+  <link href="css/print.min.css" rel="stylesheet" media="print" />
+  <style type="text/css">nav { width: 350px} @media screen and (min-width:769px) { body.md-nav-expanded div#main { margin-left: 350px} body.md-nav-expanded header { padding-left: 364px} }</style>
+
+  <!-- Content style -->
+  <link href="css/hnd.content.css" rel="stylesheet" />
+
+  
+
+
+
+</head>
+
+<body class="md-nav-expanded">
+
+
+
+  <div id="skip-link">
+    <a href="#main-content" class="element-invisible">Skip to main content</a>
+  </div>
+
+  <header class="headroom">
+    <button class="hnd-toggle btn btn-default">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>        
+    </button>
+    <h1>LuaStudio API documentation</h1>
+    
+  </header>
+
+  <nav id="panel-left" class="md-nav-expanded">
+    <!-- Nav tabs -->
+    <ul class="tab-tabs nav nav-tabs" role="tablist">
+      <li id="nav-close"> 
+        <button class="hnd-toggle btn btn-default">
+          <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+        </button>
+      </li>
+      
+	  
+        <li role="presentation" class="tab active">
+            <a href="#contents" id="tab-contents" aria-controls="contents" role="tab" data-toggle="tab">
+                <i class="glyphicon glyphicon-list"></i>
+                Contents
+            </a>
+        </li>
+      
+        <li role="presentation" class="tab">
+            <a href="#index" id="tab-index" aria-controls="index" role="tab" data-toggle="tab">
+                <i class="glyphicon glyphicon-asterisk"></i>
+                Index
+            </a>
+        </li>
+      
+        <li role="presentation" class="tab">
+            <a href="#search" id="tab-search" aria-controls="search" role="tab" data-toggle="tab">
+                <i class="glyphicon glyphicon-search"></i>
+                Search
+            </a>
+        </li>
+      
+    </ul>  <!-- /Nav tabs -->
+
+    <!-- Tab panes -->
+    <div class="tab-content">
+	  
+      <div role="tabpanel" class="tab-pane active" id="contents">
+        <div id="toc" class="tree-container unselectable"
+            data-url="_toc.json"
+            data-openlvl="1"
+        >
+            
+        </div>
+      </div>  <!-- /contents-->
+      
+      <div role="tabpanel" class="tab-pane" id="index">
+        <div id="keywords" class="tree-container unselectable"
+            data-url="_keywords.json"
+            data-openlvl="1"
+        >
+            
+        </div>
+      </div>  <!-- /index-->
+      
+      <div role="tabpanel" class="tab-pane" id="search">
+        <div class="search-content">
+          <div class="search-input">
+            <form id="search-form">
+              <div class="form-group">
+                <div class="input-group">
+                  <input type="text" class="form-control" id="input-search" name="input-search" placeholder="Search..." />
+                  <span class="input-group-btn">
+                    <button class="btn btn-default" type="submit">
+                      <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+                    </button>
+                  </span>
+                </div>
+              </div>
+            </form>
+          </div>  <!-- /search-input -->
+          <div class="search-result">
+            <div id="search-info"></div>
+            <div class="tree-container unselectable" id="search-tree"></div>
+          </div>  <!-- /search-result -->
+        </div>  <!-- /search-content -->
+      </div>  <!-- /search-->
+      
+    </div>  <!-- /Tab panes -->
+
+  </nav>
+
+  <div id="main">
+
+    <article>
+        <div id="topic-content" class="container-fluid" 
+		  data-hnd-id="BitmapFont"
+		  data-hnd-context="300"
+		  data-hnd-title="BitmapFont"
+		>
+            
+                <div class="navigation">
+                    <ol class="breadcrumb">
+                        <li><a href="Librarystructure.html">Library structure</a></li><li><a href="Away3D.html">Away3D</a></li><li><a href="Text1.html">Text</a></li>
+                    </ol>
+                    <div class="nav-arrows">
+                        <div class="btn-group btn-group-xs" role="group"><a class="btn btn-default" href="Text1.html" title="Text" role="button"><span class="glyphicon glyphicon-menu-up" aria-hidden="true"></span></a><a class="btn btn-default" href="BitmapChar.html" title="BitmapChar" role="button"><span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span></a><a class="btn btn-default" href="TextField1.html" title="TextField" role="button"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span></a></div>
+                    </div>
+                </div> 
+            
+
+            <a id="main-content"></a>
+
+            <h2>BitmapFont</h2>
+
+            <div class="main-content">
+                
+<p></p>
+<p class="rvps2"><span class="rvts6">The BitmapFont object parses bitmap font files and arranges the glyphs</span></p>
+<p class="rvps2"><span class="rvts6">&nbsp;in the form of a text.</span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts6">The object parses the Xml format as it is used in the &lt;http://www.angelcode.com/products/bmfont/&gt;</span><a class="rvts13" href="http://www.angelcode.com/products/bmfont/" target="_blank">AngelCode Bitmap Font Generator</a><span class="rvts6"> or &nbsp;the &lt;http://glyphdesigner.71squared.com/&gt;</span><a class="rvts13" href="http://glyphdesigner.71squared.com/" target="_blank">Glyph Designer</a><span class="rvts6">.&nbsp;</span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts6">This is what the file format looks like:</span></p>
+<p class="rvps2"><span class="rvts6">&nbsp; &lt;pre&gt;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts6">&nbsp; &lt;font&gt;</span></p>
+<p class="rvps2"><span class="rvts6">&nbsp; &nbsp; &lt;info face="BranchingMouse" size="40" /&gt;</span></p>
+<p class="rvps2"><span class="rvts6">&nbsp; &nbsp; &lt;common lineHeight="40" /&gt;</span></p>
+<p class="rvps2"><span class="rvts6">&nbsp; &nbsp; &lt;pages&gt; &nbsp;&lt;!-- currently, only one page is supported --&gt;</span></p>
+<p class="rvps2"><span class="rvts6">&nbsp; &nbsp; &nbsp; &lt;page id="0" file="texture.png" /&gt;</span></p>
+<p class="rvps2"><span class="rvts6">&nbsp; &nbsp; &lt;/pages&gt;</span></p>
+<p class="rvps2"><span class="rvts6">&nbsp; &nbsp; &lt;chars&gt;</span></p>
+<p class="rvps2"><span class="rvts6">&nbsp; &nbsp; &nbsp; &lt;char id="32" x="60" y="29" width="1" height="1" xoffset="0" yoffset="27" xadvance="8" /&gt;</span></p>
+<p class="rvps2"><span class="rvts6">&nbsp; &nbsp; &nbsp; &lt;char id="33" x="155" y="144" width="9" height="21" xoffset="0" yoffset="6" xadvance="9" /&gt;</span></p>
+<p class="rvps2"><span class="rvts6">&nbsp; &nbsp; &lt;/chars&gt;</span></p>
+<p class="rvps2"><span class="rvts6">&nbsp; &nbsp; &lt;kernings&gt; &lt;!-- Kerning is optional --&gt;</span></p>
+<p class="rvps2"><span class="rvts6">&nbsp; &nbsp; &nbsp; &lt;kerning first="83" second="83" amount="-4"/&gt;</span></p>
+<p class="rvps2"><span class="rvts6">&nbsp; &nbsp; &lt;/kernings&gt;</span></p>
+<p class="rvps2"><span class="rvts6">&nbsp; &lt;/font&gt;</span></p>
+<p class="rvps2"><span class="rvts6">&nbsp; &lt;/pre&gt;</span></p>
+<p class="rvps2"><span class="rvts6">&nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts6">Pass an instance of this object to the method registerBitmapFont of the </span><a class="rvts13" href="TextField1.html">TextField</a><span class="rvts6"> object. Then, set the fontName property of the text field to the &nbsp;name value of the bitmap font. This will make the text field use the bitmap &nbsp;font. &nbsp;</span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts6">BitmapFont object can be created using method </span><span class="rvts12">new</span><span class="rvts6">:</span></p>
+<div class="rvps2">
+<table width="100%" border="1" cellpadding="1" cellspacing="2" style="border-color: #000000; border-style: solid; border-spacing: 2px;">
+ <tr valign="top">
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">Lib.Away3D.Text.</span><span class="rvts18">BitmapFont.</span><span class="rvts19">new</span><span class="rvts6">(</span><span class="rvts12">texture</span><span class="rvts6">, </span><span class="rvts12">fontXml</span><span class="rvts6">)</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">Creates a bitmap font by parsing an Xml file and uses the specified texture.&nbsp;</span></p>
+   <p class="rvps2"><span class="rvts6">If you pass nil data, the "mini" font will be created.</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts12">texture</span><span class="rvts6"> - (</span><a class="rvts13" href="TextureMaterial.html">TextureMaterial</a><span class="rvts6">) default nil</span></p>
+   <p class="rvps2"><span class="rvts12">fromXml</span><span class="rvts6"> - (</span><a class="rvts13" href="Xml.html">Xml</a><span class="rvts6">) default nil</span></p>
+  </td>
+ </tr>
+</table>
+</div>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts6">BitmapFont has static constants:</span></p>
+<div class="rvps2">
+<table width="100%" border="1" cellpadding="1" cellspacing="2" style="border-color: #000000; border-style: solid; border-spacing: 2px;">
+ <tr valign="top">
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">Lib.Away3D.Text.</span><span class="rvts18">BitmapFont.NATIVE_SIZE</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">Use this constant for the fontSize property of the </span><a class="rvts13" href="TextField1.html">TextField</a><span class="rvts6"> object to render the bitmap font in exactly the size it was created.</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">Lib.Away3D.Text.</span><span class="rvts18">BitmapFont.MINI</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">The font name of the embedded minimal bitmap font. Use this e.g. for debug output.</span></p>
+  </td>
+ </tr>
+</table>
+</div>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts6">Created BitmapFont object has properties:</span></p>
+<div class="rvps2">
+<table width="100%" border="1" cellpadding="1" cellspacing="2" style="border-color: #000000; border-style: solid; border-spacing: 2px;">
+ <tr valign="top">
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts18">name</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">[read-only] The name of the font as it was parsed from the font file.</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts18">size</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">[read-only] The native size of the font.</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts18">lineHeight</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">The height of one line in points.</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts18">baseline</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">The baseline of the font. This property does not affect text rendering. It's just an information that may be useful for exact text placement.</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts18">offsetX</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">An offset that moves any generated text along the x-axis (in points).</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">Useful to make up for incorrect font data. default 0.</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts18">offsetY</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">An offset that moves any generated text along the y-axis (in points).</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">Useful to make up for incorrect font data. default 0.</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts18">fontMaterial</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">[read-only] The underlying texture that contains all the chars.</span></p>
+  </td>
+ </tr>
+</table>
+</div>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts6">methods:</span></p>
+<div class="rvps2">
+<table width="100%" border="1" cellpadding="1" cellspacing="2" style="border-color: #000000; border-style: solid; border-spacing: 2px;">
+ <tr valign="top">
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts18">dispose</span><span class="rvts6">()</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">Disposes the texture of the bitmap font</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <br/>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts18">getChar</span><span class="rvts6">(</span><span class="rvts12">charID</span><span class="rvts6">)</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">Returns a single bitmap char with a certain character ID. Returnes (</span><a class="rvts13" href="BitmapChar.html">BitmapChar</a><span class="rvts6">) object.</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts12">charID</span><span class="rvts6"> - character ID. Int</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts18">addChar</span><span class="rvts6">(</span><span class="rvts12">charID</span><span class="rvts6">, </span><span class="rvts12">bitmapChar</span><span class="rvts6">)</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">Adds a bitmap char with a certain character ID.</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts12">charID</span><span class="rvts6"> - character ID. Int</span></p>
+   <p class="rvps2"><span class="rvts12">bitmapChar</span><span class="rvts6"> - (</span><a class="rvts13" href="BitmapChar.html">BitmapChar</a><span class="rvts6">)</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts18">getCharIDs</span><span class="rvts6">(</span><span class="rvts12">result</span><span class="rvts6">)</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">Returns a vector array containing all the character IDs that are contained in this font.</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts12">result</span><span class="rvts6"> - pass result to this Vector array of Int (default nil)</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts18">hasChars</span><span class="rvts6">(</span><span class="rvts12">text</span><span class="rvts6">)</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">Checks whether a provided string can be displayed with the font. Returnes Boolean.</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts12">text</span><span class="rvts6"> - String</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts18">fillBatched</span><span class="rvts6">(</span><span class="rvts12">data</span><span class="rvts6">, </span><span class="rvts12">indices</span><span class="rvts6">, </span><span class="rvts12">width</span><span class="rvts6">, </span><span class="rvts12">height</span><span class="rvts6">, </span><span class="rvts12">text</span><span class="rvts6">, </span><span class="rvts12">fontSize</span><span class="rvts6">, </span><span class="rvts12">hAlign</span><span class="rvts6">, </span><span class="rvts12">vAlign</span><span class="rvts6">, </span><span class="rvts12">autoScale</span><span class="rvts6">, </span><span class="rvts12">kerning</span><span class="rvts6">, </span><span class="rvts12">letterSpacing</span><span class="rvts6">)</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">Draws text into a Geometry.</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts12">data</span><span class="rvts6"> - Vector array of Float</span></p>
+   <p class="rvps2"><span class="rvts12">indices</span><span class="rvts6"> - Vector array of Int</span></p>
+   <p class="rvps2"><span class="rvts12">width</span><span class="rvts6"> - Float</span></p>
+   <p class="rvps2"><span class="rvts12">height</span><span class="rvts6"> - Float</span></p>
+   <p class="rvps2"><span class="rvts12">text</span><span class="rvts6"> - String</span></p>
+   <p class="rvps2"><span class="rvts12">fontSize</span><span class="rvts6"> - Float (default -1)</span></p>
+   <p class="rvps2"><span class="rvts12">hAlign</span><span class="rvts6"> - (</span><a class="rvts13" href="HAlign.html">HAlign</a><span class="rvts6">) (default CENTER)</span></p>
+   <p class="rvps2"><span class="rvts12">vAlign</span><span class="rvts6"> - (</span><a class="rvts13" href="VAlign.html">VAlign</a><span class="rvts6">) (default CENTER)</span></p>
+   <p class="rvps2"><span class="rvts12">autoScale</span><span class="rvts6"> - Boolean (default true)</span></p>
+   <p class="rvps2"><span class="rvts12">kerning</span><span class="rvts6"> - Boolean (default true)</span></p>
+   <p class="rvps2"><span class="rvts12">letterSpacing</span><span class="rvts6"> - letter spacing. Float (default 0)</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts18">getMaterialClone</span><span class="rvts6">()&nbsp;</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">Returnes (</span><a class="rvts13" href="TextureMaterial.html">TextureMaterial</a><span class="rvts6">)</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <br/>
+  </td>
+ </tr>
+</table>
+</div>
+<p></p>
+<p class="rvps4" style="clear: both;"><span class="rvts16">Created with the Personal Edition of HelpNDoc: </span><a class="rvts17" href="https://www.helpauthoringsoftware.com">Benefits of a Help Authoring Tool</a></p>
+
+            </div>
+            
+            <div id="topic_footer"><div id="topic_footer_content">Copyright &copy; &lt;Dates&gt; by &lt;Authors&gt;. All Rights Reserved.</div></div>
+        </div>  <!-- /#topic-content -->
+    </article>
+
+    <footer></footer>
+
+  </div>  <!-- /#main -->
+
+  <div class="mask" data-toggle="sm-nav-expanded"></div>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="hndModal" tabindex="-1" role="dialog" aria-labelledby="hndModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="hndModalLabel"></h4>
+        </div>
+        <div class="modal-body">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary modal-btn-close" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Splitter -->
+  <div id="hnd-splitter" style="left: 350px"></div>  
+
+  <!-- Scripts -->
+  <script src="vendors/jquery-3.5.1/jquery.min.js"></script>
+  <script src="vendors/bootstrap-3.4.1/js/bootstrap.min.js"></script>
+  <script src="vendors/bootstrap-3.4.1/js/ie10-viewport-bug-workaround.js"></script>
+  <script src="vendors/markjs-8.11.1/jquery.mark.min.js"></script>
+  <script src="vendors/uri-1.19.2/uri.min.js"></script>
+  <script src="vendors/imageMapResizer-1.0.10/imageMapResizer.min.js"></script>
+  <script src="vendors/headroom-0.11.0/headroom.min.js"></script>
+  <script src="vendors/jstree-3.3.10/jstree.min.js"></script>  
+  <script src="vendors/interactjs-1.9.22/interact.min.js"></script>  
+
+  <!-- HelpNDoc scripts -->
+  <script src="js/polyfill.object.min.js"></script>
+  <script src="_translations.js"></script>
+  <script src="js/hndsd.min.js"></script>
+  <script src="js/hndse.min.js"></script>
+  <script src="js/app.min.js"></script>
+
+  <!-- Init script -->
+  <script>
+    $(function() {
+      // Create the app
+      var app = new Hnd.App();
+      // Update translations
+      hnd_ut(app);
+	  // Instanciate imageMapResizer
+	  imageMapResize();
+	  // Custom JS
+	  
+      // Boot the app
+      app.Boot();
+    });
+  </script>
+
+
+
+</body>
+
+</html>
+

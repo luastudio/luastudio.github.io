@@ -1,0 +1,338 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="generator" content="HelpNDoc Personal Edition 7.1.2.266">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" href="favicon.ico"/>
+
+  <title>Tilesheet</title>
+  <meta name="description" content="" /> 
+  <meta name="keywords" content="">
+
+
+
+  
+
+  <!-- Twitter Card data -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Tilesheet">
+  <meta name="twitter:description" content="">
+
+  <!-- Open Graph data -->
+  <meta property="og:title" content="Tilesheet" />
+  <meta property="og:type" content="article" />
+  <meta property="og:description" content="" />
+  <meta property="og:site_name" content="LuaStudio API documentation" /> 
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendors/bootstrap-3.4.1/css/bootstrap.min.css" rel="stylesheet"/>
+
+  <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+  <link href="vendors/bootstrap-3.4.1/css/ie10-viewport-bug-workaround.css" rel="stylesheet"/>
+
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+      <script src="vendors/html5shiv-3.7.3/html5shiv.min.js"></script>
+      <script src="vendors/respond-1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+  <!-- JsTree styles -->
+  <link href="vendors/jstree-3.3.10/themes/default/style.min.css" rel="stylesheet"/>
+
+  <!-- Hnd styles -->
+  <link href="css/layout.min.css" rel="stylesheet" />
+  <link href="css/effects.min.css" rel="stylesheet" />
+  <link href="css/theme-light-blue.min.css" rel="stylesheet" />
+  <link href="css/print.min.css" rel="stylesheet" media="print" />
+  <style type="text/css">nav { width: 350px} @media screen and (min-width:769px) { body.md-nav-expanded div#main { margin-left: 350px} body.md-nav-expanded header { padding-left: 364px} }</style>
+
+  <!-- Content style -->
+  <link href="css/hnd.content.css" rel="stylesheet" />
+
+  
+
+
+
+</head>
+
+<body class="md-nav-expanded">
+
+
+
+  <div id="skip-link">
+    <a href="#main-content" class="element-invisible">Skip to main content</a>
+  </div>
+
+  <header class="headroom">
+    <button class="hnd-toggle btn btn-default">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>        
+    </button>
+    <h1>LuaStudio API documentation</h1>
+    
+  </header>
+
+  <nav id="panel-left" class="md-nav-expanded">
+    <!-- Nav tabs -->
+    <ul class="tab-tabs nav nav-tabs" role="tablist">
+      <li id="nav-close"> 
+        <button class="hnd-toggle btn btn-default">
+          <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+        </button>
+      </li>
+      
+	  
+        <li role="presentation" class="tab active">
+            <a href="#contents" id="tab-contents" aria-controls="contents" role="tab" data-toggle="tab">
+                <i class="glyphicon glyphicon-list"></i>
+                Contents
+            </a>
+        </li>
+      
+        <li role="presentation" class="tab">
+            <a href="#index" id="tab-index" aria-controls="index" role="tab" data-toggle="tab">
+                <i class="glyphicon glyphicon-asterisk"></i>
+                Index
+            </a>
+        </li>
+      
+        <li role="presentation" class="tab">
+            <a href="#search" id="tab-search" aria-controls="search" role="tab" data-toggle="tab">
+                <i class="glyphicon glyphicon-search"></i>
+                Search
+            </a>
+        </li>
+      
+    </ul>  <!-- /Nav tabs -->
+
+    <!-- Tab panes -->
+    <div class="tab-content">
+	  
+      <div role="tabpanel" class="tab-pane active" id="contents">
+        <div id="toc" class="tree-container unselectable"
+            data-url="_toc.json"
+            data-openlvl="1"
+        >
+            
+        </div>
+      </div>  <!-- /contents-->
+      
+      <div role="tabpanel" class="tab-pane" id="index">
+        <div id="keywords" class="tree-container unselectable"
+            data-url="_keywords.json"
+            data-openlvl="1"
+        >
+            
+        </div>
+      </div>  <!-- /index-->
+      
+      <div role="tabpanel" class="tab-pane" id="search">
+        <div class="search-content">
+          <div class="search-input">
+            <form id="search-form">
+              <div class="form-group">
+                <div class="input-group">
+                  <input type="text" class="form-control" id="input-search" name="input-search" placeholder="Search..." />
+                  <span class="input-group-btn">
+                    <button class="btn btn-default" type="submit">
+                      <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+                    </button>
+                  </span>
+                </div>
+              </div>
+            </form>
+          </div>  <!-- /search-input -->
+          <div class="search-result">
+            <div id="search-info"></div>
+            <div class="tree-container unselectable" id="search-tree"></div>
+          </div>  <!-- /search-result -->
+        </div>  <!-- /search-content -->
+      </div>  <!-- /search-->
+      
+    </div>  <!-- /Tab panes -->
+
+  </nav>
+
+  <div id="main">
+
+    <article>
+        <div id="topic-content" class="container-fluid" 
+		  data-hnd-id="Tilesheet"
+		  data-hnd-context="111"
+		  data-hnd-title="Tilesheet"
+		>
+            
+                <div class="navigation">
+                    <ol class="breadcrumb">
+                        <li><a href="Librarystructure.html">Library structure</a></li><li><a href="Media.html">Media</a></li><li><a href="Display.html">Display</a></li>
+                    </ol>
+                    <div class="nav-arrows">
+                        <div class="btn-group btn-group-xs" role="group"><a class="btn btn-default" href="Display.html" title="Display" role="button"><span class="glyphicon glyphicon-menu-up" aria-hidden="true"></span></a><a class="btn btn-default" href="StageVideo.html" title="StageVideo" role="button"><span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span></a><a class="btn btn-default" href="TriangleCulling.html" title="TriangleCulling" role="button"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span></a></div>
+                    </div>
+                </div> 
+            
+
+            <a id="main-content"></a>
+
+            <h2>Tilesheet</h2>
+
+            <div class="main-content">
+                
+<p></p>
+<p class="rvps2"><span class="rvts6">In order to optimize for faster performance than individual drawing calls, the Tilesheet provides an alternative API with several constraints to play nicely with hardware rendering. First, every Tilesheet can only use one BitmapData as a texture. This restriction provides the opportunity to copy only one texture to the GPU memory before rendering. Second, the Tilesheet uses pre-defined geometry. You may make as many calls as you want to "addTileRect" to add tile geometry. You can reference this geometry later when you perform batch rendering, using a zero-based ID for the tile. When you are ready, the "drawTiles" method accepts a draw list with the ID of the tile, as well as additional values needed, depending on whether you are only rendering with the tile position, or if you have enabled flags for</span></p>
+<ul style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: disc;">
+ <li class="rvps2"><span class="rvts6">Lib.Media.Display.</span><span class="rvts18">Tilesheet.TILE_SCALE</span></li>
+ <li class="rvps2"><span class="rvts6">Lib.Media.Display.</span><span class="rvts18">Tilesheet.TILE_ROTATION</span></li>
+ <li class="rvps2"><span class="rvts6">Lib.Media.Display.</span><span class="rvts18">Tilesheet.TILE_RGB</span></li>
+ <li class="rvps2"><span class="rvts6">Lib.Media.Display.</span><span class="rvts18">Tilesheet.TILE_ALPHA</span></li>
+ <li class="rvps2"><span class="rvts6">Lib.Media.Display.</span><span class="rvts18">Tilesheet.TILE_TRANS_2x2</span></li>
+ <li class="rvps2"><span class="rvts6">Lib.Media.Display.</span><span class="rvts18">Tilesheet.TILE_RECT</span></li>
+ <li class="rvps2"><span class="rvts6">Lib.Media.Display.</span><span class="rvts18">Tilesheet.TILE_ORIGIN</span></li>
+ <li class="rvps2"><span class="rvts6">Lib.Media.Display.</span><span class="rvts18">Tilesheet.TILE_NO_ID</span></li>
+ <li class="rvps2"><span class="rvts6">Lib.Media.Display.</span><span class="rvts18">Tilesheet.TILE_MOUSE_ENABLE</span></li>
+ <li class="rvps2"><span class="rvts6">Lib.Media.Display.</span><span class="rvts18">Tilesheet.TILE_FIXED_SIZE</span></li>
+ <li class="rvps2"><span class="rvts6">Lib.Media.Display.</span><span class="rvts18">Tilesheet.TILE_BLEND_NORMAL</span></li>
+</ul>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts6">Can be created with method </span><span class="rvts12">new</span><span class="rvts6">:</span></p>
+<div class="rvps2">
+<table width="100%" border="1" cellpadding="1" cellspacing="2" style="border-color: #000000; border-style: solid; border-spacing: 2px;">
+ <tr valign="top">
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">Lib.Media.Display.</span><span class="rvts18">Tilesheet.</span><span class="rvts19">new</span><span class="rvts6">(bitmapdata)</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">creates Tilesheeit object from </span><span class="rvts12">bitmapdata</span><span class="rvts6">.</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts12">bitmapdata</span><span class="rvts6"> - </span><a class="rvts13" href="BitmapData.html">BitmapData</a><span class="rvts6"> object</span></p>
+  </td>
+ </tr>
+</table>
+</div>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts6">created Tilesheet object has methods:</span></p>
+<div class="rvps2">
+<table width="100%" border="1" cellpadding="1" cellspacing="2" style="border-color: #000000; border-style: solid; border-spacing: 2px;">
+ <tr valign="top">
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts18">addTileRect</span><span class="rvts6">(</span><span class="rvts12">rectangle</span><span class="rvts6">, </span><span class="rvts12">centerPoint</span><span class="rvts6">)</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">Add a new tile to the Tilesheet Beginning with 0, each tile is assigned an indentifier internally, which you can use to reference the geometry later while rendering. For example, if you have only called "addTileRect" once on a Tilesheet, you would reference that tile using a tile ID of 0. If you have called "addTileRect" three times, the third tile would have an ID of 2. Specify a </span><span class="rvts12">rectangle</span><span class="rvts6"> within the bounds of the Tilesheet bitmap. This portion of the Tilesheet will be rendered when ever you request a draw of this tile ID. You may also (can be nil) specify a </span><span class="rvts12">centerPoint</span><span class="rvts6">, which is used during positioning, scale and rotation. The center point should be a coordinate within the tile rectangle.</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts12">rectangle</span><span class="rvts6"> - </span><a class="rvts13" href="Rectangle.html">Rectangle</a><span class="rvts6"> object</span></p>
+   <p class="rvps2"><span class="rvts12">centerPoint</span><span class="rvts6"> - </span><a class="rvts13" href="Point.html">Point</a><span class="rvts6"> object</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts18">getTileRect</span><span class="rvts6">(</span><span class="rvts12">index</span><span class="rvts6">, </span><span class="rvts12">rect</span><span class="rvts6">)</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">Return tile rectangle for tile with </span><span class="rvts12">index</span><span class="rvts6"> ID. </span><span class="rvts12">rect</span><span class="rvts6"> object you need to use for result, can be nil. If nil method creates new rectangle.</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts12">index</span><span class="rvts6"> - tile index, int</span></p>
+   <p class="rvps2"><span class="rvts12">rect</span><span class="rvts6"> - </span><a class="rvts13" href="Rectangle.html">Rectangle</a><span class="rvts6"> object</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts18">drawTiles</span><span class="rvts6">(</span><span class="rvts12">graphics</span><span class="rvts6">, </span><span class="rvts12">tileData</span><span class="rvts6">, </span><span class="rvts12">smooth</span><span class="rvts6">, </span><span class="rvts12">flags</span><span class="rvts6">, </span><span class="rvts12">count</span><span class="rvts6">)</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">Fast method to render a batch of tiles from the Tilesheet graphic A standard "drawTiles" call expects a repeating set of three values: the X and Y coordinates, followed by the tileID that should be rendered. You can repeat this pattern for as many tiles you wish to render. If you specify drawing flags, the draw list increases in size to accommodate the additional properties needed. You may specify TILE_SCALE, TILE_ROTATION, TILE_RGB and/or TILE_ALPHA. This means that the draw list will increase from x, y, tileID ... to x, y, tileID, scale, rotation, red, green, blue, alpha ... depending on which flags are active. If you use the TILE_TRANS_2x2 flag, it means you wish to use a 2x2 Matrix transform while rendering. If you use TILE_TRANS_2x2, the TILE_SCALE and TILE_ROTATION flags will be ignored. Using this flag, the draw list will expect the following order: x, y, tileID, a, b, c, d, red, green, blue, alpha ... ...of course, if you are not using TILE_RGB or TILE_ALPHA, then you would repeat the pattern directly following the matrix "a", "b", "c" and "d" values.</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts12">graphics</span><span class="rvts6"> - The </span><a class="rvts13" href="Graphics.html">Graphics</a><span class="rvts6"> object to use for drawing</span></p>
+   <p class="rvps2"><span class="rvts12">tileData</span><span class="rvts6"> - An array of all position, ID and optional values for use in drawing</span></p>
+   <p class="rvps2"><span class="rvts12">smooth</span><span class="rvts6"> - Whether tiles should be smoothed while drawing(Recommended default: false)</span></p>
+   <p class="rvps2"><span class="rvts12">flags</span><span class="rvts6"> - Flags to enable scale, rotation, RGB and/or alpha when drawing(Recommended default: 0)</span></p>
+   <p class="rvps2"><span class="rvts12">count</span><span class="rvts6"> - data size, int (recommended default -1, means use all </span><span class="rvts12">tileData</span><span class="rvts6"> positions)</span></p>
+  </td>
+ </tr>
+</table>
+</div>
+<p></p>
+<p class="rvps4" style="clear: both;"><span class="rvts16">Created with the Personal Edition of HelpNDoc: </span><a class="rvts17" href="https://www.helpndoc.com/feature-tour/create-help-files-for-the-qt-help-framework">Produce online help for Qt applications</a></p>
+
+            </div>
+            
+            <div id="topic_footer"><div id="topic_footer_content">Copyright &copy; &lt;Dates&gt; by &lt;Authors&gt;. All Rights Reserved.</div></div>
+        </div>  <!-- /#topic-content -->
+    </article>
+
+    <footer></footer>
+
+  </div>  <!-- /#main -->
+
+  <div class="mask" data-toggle="sm-nav-expanded"></div>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="hndModal" tabindex="-1" role="dialog" aria-labelledby="hndModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="hndModalLabel"></h4>
+        </div>
+        <div class="modal-body">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary modal-btn-close" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Splitter -->
+  <div id="hnd-splitter" style="left: 350px"></div>  
+
+  <!-- Scripts -->
+  <script src="vendors/jquery-3.5.1/jquery.min.js"></script>
+  <script src="vendors/bootstrap-3.4.1/js/bootstrap.min.js"></script>
+  <script src="vendors/bootstrap-3.4.1/js/ie10-viewport-bug-workaround.js"></script>
+  <script src="vendors/markjs-8.11.1/jquery.mark.min.js"></script>
+  <script src="vendors/uri-1.19.2/uri.min.js"></script>
+  <script src="vendors/imageMapResizer-1.0.10/imageMapResizer.min.js"></script>
+  <script src="vendors/headroom-0.11.0/headroom.min.js"></script>
+  <script src="vendors/jstree-3.3.10/jstree.min.js"></script>  
+  <script src="vendors/interactjs-1.9.22/interact.min.js"></script>  
+
+  <!-- HelpNDoc scripts -->
+  <script src="js/polyfill.object.min.js"></script>
+  <script src="_translations.js"></script>
+  <script src="js/hndsd.min.js"></script>
+  <script src="js/hndse.min.js"></script>
+  <script src="js/app.min.js"></script>
+
+  <!-- Init script -->
+  <script>
+    $(function() {
+      // Create the app
+      var app = new Hnd.App();
+      // Update translations
+      hnd_ut(app);
+	  // Instanciate imageMapResizer
+	  imageMapResize();
+	  // Custom JS
+	  
+      // Boot the app
+      app.Boot();
+    });
+  </script>
+
+
+
+</body>
+
+</html>
+

@@ -1,0 +1,756 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="generator" content="HelpNDoc Personal Edition 7.1.2.266">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" href="favicon.ico"/>
+
+  <title>Context3D</title>
+  <meta name="description" content="" /> 
+  <meta name="keywords" content="">
+
+
+
+  
+
+  <!-- Twitter Card data -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Context3D">
+  <meta name="twitter:description" content="">
+
+  <!-- Open Graph data -->
+  <meta property="og:title" content="Context3D" />
+  <meta property="og:type" content="article" />
+  <meta property="og:description" content="" />
+  <meta property="og:site_name" content="LuaStudio API documentation" /> 
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendors/bootstrap-3.4.1/css/bootstrap.min.css" rel="stylesheet"/>
+
+  <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+  <link href="vendors/bootstrap-3.4.1/css/ie10-viewport-bug-workaround.css" rel="stylesheet"/>
+
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+      <script src="vendors/html5shiv-3.7.3/html5shiv.min.js"></script>
+      <script src="vendors/respond-1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+  <!-- JsTree styles -->
+  <link href="vendors/jstree-3.3.10/themes/default/style.min.css" rel="stylesheet"/>
+
+  <!-- Hnd styles -->
+  <link href="css/layout.min.css" rel="stylesheet" />
+  <link href="css/effects.min.css" rel="stylesheet" />
+  <link href="css/theme-light-blue.min.css" rel="stylesheet" />
+  <link href="css/print.min.css" rel="stylesheet" media="print" />
+  <style type="text/css">nav { width: 350px} @media screen and (min-width:769px) { body.md-nav-expanded div#main { margin-left: 350px} body.md-nav-expanded header { padding-left: 364px} }</style>
+
+  <!-- Content style -->
+  <link href="css/hnd.content.css" rel="stylesheet" />
+
+  
+
+
+
+</head>
+
+<body class="md-nav-expanded">
+
+
+
+  <div id="skip-link">
+    <a href="#main-content" class="element-invisible">Skip to main content</a>
+  </div>
+
+  <header class="headroom">
+    <button class="hnd-toggle btn btn-default">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>        
+    </button>
+    <h1>LuaStudio API documentation</h1>
+    
+  </header>
+
+  <nav id="panel-left" class="md-nav-expanded">
+    <!-- Nav tabs -->
+    <ul class="tab-tabs nav nav-tabs" role="tablist">
+      <li id="nav-close"> 
+        <button class="hnd-toggle btn btn-default">
+          <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+        </button>
+      </li>
+      
+	  
+        <li role="presentation" class="tab active">
+            <a href="#contents" id="tab-contents" aria-controls="contents" role="tab" data-toggle="tab">
+                <i class="glyphicon glyphicon-list"></i>
+                Contents
+            </a>
+        </li>
+      
+        <li role="presentation" class="tab">
+            <a href="#index" id="tab-index" aria-controls="index" role="tab" data-toggle="tab">
+                <i class="glyphicon glyphicon-asterisk"></i>
+                Index
+            </a>
+        </li>
+      
+        <li role="presentation" class="tab">
+            <a href="#search" id="tab-search" aria-controls="search" role="tab" data-toggle="tab">
+                <i class="glyphicon glyphicon-search"></i>
+                Search
+            </a>
+        </li>
+      
+    </ul>  <!-- /Nav tabs -->
+
+    <!-- Tab panes -->
+    <div class="tab-content">
+	  
+      <div role="tabpanel" class="tab-pane active" id="contents">
+        <div id="toc" class="tree-container unselectable"
+            data-url="_toc.json"
+            data-openlvl="1"
+        >
+            
+        </div>
+      </div>  <!-- /contents-->
+      
+      <div role="tabpanel" class="tab-pane" id="index">
+        <div id="keywords" class="tree-container unselectable"
+            data-url="_keywords.json"
+            data-openlvl="1"
+        >
+            
+        </div>
+      </div>  <!-- /index-->
+      
+      <div role="tabpanel" class="tab-pane" id="search">
+        <div class="search-content">
+          <div class="search-input">
+            <form id="search-form">
+              <div class="form-group">
+                <div class="input-group">
+                  <input type="text" class="form-control" id="input-search" name="input-search" placeholder="Search..." />
+                  <span class="input-group-btn">
+                    <button class="btn btn-default" type="submit">
+                      <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+                    </button>
+                  </span>
+                </div>
+              </div>
+            </form>
+          </div>  <!-- /search-input -->
+          <div class="search-result">
+            <div id="search-info"></div>
+            <div class="tree-container unselectable" id="search-tree"></div>
+          </div>  <!-- /search-result -->
+        </div>  <!-- /search-content -->
+      </div>  <!-- /search-->
+      
+    </div>  <!-- /Tab panes -->
+
+  </nav>
+
+  <div id="main">
+
+    <article>
+        <div id="topic-content" class="container-fluid" 
+		  data-hnd-id="Context3D"
+		  data-hnd-context="157"
+		  data-hnd-title="Context3D"
+		>
+            
+                <div class="navigation">
+                    <ol class="breadcrumb">
+                        <li><a href="Librarystructure.html">Library structure</a></li><li><a href="Media.html">Media</a></li><li><a href="Display3D.html">Display3D</a></li>
+                    </ol>
+                    <div class="nav-arrows">
+                        <div class="btn-group btn-group-xs" role="group"><a class="btn btn-default" href="Display3D.html" title="Display3D" role="button"><span class="glyphicon glyphicon-menu-up" aria-hidden="true"></span></a><a class="btn btn-default" href="VertexBuffer3D.html" title="VertexBuffer3D" role="button"><span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span></a><a class="btn btn-default" href="Events.html" title="Events" role="button"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span></a></div>
+                    </div>
+                </div> 
+            
+
+            <a id="main-content"></a>
+
+            <h2>Context3D</h2>
+
+            <div class="main-content">
+                
+<p></p>
+<p class="rvps2"><span class="rvts6">The Context3D object provides a context for rendering geometrically defined graphics.</span></p>
+<p class="rvps2"><span class="rvts6">A rendering context includes a drawing surface and its associated resources and state. When possible, the rendering context uses the hardware graphics processing unit (GPU). Otherwise, the rendering context uses software. (If rendering through Context3D is not supported on a platform, the stage3Ds property of the </span><a class="rvts13" href="stage.html">Stage</a><span class="rvts6"> object contains an empty list.)</span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts6">The Context3D rendering context is a programmable pipeline that is very similar to OpenGL ES 2, but is abstracted so that it is compatible with a range of hardware and GPU interfaces. Although designed for 3D graphics, the rendering pipeline does not mandate that the rendering is three dimensional. Thus, you can create a 2D renderer by supplying the appropriate vertex and pixel fragment programs. In both the 3D and 2D cases, the only geometric primitive supported is the triangle.</span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts6">Get an instance of the Context3D object by calling the requestContext3D() method of a </span><a class="rvts13" href="Stage3D.html">Stage3D</a><span class="rvts6"> object. A limited number of Context3D objects can exist per stage; one for each Stage3D in the Stage.stage3Ds list. When the context is created, the Stage3D object dispatches a context3DCreate event. A rendering context can be destroyed and recreated at any time, such as when another application that uses the GPU gains focus. Your code should anticipate receiving multiple context3DCreate events. Position the rendering area on the stage using the x and y properties of the associated Stage3D instance.</span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts6">To render and display a scene (after getting a Context3D object), the following steps are typical:</span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts6">Configure the main display buffer attributes by calling configureBackBuffer().</span></p>
+<p class="rvps2"><span class="rvts6">Create and initialize your rendering resources, including:</span></p>
+<p class="rvps2"><span class="rvts6">Vertex and index buffers defining the scene geometry</span></p>
+<p class="rvps2"><span class="rvts6">Vertex and pixel programs (shaders) for rendering the scene</span></p>
+<p class="rvps2"><span class="rvts6">Textures</span></p>
+<p class="rvps2"><span class="rvts6">Render a frame:</span></p>
+<p class="rvps2"><span class="rvts6">Set the render state as appropriate for an object or collection of objects in the scene.</span></p>
+<p class="rvps2"><span class="rvts6">Call the drawTriangles() method to render a set of triangles.</span></p>
+<p class="rvps2"><span class="rvts6">Change the rendering state for the next group of objects.</span></p>
+<p class="rvps2"><span class="rvts6">Call drawTriangles() to draw the triangles defining the objects.</span></p>
+<p class="rvps2"><span class="rvts6">Repeat until the scene is entirely rendered.</span></p>
+<p class="rvps2"><span class="rvts6">Call the present() method to display the rendered scene on the stage.</span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts6">Created Context3D object has properties:</span></p>
+<div class="rvps2">
+<table width="100%" border="1" cellpadding="1" cellspacing="2" style="border-color: #000000; border-style: solid; border-spacing: 2px;">
+ <tr valign="top">
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts18">driverInfo</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">The type of graphics library driver used by this rendering context.</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">read-only, String</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts18">enableErrorChecking</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">Specifies whether errors encountered by the renderer are reported to the application.</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">true/false</span></p>
+  </td>
+ </tr>
+</table>
+</div>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts6">methods:</span></p>
+<div class="rvps2">
+<table width="100%" border="1" cellpadding="1" cellspacing="2" style="border-color: #000000; border-style: solid; border-spacing: 2px;">
+ <tr valign="top">
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts18">clear</span><span class="rvts6">(</span><span class="rvts12">red</span><span class="rvts6">, </span><span class="rvts12">green</span><span class="rvts6">, </span><span class="rvts12">blue</span><span class="rvts6">, </span><span class="rvts12">alpha</span><span class="rvts6">, </span><span class="rvts12">depth</span><span class="rvts6">, </span><span class="rvts12">stencil</span><span class="rvts6">, </span><span class="rvts12">mask</span><span class="rvts6">)&nbsp;</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">Clears the color, depth, and stencil buffers associated with this Context3D object and fills them with the specified values.</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts12">red</span><span class="rvts6"> - (default = 0.0) - the red component of the color with which to clear the color buffer, in the range zero to one.</span></p>
+   <p class="rvps2"><span class="rvts12">green</span><span class="rvts6"> - (default = 0.0) - the green component of the color with which to clear the color buffer, in the range zero to one.</span></p>
+   <p class="rvps2"><span class="rvts12">blue</span><span class="rvts6"> - (default = 0.0) - the blue component of the color with which to clear the color buffer, in the range zero to one.</span></p>
+   <p class="rvps2"><span class="rvts12">alpha</span><span class="rvts6"> - (default = 1.0) - the alpha component of the color with which to clear the color buffer, in the range zero to one. The alpha component is not used for blending. It is written to the buffer alpha directly.</span></p>
+   <p class="rvps2"><span class="rvts12">depth</span><span class="rvts6"> - (default = 1.0) - the value with which to clear the depth buffer, in the range zero to one.</span></p>
+   <p class="rvps2"><span class="rvts12">stencil</span><span class="rvts6"> - (default = 0) - the 8-bit value with which to clear the stencil buffer, in a range of 0x00 to 0xff.</span></p>
+   <p class="rvps2"><span class="rvts12">mask</span><span class="rvts6"> - (default = Lib.Media.Display3D.</span><a class="rvts13" href="Context3DClearMask.html">Context3DClearMask</a><span class="rvts6">.ALL) - specifies which buffers to clear.</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts18">configureBackBuffer</span><span class="rvts6">(</span><span class="rvts12">width</span><span class="rvts6">, </span><span class="rvts12">height</span><span class="rvts6">, </span><span class="rvts12">antiAlias</span><span class="rvts6">, </span><span class="rvts12">enableDepthAndStencil</span><span class="rvts6">)</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">Sets the viewport dimensions and other attributes of the rendering buffer.</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts12">width</span><span class="rvts6"> - width in pixels of the buffer.</span></p>
+   <p class="rvps2"><span class="rvts12">height</span><span class="rvts6"> - height in pixels of the buffer.</span></p>
+   <p class="rvps2"><span class="rvts12">antiAlias</span><span class="rvts6"> - an integer value specifying the requested antialiasing quality. The value correlates to the number of subsamples used when antialiasing. Using more subsamples requires more calculations to be performed, although the relative performance impact depends on the specific rendering hardware. The type of antialiasing and whether antialiasing is performed at all is dependent on the device and rendering mode. Antialiasing is not supported at all by the software rendering context.</span></p>
+   <p class="rvps2"><span class="rvts6">0</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">No antialiasing</span></p>
+   <p class="rvps2"><span class="rvts6">2</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">Minimal antialiasing.</span></p>
+   <p class="rvps2"><span class="rvts6">4</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">High-quality antialiasing.</span></p>
+   <p class="rvps2"><span class="rvts6">16</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">Very high-quality antialiasing.</span></p>
+   <p class="rvps2"><span class="rvts12">enableDepthAndStencil</span><span class="rvts6"> - (default = true) - false indicates no depth or stencil buffer is created, true creates a depth and a stencil buffer. By default, the value of the depthAndStencil element is false.</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts18">createCubeTexture</span><span class="rvts6">(</span><span class="rvts12">size</span><span class="rvts6">, </span><span class="rvts12">format</span><span class="rvts6">, </span><span class="rvts12">optimizeForRenderToTexture</span><span class="rvts6">, </span><span class="rvts12">streamingLevels</span><span class="rvts6">)</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">Creates a </span><a class="rvts13" href="CubeTexture.html">CubeTexture</a><span class="rvts6"> object.</span></p>
+   <p class="rvps2"><span class="rvts6">Note: currently compressed textures not supported.</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts12">size</span><span class="rvts6"> - The texture edge length in texels.</span></p>
+   <p class="rvps2"><span class="rvts12">format</span><span class="rvts6"> - The texel format, of the </span><a class="rvts13" href="Context3DTextureFormat.html">Context3DTextureFormat</a><span class="rvts6"> enumerated list.</span></p>
+   <p class="rvps2"><span class="rvts6">Texture compression lets you store texture images in compressed format directly on the GPU, which saves GPU memory and memory bandwidth. Typically, compressed textures are compressed offline and uploaded to the GPU in compressed form using the Texture.uploadCompressedTextureFromByteArray method. Which may be useful in certain situations, such as when rendering dynamic textures from vector art. Note that this feature is not currently available on mobile platforms and an ArgumentError (Texture Format Mismatch) will be thrown instead. To use runtime texture compression, perform the following steps: 1. Create the texture object by calling the Context3D.createCubeTexture() method, passing either Context3DTextureFormat.COMPRESSED or Context3DTextureFormat.COMPRESSED_ALPHA as the format parameter. 2. Using the Texture instance returned by createCubeTexture(), call either CubeTexture.uploadFromBitmapData() or CubeTexture.uploadFromByteArray() to upload and compress the texture in one step.</span></p>
+   <p class="rvps2"><span class="rvts12">optimizeForRenderToTexture</span><span class="rvts6"> - Set to true if the texture is likely to be used as a render target.</span></p>
+   <p class="rvps2"><span class="rvts12">streamingLevels</span><span class="rvts6"> - (default = 0) - The MIP map level that must be loaded before the image is rendered. Texture streaming offers the ability to load and display the smallest mip levels first, progressively displaying higher quality images as the textures are loaded. End users can view lower-quality images in an application while the higher quality images load.</span></p>
+   <p class="rvps2"><span class="rvts6">By default, streamingLevels is 0, meaning that the highest quality image in the MIP map must be loaded before the image is rendered.</span></p>
+   <p class="rvps2"><span class="rvts6">Set streamingLevels to a value between 1 and the number of images in the MIP map to enable texture streaming. For example, you have a MIP map that includes at the highest quality a main image at 64x64 pixels. Lower quality images in the MIP map are 32x32, 16x16, 8x8, 4x4, 2x2, and 1x1 pixels, for 7 images in total, or 7 levels. Level 0 is the highest quality image. The maximum value of this property is log2(min(width,height)). Therefore, for a main image that is 64x64 pixels, the maximum value of streamingLevels is 7. Set this property to 3 to render the image after the 8x8 pixel image loads.</span></p>
+   <p class="rvps2"><span class="rvts6">Note: Setting this property to a value &gt; 0 can impact memory usage and performance.</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts18">createIndexBuffer</span><span class="rvts6">(</span><span class="rvts12">numIndices</span><span class="rvts6">)</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">Creates an </span><a class="rvts13" href="IndexBuffer3D.html">IndexBuffer3D</a><span class="rvts6"> object.</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts12">numIndices</span><span class="rvts6"> - the number of vertices to be stored in the buffer, int</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts18">createProgram</span><span class="rvts6">()</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">Creates a </span><a class="rvts13" href="Program3D.html">Program3D</a><span class="rvts6"> object.</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <br/>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts18">createRectangleTexture</span><span class="rvts6">(</span><span class="rvts12">width</span><span class="rvts6">, </span><span class="rvts12">height</span><span class="rvts6">, </span><span class="rvts12">format</span><span class="rvts6">, </span><span class="rvts12">optimizeForRenderToTexture</span><span class="rvts6">)</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">Creates a </span><a class="rvts13" href="RectangleTexture.html">Rectangle Texture</a><span class="rvts6"> object.</span></p>
+   <p class="rvps2"><span class="rvts6">Note: currently compressed textures not supported.</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts12">width</span><span class="rvts6"> - The texture width in texels.</span></p>
+   <p class="rvps2"><span class="rvts12">height</span><span class="rvts6"> - The texture height in texels.</span></p>
+   <p class="rvps2"><span class="rvts12">format</span><span class="rvts6"> - The texel format, of the </span><a class="rvts13" href="Context3DTextureFormat.html">Context3DTextureFormat</a><span class="rvts6"> enumerated list.</span></p>
+   <p class="rvps2"><span class="rvts12">optimizeForRenderToTexture</span><span class="rvts6"> - Set to true if the texture is likely to be used as a render target.</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts18">createTexture</span><span class="rvts6">(</span><span class="rvts12">width</span><span class="rvts6">, </span><span class="rvts12">height</span><span class="rvts6">, </span><span class="rvts12">format</span><span class="rvts6">, </span><span class="rvts12">optimizeForRenderToTexture</span><span class="rvts6">, </span><span class="rvts12">streamingLevels</span><span class="rvts6">)</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">Creates a Texture object.</span></p>
+   <p class="rvps2"><span class="rvts6">Note: currently compressed textures not supported.</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts12">width</span><span class="rvts6"> - The texture width in texels.</span></p>
+   <p class="rvps2"><span class="rvts12">height</span><span class="rvts6"> - The texture height in texels.</span></p>
+   <p class="rvps2"><span class="rvts12">format</span><span class="rvts6"> - The texel format, of the </span><a class="rvts13" href="Context3DTextureFormat.html">Context3DTextureFormat</a><span class="rvts6"> enumerated list.</span></p>
+   <p class="rvps2"><span class="rvts6">Texture compression lets you store texture images in compressed format directly on the GPU, which saves GPU memory and memory bandwidth. Typically, compressed textures are compressed offline and uploaded to the GPU in compressed form using the Texture.uploadCompressedTextureFromByteArray method. Which may be useful in certain situations, such as when rendering dynamic textures from vector art. Note that this feature is not currently available on mobile platforms and an ArgumentError (Texture Format Mismatch) will be thrown instead. To use runtime texture compression, perform the following steps: 1. Create the texture object by calling the Context3D.createTexture() method, passing either Context3DTextureFormat.COMPRESSED or Context3DTextureFormat.COMPRESSED_ALPHA as the format parameter. 2. Using the Texture instance returned by createTexture(), call either Texture.uploadFromBitmapData() or Texture.uploadFromByteArray() to upload and compress the texture in one step.&nbsp;</span></p>
+   <p class="rvps2"><span class="rvts12">optimizeForRenderToTexture</span><span class="rvts6"> - Set to true if the texture is likely to be used as a render target.&nbsp;</span></p>
+   <p class="rvps2"><span class="rvts12">streamingLevels</span><span class="rvts6"> - (default = 0) - The MIP map level that must be loaded before the image is rendered. Texture streaming offers the ability to load and display the smallest mip levels first, progressively displaying higher quality images as the textures are loaded. End users can view lower-quality images in an application while the higher quality images load.</span></p>
+   <p class="rvps2"><span class="rvts6">By default, streamingLevels is 0, meaning that the highest quality image in the MIP map must be loaded before the image is rendered.</span></p>
+   <p class="rvps2"><span class="rvts6">Set streamingLevels to a value between 1 and the number of images in the MIP map to enable texture streaming. For example, you have a MIP map that includes at the highest quality a main image at 64x64 pixels. Lower quality images in the MIP map are 32x32, 16x16, 8x8, 4x4, 2x2, and 1x1 pixels, for 7 images in total, or 7 levels. Level 0 is the highest quality image. The maximum value of this property is log2(min(width,height)). Therefore, for a main image that is 64x64 pixels, the maximum value of streamingLevels is 7. Set this property to 3 to render the image after the 8x8 pixel image loads.</span></p>
+   <p class="rvps2"><span class="rvts6">Note: Setting this property to a value &gt; 0 can impact memory usage and performance.</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts18">createVertexBuffer</span><span class="rvts6">(</span><span class="rvts12">numVertices</span><span class="rvts6">, </span><span class="rvts12">data32PerVertex</span><span class="rvts6">)</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">Creates a </span><a class="rvts13" href="VertexBuffer3D.html">VertexBuffer3D</a><span class="rvts6"> object.</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts12">numVertices</span><span class="rvts6"> - the number of vertices to be stored in the buffer. The maximum number of vertices in a single buffer is 65535.</span></p>
+   <p class="rvps2"><span class="rvts12">data32PerVertex</span><span class="rvts6"> - the number of 32-bit(4-byte) data values associated with each vertex. The maximum number of 32-bit data elements per vertex is 64 (or 256 bytes). Note that only eight attribute registers are accessible by a vertex shader program at any given time. Use SetVertextBufferAt() to select attributes from within a vertex buffer.</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts18">dispose</span><span class="rvts6">()</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">Frees all resources and internal storage associated with this Context3D.</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <br/>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts18">drawToBitmapData</span><span class="rvts6">(</span><span class="rvts12">destination</span><span class="rvts6">)</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">Not supported</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <br/>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts18">drawTriangles</span><span class="rvts6">(</span><span class="rvts12">indexBuffer</span><span class="rvts6">, </span><span class="rvts12">firstIndex</span><span class="rvts6">, </span><span class="rvts12">numTriangles</span><span class="rvts6">)</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">Render the specified triangles using the current buffers and state of this Context3D object.</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts12">indexBuffer</span><span class="rvts6"> - </span><a class="rvts13" href="IndexBuffer3D.html">IndexBuffer3D</a><span class="rvts6"> object, a set of vertex indices referencing the vertices to render.</span></p>
+   <p class="rvps2"><span class="rvts12">firstIndex</span><span class="rvts6"> - (default = 0) - the index of the first vertex index selected to render. Default 0.</span></p>
+   <p class="rvps2"><span class="rvts12">numTriangles</span><span class="rvts6"> - (default = -1) - the number of triangles to render. Each triangle consumes three indices. Pass -1 to draw all triangles in the index buffer. Default -1.</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts18">present</span><span class="rvts6">()</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">Displays the back rendering buffer.</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <br/>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts18">setBlendFactors</span><span class="rvts6">(</span><span class="rvts12">sourceFactor</span><span class="rvts6">, </span><span class="rvts12">destinationFactor</span><span class="rvts6">)</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">Specifies the factors used to blend the output color of a drawing operation with the existing color.</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts12">sourceFactor</span><span class="rvts6"> - The factor with which to multiply the source color. Defaults to </span><a class="rvts13" href="Context3DBlendFactor.html">Context3DBlendFactor</a><span class="rvts6">.ONE.</span></p>
+   <p class="rvps2"><span class="rvts12">destinationFactor</span><span class="rvts6"> - The factor with which to multiply the destination color. Defaults to </span><a class="rvts13" href="Context3DBlendFactor.html">Context3DBlendFactor</a><span class="rvts6">.ZERO.</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts18">setColorMask</span><span class="rvts6">(</span><span class="rvts12">red</span><span class="rvts6">, </span><span class="rvts12">green</span><span class="rvts6">, </span><span class="rvts12">blue</span><span class="rvts6">, </span><span class="rvts12">alpha</span><span class="rvts6">)&nbsp;</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">Sets the mask used when writing colors to the render buffer.</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts12">red</span><span class="rvts6"> - set false to block changes to the red channel.</span></p>
+   <p class="rvps2"><span class="rvts12">green</span><span class="rvts6"> - set false to block changes to the green channel.</span></p>
+   <p class="rvps2"><span class="rvts12">blue</span><span class="rvts6"> - set false to block changes to the blue channel.</span></p>
+   <p class="rvps2"><span class="rvts12">alpha</span><span class="rvts6"> - set false to block changes to the alpha channel.</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts18">setCulling</span><span class="rvts24">(</span><span class="rvts25">triangleFaceToCull</span><span class="rvts24">)</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">Sets triangle culling mode.</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts12">triangleFaceToCull</span><span class="rvts6"> - the culling mode. Use one of the constants defined in the </span><a class="rvts13" href="Context3DTriangleFace.html">Context3DTriangleFace</a><span class="rvts6"> object.</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts18">setDepthTest</span><span class="rvts6">(</span><span class="rvts12">depthMask</span><span class="rvts6">, </span><span class="rvts12">passCompareMode</span><span class="rvts6">)</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">Sets type of comparison used for depth testing.</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts12">depthMask</span><span class="rvts6"> - the destination depth value will be updated from the source pixel when true.</span></p>
+   <p class="rvps2"><span class="rvts12">passCompareMode</span><span class="rvts6"> - the depth comparison test operation. One of the values of </span><a class="rvts13" href="Context3DCompareMode.html">Context3DCompareMode</a><span class="rvts6">.</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts18">setProgram</span><span class="rvts6">(</span><span class="rvts12">program</span><span class="rvts6">)</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">Sets vertex and fragment shader programs to use for subsequent rendering.</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts12">program</span><span class="rvts6"> - the </span><a class="rvts13" href="Program3D.html">Program3D</a><span class="rvts6"> object representing the vertex and fragment programs to use.</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts18">setProgramConstantsFromByteArray</span><span class="rvts6">(</span><span class="rvts12">programType</span><span class="rvts6">, </span><span class="rvts12">firstRegister</span><span class="rvts6">, </span><span class="rvts12">numRegisters</span><span class="rvts6">, </span><span class="rvts12">data</span><span class="rvts6">, </span><span class="rvts12">byteArrayOffset</span><span class="rvts6">)</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">Set constants for use by shader programs using values stored in a </span><a class="rvts13" href="ByteArray.html">ByteArray</a><span class="rvts6">.</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts12">programType</span><span class="rvts6"> - one of </span><a class="rvts13" href="Context3DProgramType.html">Context3DProgramType</a><span class="rvts6">.&nbsp;</span></p>
+   <p class="rvps2"><span class="rvts12">firstRegister</span><span class="rvts6"> - the index of the first shader program constant to set, int.</span></p>
+   <p class="rvps2"><span class="rvts12">numRegisters</span><span class="rvts6"> - the number of registers to set, int. Every register is read as four float values.&nbsp;</span></p>
+   <p class="rvps2"><span class="rvts12">data</span><span class="rvts6"> - the source </span><a class="rvts13" href="ByteArray.html">ByteArray</a><span class="rvts6"> object&nbsp;</span></p>
+   <p class="rvps2"><span class="rvts12">byteArrayOffset</span><span class="rvts6"> - an offset into the ByteArray for reading, int.</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts18">setProgramConstantsFromMatrix</span><span class="rvts6">(</span><span class="rvts12">programType</span><span class="rvts6">, </span><span class="rvts12">firstRegister</span><span class="rvts6">, </span><span class="rvts12">matrix</span><span class="rvts6">, </span><span class="rvts12">transposedMatrix</span><span class="rvts6">)</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">Sets constants for use by shader programs using values stored in a Matrix3D.</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts12">programType</span><span class="rvts6"> - The type of shader program, either </span><a class="rvts13" href="Context3DProgramType.html">Context3DProgramType</a><span class="rvts6">.VERTEX or </span><a class="rvts13" href="Context3DProgramType.html">Context3DProgramType</a><span class="rvts6">.FRAGMENT.</span></p>
+   <p class="rvps2"><span class="rvts12">firstRegister</span><span class="rvts6"> - the index of the first constant register to set. Since a </span><a class="rvts13" href="Matrix3D.html">Matrix3D</a><span class="rvts6"> has 16 values, four registers are set, int.</span></p>
+   <p class="rvps2"><span class="rvts12">matrix</span><span class="rvts6"> - the matrix containing the constant values, </span><a class="rvts13" href="Matrix3D.html">Matrix3D</a><span class="rvts6"> object.</span></p>
+   <p class="rvps2"><span class="rvts12">transposedMatrix</span><span class="rvts6"> - (default = false) - if true the matrix entries are copied to registers in transposed order. The default value is false.</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts18">setProgramConstantsFromVector</span><span class="rvts6">(</span><span class="rvts12">programType</span><span class="rvts6">, </span><span class="rvts12">firstRegister</span><span class="rvts6">, </span><span class="rvts12">data</span><span class="rvts6">, </span><span class="rvts12">numRegisters</span><span class="rvts6">)</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">Sets the constant inputs for the shader programs.</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts12">programType</span><span class="rvts6"> - The type of shader program, either </span><a class="rvts13" href="Context3DProgramType.html">Context3DProgramType</a><span class="rvts6">.VERTEX or </span><a class="rvts13" href="Context3DProgramType.html">Context3DProgramType</a><span class="rvts6">.FRAGMENT.</span></p>
+   <p class="rvps2"><span class="rvts12">firstRegister</span><span class="rvts6"> - the index of the first constant register to set.</span></p>
+   <p class="rvps2"><span class="rvts12">data</span><span class="rvts6"> - the floating point constant values. There must be at least numRegisters 4 elements in data, vector array of floats.</span></p>
+   <p class="rvps2"><span class="rvts12">numRegisters</span><span class="rvts6"> - (default = -1) - the number of constants to set. Specify -1, the default value, to set enough registers to use all of the available data.</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts18">setGLSLProgramConstantsFromByteArray</span><span class="rvts6">(</span><span class="rvts12">locationName</span><span class="rvts6">, </span><span class="rvts12">data</span><span class="rvts6">, </span><span class="rvts12">byteArrayOffset</span><span class="rvts6">)</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">Set constants for use by GLSL shader programs using values stored in a </span><a class="rvts13" href="ByteArray.html">ByteArray</a><span class="rvts6">.</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts12">locationName</span><span class="rvts6"> - uniform location name, string.&nbsp;</span></p>
+   <p class="rvps2"><span class="rvts12">data</span><span class="rvts6"> - the source </span><a class="rvts13" href="ByteArray.html">ByteArray</a><span class="rvts6"> object&nbsp;</span></p>
+   <p class="rvps2"><span class="rvts12">byteArrayOffset</span><span class="rvts6"> - an offset into the ByteArray for reading, int.</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts18">setGLSLProgramConstantsFromMatrix</span><span class="rvts6">(</span><span class="rvts12">locationName</span><span class="rvts6">, </span><span class="rvts12">matrix</span><span class="rvts6">, </span><span class="rvts12">transposedMatrix</span><span class="rvts6">)</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">Sets constants for use by GLSL shader programs using values stored in a Matrix3D.</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts12">locationName</span><span class="rvts6"> - uniform location name, string.&nbsp;</span></p>
+   <p class="rvps2"><span class="rvts12">matrix</span><span class="rvts6"> - the matrix containing the constant values, </span><a class="rvts13" href="Matrix3D.html">Matrix3D</a><span class="rvts6"> object.</span></p>
+   <p class="rvps2"><span class="rvts12">transposedMatrix</span><span class="rvts6"> - (default = false) - if true the matrix entries are copied to registers in transposed order. The default value is false.</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts18">setGLSLProgramConstantsFromVector4</span><span class="rvts6">(</span><span class="rvts12">locationName</span><span class="rvts6">, </span><span class="rvts12">data</span><span class="rvts6">, </span><span class="rvts12">startIndex</span><span class="rvts6">)</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">Sets the constant inputs for the GLSL shader programs.</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts12">locationName</span><span class="rvts6"> - uniform location name, string.&nbsp;</span></p>
+   <p class="rvps2"><span class="rvts12">data</span><span class="rvts6"> - the floating point constant values. There must be 4 elements in data, vector array of floats.</span></p>
+   <p class="rvps2"><span class="rvts12">startIndex</span><span class="rvts6"> - (default = 0) - </span><span class="rvts12">data</span><span class="rvts6"> start index,</span></p>
+   <p class="rvps2"><span class="rvts6">data[startIndex], data[startIndex + 1], data[startIndex+2], data[startIndex+3]</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts18">setRenderToBackBuffer</span><span class="rvts6">()</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">Sets the back rendering buffer as the render target.</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts12"><br/></span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts18">setRenderToTexture</span><span class="rvts6">(</span><span class="rvts12">texture</span><span class="rvts6">, </span><span class="rvts12">enableDepthAndStencil</span><span class="rvts6">, </span><span class="rvts12">antiAlias</span><span class="rvts6">, </span><span class="rvts12">surfaceSelector</span><span class="rvts6">)</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">Sets the specified texture as the rendering target.</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts12">texture</span><span class="rvts6"> - the target </span><a class="rvts13" href="Textures1.html">texture</a><span class="rvts6"> to render into. Set to nil to resume rendering to the back buffer (setRenderToBackBuffer() and present also reset the target to the back buffer).</span></p>
+   <p class="rvps2"><span class="rvts12">enableDepthAndStencil</span><span class="rvts6"> - (default = false) - if true, depth and stencil testing are available. If false, all depth and stencil state is ignored for subsequent drawing operations.</span></p>
+   <p class="rvps2"><span class="rvts12">antiAlias</span><span class="rvts6"> - (default = 0) - the antialiasing quality. Use 0 to disable antialiasing; higher values improve antialiasing quality, but require more calculations. The value is currently ignored by mobile platform and software rendering context.</span></p>
+   <p class="rvps2"><span class="rvts12">surfaceSelector</span><span class="rvts6"> - (default = 0) - specifies which element of the texture to update. Texture objects have one surface, so you must specify 0, the default value. CubeTexture objects have six surfaces, so you can specify an integer from 0 through 5.</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts18">setSamplerStateAt</span><span class="rvts6">(</span><span class="rvts12">sampler</span><span class="rvts6">, </span><span class="rvts12">wrap</span><span class="rvts6">, </span><span class="rvts12">filter</span><span class="rvts6">, </span><span class="rvts12">mipfilter</span><span class="rvts6">)</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">Manually override texture sampler state.</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts12">sampler</span><span class="rvts6"> - sampler The sampler register to use. Maps to the sampler register in AGAL, int value.</span></p>
+   <p class="rvps2"><span class="rvts12">wrap</span><span class="rvts6"> - Wrapping mode. Defined in </span><a class="rvts13" href="Context3DWrapMode.html">Context3DWrapMode</a><span class="rvts6">. The default is repeat.</span></p>
+   <p class="rvps2"><span class="rvts12">filter</span><span class="rvts6"> - Texture filtering mode. Defined in </span><a class="rvts13" href="Context3DTextureFilter.html">Context3DTextureFilter</a><span class="rvts6">. The default is nearest.</span></p>
+   <p class="rvps2"><span class="rvts12">mipfilter</span><span class="rvts6"> - Mip map filter. Defined in </span><a class="rvts13" href="Context3DMipFilter.html">Context3DMipFilter</a><span class="rvts6">. The default is none.</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts18">setScissorRectangle</span><span class="rvts6">(</span><span class="rvts12">rectangle</span><span class="rvts6">)</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">Sets a scissor rectangle, which is type of drawing mask.</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts12">rectangle</span><span class="rvts6"> - The </span><a class="rvts13" href="Rectangle.html">rectangle</a><span class="rvts6"> in which to draw. Specify the rectangle position and dimensions in pixels. The coordinate system origin is the top left corner of the viewport, with positive values increasing down and to the right (the same as the normal Flash display coordinate system).</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts18">setStencilActions</span><span class="rvts6">(</span><span class="rvts12">triangleFace</span><span class="rvts6">,</span><span class="rvts12">compareMode</span><span class="rvts6">, </span><span class="rvts12">actionOnBothPass</span><span class="rvts6">, </span><span class="rvts12">actionOnDepthFail</span><span class="rvts6">, </span><span class="rvts12">actionOnDepthPassStencilFail</span><span class="rvts6">)</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">Not supported</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts12"><br/></span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts18">setStencilReferenceValue</span><span class="rvts6">(</span><span class="rvts12">referenceValue</span><span class="rvts6">, </span><span class="rvts12">readMask</span><span class="rvts6">, </span><span class="rvts12">writeMask</span><span class="rvts6">)</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">Not supported</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts12"><br/></span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts18">setTextureAt</span><span class="rvts6">(</span><span class="rvts12">sampler</span><span class="rvts6">, </span><span class="rvts12">texture</span><span class="rvts6">)</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">Specifies the texture to use for a texture input register of a fragment program.</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts12">sampler</span><span class="rvts6"> - the sampler register index, a value from 0 through 7.</span></p>
+   <p class="rvps2"><span class="rvts12">texture</span><span class="rvts6"> - the </span><a class="rvts13" href="Textures1.html">texture</a><span class="rvts6"> object to make available, either a Texture or a CubeTexture instance.</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts18">setGLSLTextureAt</span><span class="rvts6">(</span><span class="rvts12">locationName</span><span class="rvts6">, </span><span class="rvts12">texture</span><span class="rvts6">, </span><span class="rvts12">textureIndex</span><span class="rvts6">)</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">Specifies the texture to use for a texture input register of a fragment GLSL program.</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts12">locationName</span><span class="rvts6"> - uniform location name, string.</span></p>
+   <p class="rvps2"><span class="rvts12">texture</span><span class="rvts6"> - the </span><a class="rvts13" href="Textures1.html">texture</a><span class="rvts6"> object to make available, either a Texture or a CubeTexture instance.</span></p>
+   <p class="rvps2"><span class="rvts12">textureIndex</span><span class="rvts6"> - texture index, int [0..7]</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts18">setVertexBufferAt</span><span class="rvts6">(</span><span class="rvts12">index</span><span class="rvts6">, </span><span class="rvts12">buffer</span><span class="rvts6">, </span><span class="rvts12">bufferOffset</span><span class="rvts6">, </span><span class="rvts12">format</span><span class="rvts6">)</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">Specifies which vertex data components correspond to a single vertex shader program input.</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts12">index</span><span class="rvts6"> - the index of the attribute register in the vertex shader (0 through 7).</span></p>
+   <p class="rvps2"><span class="rvts12">buffer</span><span class="rvts6"> - the </span><a class="rvts13" href="VertexBuffer3D.html">VertexBuffer3D</a><span class="rvts6"> buffer that contains the source vertex data to be fed to the vertex shader.</span></p>
+   <p class="rvps2"><span class="rvts12">bufferOffset</span><span class="rvts6"> - (default = 0) - an offset from the start of the data for a single vertex at which to start reading this attribute. In the example above, the position data has an offset of 0 because it is the first attribute; color has an offset of 3 because the color attribute follows the three 32-bit position values. The offset is specified in units of 32 bits.</span></p>
+   <p class="rvps2"><span class="rvts12">format</span><span class="rvts6"> - (default = "float4") - a value from the </span><a class="rvts13" href="Context3DVertexBufferFormat.html">Context3DVertexBufferFormat</a><span class="rvts6"> object specifying the data type of this attribute.</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts18">setGLSLVertexBufferAt</span><span class="rvts6">(</span><span class="rvts12">locationName</span><span class="rvts6">, </span><span class="rvts12">buffer</span><span class="rvts6">, </span><span class="rvts12">bufferOffset</span><span class="rvts6">, </span><span class="rvts12">format</span><span class="rvts6">)</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">Specifies which vertex data components correspond to a single vertex GLSL shader program input.</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts12">locationName</span><span class="rvts6"> - uniform location name, string.</span></p>
+   <p class="rvps2"><span class="rvts12">buffer</span><span class="rvts6"> - the </span><a class="rvts13" href="VertexBuffer3D.html">VertexBuffer3D</a><span class="rvts6"> buffer that contains the source vertex data to be fed to the vertex shader.</span></p>
+   <p class="rvps2"><span class="rvts12">bufferOffset</span><span class="rvts6"> - (default = 0) - an offset from the start of the data for a single vertex at which to start reading this attribute. In the example above, the position data has an offset of 0 because it is the first attribute; color has an offset of 3 because the color attribute follows the three 32-bit position values. The offset is specified in units of 32 bits.</span></p>
+   <p class="rvps2"><span class="rvts12">format</span><span class="rvts6"> - (default = "float4") - a value from the </span><a class="rvts13" href="Context3DVertexBufferFormat.html">Context3DVertexBufferFormat</a><span class="rvts6"> object specifying the data type of this attribute.</span></p>
+  </td>
+ </tr>
+</table>
+</div>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p></p>
+<p class="rvps4" style="clear: both;"><span class="rvts16">Created with the Personal Edition of HelpNDoc: </span><a class="rvts17" href="https://www.helpndoc.com/feature-tour">Full-featured Help generator</a></p>
+
+            </div>
+            
+            <div id="topic_footer"><div id="topic_footer_content">Copyright &copy; &lt;Dates&gt; by &lt;Authors&gt;. All Rights Reserved.</div></div>
+        </div>  <!-- /#topic-content -->
+    </article>
+
+    <footer></footer>
+
+  </div>  <!-- /#main -->
+
+  <div class="mask" data-toggle="sm-nav-expanded"></div>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="hndModal" tabindex="-1" role="dialog" aria-labelledby="hndModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="hndModalLabel"></h4>
+        </div>
+        <div class="modal-body">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary modal-btn-close" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Splitter -->
+  <div id="hnd-splitter" style="left: 350px"></div>  
+
+  <!-- Scripts -->
+  <script src="vendors/jquery-3.5.1/jquery.min.js"></script>
+  <script src="vendors/bootstrap-3.4.1/js/bootstrap.min.js"></script>
+  <script src="vendors/bootstrap-3.4.1/js/ie10-viewport-bug-workaround.js"></script>
+  <script src="vendors/markjs-8.11.1/jquery.mark.min.js"></script>
+  <script src="vendors/uri-1.19.2/uri.min.js"></script>
+  <script src="vendors/imageMapResizer-1.0.10/imageMapResizer.min.js"></script>
+  <script src="vendors/headroom-0.11.0/headroom.min.js"></script>
+  <script src="vendors/jstree-3.3.10/jstree.min.js"></script>  
+  <script src="vendors/interactjs-1.9.22/interact.min.js"></script>  
+
+  <!-- HelpNDoc scripts -->
+  <script src="js/polyfill.object.min.js"></script>
+  <script src="_translations.js"></script>
+  <script src="js/hndsd.min.js"></script>
+  <script src="js/hndse.min.js"></script>
+  <script src="js/app.min.js"></script>
+
+  <!-- Init script -->
+  <script>
+    $(function() {
+      // Create the app
+      var app = new Hnd.App();
+      // Update translations
+      hnd_ut(app);
+	  // Instanciate imageMapResizer
+	  imageMapResize();
+	  // Custom JS
+	  
+      // Boot the app
+      app.Boot();
+    });
+  </script>
+
+
+
+</body>
+
+</html>
+

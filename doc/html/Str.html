@@ -1,0 +1,764 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="generator" content="HelpNDoc Personal Edition 7.1.2.266">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" href="favicon.ico"/>
+
+  <title>Str</title>
+  <meta name="description" content="" /> 
+  <meta name="keywords" content="">
+
+
+
+  
+
+  <!-- Twitter Card data -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Str">
+  <meta name="twitter:description" content="">
+
+  <!-- Open Graph data -->
+  <meta property="og:title" content="Str" />
+  <meta property="og:type" content="article" />
+  <meta property="og:description" content="" />
+  <meta property="og:site_name" content="LuaStudio API documentation" /> 
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendors/bootstrap-3.4.1/css/bootstrap.min.css" rel="stylesheet"/>
+
+  <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+  <link href="vendors/bootstrap-3.4.1/css/ie10-viewport-bug-workaround.css" rel="stylesheet"/>
+
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+      <script src="vendors/html5shiv-3.7.3/html5shiv.min.js"></script>
+      <script src="vendors/respond-1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+  <!-- JsTree styles -->
+  <link href="vendors/jstree-3.3.10/themes/default/style.min.css" rel="stylesheet"/>
+
+  <!-- Hnd styles -->
+  <link href="css/layout.min.css" rel="stylesheet" />
+  <link href="css/effects.min.css" rel="stylesheet" />
+  <link href="css/theme-light-blue.min.css" rel="stylesheet" />
+  <link href="css/print.min.css" rel="stylesheet" media="print" />
+  <style type="text/css">nav { width: 350px} @media screen and (min-width:769px) { body.md-nav-expanded div#main { margin-left: 350px} body.md-nav-expanded header { padding-left: 364px} }</style>
+
+  <!-- Content style -->
+  <link href="css/hnd.content.css" rel="stylesheet" />
+
+  
+
+
+
+</head>
+
+<body class="md-nav-expanded">
+
+
+
+  <div id="skip-link">
+    <a href="#main-content" class="element-invisible">Skip to main content</a>
+  </div>
+
+  <header class="headroom">
+    <button class="hnd-toggle btn btn-default">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>        
+    </button>
+    <h1>LuaStudio API documentation</h1>
+    
+  </header>
+
+  <nav id="panel-left" class="md-nav-expanded">
+    <!-- Nav tabs -->
+    <ul class="tab-tabs nav nav-tabs" role="tablist">
+      <li id="nav-close"> 
+        <button class="hnd-toggle btn btn-default">
+          <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+        </button>
+      </li>
+      
+	  
+        <li role="presentation" class="tab active">
+            <a href="#contents" id="tab-contents" aria-controls="contents" role="tab" data-toggle="tab">
+                <i class="glyphicon glyphicon-list"></i>
+                Contents
+            </a>
+        </li>
+      
+        <li role="presentation" class="tab">
+            <a href="#index" id="tab-index" aria-controls="index" role="tab" data-toggle="tab">
+                <i class="glyphicon glyphicon-asterisk"></i>
+                Index
+            </a>
+        </li>
+      
+        <li role="presentation" class="tab">
+            <a href="#search" id="tab-search" aria-controls="search" role="tab" data-toggle="tab">
+                <i class="glyphicon glyphicon-search"></i>
+                Search
+            </a>
+        </li>
+      
+    </ul>  <!-- /Nav tabs -->
+
+    <!-- Tab panes -->
+    <div class="tab-content">
+	  
+      <div role="tabpanel" class="tab-pane active" id="contents">
+        <div id="toc" class="tree-container unselectable"
+            data-url="_toc.json"
+            data-openlvl="1"
+        >
+            
+        </div>
+      </div>  <!-- /contents-->
+      
+      <div role="tabpanel" class="tab-pane" id="index">
+        <div id="keywords" class="tree-container unselectable"
+            data-url="_keywords.json"
+            data-openlvl="1"
+        >
+            
+        </div>
+      </div>  <!-- /index-->
+      
+      <div role="tabpanel" class="tab-pane" id="search">
+        <div class="search-content">
+          <div class="search-input">
+            <form id="search-form">
+              <div class="form-group">
+                <div class="input-group">
+                  <input type="text" class="form-control" id="input-search" name="input-search" placeholder="Search..." />
+                  <span class="input-group-btn">
+                    <button class="btn btn-default" type="submit">
+                      <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+                    </button>
+                  </span>
+                </div>
+              </div>
+            </form>
+          </div>  <!-- /search-input -->
+          <div class="search-result">
+            <div id="search-info"></div>
+            <div class="tree-container unselectable" id="search-tree"></div>
+          </div>  <!-- /search-result -->
+        </div>  <!-- /search-content -->
+      </div>  <!-- /search-->
+      
+    </div>  <!-- /Tab panes -->
+
+  </nav>
+
+  <div id="main">
+
+    <article>
+        <div id="topic-content" class="container-fluid" 
+		  data-hnd-id="Str"
+		  data-hnd-context="357"
+		  data-hnd-title="Str"
+		>
+            
+                <div class="navigation">
+                    <ol class="breadcrumb">
+                        <li><a href="Librarystructure.html">Library structure</a></li>
+                    </ol>
+                    <div class="nav-arrows">
+                        <div class="btn-group btn-group-xs" role="group"><a class="btn btn-default" href="Librarystructure.html" title="Library structure" role="button"><span class="glyphicon glyphicon-menu-up" aria-hidden="true"></span></a><a class="btn btn-default" href="Reflect.html" title="Reflect" role="button"><span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span></a><a class="btn btn-default" href="SQLight.html" title="SQLight" role="button"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span></a></div>
+                    </div>
+                </div> 
+            
+
+            <a id="main-content"></a>
+
+            <h2>Str</h2>
+
+            <div class="main-content">
+                
+<p></p>
+<p class="rvps2"><span class="rvts6">This Library provides advanced methods on Strings. If the first argument to any of the methods is nil, the result is</span></p>
+<p class="rvps2"><span class="rvts6">unspecified.</span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts6">Static methods:</span></p>
+<div class="rvps2">
+<table width="100%" border="1" cellpadding="1" cellspacing="2" style="border-color: #000000; border-style: solid; border-spacing: 2px;">
+ <tr valign="top">
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">Lib.Str.</span><span class="rvts18">urlEncode</span><span class="rvts6">(s)</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">Encode an URL by using the standard format.</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">s - String</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">Lib.Str.</span><span class="rvts18">urlDecode</span><span class="rvts6">(s)</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">Decode an URL using the standard format.</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">s - String</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">Lib.Str.</span><span class="rvts18">htmlEscape</span><span class="rvts6">(s, quotes)</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">Escapes HTML special characters of the string `s`.</span></p>
+   <p class="rvps2"><span class="rvts6"><br/></span></p>
+   <p class="rvps2"><span class="rvts6">The following replacements are made:</span></p>
+   <p class="rvps2"><span class="rvts6">- `&amp;` becomes `&amp;amp`;</span></p>
+   <p class="rvps2"><span class="rvts6">- `&lt;` becomes `&amp;lt`;</span></p>
+   <p class="rvps2"><span class="rvts6">- `&gt;` becomes `&amp;gt`;</span></p>
+   <p class="rvps2"><span class="rvts6">If `quotes` is true, the following characters are also replaced:</span></p>
+   <p class="rvps2"><span class="rvts6">- `"` becomes `&amp;quot`;</span></p>
+   <p class="rvps2"><span class="rvts6">- `'` becomes `&amp;#039`;</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">s - String</span></p>
+   <p class="rvps2"><span class="rvts6">quotes - true/false</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">Lib.Str.</span><span class="rvts18">htmlUnescape</span><span class="rvts6">(s)</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">Unescapes HTML special characters of the string `s`.</span></p>
+   <p class="rvps2"><span class="rvts6"><br/></span></p>
+   <p class="rvps2"><span class="rvts6">This is the inverse operation to htmlEscape, i.e. the following always</span></p>
+   <p class="rvps2"><span class="rvts6">holds: `Lib.Str.htmlUnescape(Lib.Str.htmlEscape(s)) == s`</span></p>
+   <p class="rvps2"><span class="rvts6">The replacements follow:</span></p>
+   <p class="rvps2"><span class="rvts6">- `&amp;amp;` becomes `&amp;`</span></p>
+   <p class="rvps2"><span class="rvts6">- `&amp;lt;` becomes `&lt;`</span></p>
+   <p class="rvps2"><span class="rvts6">- `&amp;gt;` becomes `&gt;`</span></p>
+   <p class="rvps2"><span class="rvts6">- `&amp;quot;` becomes `"`</span></p>
+   <p class="rvps2"><span class="rvts6">- `&amp;#039;` becomes `'`</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">s - String</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">Lib.Str.</span><span class="rvts18">startsWith</span><span class="rvts6">(s, start)</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">Tells if the string `s` starts with the string `start`.</span></p>
+   <p class="rvps2"><span class="rvts6">If `start` is `nil`, the result is unspecified.</span></p>
+   <p class="rvps2"><span class="rvts6">If `start` is the empty String `""`, the result is true.</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">s - String</span></p>
+   <p class="rvps2"><span class="rvts6">start - int, start position</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">Lib.Str.</span><span class="rvts18">endsWith</span><span class="rvts6">(s, end)</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">Tells if the string `s` ends with the string `end`.</span></p>
+   <p class="rvps2"><span class="rvts6">If `end` is `nil`, the result is unspecified.</span></p>
+   <p class="rvps2"><span class="rvts6">If `end` is the empty String `""`, the result is true.</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">s - String</span></p>
+   <p class="rvps2"><span class="rvts6">end - int, end position</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">Lib.Str.</span><span class="rvts18">isSpace</span><span class="rvts6">(s, pos)</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">Tells if the character in the string `s` at position `pos` is a space.</span></p>
+   <p class="rvps2"><span class="rvts6">A character is considered to be a space character if its character code is 9,10,11,12,13 or 32.</span></p>
+   <p class="rvps2"><span class="rvts6">If `s` is the empty String `""`, or if pos is not a valid position within `s`, the result is false.</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">s - String</span></p>
+   <p class="rvps2"><span class="rvts6">pos - int, position</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">Lib.Str.</span><span class="rvts18">ltrim</span><span class="rvts6">(s)</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">Removes leading space characters of `s`.</span></p>
+   <p class="rvps2"><span class="rvts6">This function internally calls `Lib.Str.isSpace()` to decide which characters to remove.</span></p>
+   <p class="rvps2"><span class="rvts6">If `s` is the empty String `""` or consists only of space characters, the result is the empty String `""`.</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">s - String</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">Lib.Str.</span><span class="rvts18">rtrim</span><span class="rvts6">(s)</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">Removes trailing space characters of `s`.</span></p>
+   <p class="rvps2"><span class="rvts6">This function internally calls `Lib.Str.isSpace()` to decide which characters to remove.</span></p>
+   <p class="rvps2"><span class="rvts6">If `s` is the empty String `""` or consists only of space characters, the result is the empty String `""`.</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">s - String</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">Lib.Str.</span><span class="rvts18">trim</span><span class="rvts6">(s)</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">Removes leading and trailing space characters of `s`.</span></p>
+   <p class="rvps2"><span class="rvts6">This is a convenience function for `Lib.Str.ltrim(Lib.Str.rtrim(s))`.</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">s - String</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">Lib.Str.</span><span class="rvts18">lpad</span><span class="rvts6">(s, c, l)</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">Concatenates `c` to `s` until `s` length is at least `l`.</span></p>
+   <p class="rvps2"><span class="rvts6">If `c` is the empty String `""` or if `l` does not exceed `s` length, `s` is returned unchanged.</span></p>
+   <p class="rvps2"><span class="rvts6">If `c` length is 1, the resulting String length is exactly `l`.</span></p>
+   <p class="rvps2"><span class="rvts6">Otherwise the length may exceed `l`.</span></p>
+   <p class="rvps2"><span class="rvts6">If `c` is nil, the result is unspecified.</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">s - String</span></p>
+   <p class="rvps2"><span class="rvts6">c - String</span></p>
+   <p class="rvps2"><span class="rvts6">l - int, length limit</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">Lib.Str.</span><span class="rvts18">rpad</span><span class="rvts6">(s, c, l)</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">Appends `c` to `s` until `s` length is at least `l`.</span></p>
+   <p class="rvps2"><span class="rvts6">If `c` is the empty String `""` or if `l` does not exceed `s` length, `s` is returned unchanged.</span></p>
+   <p class="rvps2"><span class="rvts6">If `c` length is 1, the resulting String length is exactly `l`.</span></p>
+   <p class="rvps2"><span class="rvts6">Otherwise the length may exceed `l`.</span></p>
+   <p class="rvps2"><span class="rvts6">If `c` is nil, the result is unspecified.</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">s - String</span></p>
+   <p class="rvps2"><span class="rvts6">c - String</span></p>
+   <p class="rvps2"><span class="rvts6">l - int, length limit</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">Lib.Str.</span><span class="rvts18">replace</span><span class="rvts6">(s, sub, by)</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">Replace all occurrences of the String `sub` in the String `s` by the String `by`.</span></p>
+   <p class="rvps2"><span class="rvts6">If `sub` is the empty String `""`, `by` is inserted after each character of `s`. If `by` is also the empty String `""`, `s` remains unchanged.</span></p>
+   <p class="rvps2"><span class="rvts6">This is a convenience function for `Lib.Str.join(Lib.Str.split(s, sub), by)`.</span></p>
+   <p class="rvps2"><span class="rvts6">If `sub` or `by` are nil, the result is unspecified.</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">s - String</span></p>
+   <p class="rvps2"><span class="rvts6">sub - String, for replacement</span></p>
+   <p class="rvps2"><span class="rvts6">by - String, replaced to</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">Lib.Str.</span><span class="rvts18">hex</span><span class="rvts6">(n, digits)</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">Encodes `n` into a hexadecimal representation.</span></p>
+   <p class="rvps2"><span class="rvts6">The resulting String is padded with "0" until its `length` equals `digits`</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">n - int, number for encode</span></p>
+   <p class="rvps2"><span class="rvts6">digits - int, 0 padded limit</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">Lib.Str.</span><span class="rvts18">quoteUnixArg</span><span class="rvts6">(argument)</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">Returns a String that can be used as a single command line argument on Unix.</span></p>
+   <p class="rvps2"><span class="rvts6">The input will be quoted, or escaped if necessary.</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">argument - String</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">Lib.Str.</span><span class="rvts18">quoteWinArg</span><span class="rvts6">(argument, escapeMetaCharacters)</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">Returns a String that can be used as a single command line argument on Windows.</span></p>
+   <p class="rvps2"><span class="rvts6">The input will be quoted, or escaped if necessary, such that the output will be parsed as a single argument using the rule specified in http://msdn.microsoft.com/en-us/library/ms880421</span></p>
+   <p class="rvps2"><span class="rvts6"><br/></span></p>
+   <p class="rvps2"><span class="rvts6">Examples:&nbsp;</span></p>
+   <p class="rvps2"><span class="rvts6">```</span></p>
+   <p class="rvps2"><span class="rvts6">Lib.Str.quoteWinArg("abc") == "abc"</span></p>
+   <p class="rvps2"><span class="rvts6">Lib.Str.quoteWinArg("ab c") == '"ab c"'</span></p>
+   <p class="rvps2"><span class="rvts6">```</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6"><br/></span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">Lib.Str.</span><span class="rvts18">join</span><span class="rvts6">(st, sep)</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">Returns a string representation of `st` table of String values, with `sep` separating each element.</span></p>
+   <p class="rvps2"><span class="rvts6">If `st' not a table of Strings, &nbsp;the result is unspecified.</span></p>
+   <p class="rvps2"><span class="rvts6">The result of this operation is equal to `Lib.Str.string(st[1]) + sep + Lib.Str.string(st[2]) + sep + ... + sep + Lib.Str.string(st[#st])`</span></p>
+   <p class="rvps2"><span class="rvts6">If `st` is the empty table `{}`, the result is the empty String `""`.</span></p>
+   <p class="rvps2"><span class="rvts6">If `st` has exactly one element, the result is equal to a call to `Lib.Str.string(st[1])`.</span></p>
+   <p class="rvps2"><span class="rvts6">If `sep` is nil, the result is unspecified.</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">st - table of Strings</span></p>
+   <p class="rvps2"><span class="rvts6">sep - String separator</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">Lib.Str.</span><span class="rvts18">string</span><span class="rvts6">(s)</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">Converts any value to a String.</span></p>
+   <p class="rvps2"><span class="rvts6">If `s` is of `String`, `Int`, `Float` or `Bool`, its value is returned.</span></p>
+   <p class="rvps2"><span class="rvts6">If `s` is an instance of a Lib object and that class or one of its parent objects has a `toString` method, that method is called. If no such method is present, the result is unspecified.</span></p>
+   <p class="rvps2"><span class="rvts6">If `s` is an enum constructor without argument, the constructor's name is returned. If arguments exists, the constructor's name followed by the String representations of the arguments is returned.</span></p>
+   <p class="rvps2"><span class="rvts6">If `s` is a structure, the field names along with their values are returned. The field order and the operator separating field names and values are unspecified.</span></p>
+   <p class="rvps2"><span class="rvts6">If s is nil, "nil" is returned.</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">s - any value with type Lib compatible.</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">Lib.Str.</span><span class="rvts18">parseInt</span><span class="rvts6">(x)</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">Converts a `String` to an `Int`.</span></p>
+   <p class="rvps2"><span class="rvts6">Leading whitespaces are ignored.</span></p>
+   <p class="rvps2"><span class="rvts6">If `x` starts with 0x or 0X, hexadecimal notation is recognized where the following digits may contain 0-9 and A-F.</span></p>
+   <p class="rvps2"><span class="rvts6">Otherwise `x` is read as decimal number with 0-9 being allowed characters. `x` may also start with a - to denote a negative value.</span></p>
+   <p class="rvps2"><span class="rvts6">In decimal mode, parsing continues until an invalid character is detected, in which case the result up to that point is returned. For hexadecimal notation, the effect of invalid characters is unspecified.</span></p>
+   <p class="rvps2"><span class="rvts6">Leading 0s that are not part of the 0x/0X hexadecimal notation are ignored, which means octal notation is not supported.</span></p>
+   <p class="rvps2"><span class="rvts6">If the input cannot be recognized, the result is `nil`.</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">x - String</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">Lib.Str.</span><span class="rvts18">parseFloat</span><span class="rvts6">(x)</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">Converts a `String` to a `Float`.</span></p>
+   <p class="rvps2"><span class="rvts6">The parsing rules for `parseInt` apply here as well&nbsp;</span></p>
+   <p class="rvps2"><span class="rvts6">Additionally, decimal notation may contain a single `.` to denote the start of the fractions.</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">x - String</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">Lib.Str.</span><span class="rvts18">split</span><span class="rvts6">(s, delimiter)</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">Splits `s` String at each occurrence of `delimiter`.</span></p>
+   <p class="rvps2"><span class="rvts6">If `s` String is the empty String `""`, the result is `{}`.</span></p>
+   <p class="rvps2"><span class="rvts6">If `delimiter` is the empty String `""`, `s` String is split into an table of `s` length elements, where the elements correspond to the characters of `s` String.</span></p>
+   <p class="rvps2"><span class="rvts6">If `delimiter` is not found within `s` String, the result is an table with one element, which equals `s` String.</span></p>
+   <p class="rvps2"><span class="rvts6">If `delimiter` is nil, the result is unspecified.</span></p>
+   <p class="rvps2"><span class="rvts6">Otherwise, `s` String is split into parts at each occurrence of `delimiter`. If `s` String starts (or ends) with `delimiter`, the result table contains a leading (or trailing) empty String `""` element.</span></p>
+   <p class="rvps2"><span class="rvts6">Two subsequent delimiters also result in an empty String `""` element.</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">s - String</span></p>
+   <p class="rvps2"><span class="rvts6">delimiter - Delimiter String</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">Lib.Str.</span><span class="rvts18">length</span><span class="rvts6">(s)</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">The number of characters in `s` String.</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">s - String</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">Lib.Str.</span><span class="rvts18">toUpperCase</span><span class="rvts6">(s)</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">Returns a String where all characters of `s` String are upper case.</span></p>
+   <p class="rvps2"><span class="rvts6">Affects the characters `a-z`. Other characters remain unchanged.</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">s - String</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">Lib.Str.</span><span class="rvts18">toLowerCase</span><span class="rvts6">(s)</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">Returns a String where all characters of `s` String are lower case.</span></p>
+   <p class="rvps2"><span class="rvts6">Affects the characters `A-Z`. Other characters remain unchanged.</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">s - String</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">Lib.Str.</span><span class="rvts18">charAt</span><span class="rvts6">(s, index)</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">Returns the character at position `index` of `s` String.</span></p>
+   <p class="rvps2"><span class="rvts6">If `index` is negative or exceeds `s` length, the empty String `""`</span></p>
+   <p class="rvps2"><span class="rvts6">is returned.</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">s - String</span></p>
+   <p class="rvps2"><span class="rvts6">index - int, position</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">Lib.Str.</span><span class="rvts18">charCodeAt</span><span class="rvts6">(s, index)</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">Returns the character code at position `index` of `s` String.</span></p>
+   <p class="rvps2"><span class="rvts6">If `index` is negative or exceeds `s` length, `nil` is returned.</span></p>
+   <p class="rvps2"><span class="rvts6">Note that this only works on String literals of length 1.</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">s - String</span></p>
+   <p class="rvps2"><span class="rvts6">index - int, position</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">Lib.Str.</span><span class="rvts18">indexOf</span><span class="rvts6">(s, str, startIndex)</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">Returns the position of the leftmost occurrence of `str` within `s` String.</span></p>
+   <p class="rvps2"><span class="rvts6">The search is performed within the substring of `s` String starting from `startIndex`.</span></p>
+   <p class="rvps2"><span class="rvts6">If `str` cannot be found, -1 is returned.</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">s - String</span></p>
+   <p class="rvps2"><span class="rvts6">str - String, for search</span></p>
+   <p class="rvps2"><span class="rvts6">startIndex - int, starting position (0)</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">Lib.Str.</span><span class="rvts18">lastIndexOf</span><span class="rvts6">(s, str, startIndex)</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">Returns the position of the rightmost occurrence of `str` within `s` String.</span></p>
+   <p class="rvps2"><span class="rvts6">The search is performed within the substring of `s` String from 0 to `startIndex`.</span></p>
+   <p class="rvps2"><span class="rvts6">If `str` cannot be found, -1 is returned.</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">s - String</span></p>
+   <p class="rvps2"><span class="rvts6">str - String, for search</span></p>
+   <p class="rvps2"><span class="rvts6">startIndex - int, starting position (0)</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">Lib.Str.</span><span class="rvts18">substr</span><span class="rvts6">(s, pos, len)</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">Returns `len` characters of `s` String, starting at position `pos`.</span></p>
+   <p class="rvps2"><span class="rvts6">If `pos` is negative, its value is calculated from the end of `s` String by `s` length + `pos`. If this yields a negative value, 0 is used instead.</span></p>
+   <p class="rvps2"><span class="rvts6">If the calculated position + `len` exceeds `s` length, the characters from that position to the end of `s` String are returned.</span></p>
+   <p class="rvps2"><span class="rvts6">If `len` is negative, the result is unspecified.</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">s - String</span></p>
+   <p class="rvps2"><span class="rvts6">pos - int, position</span></p>
+   <p class="rvps2"><span class="rvts6">len - int, length</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">Lib.Str.</span><span class="rvts18">substring</span><span class="rvts6">(s, startIndex, endIndex)</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">Returns the part of `s` String from `startIndex` to but not including `endIndex`.</span></p>
+   <p class="rvps2"><span class="rvts6">If `startIndex` or `endIndex` are negative, 0 is used instead.</span></p>
+   <p class="rvps2"><span class="rvts6">If `startIndex` exceeds `endIndex`, they are swapped.</span></p>
+   <p class="rvps2"><span class="rvts6">If the (possibly swapped) `endIndex` is omitted or exceeds `s` length, `s` length is used instead.</span></p>
+   <p class="rvps2"><span class="rvts6">If the (possibly swapped) `startIndex` exceeds `s` length, the empty String `""` is returned.</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">s - String</span></p>
+   <p class="rvps2"><span class="rvts6">startIndex - int, starting position (0)</span></p>
+   <p class="rvps2"><span class="rvts6">endIndex - int, ending position (0)</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">Lib.Str.</span><span class="rvts18">fromCharCode</span><span class="rvts6">(code)</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">Returns the String corresponding to the character code `code`.</span></p>
+   <p class="rvps2"><span class="rvts6">If `code` is negative or has another invalid value, the result is unspecified.</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">code - int, char code</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">Lib.Str.</span><span class="rvts18">parseUrl</span><span class="rvts6">(url)</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">Returns parsed from url String object with fields:</span></p>
+   <p class="rvps2"><span class="rvts6">url : String</span></p>
+   <p class="rvps2"><span class="rvts6">source : String</span></p>
+   <p class="rvps2"><span class="rvts6">protocol : String</span></p>
+   <p class="rvps2"><span class="rvts6">authority : String</span></p>
+   <p class="rvps2"><span class="rvts6">userInfo : String</span></p>
+   <p class="rvps2"><span class="rvts6">user : String</span></p>
+   <p class="rvps2"><span class="rvts6">password : String</span></p>
+   <p class="rvps2"><span class="rvts6">host : String</span></p>
+   <p class="rvps2"><span class="rvts6">port : String</span></p>
+   <p class="rvps2"><span class="rvts6">relative : String</span></p>
+   <p class="rvps2"><span class="rvts6">path : String</span></p>
+   <p class="rvps2"><span class="rvts6">directory : String</span></p>
+   <p class="rvps2"><span class="rvts6">file : String</span></p>
+   <p class="rvps2"><span class="rvts6">query : String</span></p>
+   <p class="rvps2"><span class="rvts6">anchor : String</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">url - URL String</span></p>
+  </td>
+ </tr>
+</table>
+</div>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts6">Static values:</span></p>
+<div class="rvps2">
+<table width="100%" border="1" cellpadding="1" cellspacing="2" style="border-color: #000000; border-style: solid; border-spacing: 2px;">
+ <tr valign="top">
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">Lib.Str.</span><span class="rvts18">winMetaCharacters</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">Character codes of the characters that will be escaped by `Lib.String.Tools.quoteWinArg(...., true)</span></p>
+  </td>
+ </tr>
+</table>
+</div>
+<p></p>
+<p class="rvps4" style="clear: both;"><span class="rvts16">Created with the Personal Edition of HelpNDoc: </span><a class="rvts17" href="https://www.helpndoc.com">Full-featured Documentation generator</a></p>
+
+            </div>
+            
+            <div id="topic_footer"><div id="topic_footer_content">Copyright &copy; &lt;Dates&gt; by &lt;Authors&gt;. All Rights Reserved.</div></div>
+        </div>  <!-- /#topic-content -->
+    </article>
+
+    <footer></footer>
+
+  </div>  <!-- /#main -->
+
+  <div class="mask" data-toggle="sm-nav-expanded"></div>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="hndModal" tabindex="-1" role="dialog" aria-labelledby="hndModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="hndModalLabel"></h4>
+        </div>
+        <div class="modal-body">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary modal-btn-close" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Splitter -->
+  <div id="hnd-splitter" style="left: 350px"></div>  
+
+  <!-- Scripts -->
+  <script src="vendors/jquery-3.5.1/jquery.min.js"></script>
+  <script src="vendors/bootstrap-3.4.1/js/bootstrap.min.js"></script>
+  <script src="vendors/bootstrap-3.4.1/js/ie10-viewport-bug-workaround.js"></script>
+  <script src="vendors/markjs-8.11.1/jquery.mark.min.js"></script>
+  <script src="vendors/uri-1.19.2/uri.min.js"></script>
+  <script src="vendors/imageMapResizer-1.0.10/imageMapResizer.min.js"></script>
+  <script src="vendors/headroom-0.11.0/headroom.min.js"></script>
+  <script src="vendors/jstree-3.3.10/jstree.min.js"></script>  
+  <script src="vendors/interactjs-1.9.22/interact.min.js"></script>  
+
+  <!-- HelpNDoc scripts -->
+  <script src="js/polyfill.object.min.js"></script>
+  <script src="_translations.js"></script>
+  <script src="js/hndsd.min.js"></script>
+  <script src="js/hndse.min.js"></script>
+  <script src="js/app.min.js"></script>
+
+  <!-- Init script -->
+  <script>
+    $(function() {
+      // Create the app
+      var app = new Hnd.App();
+      // Update translations
+      hnd_ut(app);
+	  // Instanciate imageMapResizer
+	  imageMapResize();
+	  // Custom JS
+	  
+      // Boot the app
+      app.Boot();
+    });
+  </script>
+
+
+
+</body>
+
+</html>
+
