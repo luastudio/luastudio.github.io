@@ -104,7 +104,7 @@ on Windows: use Alt + Enter keys combination for switching
   <td valign="top"><b>Exporter</b></td>
   <td width="3">&nbsp;</td>
   <td>
-    <a href="download/Exporter_v13_0.luastudio" target="_blank">Exporter_v13_0.luastudio</a> (215MB)
+    <a href="https://github.com/luastudio/Exporter/releases/download/1.13/Exporter_v13_0.luastudio" target="_blank">Exporter_v13_0.luastudio</a> (215MB)
   </td>
 </tr>
 <tr>
@@ -120,7 +120,7 @@ on Windows: use Alt + Enter keys combination for switching
     Install(copy) Exporter project to user document folder on your device. Location to this folder can be printed from Lua code: <b>print(Lib.Media.FileSystem.File.documentsDirectory.nativePath)</b><br/>
     As an option, simply run script:<br/>
     <code>
-r = Lib.Sys.Net.Http.new( "https://scormpool.com/luastudio/download/Exporter_v13_0_installer.lua" )
+r = Lib.Sys.Net.Http.new( "https://raw.githubusercontent.com/luastudio/Exporter/main/Exporter_v13_0_installer.lua" )
 r.onData = function(s)fn=load(s) fn()end r.onError = print r.request(false)
     </code>
   </td>
