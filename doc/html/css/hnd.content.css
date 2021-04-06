@@ -303,15 +303,39 @@ a.rvts58, span.rvts58
  background-color: #ffffff;
  text-decoration: none;
 }
-span.rvts59
+a.rvts59, span.rvts59
+{
+ color: ;
+ background-color: #ffffff;
+ text-decoration: none;
+}
+a.rvts60, span.rvts60
+{
+ font-weight: bold;
+ color: ;
+ background-color: #ffffff;
+ text-decoration: none;
+}
+span.rvts61
+{
+ color: ;
+ background-color: #ffffff;
+}
+span.rvts62
+{
+ font-weight: bold;
+ color: ;
+ background-color: #ffffff;
+}
+span.rvts63
 {
  color: #450000;
 }
-span.rvts60
+span.rvts64
 {
  color: #24292e;
 }
-span.rvts61
+span.rvts65
 {
  font-style: italic;
  color: #24292e;
