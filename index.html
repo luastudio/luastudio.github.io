@@ -37,7 +37,7 @@ on Mac: use default top left icon for full screen resizing<br/>
 on Windows: use Alt + Enter keys combination for switching 
 </p>
 
-<p style="color:navy;'">Current version <b>2.5.0 / 2.6.0</b></p>
+<p style="color:navy;'">Current version <b>2.6.0</b></p>
 <table>
 <tr>
   <td valign="top"><b>Mobile version</b></td>
@@ -68,24 +68,24 @@ on Windows: use Alt + Enter keys combination for switching
     <table>
       <tr>
           <td>Mac OS 64-bit<td>
-          <td><a href="download/LuaStudio_v2_5_0_Mac.zip" target="_blank">LuaStudio_v2_5_0_Mac.zip</a></td>
+          <td><a href="download/LuaStudio_v2_6_0_Mac.zip" target="_blank">LuaStudio_v2_6_0_Mac.zip</a></td>
           <td>&nbsp;</td>
           <td>Mac OS JIT 64-bit<td>
-          <td><a href="download/LuaStudioJIT_v2_5_0_Mac.zip" target="_blank">LuaStudioJIT_v2_5_0_Mac.zip</a></td>         
+          <td><a href="download/LuaStudioJIT_v2_6_0_Mac.zip" target="_blank">LuaStudioJIT_v2_6_0_Mac.zip</a></td>         
       </tr>
       <tr>
           <td>Windows 32-bit<td>
-          <td><a href="download/LuaStudio_v2_5_0_Win_x86.zip" target="_blank">LuaStudio_v2_5_0_Win_x86.zip</a></td>
+          <td><a href="download/LuaStudio_v2_6_0_Win_x86.zip" target="_blank">LuaStudio_v2_6_0_Win_x86.zip</a></td>
           <td>&nbsp;</td>
           <td>Windows JIT 32-bit<td>
-          <td><a href="download/LuaStudioJIT_v2_5_0_Win_x86.zip" target="_blank">LuaStudioJIT_v2_5_0_Win_x86.zip</a></td>
+          <td><a href="download/LuaStudioJIT_v2_6_0_Win_x86.zip" target="_blank">LuaStudioJIT_v2_6_0_Win_x86.zip</a></td>
       </tr>
       <tr>
           <td>Windows 64-bit<td>
-          <td><a href="download/LuaStudio_v2_5_0_Win_x64.zip" target="_blank">LuaStudio_v2_5_0_Win_x64.zip</a></td>
+          <td><a href="download/LuaStudio_v2_6_0_Win_x64.zip" target="_blank">LuaStudio_v2_6_0_Win_x64.zip</a></td>
           <td>&nbsp;</td>
           <td>Windows JIT 64-bit<td>
-          <td><a href="download/LuaStudioJIT_v2_5_0_Win_x64.zip" target="_blank">LuaStudioJIT_v2_5_0_Win_x64.zip</a></td>
+          <td><a href="download/LuaStudioJIT_v2_6_0_Win_x64.zip" target="_blank">LuaStudioJIT_v2_6_0_Win_x64.zip</a></td>
       </tr>
     </table>
   </td>
@@ -104,7 +104,7 @@ on Windows: use Alt + Enter keys combination for switching
   <td valign="top"><b>Exporter</b></td>
   <td width="3">&nbsp;</td>
   <td>
-    <a href="https://github.com/luastudio/Exporter/releases/download/16.0/Exporter_v16_0.luastudio" target="_blank">Exporter_v16_0.luastudio</a> (212MB)
+    <a href="https://github.com/luastudio/Exporter/releases/download/17.0/Exporter_v17_0.luastudio" target="_blank">Exporter_v17_0.luastudio</a> (212MB)
   </td>
 </tr>
 <tr>
@@ -114,13 +114,13 @@ on Windows: use Alt + Enter keys combination for switching
     This project can export any LuaStudio projects to standalon app directly or to native target projects.<br/>
     Available targets:<br/>
     1 - android gradle / importable to android studio<br/>
-    2 - xcode iOS (based on v13.1)<br/>
+    2 - xcode iOS (based on v13.2.1)<br/>
     3 - standalon windows (+JIT)<br/>
     4 - standalon mac os (+JIT)<br/>
     Install(copy) Exporter project to user document folder on your device. Location to this folder can be printed from Lua code: <b>print(Lib.Media.FileSystem.File.documentsDirectory.nativePath)</b><br/>
     As an option, simply run script:<br/>
     <code>
-r = Lib.Sys.Net.Http.new( "https://raw.githubusercontent.com/luastudio/Exporter/main/Exporter_v16_0_installer.lua" )
+r = Lib.Sys.Net.Http.new( "https://raw.githubusercontent.com/luastudio/Exporter/main/Exporter_v17_0_installer.lua" )
 r.onData = function(s)fn=load(s) fn()end r.onError = print r.request(false)
     </code>
   </td>
