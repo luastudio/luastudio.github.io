@@ -1,144 +1,199 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<title>LuaStudio</title>
-    <link rel="stylesheet" href="/main.css" type="text/css" />
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LuaStudio</title>
+  <link rel="stylesheet" href="main.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 </head>
 <body>
+<header>
 
-<h1>LuaStudio</h1>
-<p>
-This application allows you create and launch Lua code. Check samples for more details.
-Save and load files to/from cloud. <a href="image/Gestures_Long_Press.png" target="_blank">Long press</a> on file/folder/project gives you more options.
-Wide range of available libraries.
-</p>
 
-<p>
-LuaStudio<sup>*</sup> based on Lua programming language<sup>**</sup> version 5.2. You can read more about Lua here: <a href="http://www.lua.org" target="_blank">http://www.lua.org</a>.<br/>
-Lua 5.2 Reference Manual available from this url: <a href="https://www.lua.org/manual/5.2/" target="_blank">https://www.lua.org/manual/5.2/</a>.
-</p>
-<p>
-LuaStudio JIT based on LuaJIT<sup>***</sup> version 2.1.0-beta3 (latest from <a href="https://github.com/LuaJIT/LuaJIT" target="_blank">https://github.com/LuaJIT/LuaJIT</a>). You can read more about luaJIT here: <a href="http://luajit.org/" target="_blank">http://luajit.org/</a>.
-</p>
+  <div class="container">
+    <div class="header-inner">
+      <div class="moon-pic">
+        <img src="moon.png" width=300px heigth=300px alt="moon picture">
+      </div>
+      <div class="logo">
+        <h1>LuaStudio</h1>
+        <div class="para"><p>An app that allows you create and launch Lua code.</p></div>
+        <div class="button">
+          <a href="#download">Download</a>
+        </div>
+      </div>
+      <!-- <div class="first-star">
+        <img src="star.png" width=50px height=50px alt="">
+      </div> -->
+    </div>
+  </div>
+</header>
 
-<p>
-Project file has extension *.luastudio. You can open it as SQLite data base. Project Samples.luastudio hold this name for default examples. Delete or rename old samples if you want restore original version. Samples available on <a href="https://github.com/luastudio/samples" target="_blank">GitHub</a> 
-</p>
 
-<p>
-You can run LuaStudio in application mode using command line arguments:<br/>
-on Mac: <b>open -na LuaStudio.app --args -a Samples.luastudio /HelloWorld.lua "Custom Window Title"</b><br/>
-on Windows: <b>LuaStudio.exe -a Samples.luastudio /HelloWorld.lua "Custom Window Title"</b><br/>
-Parameter <b>-a</b> and next two: <b>project_file_path</b> and <b>executable_lua_script_path</b> force LuaStudio open and immediately launch Lua file from specific location instead of displaying whole list of available projects. Last parameter <b>window_title</b> responsible for new custom window title, can be omitted.
-</p>
+<section class="section1"
 
-<p>
-Full screen mode:<br/>
-on Mac: use default top left icon for full screen resizing<br/>
-on Windows: use Alt + Enter keys combination for switching 
-</p>
+data-aos="fade-up"
+data-aos-delay="50"
+data-aos-duration="1000"
+data-aos-easing="ease-in-out"
+data-aos-once="false">
 
-<p style="color:navy;'">Current version <b>2.6.0</b></p>
-<table>
-<tr>
-  <td valign="top"><b>Mobile version</b></td>
-  <td width="3">&nbsp;</td>
-  <td>
-    <table>
-     <tr>
-      <td>
-         <a href="https://itunes.apple.com/us/app/lua-studio/id1161260887?mt=8" target="_blank"><img src="/image/available_on_the_appstore_small.gif" border="0" alt="Available on the appstore" width="120" height="43"></a>
-      </td>
-      <td>  
-         <a href="https://play.google.com/store/apps/details?id=com.codeservice.app.luastudio" target="_blank"><img src="/image/google_play.png" border="0" alt="Available on the Google Play" width="127" height="43"></a>
-      </td>
-     </tr>
-     <tr>
-       <td></td>
-       <td>
-         <a href="https://github.com/luastudio/Release_And/releases/download/2.6.0/LuaStudio-release_v2_6_0.apk">LuaStudio-release_v2_6_0.apk</a>
-       </td>
-     </tr>
-    </table>
-  </td>
-</tr>
-<tr>
-  <td valign="top"><b>Desktop version</b></td>
-  <td width="3">&nbsp;</td>
-  <td>
-    <table>
-      <tr>
-          <td>Mac OS 64-bit<td>
-          <td><a href="download/LuaStudio_v2_6_0_Mac.zip" target="_blank">LuaStudio_v2_6_0_Mac.zip</a></td>
-          <td>&nbsp;</td>
-          <td>Mac OS JIT 64-bit<td>
-          <td><a href="download/LuaStudioJIT_v2_6_0_Mac.zip" target="_blank">LuaStudioJIT_v2_6_0_Mac.zip</a></td>         
-      </tr>
-      <tr>
-          <td>Windows 32-bit<td>
-          <td><a href="download/LuaStudio_v2_6_0_Win_x86.zip" target="_blank">LuaStudio_v2_6_0_Win_x86.zip</a></td>
-          <td>&nbsp;</td>
-          <td>Windows JIT 32-bit<td>
-          <td><a href="download/LuaStudioJIT_v2_6_0_Win_x86.zip" target="_blank">LuaStudioJIT_v2_6_0_Win_x86.zip</a></td>
-      </tr>
-      <tr>
-          <td>Windows 64-bit<td>
-          <td><a href="download/LuaStudio_v2_6_0_Win_x64.zip" target="_blank">LuaStudio_v2_6_0_Win_x64.zip</a></td>
-          <td>&nbsp;</td>
-          <td>Windows JIT 64-bit<td>
-          <td><a href="download/LuaStudioJIT_v2_6_0_Win_x64.zip" target="_blank">LuaStudioJIT_v2_6_0_Win_x64.zip</a></td>
-      </tr>
-    </table>
-  </td>
-	
-</tr>
-<tr>
-  <td valign="top"><b>Documentation</b></td>
-  <td width="3">&nbsp;</td>
-  <td>
-    <a href="doc/html/LuaStudio API documentation.html" target="_blank">HTML version</a>&nbsp;
-    <a href="doc/LuaStudio API documentation.zip">CHM version (zip)</a><br/>
-    <a href="doc/info/IntelliJandLS.html" target="_blank">Instruction how to integrate LS with IntelliJ IDEA</a>
-  </td>
-</tr>
-<tr>
-  <td valign="top"><b>Exporter</b></td>
-  <td width="3">&nbsp;</td>
-  <td>
-    <a href="https://github.com/luastudio/Exporter/releases/download/17.0/Exporter_v17_0.luastudio" target="_blank">Exporter_v17_0.luastudio</a> (212MB)
-  </td>
-</tr>
-<tr>
-  <td valign="top"></td>
-  <td width="3">&nbsp;</td>
-  <td>
-    This project can export any LuaStudio projects to standalon app directly or to native target projects.<br/>
-    Available targets:<br/>
-    1 - android gradle / importable to android studio<br/>
-    2 - xcode iOS (based on v13.2.1)<br/>
-    3 - standalon windows (+JIT)<br/>
-    4 - standalon mac os (+JIT)<br/>
-    Install(copy) Exporter project to user document folder on your device. Location to this folder can be printed from Lua code: <b>print(Lib.Media.FileSystem.File.documentsDirectory.nativePath)</b><br/>
-    As an option, simply run script:<br/>
-    <code>
-r = Lib.Sys.Net.Http.new( "https://raw.githubusercontent.com/luastudio/Exporter/main/Exporter_v17_0_installer.lua" )
-r.onData = function(s)fn=load(s) fn()end r.onError = print r.request(false)
-    </code>
-  </td>
-</tr>
-<tr>
-  <td valign="top"><b>Privacy Policy</b></td>
-  <td width="3">&nbsp;</td>
-  <td>
-    <a href="policy.html" target="_blank">click here</a>&nbsp;
-  </td>
-</tr>
-</table>
 
-<p>
-<sup>*</sup> LuaStudio free for all purpose and distributed on AS IS basis with no warranty. You can use it on your own risk with no compensation for any damage or lost.<br/>
-<sup>**</sup> Lua 5.2 - Copyright &copy; 1994-2022 Lua.org, PUC-Rio.<br/>
-<sup>***</sup> LuaJIT 2.1.0-beta3 - Copyright &copy; 2005-2022 Mike Pall, released under the MIT open source license. 
-</p>
+  <div class="container">
+    <div class="section1-inner">
+      <div class="about-header"><h1>About LuaStudio</h1></div>
+    <div class="about">
 
+      <div class="first">
+        <h1>launch lua codes</h1>
+        <div class="icon"><i class="fa fa-fw fa-rocket"></i></div>
+      </div>
+
+      <div class="first">
+        <h1 class="special">save your progress to the clouds</h1>
+        <div class="icon3"><i class="fa fa-fw fa-save"></i></div>
+      </div>
+
+      <div class="first">
+        <h1>wide range of libraries</h1>
+        <div class="icon2"><i class="fa fa-fw fa-book"></i></div>
+      </div>
+
+      <div class="first">
+        <h1>based on LuaJIT</h1>
+        <div class="icon"><i class="fa fa-fw fa-rocket"></i></div>
+      </div>
+    </div>
+
+    <div class="about">
+      <div class="second">
+        <h1>based on lua programing language</h1>
+        <div class="icon3"><i class="fa fa-fw fa-code"></i></div>
+      </div>
+
+      <div class="second">
+        <h1>simple and easy to use</h1>
+        <div class="icon2"><i class="fa fa-fw fa-wrench"></i></div>
+      </div>
+
+      <div class="second">
+        <h1>plenty of sample projects</h1>
+        <div class="icon2"><i class="fa fa-fw fa-search"></i></div>
+      </div>
+
+      <div class="second">
+        <h1>Easy to set up</h1>
+        <div class="icon"><i class="fa fa-fw fa-plug"></i></div>
+      </div>
+    </div>
+    </div>
+  </div>
+</section>
+
+<section class="section2">
+
+
+  <div class="container">
+    <div class="section2-inner">
+      <div class="instruction-heading"><h1>Setup LuaStudio</h1></div>
+
+      <div class="setup-text">
+        <div class="instructions-text"><p>You can run luastudio in application mode using command line arguments</p></div>
+      <div class="setup-flex-div">
+        <div  class="setup-div">
+          <h1>On Windows</h1>
+          <p class="windows"> LuaStudio.exe -a Samples.luastudio /HelloWorld.lua "Custom Window Title"</p>
+        </div>
+
+        <div class="setup-div">
+          <h1>On Mac</h1>
+          <p class="mac"> open -na LuaStudio.app --args -a Samples.luastudio /HelloWorld.lua "Custom Window Title"</p>
+        </div>
+      </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section3"
+
+
+data-aos="fade-up"
+data-aos-delay="50"
+data-aos-duration="1000"
+data-aos-easing="ease-in-out"
+data-aos-once="false">
+
+
+  <div class="container">
+    <div class="section3-inner">
+      <div class="download-heading"><h1 id="download">Download LuaStudio</h1></div>
+      <div class="download-flex">
+        <div class="mac-download">
+          <h1>mac os 64bit</h1>
+           <li><a href="download/LuaStudio_v2_6_0_Mac.zip" target="_blank">LuaStudio Mac zip</a></li>
+        </div>
+        <div class="windows-download">
+          <h1>windows os 32bit</h1>
+          <ul>
+            <li><a href="download/LuaStudio_v2_6_0_Win_x86.zip" target="_blank">LuaStudio Windows zip</a></li>
+            <li><a href="download/LuaStudioJIT_v2_6_0_Win_x86.zip" target="_blank">LuaStudioJIT Windows zip</a></li>
+          </ul>
+        </div>
+        <div class="windows-download">
+          <h1>windows os 64bit</h1>
+          <ul>
+            <li><a href="download/LuaStudio_v2_6_0_Win_x64.zip" target="_blank">LuaStudio Windows zip</a></li>
+            <li><a href="download/LuaStudioJIT_v2_6_0_Win_x64.zip" target="_blank">LuaStudioJIT Windows zip</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="download-flex">
+        <div class="apple-download">
+          <h1>apple os</h1>
+          <a href="https://itunes.apple.com/us/app/lua-studio/id1161260887?mt=8" target="_blank"><img src="image/available_on_the_appstore_small.gif" border="0" alt="Available on the appstore" width="120" height="43"></a>
+        </div>
+        <div class="andriod-download">
+          <h1>andriod os</h1>
+          <a href="https://play.google.com/store/apps/details?id=com.codeservice.app.luastudio" target="_blank"><img src="image/google_play.png" border="0" alt="Available on the Google Play" width="127" height="43"></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="initials"
+
+data-aos="fade-up"
+data-aos-delay="50"
+data-aos-duration="1000"
+data-aos-easing="ease-in-out"
+data-aos-once="false">
+
+  <div class="container">
+    <div class="header-inner2">
+      <div class="moon-pic">
+        <img src="moon.png" width=300px heigth=300px alt="moon picture">
+      </div>
+      <div class="logo2">
+        <h1>LuaStudio</h1>
+        <div class="para2"><p>Web design by</p></div>
+        <div class="box-ware-logo"> <h1><span class="anti-animation">B</span><span class="animation">o</span><span class="anti-animation">x</span> <span class="animation">W</span><span class="anti-animation">a</span><span class="animation">r</span><span class="anti-animation">e</span></h1></div>
+      </div>
+    </div>
+    <div class="btn">
+      <a href="policy.html">see our policies here</a>
+    </div> 
+  </div>
+</footer>
+
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
 </body>
 </html>
