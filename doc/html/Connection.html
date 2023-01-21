@@ -219,7 +219,7 @@
    <p class="rvps2"><span class="rvts6">perform query request to DB with parameters. Use </span><span class="rvts12">nil</span><span class="rvts6"> for empty parameters table. Can return </span><a class="rvts13" href="ResultSet.html">ResultSet</a><span class="rvts6"> object with DB rows access.</span></p>
   </td>
   <td style="border-color: #000000; border-style: solid; padding: 1px;">
-   <p class="rvps2"><span class="rvts12">query </span><span class="rvts6">- DB query text with '</span><span class="rvts45">?</span><span class="rvts6">' as parameter placeholder</span></p>
+   <p class="rvps2"><span class="rvts12">query </span><span class="rvts6">- &nbsp;project path to DB query .sql file or query text with '</span><span class="rvts45">?</span><span class="rvts6">' as parameter placeholder</span></p>
    <p class="rvps2"><span class="rvts12">query_parameters</span><span class="rvts6"> - table of query parameters corresponding to each '</span><span class="rvts45">?</span><span class="rvts6">' placeholder in order of appearance.</span></p>
    <p class="rvps2"><span class="rvts6">Parameters types can be:</span></p>
    <p class="rvps2"><span class="rvts6">- nil (NULL in DB)</span></p>
@@ -248,6 +248,7 @@
 <p class="rvps2"><span class="rvts6"><br/></span></p>
 <p class="rvps2"><span class="rvts6">local connection = Lib.SQLight.</span><span class="rvts18">Connection.</span><span class="rvts19">new</span><span class="rvts6">(":memory:")</span></p>
 <p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts6">--also request can load query from .sql file: connection.</span><span class="rvts18">request</span><span class="rvts6">("/folder/file.sql", nil)</span></p>
 <p class="rvps2"><span class="rvts6">connection.</span><span class="rvts18">request</span><span class="rvts6">([[CREATE TABLE IF NOT EXISTS Test (</span></p>
 <p class="rvps2"><span class="rvts6">&nbsp; &nbsp; field1 INTEGER PRIMARY KEY NOT NULL,</span></p>
 <p class="rvps2"><span class="rvts6">&nbsp; &nbsp; field2 TEXT,</span></p>
