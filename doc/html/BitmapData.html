@@ -204,7 +204,7 @@
 <table width="100%" border="1" cellpadding="1" cellspacing="2" style="border-color: #000000; border-style: solid; border-spacing: 2px;">
  <tr valign="top">
   <td style="border-color: #000000; border-style: solid; padding: 1px;">
-   <p class="rvps2"><span class="rvts6">Lib.Media.Display.</span><span class="rvts18">BitmapData.</span><span class="rvts19">new</span><span class="rvts6">(</span><span class="rvts12">inWidth</span><span class="rvts6">, </span><span class="rvts12">inHeight</span><span class="rvts6">, </span><span class="rvts12">inTransparent</span><span class="rvts6">, </span><span class="rvts12">fillColor</span><span class="rvts6">, </span><span class="rvts12">inGPUMode</span><span class="rvts6">)</span></p>
+   <p class="rvps2"><span class="rvts6">Lib.Media.Display.</span><span class="rvts18">BitmapData.</span><span class="rvts19">new</span><span class="rvts6">(</span><span class="rvts12">inWidth</span><span class="rvts6">, </span><span class="rvts12">inHeight</span><span class="rvts6">, </span><span class="rvts12">inTransparent</span><span class="rvts6">, </span><span class="rvts12">fillColor</span><span class="rvts6">, </span><span class="rvts12">inPixelFormat</span><span class="rvts6">)</span></p>
   </td>
   <td style="border-color: #000000; border-style: solid; padding: 1px;">
    <p class="rvps2"><span class="rvts6">Creates a BitmapData object with a specified width </span><span class="rvts12">inWidth</span><span class="rvts6"> and height </span><span class="rvts12">inHeight</span><span class="rvts6">. If you specify a value for the </span><span class="rvts12">fillColor</span><span class="rvts6"> parameter, every pixel in the bitmap is set to that color. By default, the bitmap is created as transparent, unless you pass the value false for the transparent parameter. After you create an opaque bitmap, you cannot change it to a transparent bitmap. Every pixel in an opaque bitmap uses only 24 bits of color channel information. If you define the bitmap as transparent, every pixel uses 32 bits of color channel information, including an alpha transparency channel.</span></p>
@@ -214,14 +214,7 @@
    <p class="rvps2"><span class="rvts12">inHeight</span><span class="rvts6"> - The height of the bitmap image in pixels.</span></p>
    <p class="rvps2"><span class="rvts12">inTransparent</span><span class="rvts6"> - Specifies whether the bitmap image supports per-pixel transparency. The recommended default value is true(transparent). To create a fully transparent bitmap, set the value of the transparent parameter to true and the value of the </span><span class="rvts12">fillColor</span><span class="rvts6"> parameter to 0x00000000(or to 0). Setting the transparent property to false can result in minor improvements in rendering performance.</span></p>
    <p class="rvps2"><span class="rvts12">fillColor</span><span class="rvts6"> - A 32-bit ARGB color value that you use to fill the bitmap image area. The recommended default value is 0xFFFFFFFF(solid white).</span></p>
-   <p class="rvps2"><span class="rvts12">inGPUMode</span><span class="rvts6"> - custom GPU pixel format, default recommended value is nil for autodetection or equal to:</span></p>
-   <p class="rvps2"><span class="rvts6">pfXRGB &nbsp; &nbsp; &nbsp; &nbsp;- 0x00,</span></p>
-   <p class="rvps2"><span class="rvts6">pfARGB &nbsp; &nbsp; &nbsp; &nbsp;- &nbsp;0x01,</span></p>
-   <p class="rvps2"><span class="rvts6">pfAlpha &nbsp; &nbsp; &nbsp; &nbsp; - 0x03,</span></p>
-   <p class="rvps2"><span class="rvts6">pfHardware &nbsp; &nbsp; - 0x10,</span></p>
-   <p class="rvps2"><span class="rvts6">pfARGB4444 &nbsp;- 0x11,</span></p>
-   <p class="rvps2"><span class="rvts6">pfRGB565 &nbsp; &nbsp; &nbsp;- 0x12,</span></p>
-   <p class="rvps2"><span class="rvts6">pfHasAlpha &nbsp; &nbsp; - 0x01</span></p>
+   <p class="rvps2"><span class="rvts12">inPixelFormat</span><span class="rvts6"> - </span><span class="rvts20">Int, </span><a class="rvts13" href="PixelFormat.html">PixelFormat</a><span class="rvts20">, Default =-1 (None)</span></p>
   </td>
  </tr>
 </table>
@@ -460,6 +453,17 @@
  </tr>
  <tr valign="top">
   <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts18">getBytes</span><span class="rvts20">(</span><span class="rvts21">inPixelFormat</span><span class="rvts20">)</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">Returns </span><a class="rvts13" href="ByteArray.html">ByteArray</a></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts21">inPixelFormat</span><span class="rvts20"> - Int, </span><a class="rvts13" href="PixelFormat.html">PixelFormat</a><span class="rvts20">, Default =-1 (None)</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
    <p class="rvps2"><span class="rvts18">getColorBoundsRect</span><span class="rvts6">(</span><span class="rvts12">mask</span><span class="rvts6">, </span><span class="rvts12">color</span><span class="rvts6">, </span><span class="rvts12">findColor</span><span class="rvts6">)</span></p>
   </td>
   <td style="border-color: #000000; border-style: solid; padding: 1px;">
@@ -472,6 +476,23 @@
    <p class="rvps2"><span class="rvts12">color</span><span class="rvts6"> - A hexadecimal value, specifying the ARGB color to match (if </span><span class="rvts12">findColor</span><span class="rvts6"> is set to true) or not to match(if </span><span class="rvts12">findColor</span><span class="rvts6"> is set to false).</span></p>
    <p class="rvps2"><span class="rvts12">findColor</span><span class="rvts6"> - If the value is set to true, returns the bounds of a color value in an image. If the value is set to false, returns the bounds of where this color doesn't exist in an image. (default recommended value is true)</span></p>
    <p class="rvps2"><span class="rvts6"><br/></span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts18">getData</span><span class="rvts20">(</span><span class="rvts21">dataHandle</span><span class="rvts20">, </span><span class="rvts21">inPixelFormat</span><span class="rvts20">, </span><span class="rvts21">dataOffset</span><span class="rvts20">, </span><span class="rvts21">dataStride</span><span class="rvts20">, </span><span class="rvts21">subSample</span><span class="rvts20">)</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">Get the pixels and fill &nbsp;a (region) of a byte buffer of given pixel format.</span></p>
+   <p class="rvps2"><span class="rvts6">The buffer should be allocated with enough room to hold the data</span></p>
+   <p class="rvps2"><span class="rvts6">Pixel conversion between non-float types will take place (eg, pfLuma -&gt; pfRGB)</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts21">dataHandle</span><span class="rvts20"> - </span><a class="rvts13" href="ByteArray.html">ByteArray</a><span class="rvts20"> &nbsp;</span></p>
+   <p class="rvps2"><span class="rvts21">inPixelFormat</span><span class="rvts20"> - </span><a class="rvts13" href="PixelFormat.html">PixelFormat</a><span class="rvts20">, Default = -1 (None),</span></p>
+   <p class="rvps2"><span class="rvts21">dataOffset</span><span class="rvts20"> - Data offset, Default = 0,&nbsp;</span></p>
+   <p class="rvps2"><span class="rvts21">dataStride</span><span class="rvts20"> - Data stride, Default = 0,&nbsp;</span></p>
+   <p class="rvps2"><span class="rvts21">subSample</span><span class="rvts20"> - Sub sample, Default = 1</span></p>
   </td>
  </tr>
  <tr valign="top">
@@ -541,6 +562,18 @@
  </tr>
  <tr valign="top">
   <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts18">save</span><span class="rvts20">(</span><span class="rvts21">inFilename</span><span class="rvts20">, </span><span class="rvts21">inQuality</span><span class="rvts20">)</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">Save BitmapData to image file (jpg or png) with different quality</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts21">inFilename</span><span class="rvts20"> - String, image file name with extensions: jpg, jpeg, png. Any other extension will be accepted as png</span></p>
+   <p class="rvps2"><span class="rvts21">inQuality</span><span class="rvts20"> - Float, Quality, Default = 0.9</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
    <p class="rvps2"><span class="rvts18">scroll</span><span class="rvts6">(</span><span class="rvts12">x</span><span class="rvts6">, </span><span class="rvts12">y</span><span class="rvts6">)&nbsp;</span></p>
   </td>
   <td style="border-color: #000000; border-style: solid; padding: 1px;">
@@ -549,6 +582,22 @@
   <td style="border-color: #000000; border-style: solid; padding: 1px;">
    <p class="rvps2"><span class="rvts12">x</span><span class="rvts6"> - The amount by which to scroll horizontally.</span></p>
    <p class="rvps2"><span class="rvts12">y</span><span class="rvts6"> - The amount by which to scroll vertically.</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts18">setData</span><span class="rvts20">(</span><span class="rvts21">dataHandle</span><span class="rvts20">, </span><span class="rvts21">inPixelFormat</span><span class="rvts20">, </span><span class="rvts21">dataOffset</span><span class="rvts20">, </span><span class="rvts21">dataStride</span><span class="rvts20">, </span><span class="rvts21">expand</span><span class="rvts20">)</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">Set the pixels from a (region) of a byte buffer of given pixel format.</span></p>
+   <p class="rvps2"><span class="rvts6">Pixel conversion between non-float types will take place (eg, pfLuma -&gt; pfRGB)</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts21">dataHandle</span><span class="rvts20"> - </span><a class="rvts13" href="ByteArray.html">ByteArray</a><span class="rvts20"> &nbsp;</span></p>
+   <p class="rvps2"><span class="rvts21">inPixelFormat</span><span class="rvts20"> - </span><a class="rvts13" href="PixelFormat.html">PixelFormat</a><span class="rvts20">, Default = -1 (None),</span></p>
+   <p class="rvps2"><span class="rvts21">dataOffset</span><span class="rvts20"> - Data offset, Default = 0,&nbsp;</span></p>
+   <p class="rvps2"><span class="rvts21">dataStride</span><span class="rvts20"> - Data stride, Default = 0,&nbsp;</span></p>
+   <p class="rvps2"><span class="rvts21">expand</span><span class="rvts20"> - Expand, Default = 1</span></p>
   </td>
  </tr>
  <tr valign="top">
@@ -624,7 +673,86 @@
 </table>
 </div>
 <p class="rvps2"><span class="rvts6"><br/></span></p>
-<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts6">Static methods:</span></p>
+<div class="rvps2">
+<table width="100%" border="1" cellpadding="1" cellspacing="2" style="border-color: #000000; border-style: solid; border-spacing: 2px;">
+ <tr valign="top">
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts20">Lib.Media.Display.</span><span class="rvts18">BitmapData.createPremultiplied</span><span class="rvts6">(</span><span class="rvts12">width</span><span class="rvts6">, </span><span class="rvts12">height</span><span class="rvts6">, </span><span class="rvts12">inArgb</span><span class="rvts6">)</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">Creates BitmapData</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts12">width</span><span class="rvts6"> - Int, BitmapData width</span></p>
+   <p class="rvps2"><span class="rvts12">height</span><span class="rvts6"> - Int, BitmapData height</span></p>
+   <p class="rvps2"><span class="rvts12">inArgb</span><span class="rvts6"> - Int, Default value 0</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts20">Lib.Media.Display.</span><span class="rvts18">BitmapData.createGrey</span><span class="rvts6">(</span><span class="rvts12">width</span><span class="rvts6">, </span><span class="rvts12">height</span><span class="rvts6">, </span><span class="rvts12">inLuma</span><span class="rvts6">)</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">Creates BitmapData</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts12">width</span><span class="rvts6"> - Int, BitmapData width</span></p>
+   <p class="rvps2"><span class="rvts12">height</span><span class="rvts6"> - Int, BitmapData height</span></p>
+   <p class="rvps2"><span class="rvts12">inLuma</span><span class="rvts6"> - Int</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts20">Lib.Media.Display.</span><span class="rvts18">BitmapData.createAlpha</span><span class="rvts6">(</span><span class="rvts12">width</span><span class="rvts6">, </span><span class="rvts12">height</span><span class="rvts6">,</span><span class="rvts12">inAlpha</span><span class="rvts6">)</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">Creates BitmapData</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts12">width</span><span class="rvts6"> - Int, BitmapData width</span></p>
+   <p class="rvps2"><span class="rvts12">height</span><span class="rvts6"> - Int, BitmapData height</span></p>
+   <p class="rvps2"><span class="rvts12">inAlpha</span><span class="rvts6"> - Int, Default value 0</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts20">Lib.Media.Display.</span><span class="rvts18">BitmapData.createUInt16</span><span class="rvts6">(</span><span class="rvts12">width</span><span class="rvts6">, </span><span class="rvts12">height</span><span class="rvts6">)</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">Creates BitmapData</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts12">width</span><span class="rvts6"> - Int, BitmapData width</span></p>
+   <p class="rvps2"><span class="rvts12">height</span><span class="rvts6"> - Int, BitmapData height</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts20">Lib.Media.Display.</span><span class="rvts18">BitmapData.createUInt32</span><span class="rvts6">(</span><span class="rvts12">width</span><span class="rvts6">, </span><span class="rvts12">height</span><span class="rvts6">)</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">Creates BitmapData</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts12">width</span><span class="rvts6"> - Int, BitmapData width</span></p>
+   <p class="rvps2"><span class="rvts12">height</span><span class="rvts6"> - Int, BitmapData height</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts20">Lib.Media.Display.</span><span class="rvts18">BitmapData.load</span><span class="rvts6">(</span><span class="rvts12">inFilename, format</span><span class="rvts6">)</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">Loads BitmapData from file</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts12">inFilename - </span><span class="rvts20">String, image file name</span><span class="rvts12">,&nbsp;</span></p>
+   <p class="rvps2"><span class="rvts12">format</span><span class="rvts20"> - </span><a class="rvts13" href="PixelFormat.html">PixelFormat</a><span class="rvts20">, Default = -1 (None)</span></p>
+  </td>
+ </tr>
+</table>
+</div>
 <p></p>
 <p class="rvps4" style="clear: both;"><span class="rvts16">Created with the Personal Edition of HelpNDoc: </span><a class="rvts17" href="https://www.helpndoc.com/feature-tour">Easily create CHM Help documents</a></p>
 

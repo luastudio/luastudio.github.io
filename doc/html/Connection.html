@@ -213,6 +213,17 @@
  </tr>
  <tr valign="top">
   <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts18">interrupt</span><span class="rvts24">()</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">This function causes any pending database operation to abort and return at its earliest opportunity. This routine is typically called in response to a user action such as pressing "Cancel" or Ctrl-C where the user wants a long query operation to halt immediately.</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts12"><br/></span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
    <p class="rvps2"><span class="rvts18">request</span><span class="rvts6">(</span><span class="rvts12">query</span><span class="rvts6">, </span><span class="rvts12">query_parameters</span><span class="rvts6">)</span></p>
   </td>
   <td style="border-color: #000000; border-style: solid; padding: 1px;">
@@ -245,6 +256,8 @@
 </div>
 <p class="rvps2"><span class="rvts6"><br/></span></p>
 <p class="rvps2"><span class="rvts22">Examples:</span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts22">Example 1</span></p>
 <p class="rvps2"><span class="rvts6"><br/></span></p>
 <p class="rvps2"><span class="rvts6">local connection = Lib.SQLight.</span><span class="rvts18">Connection.</span><span class="rvts19">new</span><span class="rvts6">(":memory:")</span></p>
 <p class="rvps2"><span class="rvts6"><br/></span></p>
@@ -326,6 +339,62 @@
 <p class="rvps2"><span class="rvts6">bmp.x = 10</span></p>
 <p class="rvps2"><span class="rvts6">bmp.y = 10</span></p>
 <p class="rvps2"><span class="rvts6">stage.addChild(bmp)</span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts22">Example 2</span></p>
+<p class="rvps2"><span class="rvts22"><br/></span></p>
+<p class="rvps2"><span class="rvts6">-- https://sqlite.org/c3ref/interrupt.html</span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts6">Thread = Lib.Sys.VM.Thread</span></p>
+<p class="rvps2"><span class="rvts6">Text = Lib.Media.Text</span></p>
+<p class="rvps2"><span class="rvts6">Capabilities = Lib.Media.Capabilities</span></p>
+<p class="rvps2"><span class="rvts6">stage = Lib.Media.Display.stage</span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts6">connection = Lib.SQLight.</span><span class="rvts18">Connection.</span><span class="rvts19">new</span><span class="rvts6">(":memory:")</span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts6">stage.scaleX = Capabilities.screenDPI &gt; 120 and Capabilities.screenDPI / 120 or 1</span></p>
+<p class="rvps2"><span class="rvts6">stage.scaleY = stage.scaleX</span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts6">local fmt = Text.TextFormat.new('_sans', 16, 0x000000, nil, nil, nil)</span></p>
+<p class="rvps2"><span class="rvts6">fmt.align = Text.TextFormatAlign.CENTER</span></p>
+<p class="rvps2"><span class="rvts6">fmt.leftMargin = 4</span></p>
+<p class="rvps2"><span class="rvts6">fmt.rightMargin = 4</span></p>
+<p class="rvps2"><span class="rvts6">fmt.leading = 15</span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts6">local text = Text.TextField.new()</span></p>
+<p class="rvps2"><span class="rvts6">text.defaultTextFormat = fmt</span></p>
+<p class="rvps2"><span class="rvts6">text.autoSize = Text.TextFieldAutoSize.LEFT</span></p>
+<p class="rvps2"><span class="rvts6">text.x = 10</span></p>
+<p class="rvps2"><span class="rvts6">text.y = 10</span></p>
+<p class="rvps2"><span class="rvts6">text.border = true</span></p>
+<p class="rvps2"><span class="rvts6">text.selectable = false</span></p>
+<p class="rvps2"><span class="rvts6">text.multiline = true</span></p>
+<p class="rvps2"><span class="rvts6">text.wordWrap = false</span></p>
+<p class="rvps2"><span class="rvts6">text.htmlText = [[Click on text link to interrupt query:</span></p>
+<p class="rvps2"><span class="rvts6">&lt;u&gt;&lt;font color='#0000FF'&gt;&lt;a href='event:myEvent'&gt;INTERRUPT&lt;/a&gt;&lt;/font&gt;&lt;/u&gt;]]</span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts6">text.addEventListener(Lib.Media.Events.TextEvent.LINK, function(e)</span></p>
+<p class="rvps2"><span class="rvts6"></span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">print("Interrupting ...")</span></p>
+<p class="rvps2"><span class="rvts6">&nbsp; &nbsp; connection.</span><span class="rvts18">interrupt</span><span class="rvts6">()</span></p>
+<p class="rvps2"><span class="rvts6">end, false, 0, false)</span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts6">stage.addChild(text)</span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts6">t = Thread.create([[--thread&nbsp;</span></p>
+<p class="rvps2"><span class="rvts6">&nbsp; Thread = Lib.Sys.VM.Thread</span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts6">&nbsp; local connection = Thread.readMessage(true)</span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts6">&nbsp; --endless query</span></p>
+<p class="rvps2"><span class="rvts6">&nbsp; local status, message = pcall(connection.</span><span class="rvts18">request</span><span class="rvts6">, "WITH RECURSIVE c(x) AS (VALUES(1) UNION ALL SELECT x+1 FROM c) SELECT x FROM c WHERE x&lt;0", nil)</span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts6">&nbsp; connection.</span><span class="rvts18">close</span><span class="rvts6">()</span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts6">&nbsp; print("thread done! query status: ["..(status and "ok" or "error").."] message: ["..message.."]")</span></p>
+<p class="rvps2"><span class="rvts6">]])</span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts6">t.sendMessage(connection)</span></p>
 <p></p>
 <p class="rvps4" style="clear: both;"><span class="rvts16">Created with the Personal Edition of HelpNDoc: </span><a class="rvts17" href="https://www.helpndoc.com/feature-tour">Easily create EPub books</a></p>
 
