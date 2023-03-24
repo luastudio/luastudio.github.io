@@ -11,7 +11,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="icon" href="favicon.ico"/>
 
-  <title>VM</title>
+  <title>Thread</title>
   <meta name="description" content="" /> 
   <meta name="keywords" content="">
 
@@ -21,11 +21,11 @@
 
   <!-- Twitter Card data -->
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="VM">
+  <meta name="twitter:title" content="Thread">
   <meta name="twitter:description" content="">
 
   <!-- Open Graph data -->
-  <meta property="og:title" content="VM" />
+  <meta property="og:title" content="Thread" />
   <meta property="og:type" content="article" />
   <meta property="og:description" content="" />
   <meta property="og:site_name" content="LuaStudio API documentation" /> 
@@ -163,33 +163,120 @@
 
     <article>
         <div id="topic-content" class="container-fluid" 
-		  data-hnd-id="VM"
-		  data-hnd-context="20"
-		  data-hnd-title="VM"
+		  data-hnd-id="Thread"
+		  data-hnd-context="442"
+		  data-hnd-title="Thread"
 		>
             
                 <div class="navigation">
                     <ol class="breadcrumb">
-                        <li><a href="Librarystructure.html">Library structure</a></li><li><a href="Sys.html">Sys</a></li>
+                        <li><a href="Librarystructure.html">Library structure</a></li><li><a href="Sys.html">Sys</a></li><li><a href="VM.html">VM</a></li>
                     </ol>
                     <div class="nav-arrows">
-                        <div class="btn-group btn-group-xs" role="group"><a class="btn btn-default" href="Sys.html" title="Sys" role="button"><span class="glyphicon glyphicon-menu-up" aria-hidden="true"></span></a><a class="btn btn-default" href="Utf8.html" title="Utf8" role="button"><span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span></a><a class="btn btn-default" href="Thread.html" title="Thread" role="button"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span></a></div>
+                        <div class="btn-group btn-group-xs" role="group"><a class="btn btn-default" href="VM.html" title="VM" role="button"><span class="glyphicon glyphicon-menu-up" aria-hidden="true"></span></a><a class="btn btn-default" href="VM.html" title="VM" role="button"><span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span></a><a class="btn btn-default" href="Deque.html" title="Deque" role="button"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span></a></div>
                     </div>
                 </div> 
             
 
             <a id="main-content"></a>
 
-            <h2>VM</h2>
+            <h2>Thread</h2>
 
             <div class="main-content">
                 
 <p></p>
-<p class="rvps2"><span class="rvts6">Library threads.</span></p>
+<p class="rvps2"><span class="rvts6">You can create thread using static method:</span></p>
+<div class="rvps2">
+<table width="100%" border="1" cellpadding="1" cellspacing="2" style="border-color: #000000; border-style: solid; border-spacing: 2px;">
+ <tr valign="top">
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">Lib.Sys.VM.</span><span class="rvts18">Thread.create</span><span class="rvts6">(</span><span class="rvts12">spath</span><span class="rvts6">)</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">Creates a new thread that will execute the </span><span class="rvts12">spath</span><span class="rvts6"> Lua script as independent instance, then exit.&nbsp;</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts12">spath</span><span class="rvts6"> - can be Lua script or project path to Lua script</span></p>
+  </td>
+ </tr>
+</table>
+</div>
 <p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts6">More static methods:</span></p>
+<div class="rvps2">
+<table width="100%" border="1" cellpadding="1" cellspacing="2" style="border-color: #000000; border-style: solid; border-spacing: 2px;">
+ <tr valign="top">
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">Lib.Sys.VM.Thread.</span><span class="rvts18">current</span><span class="rvts6">()</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">Returns the current thread.</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <br/>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">Lib.Sys.VM.Thread.</span><span class="rvts18">readMessage</span><span class="rvts6">(</span><span class="rvts12">block</span><span class="rvts6">)</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">Reads a message from the thread queue. If </span><span class="rvts12">block</span><span class="rvts6"> is true, the function blocks until a message is available. If </span><span class="rvts12">block</span><span class="rvts6"> is false, the function returns nil if no message is available.</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts12">block</span><span class="rvts6"> - true/false, thread reading blocking condition</span></p>
+  </td>
+ </tr>
+</table>
+</div>
 <p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts6">Created thread has methods:</span></p>
+<div class="rvps2">
+<table width="100%" border="1" cellpadding="1" cellspacing="2" style="border-color: #000000; border-style: solid; border-spacing: 2px;">
+ <tr valign="top">
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts18">sendMessage</span><span class="rvts6">(</span><span class="rvts12">msg</span><span class="rvts6">)</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">Send a message </span><span class="rvts12">msg</span><span class="rvts6"> to the thread queue. This message can be read by using </span><span class="rvts18">readMessage</span><span class="rvts6">.</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts12">msg</span><span class="rvts6"> - any object, string, etc. to send</span></p>
+  </td>
+ </tr>
+</table>
+</div>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts22">Examples:</span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts6">Thread = Lib.Sys.VM.Thread</span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts6">t = Thread.</span><span class="rvts18">create</span><span class="rvts6">([[</span></p>
+<p class="rvps2"><span class="rvts6">Thread = Lib.Sys.VM.Thread</span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts6">--get ref to main thread</span></p>
+<p class="rvps2"><span class="rvts6">local main = Thread.</span><span class="rvts18">readMessage</span><span class="rvts6">(true)</span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts6">for ii=0, 5, 1 do</span></p>
+<p class="rvps2"><span class="rvts6">&nbsp; &nbsp; print("message"..ii)</span></p>
+<p class="rvps2"><span class="rvts6">end</span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts6">main.</span><span class="rvts18">sendMessage</span><span class="rvts6">("thread done")</span></p>
+<p class="rvps2"><span class="rvts6">]])</span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts6">--give thread t a ref to main thread</span></p>
+<p class="rvps2"><span class="rvts6">t.</span><span class="rvts18">sendMessage</span><span class="rvts6">(Thread.</span><span class="rvts18">current</span><span class="rvts6">())</span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts6">--wait for thread to finish</span></p>
+<p class="rvps2"><span class="rvts6">Lib.Media.Display.stage.addEventListener(Lib.Media.Events.Event.ENTER_FRAME,</span></p>
+<p class="rvps2"><span class="rvts6">&nbsp; &nbsp; function (e)</span></p>
+<p class="rvps2"><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">local message = Thread.</span><span class="rvts18">readMessage</span><span class="rvts6">(false)</span></p>
+<p class="rvps2"><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">if message ~= nil then</span></p>
+<p class="rvps2"><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6"> &nbsp; print(message)</span></p>
+<p class="rvps2"><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">end</span></p>
+<p class="rvps2"><span class="rvts6">&nbsp; &nbsp; end, false, 0, false)</span></p>
 <p></p>
-<p class="rvps4" style="clear: both;"><span class="rvts16">Created with the Personal Edition of HelpNDoc: </span><a class="rvts17" href="https://www.helpndoc.com/feature-tour">Easily create EBooks</a></p>
+<p class="rvps4" style="clear: both;"><span class="rvts16">Created with the Personal Edition of HelpNDoc: </span><a class="rvts17" href="https://www.helpndoc.com">Free PDF documentation generator</a></p>
 
             </div>
             
