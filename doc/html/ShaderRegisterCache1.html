@@ -11,7 +11,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="icon" href="favicon.ico"/>
 
-  <title>TextFormat</title>
+  <title>ShaderRegisterCache</title>
   <meta name="description" content="" /> 
   <meta name="keywords" content="">
 
@@ -21,11 +21,11 @@
 
   <!-- Twitter Card data -->
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="TextFormat">
+  <meta name="twitter:title" content="ShaderRegisterCache">
   <meta name="twitter:description" content="">
 
   <!-- Open Graph data -->
-  <meta property="og:title" content="TextFormat" />
+  <meta property="og:title" content="ShaderRegisterCache" />
   <meta property="og:type" content="article" />
   <meta property="og:description" content="" />
   <meta property="og:site_name" content="LuaStudio API documentation" /> 
@@ -163,251 +163,307 @@
 
     <article>
         <div id="topic-content" class="container-fluid" 
-		  data-hnd-id="TextFormat"
-		  data-hnd-context="129"
-		  data-hnd-title="TextFormat"
+		  data-hnd-id="ShaderRegisterCache1"
+		  data-hnd-context="448"
+		  data-hnd-title="ShaderRegisterCache"
 		>
             
                 <div class="navigation">
                     <ol class="breadcrumb">
-                        <li><a href="Librarystructure.html">Library structure</a></li><li><a href="Media.html">Media</a></li><li><a href="Text.html">Text</a></li>
+                        <li><a href="Librarystructure.html">Library structure</a></li><li><a href="Away3D.html">Away3D</a></li><li><a href="Materials.html">Materials</a></li><li><a href="Compilation.html">Compilation</a></li>
                     </ol>
                     <div class="nav-arrows">
-                        <div class="btn-group btn-group-xs" role="group"><a class="btn btn-default" href="Text.html" title="Text" role="button"><span class="glyphicon glyphicon-menu-up" aria-hidden="true"></span></a><a class="btn btn-default" href="TextField.html" title="TextField" role="button"><span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span></a><a class="btn btn-default" href="TextFieldAutoSize.html" title="TextFieldAutoSize" role="button"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span></a></div>
+                        <div class="btn-group btn-group-xs" role="group"><a class="btn btn-default" href="Compilation.html" title="Compilation" role="button"><span class="glyphicon glyphicon-menu-up" aria-hidden="true"></span></a><a class="btn btn-default" href="Compilation.html" title="Compilation" role="button"><span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span></a><a class="btn btn-default" href="ShaderRegisterElement1.html" title="ShaderRegisterElement" role="button"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span></a></div>
                     </div>
                 </div> 
             
 
             <a id="main-content"></a>
 
-            <h2>TextFormat</h2>
+            <h2>ShaderRegisterCache</h2>
 
             <div class="main-content">
                 
 <p></p>
-<p class="rvps2"><span class="rvts6">The TextFormat object represents character formatting information. Use the TextFormat object to create specific text formatting for text fields. You can apply text formatting to both static and dynamic text fields. The properties of the TextFormat object apply to device and embedded fonts.&nbsp;</span></p>
-<p class="rvps2"><span class="rvts6">You must use the constructor "new" TextFormat() to create a TextFormat object before setting its properties. When you apply a TextFormat object to a text field using the </span><a class="rvts13" href="TextField.html">TextField</a><span class="rvts6">.defaultTextFormat property or the </span><a class="rvts13" href="TextField.html">TextField</a><span class="rvts6">.setTextFormat() method, only its defined properties are applied. Use the </span><a class="rvts13" href="TextField.html">TextField</a><span class="rvts6">.defaultTextFormat property to apply formatting BEFORE you add text to the </span><a class="rvts13" href="TextField.html">TextField</a><span class="rvts6">, and the setTextFormat() method to add formatting AFTER you add text to the TextField. The TextFormat properties are nil by default because if you don't provide values for the properties, application uses its own default formatting.</span></p>
+<p class="rvps2"><span class="rvts6">ShaderRegister Cache provides the usage management system for all registers during shading compilation.</span></p>
 <p class="rvps2"><span class="rvts6"><br/></span></p>
-<p class="rvps2"><span class="rvts6">Can be created with method </span><span class="rvts12">new</span><span class="rvts6">:</span></p>
+<p class="rvps2"><span class="rvts6">Can be created using method </span><span class="rvts12">new</span><span class="rvts6">:</span></p>
 <div class="rvps2">
 <table width="100%" border="1" cellpadding="1" cellspacing="2" style="border-color: #000000; border-style: solid; border-spacing: 2px;">
  <tr valign="top">
   <td style="border-color: #000000; border-style: solid; padding: 1px;">
-   <p class="rvps2"><span class="rvts6">Lib.Media.Text.</span><span class="rvts18">TextFormat.</span><span class="rvts19">new</span><span class="rvts6">(</span><span class="rvts12">font</span><span class="rvts6">, </span><span class="rvts12">size</span><span class="rvts6">, </span><span class="rvts12">color</span><span class="rvts6">, </span><span class="rvts12">bold</span><span class="rvts6">, </span><span class="rvts12">italic</span><span class="rvts6">, </span><span class="rvts12">underline</span><span class="rvts6">)</span></p>
+   <p class="rvps2"><span class="rvts6">Lib.Away3D.Materials.Compilation.</span><span class="rvts18">ShaderRegisterCache.</span><span class="rvts19">new</span><span class="rvts6">(</span><span class="rvts12">profile</span><span class="rvts6">)</span></p>
   </td>
   <td style="border-color: #000000; border-style: solid; padding: 1px;">
-   <p class="rvps2"><span class="rvts6">Creates a TextFormat object with the specified properties.</span></p>
+   <p class="rvps2"><span class="rvts6">Create a new ShaderRegisterCache object.</span></p>
   </td>
   <td style="border-color: #000000; border-style: solid; padding: 1px;">
-   <p class="rvps2"><span class="rvts12">font</span><span class="rvts6"> - (default = nil) - The name of a font for text as a string.</span></p>
-   <p class="rvps2"><span class="rvts12">size</span><span class="rvts6"> - (default = nil) - An integer that indicates the size in pixels.</span></p>
-   <p class="rvps2"><span class="rvts12">color</span><span class="rvts6"> - (default = nil) - The color of text using this text format. A number containing three 8-bit RGB components; for example, 0xFF0000 is red, and 0x00FF00 is green.</span></p>
-   <p class="rvps2"><span class="rvts12">bold</span><span class="rvts6"> - (default = nil) - A Boolean value that indicates whether the text is boldface.</span></p>
-   <p class="rvps2"><span class="rvts12">italic</span><span class="rvts6"> - (default = nil) - A Boolean value that indicates whether the text is italicized.</span></p>
-   <p class="rvps2"><span class="rvts12">underline</span><span class="rvts6"> - (default = nil) - A Boolean value that indicates whether the text is underlined.</span></p>
+   <p class="rvps2"><span class="rvts12">profile</span><span class="rvts6"> - String, The compatibility profile used by the renderer.</span></p>
   </td>
  </tr>
 </table>
 </div>
 <p class="rvps2"><span class="rvts6"><br/></span></p>
-<p class="rvps2"><span class="rvts6">Created TextFormat object has properties:</span></p>
+<p class="rvps2"><span class="rvts6">Created element has method:</span></p>
 <div class="rvps2">
 <table width="100%" border="1" cellpadding="1" cellspacing="2" style="border-color: #000000; border-style: solid; border-spacing: 2px;">
  <tr valign="top">
   <td style="border-color: #000000; border-style: solid; padding: 1px;">
-   <p class="rvps2"><span class="rvts18">align</span></p>
+   <p class="rvps2"><span class="rvts18">addFragmentTempUsages</span><span class="rvts20">(</span><span class="rvts21">register</span><span class="rvts20">, </span><span class="rvts21">usageCount</span><span class="rvts20">)</span></p>
   </td>
   <td style="border-color: #000000; border-style: solid; padding: 1px;">
-   <p class="rvps2"><span class="rvts6">Indicates the alignment of the paragraph. (</span><a class="rvts13" href="TextFormatAlign.html">TextFormatAlign</a><span class="rvts6">)</span></p>
-  </td>
- </tr>
- <tr valign="top">
-  <td style="border-color: #000000; border-style: solid; padding: 1px;">
-   <p class="rvps2"><span class="rvts18">blockIndent</span></p>
+   <p class="rvps2"><span class="rvts20">Marks a fragment temporary register as used, so it cannot be retrieved. The register won't be able to be used until removeUsage has been called usageCount times again.</span></p>
   </td>
   <td style="border-color: #000000; border-style: solid; padding: 1px;">
-   <p class="rvps2"><span class="rvts6">Indicates the block indentation in pixels.</span></p>
+   <p class="rvps2"><span class="rvts21">register</span><span class="rvts20"> -</span><a class="rvts22" href="ShaderRegisterElement1.html"> </a><a class="rvts13" href="ShaderRegisterElement1.html">ShaderRegisterElement</a><span class="rvts20">, The register to mark as used.</span></p>
+   <p class="rvps2"><span class="rvts21">usageCount</span><span class="rvts20"> - Int, The amount of usages to add.</span></p>
   </td>
  </tr>
  <tr valign="top">
   <td style="border-color: #000000; border-style: solid; padding: 1px;">
-   <p class="rvps2"><span class="rvts18">bold</span></p>
+   <p class="rvps2"><span class="rvts18">addVertexTempUsages</span><span class="rvts20">(</span><span class="rvts21">register</span><span class="rvts20">, </span><span class="rvts21">usageCount</span><span class="rvts20">)</span></p>
   </td>
   <td style="border-color: #000000; border-style: solid; padding: 1px;">
-   <p class="rvps2"><span class="rvts6">Specifies whether the text is boldface.</span></p>
-  </td>
- </tr>
- <tr valign="top">
-  <td style="border-color: #000000; border-style: solid; padding: 1px;">
-   <p class="rvps2"><span class="rvts18">bullet</span></p>
+   <p class="rvps2"><span class="rvts20">Marks a vertex temporary register as used, so it cannot be retrieved. The register won't be able to be used until removeUsage has been called usageCount times again.</span></p>
   </td>
   <td style="border-color: #000000; border-style: solid; padding: 1px;">
-   <p class="rvps2"><span class="rvts6">Indicates that the text is part of a bulleted list. (not supported)</span></p>
+   <p class="rvps2"><span class="rvts21">register</span><span class="rvts20"> -</span><a class="rvts22" href="ShaderRegisterElement1.html"> </a><a class="rvts13" href="ShaderRegisterElement1.html">ShaderRegisterElement</a><span class="rvts20">, The register to mark as used.</span></p>
+   <p class="rvps2"><span class="rvts21">usageCount</span><span class="rvts20"> - Int, The amount of usages to add.</span></p>
   </td>
  </tr>
  <tr valign="top">
   <td style="border-color: #000000; border-style: solid; padding: 1px;">
-   <p class="rvps2"><span class="rvts18">color</span></p>
+   <p class="rvps2"><span class="rvts18">dispose</span><span class="rvts20">()</span></p>
   </td>
   <td style="border-color: #000000; border-style: solid; padding: 1px;">
-   <p class="rvps2"><span class="rvts6">Indicates the color of the text.</span></p>
-  </td>
- </tr>
- <tr valign="top">
-  <td style="border-color: #000000; border-style: solid; padding: 1px;">
-   <p class="rvps2"><span class="rvts18">font</span></p>
+   <p class="rvps2"><span class="rvts6">Disposes all resources used.</span></p>
   </td>
   <td style="border-color: #000000; border-style: solid; padding: 1px;">
-   <p class="rvps2"><span class="rvts6">The name of the font for text in this text format, as a string.</span></p>
+   <p class="rvps2"><span class="rvts6"><br/></span></p>
   </td>
  </tr>
  <tr valign="top">
   <td style="border-color: #000000; border-style: solid; padding: 1px;">
-   <p class="rvps2"><span class="rvts18">indent</span></p>
+   <p class="rvps2"><span class="rvts18">getFreeFragmentConstant</span><span class="rvts20">()</span></p>
   </td>
   <td style="border-color: #000000; border-style: solid; padding: 1px;">
-   <p class="rvps2"><span class="rvts6">Indicates the indentation from the left margin to the first character in the paragraph.</span></p>
-  </td>
- </tr>
- <tr valign="top">
-  <td style="border-color: #000000; border-style: solid; padding: 1px;">
-   <p class="rvps2"><span class="rvts18">italic</span></p>
+   <p class="rvps2"><span class="rvts6">Retrieve an available fragment constant register. </span><a class="rvts13" href="ShaderRegisterElement1.html">ShaderRegisterElement</a><span class="rvts6">)</span></p>
   </td>
   <td style="border-color: #000000; border-style: solid; padding: 1px;">
-   <p class="rvps2"><span class="rvts6">Indicates whether text in this text format is italicized.</span></p>
+   <p class="rvps2"><span class="rvts6"><br/></span></p>
   </td>
  </tr>
  <tr valign="top">
   <td style="border-color: #000000; border-style: solid; padding: 1px;">
-   <p class="rvps2"><span class="rvts18">kerning</span></p>
+   <p class="rvps2"><span class="rvts18">getFreeFragmentSingleTemp</span><span class="rvts20">()</span></p>
   </td>
   <td style="border-color: #000000; border-style: solid; padding: 1px;">
-   <p class="rvps2"><span class="rvts6">A Boolean value that indicates whether kerning is enabled (true) or disabled (false).</span></p>
-  </td>
- </tr>
- <tr valign="top">
-  <td style="border-color: #000000; border-style: solid; padding: 1px;">
-   <p class="rvps2"><span class="rvts18">leading</span></p>
+   <p class="rvps2"><span class="rvts6">Retrieve a single component from a fragment temporary register that's still available. (</span><a class="rvts13" href="ShaderRegisterElement1.html">ShaderRegisterElement</a><span class="rvts6">)</span></p>
   </td>
   <td style="border-color: #000000; border-style: solid; padding: 1px;">
-   <p class="rvps2"><span class="rvts6">An integer representing the amount of vertical space (called leading) between lines.</span></p>
+   <p class="rvps2"><span class="rvts6"><br/></span></p>
   </td>
  </tr>
  <tr valign="top">
   <td style="border-color: #000000; border-style: solid; padding: 1px;">
-   <p class="rvps2"><span class="rvts18">leftMargin</span></p>
+   <p class="rvps2"><span class="rvts18">getFreeFragmentVectorTemp</span><span class="rvts20">()</span></p>
   </td>
   <td style="border-color: #000000; border-style: solid; padding: 1px;">
-   <p class="rvps2"><span class="rvts6">The left margin of the paragraph, in pixels.</span></p>
-  </td>
- </tr>
- <tr valign="top">
-  <td style="border-color: #000000; border-style: solid; padding: 1px;">
-   <p class="rvps2"><span class="rvts18">letterSpacing</span></p>
+   <p class="rvps2"><span class="rvts6">Retrieve an entire fragment temporary register that's still available. The register won't be able to be used until removeUsage has been called usageCount times again. (</span><a class="rvts13" href="ShaderRegisterElement1.html">ShaderRegisterElement</a><span class="rvts6">)</span></p>
   </td>
   <td style="border-color: #000000; border-style: solid; padding: 1px;">
-   <p class="rvps2"><span class="rvts6">A number representing the amount of space that is uniformly distributed between all characters.</span></p>
+   <p class="rvps2"><span class="rvts6"><br/></span></p>
   </td>
  </tr>
  <tr valign="top">
   <td style="border-color: #000000; border-style: solid; padding: 1px;">
-   <p class="rvps2"><span class="rvts18">outline</span></p>
+   <p class="rvps2"><span class="rvts18">getFreeTextureReg</span><span class="rvts20">()</span></p>
   </td>
   <td style="border-color: #000000; border-style: solid; padding: 1px;">
-   <p class="rvps2"><span class="rvts6">Number. The border radius. This generates stroked outlines of a given vectorial glyph. It also allows you to retrieve the 'outside' borders of the stroke.</span></p>
-   <p class="rvps2"><span class="rvts6">This can be useful to generate 'bordered' glyph, i.e., glyphs displayed with anti-aliased border around their shape.</span></p>
-  </td>
- </tr>
- <tr valign="top">
-  <td style="border-color: #000000; border-style: solid; padding: 1px;">
-   <p class="rvps2"><span class="rvts18">outlineFlags</span></p>
+   <p class="rvps2"><span class="rvts6">Retrieve an available texture register (</span><a class="rvts13" href="ShaderRegisterElement1.html">ShaderRegisterElement</a><span class="rvts6">)</span></p>
   </td>
   <td style="border-color: #000000; border-style: solid; padding: 1px;">
-   <p class="rvps2"><span class="rvts6">Available flags:</span></p>
-   <p class="rvps2"><span class="rvts6">Lib.Media.Text.</span><span class="rvts18">TextFormat.OUTLINE_END_SQUARE</span><span class="rvts25"> - The end of lines is rendered as a square around the last point (by default half-circle around the last point)</span></p>
-   <p class="rvps2"><span class="rvts6">Lib.Media.Text.</span><span class="rvts18">TextFormat.OUTLINE_EDGE_BEVEL</span><span class="rvts25"> - Used to render beveled line joins. The outer corner of the joined lines is filled by enclosing the triangular region of the corner with a straight line between the outer corners of each stroke.</span></p>
-   <p class="rvps2"><span class="rvts6">Lib.Media.Text.</span><span class="rvts18">TextFormat.OUTLINE_EDGE_MITER</span><span class="rvts25"> - Used to render mitered line joins, with variable bevels if the miter limit is exceeded. The intersection of the strokes is clipped at a line perpendicular to the bisector of the angle between the strokes, at the distance from the intersection of the segments equal to the product of the miter limit value and the border radius. This prevents long spikes being created.</span></p>
-   <p class="rvps2"><span class="rvts25"><br/></span></p>
-   <p class="rvps2"><span class="rvts25">If outline edge flags not specified then rounded joins used by default. Circular arcs are used to join two lines smoothly.</span></p>
+   <p class="rvps2"><span class="rvts6"><br/></span></p>
   </td>
  </tr>
  <tr valign="top">
   <td style="border-color: #000000; border-style: solid; padding: 1px;">
-   <p class="rvps2"><span class="rvts18">outlineMiterLimit</span></p>
+   <p class="rvps2"><span class="rvts18">getFreeVarying</span><span class="rvts20">()</span></p>
   </td>
   <td style="border-color: #000000; border-style: solid; padding: 1px;">
-   <p class="rvps2"><span class="rvts6">Number. The miter limit for the mitter line join styles</span></p>
-  </td>
- </tr>
- <tr valign="top">
-  <td style="border-color: #000000; border-style: solid; padding: 1px;">
-   <p class="rvps2"><span class="rvts18">rightMargin</span></p>
+   <p class="rvps2"><span class="rvts6">Retrieve an available varying register. (</span><a class="rvts13" href="ShaderRegisterElement1.html">ShaderRegisterElement</a><span class="rvts6">)</span></p>
   </td>
   <td style="border-color: #000000; border-style: solid; padding: 1px;">
-   <p class="rvps2"><span class="rvts6">The right margin of the paragraph, in pixels.</span></p>
+   <p class="rvps2"><span class="rvts6"><br/></span></p>
   </td>
  </tr>
  <tr valign="top">
   <td style="border-color: #000000; border-style: solid; padding: 1px;">
-   <p class="rvps2"><span class="rvts18">size</span></p>
+   <p class="rvps2"><span class="rvts18">getFreeVertexAttribute</span><span class="rvts20">()</span></p>
   </td>
   <td style="border-color: #000000; border-style: solid; padding: 1px;">
-   <p class="rvps2"><span class="rvts6">The size in pixels of text in this text format.</span></p>
-  </td>
- </tr>
- <tr valign="top">
-  <td style="border-color: #000000; border-style: solid; padding: 1px;">
-   <p class="rvps2"><span class="rvts18">tabStops</span></p>
+   <p class="rvps2"><span class="rvts6">Retrieve an available vertex attribute register (</span><a class="rvts13" href="ShaderRegisterElement1.html">ShaderRegisterElement</a><span class="rvts6">)</span></p>
   </td>
   <td style="border-color: #000000; border-style: solid; padding: 1px;">
-   <p class="rvps2"><span class="rvts6">Specifies custom tab stops as an array of non-negative integers.</span></p>
+   <p class="rvps2"><span class="rvts6"><br/></span></p>
   </td>
  </tr>
  <tr valign="top">
   <td style="border-color: #000000; border-style: solid; padding: 1px;">
-   <p class="rvps2"><span class="rvts18">target</span></p>
+   <p class="rvps2"><span class="rvts18">getFreeVertexConstant</span><span class="rvts20">()</span></p>
   </td>
   <td style="border-color: #000000; border-style: solid; padding: 1px;">
-   <p class="rvps2"><span class="rvts6">Indicates the target window where the hyperlink is displayed. (not supported)</span></p>
-  </td>
- </tr>
- <tr valign="top">
-  <td style="border-color: #000000; border-style: solid; padding: 1px;">
-   <p class="rvps2"><span class="rvts18">underline</span></p>
+   <p class="rvps2"><span class="rvts6">Retrieve an available vertex constant register (</span><a class="rvts13" href="ShaderRegisterElement1.html">ShaderRegisterElement</a><span class="rvts6">)</span></p>
   </td>
   <td style="border-color: #000000; border-style: solid; padding: 1px;">
-   <p class="rvps2"><span class="rvts6">Indicates whether the text that uses this text format is underlined (true) or not (false).</span></p>
+   <p class="rvps2"><span class="rvts6"><br/></span></p>
   </td>
  </tr>
  <tr valign="top">
   <td style="border-color: #000000; border-style: solid; padding: 1px;">
-   <p class="rvps2"><span class="rvts18">url</span></p>
+   <p class="rvps2"><span class="rvts18">getFreeVertexSingleTemp</span><span class="rvts20">()</span></p>
   </td>
   <td style="border-color: #000000; border-style: solid; padding: 1px;">
-   <p class="rvps2"><span class="rvts6">Indicates the target URL for the text in this text format.</span></p>
-  </td>
- </tr>
- <tr valign="top">
-  <td style="border-color: #000000; border-style: solid; padding: 1px;">
-   <p class="rvps2"><span class="rvts18">lineThrough</span></p>
+   <p class="rvps2"><span class="rvts6">Retrieve a single component from a vertex temporary register that's still available. (</span><a class="rvts13" href="ShaderRegisterElement1.html">ShaderRegisterElement</a><span class="rvts6">)</span></p>
   </td>
   <td style="border-color: #000000; border-style: solid; padding: 1px;">
-   <p class="rvps2"><span class="rvts6">strikethrough (horizontal line) over text. true/false</span></p>
+   <p class="rvps2"><span class="rvts6"><br/></span></p>
   </td>
  </tr>
  <tr valign="top">
   <td style="border-color: #000000; border-style: solid; padding: 1px;">
-   <p class="rvps2"><span class="rvts18">baselineShift</span></p>
+   <p class="rvps2"><span class="rvts18">getFreeVertexVectorTemp</span><span class="rvts20">()</span></p>
   </td>
   <td style="border-color: #000000; border-style: solid; padding: 1px;">
-   <p class="rvps2"><span class="rvts6">String value, can be "superscript" or "subscript". Superscript text appears above the normal line, and rendered in a smaller font. Subscript text appears below the normal line, and rendered in a smaller font</span></p>
+   <p class="rvps2"><span class="rvts6">Retrieve an entire vertex temporary register that's still available. (</span><a class="rvts13" href="ShaderRegisterElement1.html">ShaderRegisterElement</a><span class="rvts6">)</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6"><br/></span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts18">removeFragmentTempUsage</span><span class="rvts20">(</span><span class="rvts21">register</span><span class="rvts20">)</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts20">Removes a usage from a fragment temporary register. When usages reach 0, the register is freed again.</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts21">register</span><span class="rvts20"> -</span><a class="rvts22" href="ShaderRegisterElement1.html"> </a><a class="rvts13" href="ShaderRegisterElement1.html">ShaderRegisterElement</a><span class="rvts20">, The register for which to remove a usage.</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts18">removeVertexTempUsage</span><span class="rvts20">(</span><span class="rvts21">register</span><span class="rvts20">)</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts20">Removes a usage from a vertex temporary register. When usages reach 0, the register is freed again.</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts21">register</span><span class="rvts20"> -</span><a class="rvts22" href="ShaderRegisterElement1.html"> </a><a class="rvts13" href="ShaderRegisterElement1.html">ShaderRegisterElement</a><span class="rvts20">, The register for which to remove a usage.</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts18">reset</span><span class="rvts20">()</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">Resets all registers.</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6"><br/></span></p>
   </td>
  </tr>
 </table>
 </div>
 <p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts6">Properties:</span></p>
+<div class="rvps2">
+<table width="100%" border="1" cellpadding="1" cellspacing="2" style="border-color: #000000; border-style: solid; border-spacing: 2px;">
+ <tr valign="top">
+  <td height="16" style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts18">vertexConstantOffset</span></p>
+  </td>
+  <td height="16" style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">Int, Indicates the start index from which to retrieve vertex constants.</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts18">vertexAttributesOffset</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">Int, Indicates the start index from which to retrieve vertex attributes.</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts18">varyingsOffset</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">Int, Indicates the start index from which to retrieve varying registers.</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts18">fragmentConstantOffset</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">Int, Indicates the start index from which to retrieve fragment constants.</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts18">fragmentOutputRegister</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">[read-only] </span><a class="rvts13" href="ShaderRegisterElement1.html">ShaderRegisterElement</a><span class="rvts6">, The fragment output register.</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts18">numUsedVertexConstants</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">[read-only] Int, The amount of used vertex constant registers.</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts18">numUsedFragmentConstants</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">[read-only] Int, The amount of used fragment constant registers.</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts18">numUsedStreams</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">[read-only] Int, The amount of used vertex streams.</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts18">numUsedTextures</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">[read-only] Int, The amount of used texture slots.</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts18">numUsedVaryings</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts6">[read-only] Int, The amount of used varying registers.</span></p>
+  </td>
+ </tr>
+</table>
+</div>
 <p></p>
-<p class="rvps4" style="clear: both;"><span class="rvts16">Created with the Personal Edition of HelpNDoc: </span><a class="rvts17" href="https://www.helpndoc.com/feature-tour">Easily create Qt Help files</a></p>
+<p class="rvps4" style="clear: both;"><span class="rvts16">Created with the Personal Edition of HelpNDoc: </span><a class="rvts17" href="https://www.helpndoc.com/feature-tour">Easily create EPub books</a></p>
 
             </div>
             

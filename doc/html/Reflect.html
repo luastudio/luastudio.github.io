@@ -191,7 +191,7 @@
 <table width="100%" border="1" cellpadding="1" cellspacing="2" style="border-color: #000000; border-style: solid; border-spacing: 2px;">
  <tr valign="top">
   <td style="border-color: #000000; border-style: solid; padding: 1px;">
-   <p class="rvps7"><span class="rvts37">Lib.Reflect.</span><span class="rvts39">hasField</span><span class="rvts37">(</span><span class="rvts38">o</span><span class="rvts37">, </span><span class="rvts38">field</span><span class="rvts37">)</span></p>
+   <p class="rvps7"><span class="rvts38">Lib.Reflect.</span><span class="rvts40">hasField</span><span class="rvts38">(</span><span class="rvts39">o</span><span class="rvts38">, </span><span class="rvts39">field</span><span class="rvts38">)</span></p>
   </td>
   <td style="border-color: #000000; border-style: solid; padding: 1px;">
    <p class="rvps7"><span class="rvts6">Tells if structure </span><span class="rvts12">o</span><span class="rvts6"> has a field named </span><span class="rvts12">field</span><span class="rvts6">.</span><br/><span class="rvts6">This is only guaranteed to work for anonymous structures.</span></p>
@@ -204,7 +204,7 @@
  </tr>
  <tr valign="top">
   <td style="border-color: #000000; border-style: solid; padding: 1px;">
-   <p class="rvps7"><span class="rvts37">Lib.Reflect.</span><span class="rvts39">field</span><span class="rvts37">(</span><span class="rvts38">o</span><span class="rvts37">, </span><span class="rvts38">field</span><span class="rvts37">)</span></p>
+   <p class="rvps7"><span class="rvts38">Lib.Reflect.</span><span class="rvts40">field</span><span class="rvts38">(</span><span class="rvts39">o</span><span class="rvts38">, </span><span class="rvts39">field</span><span class="rvts38">)</span></p>
   </td>
   <td style="border-color: #000000; border-style: solid; padding: 1px;">
    <p class="rvps7"><span class="rvts6">Returns the value of the field named </span><span class="rvts12">field</span><span class="rvts6"> on object </span><span class="rvts12">o</span><span class="rvts6">.</span><br/><span class="rvts6">If </span><span class="rvts12">o</span><span class="rvts6"> is not an object or has no field named </span><span class="rvts12">field</span><span class="rvts6">, the result is nil.</span><br/><span class="rvts6">If the field is defined as a property, its accessors are ignored. Refer to Reflect.</span><span class="rvts18">getProperty</span><span class="rvts6"> for a function supporting property accessors.</span><br/><span class="rvts6">If </span><span class="rvts12">field</span><span class="rvts6"> is nil, the result is unspecified.</span></p>
@@ -216,7 +216,7 @@
  </tr>
  <tr valign="top">
   <td style="border-color: #000000; border-style: solid; padding: 1px;">
-   <p class="rvps7"><span class="rvts37">Lib.Reflect.</span><span class="rvts39">setField</span><span class="rvts37">(</span><span class="rvts38">o</span><span class="rvts37">, </span><span class="rvts38">field</span><span class="rvts37">, </span><span class="rvts38">value</span><span class="rvts37">)</span></p>
+   <p class="rvps7"><span class="rvts38">Lib.Reflect.</span><span class="rvts40">setField</span><span class="rvts38">(</span><span class="rvts39">o</span><span class="rvts38">, </span><span class="rvts39">field</span><span class="rvts38">, </span><span class="rvts39">value</span><span class="rvts38">)</span></p>
   </td>
   <td style="border-color: #000000; border-style: solid; padding: 1px;">
    <p class="rvps7"><span class="rvts6">Sets the field named </span><span class="rvts12">field</span><span class="rvts6"> of object </span><span class="rvts12">o</span><span class="rvts6"> to value </span><span class="rvts12">value</span><span class="rvts6">.</span><br/><span class="rvts6">If </span><span class="rvts12">o</span><span class="rvts6"> has no field named </span><span class="rvts12">field</span><span class="rvts6">, this function is only guaranteed to work for anonymous structures.</span><br/><span class="rvts6">If </span><span class="rvts12">o</span><span class="rvts6"> or </span><span class="rvts12">field</span><span class="rvts6"> are nil, the result is unspecified.</span></p>
@@ -229,7 +229,7 @@
  </tr>
  <tr valign="top">
   <td style="border-color: #000000; border-style: solid; padding: 1px;">
-   <p class="rvps7"><span class="rvts37">Lib.Reflect.</span><span class="rvts39">getProperty</span><span class="rvts37">(</span><span class="rvts38">o</span><span class="rvts37">, </span><span class="rvts38">field</span><span class="rvts37">)</span></p>
+   <p class="rvps7"><span class="rvts38">Lib.Reflect.</span><span class="rvts40">getProperty</span><span class="rvts38">(</span><span class="rvts39">o</span><span class="rvts38">, </span><span class="rvts39">field</span><span class="rvts38">)</span></p>
   </td>
   <td style="border-color: #000000; border-style: solid; padding: 1px;">
    <p class="rvps7"><span class="rvts6">Returns the value of the field named </span><span class="rvts12">field</span><span class="rvts6"> on object </span><span class="rvts12">o</span><span class="rvts6">, taking property getter functions into account.</span><br/><span class="rvts6">If the field is not a property, this function behaves like Reflect.</span><span class="rvts18">field</span><span class="rvts6">, but might be slower.</span><br/><span class="rvts6">If </span><span class="rvts12">o</span><span class="rvts6"> or </span><span class="rvts12">field</span><span class="rvts6"> are nil, the result is unspecified.</span></p>
@@ -241,7 +241,7 @@
  </tr>
  <tr valign="top">
   <td style="border-color: #000000; border-style: solid; padding: 1px;">
-   <p class="rvps7"><span class="rvts37">Lib.Reflect.</span><span class="rvts39">setProperty</span><span class="rvts37">(</span><span class="rvts38">o</span><span class="rvts37">, </span><span class="rvts38">field</span><span class="rvts37">, </span><span class="rvts38">value</span><span class="rvts37">)</span></p>
+   <p class="rvps7"><span class="rvts38">Lib.Reflect.</span><span class="rvts40">setProperty</span><span class="rvts38">(</span><span class="rvts39">o</span><span class="rvts38">, </span><span class="rvts39">field</span><span class="rvts38">, </span><span class="rvts39">value</span><span class="rvts38">)</span></p>
   </td>
   <td style="border-color: #000000; border-style: solid; padding: 1px;">
    <p class="rvps7"><span class="rvts6">Sets the field named </span><span class="rvts12">field</span><span class="rvts6"> of object </span><span class="rvts12">o</span><span class="rvts6"> to value </span><span class="rvts12">value</span><span class="rvts6">, taking property setter functions into account.</span><br/><span class="rvts6">If the field is not a property, this function behaves like Reflect.</span><span class="rvts18">setField</span><span class="rvts6">, but might be slower.</span><br/><span class="rvts6">If </span><span class="rvts12">field</span><span class="rvts6"> is nil, the result is unspecified.</span></p>
@@ -254,7 +254,7 @@
  </tr>
  <tr valign="top">
   <td style="border-color: #000000; border-style: solid; padding: 1px;">
-   <p class="rvps7"><span class="rvts37">Lib.Reflect.</span><span class="rvts39">callMethod</span><span class="rvts37">(</span><span class="rvts38">o</span><span class="rvts37">, </span><span class="rvts38">funcName</span><span class="rvts37">, </span><span class="rvts38">args</span><span class="rvts37">)</span></p>
+   <p class="rvps7"><span class="rvts38">Lib.Reflect.</span><span class="rvts40">callMethod</span><span class="rvts38">(</span><span class="rvts39">o</span><span class="rvts38">, </span><span class="rvts39">funcName</span><span class="rvts38">, </span><span class="rvts39">args</span><span class="rvts38">)</span></p>
   </td>
   <td style="border-color: #000000; border-style: solid; padding: 1px;">
    <p class="rvps7"><span class="rvts6">Call a method </span><span class="rvts12">funcName</span><span class="rvts6"> with the given object </span><span class="rvts12">o</span><span class="rvts6"> and arguments </span><span class="rvts12">args</span><span class="rvts6">.</span></p>
@@ -267,23 +267,23 @@
  </tr>
  <tr valign="top">
   <td style="border-color: #000000; border-style: solid; padding: 1px;">
-   <p class="rvps7"><span class="rvts41">Lib.Reflect.</span><span class="rvts43">callMethodSafe</span><span class="rvts41">(</span><span class="rvts42">o</span><span class="rvts41">, </span><span class="rvts42">funcName</span><span class="rvts41">, </span><span class="rvts42">args, errFunc</span><span class="rvts41">)</span></p>
+   <p class="rvps7"><span class="rvts42">Lib.Reflect.</span><span class="rvts44">callMethodSafe</span><span class="rvts42">(</span><span class="rvts43">o</span><span class="rvts42">, </span><span class="rvts43">funcName</span><span class="rvts42">, </span><span class="rvts43">args, errFunc</span><span class="rvts42">)</span></p>
   </td>
   <td style="border-color: #000000; border-style: solid; padding: 1px;">
-   <p class="rvps7"><span class="rvts32">Safe call for a Lib method with </span><span class="rvts40">funcName</span><span class="rvts32"> with the given object </span><span class="rvts40">o</span><span class="rvts32"> and arguments </span><span class="rvts40">args</span><span class="rvts32">. This call performs in safe try/catch block. </span><span class="rvts40">errFunc</span><span class="rvts32"> will be triggered in case of Lib error.</span></p>
-   <p class="rvps7"><span class="rvts32">WARNING: callMethodSafe works only with Lib methods.</span></p>
+   <p class="rvps7"><span class="rvts33">Safe call for a Lib method with </span><span class="rvts41">funcName</span><span class="rvts33"> with the given object </span><span class="rvts41">o</span><span class="rvts33"> and arguments </span><span class="rvts41">args</span><span class="rvts33">. This call performs in safe try/catch block. </span><span class="rvts41">errFunc</span><span class="rvts33"> will be triggered in case of Lib error.</span></p>
+   <p class="rvps7"><span class="rvts33">WARNING: callMethodSafe works only with Lib methods.</span></p>
    <p class="rvps7"><span class="rvts6">REMOVED FROM LIB (use pcall)</span></p>
   </td>
   <td style="border-color: #000000; border-style: solid; padding: 1px;">
-   <p class="rvps2"><span class="rvts40">o</span><span class="rvts32"> - object</span></p>
-   <p class="rvps2"><span class="rvts40">funcName</span><span class="rvts32"> - method name, string value</span></p>
-   <p class="rvps2"><span class="rvts40">args</span><span class="rvts32"> - array of arguments</span></p>
-   <p class="rvps2"><span class="rvts40">errFunc</span><span class="rvts32"> - on error function</span></p>
+   <p class="rvps2"><span class="rvts41">o</span><span class="rvts33"> - object</span></p>
+   <p class="rvps2"><span class="rvts41">funcName</span><span class="rvts33"> - method name, string value</span></p>
+   <p class="rvps2"><span class="rvts41">args</span><span class="rvts33"> - array of arguments</span></p>
+   <p class="rvps2"><span class="rvts41">errFunc</span><span class="rvts33"> - on error function</span></p>
   </td>
  </tr>
  <tr valign="top">
   <td style="border-color: #000000; border-style: solid; padding: 1px;">
-   <p class="rvps7"><span class="rvts37">Lib.Reflect.</span><span class="rvts39">fields</span><span class="rvts37">(</span><span class="rvts38">o</span><span class="rvts37">)</span></p>
+   <p class="rvps7"><span class="rvts38">Lib.Reflect.</span><span class="rvts40">fields</span><span class="rvts38">(</span><span class="rvts39">o</span><span class="rvts38">)</span></p>
   </td>
   <td style="border-color: #000000; border-style: solid; padding: 1px;">
    <p class="rvps7"><span class="rvts6">Returns the fields of structure </span><span class="rvts12">o</span><span class="rvts6">.</span><br/><span class="rvts6">This method is only guaranteed to work on anonymous structures.</span><br/><span class="rvts6">If </span><span class="rvts12">o</span><span class="rvts6"> is nil, the result is unspecified.</span></p>
@@ -294,7 +294,7 @@
  </tr>
  <tr valign="top">
   <td style="border-color: #000000; border-style: solid; padding: 1px;">
-   <p class="rvps7"><span class="rvts37">Lib.Reflect.</span><span class="rvts39">isFunction</span><span class="rvts37">(</span><span class="rvts38">f</span><span class="rvts37">)</span></p>
+   <p class="rvps7"><span class="rvts38">Lib.Reflect.</span><span class="rvts40">isFunction</span><span class="rvts38">(</span><span class="rvts39">f</span><span class="rvts38">)</span></p>
   </td>
   <td style="border-color: #000000; border-style: solid; padding: 1px;">
    <p class="rvps7"><span class="rvts6">Returns true if </span><span class="rvts12">f</span><span class="rvts6"> is a function, false otherwise.</span><br/><span class="rvts6">If </span><span class="rvts12">f</span><span class="rvts6"> is nil, the result is false.</span></p>
@@ -305,7 +305,7 @@
  </tr>
  <tr valign="top">
   <td style="border-color: #000000; border-style: solid; padding: 1px;">
-   <p class="rvps7"><span class="rvts37">Lib.Reflect.</span><span class="rvts39">isObject</span><span class="rvts37">(</span><span class="rvts38">v</span><span class="rvts37">)</span></p>
+   <p class="rvps7"><span class="rvts38">Lib.Reflect.</span><span class="rvts40">isObject</span><span class="rvts38">(</span><span class="rvts39">v</span><span class="rvts38">)</span></p>
   </td>
   <td style="border-color: #000000; border-style: solid; padding: 1px;">
    <p class="rvps7"><span class="rvts6">Tells if </span><span class="rvts12">v</span><span class="rvts6"> is an object.</span><br/><span class="rvts6">The result is true if </span><span class="rvts12">v</span><span class="rvts6"> is one of the following:</span><br/><span class="rvts6">- class instance</span><br/><span class="rvts6">- structure</span><br/><span class="rvts6">- Class type</span><br/><span class="rvts6">- Enum type</span><br/><span class="rvts6">Otherwise, including if </span><span class="rvts12">v</span><span class="rvts6"> is nil, the result is false.</span></p>
@@ -316,7 +316,7 @@
  </tr>
  <tr valign="top">
   <td style="border-color: #000000; border-style: solid; padding: 1px;">
-   <p class="rvps7"><span class="rvts37">Lib.Reflect.</span><span class="rvts39">isEnumValue</span><span class="rvts37">(</span><span class="rvts38">v</span><span class="rvts37">)</span></p>
+   <p class="rvps7"><span class="rvts38">Lib.Reflect.</span><span class="rvts40">isEnumValue</span><span class="rvts38">(</span><span class="rvts39">v</span><span class="rvts38">)</span></p>
   </td>
   <td style="border-color: #000000; border-style: solid; padding: 1px;">
    <p class="rvps7"><span class="rvts6">Tells if </span><span class="rvts12">v</span><span class="rvts6"> is an enum value.</span><br/><span class="rvts6">The result is true if </span><span class="rvts12">v</span><span class="rvts6"> is of type EnumValue, i.e. an enum constructor.</span><br/><span class="rvts6">Otherwise, including if </span><span class="rvts12">v</span><span class="rvts6"> is nil, the result is false.</span></p>
@@ -327,7 +327,7 @@
  </tr>
  <tr valign="top">
   <td style="border-color: #000000; border-style: solid; padding: 1px;">
-   <p class="rvps7"><span class="rvts37">Lib.Reflect.</span><span class="rvts39">deleteField</span><span class="rvts37">(</span><span class="rvts38">o</span><span class="rvts37">, </span><span class="rvts38">field</span><span class="rvts37">)</span></p>
+   <p class="rvps7"><span class="rvts38">Lib.Reflect.</span><span class="rvts40">deleteField</span><span class="rvts38">(</span><span class="rvts39">o</span><span class="rvts38">, </span><span class="rvts39">field</span><span class="rvts38">)</span></p>
   </td>
   <td style="border-color: #000000; border-style: solid; padding: 1px;">
    <p class="rvps7"><span class="rvts6">Removes the field named </span><span class="rvts12">field</span><span class="rvts6"> from structure </span><span class="rvts12">o</span><span class="rvts6">.</span><br/><span class="rvts6">This method is only guaranteed to work on anonymous structures.</span><br/><span class="rvts6">If </span><span class="rvts12">o</span><span class="rvts6"> or field are nil, the result is unspecified.</span></p>
@@ -339,7 +339,7 @@
  </tr>
  <tr valign="top">
   <td style="border-color: #000000; border-style: solid; padding: 1px;">
-   <p class="rvps7"><span class="rvts37">Lib.Reflect.</span><span class="rvts39">copy</span><span class="rvts37">(</span><span class="rvts38">o</span><span class="rvts37">)</span></p>
+   <p class="rvps7"><span class="rvts38">Lib.Reflect.</span><span class="rvts40">copy</span><span class="rvts38">(</span><span class="rvts39">o</span><span class="rvts38">)</span></p>
   </td>
   <td style="border-color: #000000; border-style: solid; padding: 1px;">
    <p class="rvps7"><span class="rvts6">Copies the fields of structure </span><span class="rvts12">o</span><span class="rvts6">.</span><br/><span class="rvts6">This is only guaranteed to work on anonymous structures.</span><br/><span class="rvts6">If </span><span class="rvts12">o</span><span class="rvts6"> is nil, the result is unspecified.</span></p>
@@ -350,8 +350,8 @@
  </tr>
 </table>
 </div>
-<p class="rvps7"><span class="rvts36"><br/></span></p>
-<p class="rvps2"><span class="rvts22">Examples:</span></p>
+<p class="rvps7"><span class="rvts37"><br/></span></p>
+<p class="rvps2"><span class="rvts23">Examples:</span></p>
 <p class="rvps2"><span class="rvts6"><br/></span></p>
 <p class="rvps2"><span class="rvts6">Lib.Sys.trace(Lib.Reflect.</span><span class="rvts18">fields</span><span class="rvts6">(Lib))</span></p>
 <p class="rvps2"><span class="rvts6">Lib.Reflect.</span><span class="rvts18">callMethod</span><span class="rvts6">(Lib.Sys, Lib.Sys.trace, {'message'})</span></p>
@@ -360,15 +360,15 @@
 <p class="rvps2"><span class="rvts6">local clone = Lib.Reflect.</span><span class="rvts18">copy</span><span class="rvts6">(obj)</span></p>
 <p class="rvps2"><span class="rvts6">Lib.Sys.trace(clone)</span></p>
 <p class="rvps2"><span class="rvts6"><br/></span></p>
-<p class="rvps2"><span class="rvts32">Lib.Reflect.</span><span class="rvts44">callMethodSafe</span><span class="rvts32">(Lib.Sys, "throw", {"My Error"}, function(err) print("ERROR: "..err) end)</span></p>
-<p class="rvps2"><span class="rvts32"><br/></span></p>
-<p class="rvps2"><span class="rvts32">--</span><span class="rvts40">WARNING</span><span class="rvts32">: current implementation of callMethodSafe will not work on Lib methods assigned to non Lib Lua object:</span></p>
-<p class="rvps2"><span class="rvts32">a = {} -- non Lib Lua object</span></p>
-<p class="rvps2"><span class="rvts32">a.throw = Lib.Sys.throw -- throw assigned to Lua object</span></p>
-<p class="rvps2"><span class="rvts32">Lib.Reflect.</span><span class="rvts44">callMethodSafe</span><span class="rvts32">(a, "throw", {"err1"}, function(err) print("ERROR: "..err) end) -- will not capture error</span></p>
-<p class="rvps2"><span class="rvts32"><br/></span></p>
-<p class="rvps2"><span class="rvts32">PointToSys = Lib.Sys</span></p>
-<p class="rvps2"><span class="rvts32">Lib.Reflect.</span><span class="rvts44">callMethodSafe</span><span class="rvts32">(PointToSys, "throw", {"err2",2}, function(err) print("ERROR: "..err) end) -- will capture error, method "throw" still part of Lib object</span></p>
+<p class="rvps2"><span class="rvts33">Lib.Reflect.</span><span class="rvts45">callMethodSafe</span><span class="rvts33">(Lib.Sys, "throw", {"My Error"}, function(err) print("ERROR: "..err) end)</span></p>
+<p class="rvps2"><span class="rvts33"><br/></span></p>
+<p class="rvps2"><span class="rvts33">--</span><span class="rvts41">WARNING</span><span class="rvts33">: current implementation of callMethodSafe will not work on Lib methods assigned to non Lib Lua object:</span></p>
+<p class="rvps2"><span class="rvts33">a = {} -- non Lib Lua object</span></p>
+<p class="rvps2"><span class="rvts33">a.throw = Lib.Sys.throw -- throw assigned to Lua object</span></p>
+<p class="rvps2"><span class="rvts33">Lib.Reflect.</span><span class="rvts45">callMethodSafe</span><span class="rvts33">(a, "throw", {"err1"}, function(err) print("ERROR: "..err) end) -- will not capture error</span></p>
+<p class="rvps2"><span class="rvts33"><br/></span></p>
+<p class="rvps2"><span class="rvts33">PointToSys = Lib.Sys</span></p>
+<p class="rvps2"><span class="rvts33">Lib.Reflect.</span><span class="rvts45">callMethodSafe</span><span class="rvts33">(PointToSys, "throw", {"err2",2}, function(err) print("ERROR: "..err) end) -- will capture error, method "throw" still part of Lib object</span></p>
 <p></p>
 <p class="rvps4" style="clear: both;"><span class="rvts16">Created with the Personal Edition of HelpNDoc: </span><a class="rvts17" href="https://www.helpndoc.com">Easy EPub and documentation editor</a></p>
 

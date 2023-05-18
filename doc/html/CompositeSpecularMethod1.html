@@ -11,7 +11,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="icon" href="favicon.ico"/>
 
-  <title>BytesOutput</title>
+  <title>CompositeSpecularMethod</title>
   <meta name="description" content="" /> 
   <meta name="keywords" content="">
 
@@ -21,11 +21,11 @@
 
   <!-- Twitter Card data -->
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="BytesOutput">
+  <meta name="twitter:title" content="CompositeSpecularMethod">
   <meta name="twitter:description" content="">
 
   <!-- Open Graph data -->
-  <meta property="og:title" content="BytesOutput" />
+  <meta property="og:title" content="CompositeSpecularMethod" />
   <meta property="og:type" content="article" />
   <meta property="og:description" content="" />
   <meta property="og:site_name" content="LuaStudio API documentation" /> 
@@ -163,86 +163,65 @@
 
     <article>
         <div id="topic-content" class="container-fluid" 
-		  data-hnd-id="BytesOutput"
-		  data-hnd-context="26"
-		  data-hnd-title="BytesOutput"
+		  data-hnd-id="CompositeSpecularMethod1"
+		  data-hnd-context="447"
+		  data-hnd-title="CompositeSpecularMethod"
 		>
             
                 <div class="navigation">
                     <ol class="breadcrumb">
-                        <li><a href="Librarystructure.html">Library structure</a></li><li><a href="Sys.html">Sys</a></li><li><a href="IO.html">IO</a></li>
+                        <li><a href="Librarystructure.html">Library structure</a></li><li><a href="Away3D.html">Away3D</a></li><li><a href="Materials.html">Materials</a></li><li><a href="Methods.html">Methods</a></li>
                     </ol>
                     <div class="nav-arrows">
-                        <div class="btn-group btn-group-xs" role="group"><a class="btn btn-default" href="IO.html" title="IO" role="button"><span class="glyphicon glyphicon-menu-up" aria-hidden="true"></span></a><a class="btn btn-default" href="BytesInput.html" title="BytesInput" role="button"><span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span></a><a class="btn btn-default" href="File.html" title="File" role="button"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span></a></div>
+                        <div class="btn-group btn-group-xs" role="group"><a class="btn btn-default" href="Methods.html" title="Methods" role="button"><span class="glyphicon glyphicon-menu-up" aria-hidden="true"></span></a><a class="btn btn-default" href="CompositeDiffuseMethod.html" title="CompositeDiffuseMethod" role="button"><span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span></a><a class="btn btn-default" href="EnvMapMethod.html" title="EnvMapMethod" role="button"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span></a></div>
                     </div>
                 </div> 
             
 
             <a id="main-content"></a>
 
-            <h2>BytesOutput</h2>
+            <h2>CompositeSpecularMethod</h2>
 
             <div class="main-content">
                 
 <p></p>
-<p class="rvps2"><span class="rvts6">BytesOutput object for writing bytes as stream, inherited from </span><a class="rvts13" href="Output.html">Output</a></p>
+<p class="rvps2"><span class="rvts6">CompositeSpecularMethod provides a base class for specular methods that wrap a specular method to alter the calculated specular reflection strength.</span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts6">Inherited from </span><a class="rvts13" href="BasicSpecularMethod.html">BasicSpecularMethod</a><span class="rvts6"> -&gt; </span><a class="rvts13" href="LightingMethodBase.html">LightingMethodBase</a><span class="rvts6"> -&gt; </span><a class="rvts13" href="ShadingMethodBase.html">ShadingMethodBase</a><span class="rvts6"> -&gt; </span><a class="rvts13" href="NamedAssetBase.html">NamedAssetBase</a><span class="rvts6"> -&gt; </span><a class="rvts13" href="EventDispatcher.html">EventDispatcher</a><span class="rvts6">.</span></p>
 <p class="rvps2"><span class="rvts6"><br/></span></p>
 <p class="rvps2"><span class="rvts6">Can be created using method </span><span class="rvts12">new</span><span class="rvts6">:</span></p>
 <div class="rvps2">
 <table width="100%" border="1" cellpadding="1" cellspacing="2" style="border-color: #000000; border-style: solid; border-spacing: 2px;">
  <tr valign="top">
   <td style="border-color: #000000; border-style: solid; padding: 1px;">
-   <p class="rvps2"><span class="rvts6">Lib.Sys.IO.</span><span class="rvts18">BytesOutput.</span><span class="rvts19">new</span><span class="rvts6">()</span></p>
+   <p class="rvps2"><span class="rvts6">Lib.Away3D.Materials.Methods.</span><span class="rvts18">CompositeSpecularMethod.</span><span class="rvts19">new</span><span class="rvts6">(</span><span class="rvts12">modulateMethod</span><span class="rvts6">, </span><span class="rvts12">baseSpecularMethod</span><span class="rvts6">)</span></p>
   </td>
   <td style="border-color: #000000; border-style: solid; padding: 1px;">
-   <p class="rvps2"><span class="rvts6">create BytesOutput object</span></p>
+   <p class="rvps2"><span class="rvts6">Creates a new WrapSpecularMethod object.</span></p>
   </td>
   <td style="border-color: #000000; border-style: solid; padding: 1px;">
-   <p class="rvps2"><span class="rvts12"><br/></span></p>
+   <p class="rvps2"><span class="rvts12">modulateMethod</span><span class="rvts6"> - The method which will add the code to alter the base method's strength. It needs to have the signature modSpecular(t : </span><a class="rvts13" href="ShaderRegisterElement1.html">ShaderRegisterElement</a><span class="rvts6">, regCache : </span><a class="rvts13" href="ShaderRegisterCache1.html">ShaderRegisterCache</a><span class="rvts6"> : String, in which t.w will contain the specular strength and t.xyz will contain the half-vector or the reflection vector.</span></p>
+   <p class="rvps2"><span class="rvts12">baseSpecularMethod</span><span class="rvts6"> - </span><a class="rvts13" href="BasicSpecularMethod.html">BasicSpecularMethod</a><span class="rvts6">, The base specular method on which this method's shading is based.. Defaults nil</span></p>
   </td>
  </tr>
 </table>
 </div>
 <p class="rvps2"><span class="rvts6"><br/></span></p>
-<p class="rvps2"><span class="rvts6">Created BytesOutput object has properties:</span></p>
-<div class="rvps2">
-<table width="100%" border="1" cellpadding="1" cellspacing="2" style="border-color: #000000; border-style: solid; border-spacing: 2px;">
- <tr valign="top">
-  <td width="229" style="border-color: #000000; border-style: solid; padding: 1px;">
-   <p class="rvps2"><span class="rvts18">length</span></p>
-  </td>
-  <td width="468" style="border-color: #000000; border-style: solid; padding: 1px;">
-   <p class="rvps2"><span class="rvts6">length of the stream. read-only.</span></p>
-  </td>
- </tr>
-</table>
-</div>
-<p class="rvps2"><span class="rvts6"><br/></span></p>
-<p class="rvps2"><span class="rvts6">and methods:</span></p>
+<p class="rvps2"><span class="rvts6">Has properties:</span></p>
 <div class="rvps2">
 <table width="100%" border="1" cellpadding="1" cellspacing="2" style="border-color: #000000; border-style: solid; border-spacing: 2px;">
  <tr valign="top">
   <td style="border-color: #000000; border-style: solid; padding: 1px;">
-   <p class="rvps7"><span class="rvts40">getBytes</span><span class="rvts38">()</span></p>
+   <p class="rvps2"><span class="rvts18">baseMethod</span></p>
   </td>
   <td style="border-color: #000000; border-style: solid; padding: 1px;">
-   <p class="rvps7"><span class="rvts6">Returns the </span><a class="rvts13" href="Bytes.html">Bytes</a><span class="rvts6"> of this output.</span><br/><span class="rvts6">This function should not be called more than once on a given BytesOutput instance.</span></p>
-  </td>
-  <td style="border-color: #000000; border-style: solid; padding: 1px;">
-   <br/>
+   <p class="rvps2"><a class="rvts13" href="BasicSpecularMethod.html">BasicSpecularMethod</a><span class="rvts6">, The base specular method on which this method's shading is based.</span></p>
   </td>
  </tr>
 </table>
 </div>
-<p class="rvps2"><span class="rvts6"><br/></span></p>
-<p class="rvps2"><span class="rvts6">check other available methods in </span><a class="rvts13" href="Output.html">Output</a></p>
-<p class="rvps2"><span class="rvts6"><br/></span></p>
-<p class="rvps2"><span class="rvts23">Examples:</span></p>
-<p class="rvps2"><span class="rvts6"><br/></span></p>
-<p class="rvps2"><span class="rvts6">bytesOutput = Lib.Sys.IO.</span><span class="rvts18">BytesOutput.</span><span class="rvts19">new</span><span class="rvts6">()</span></p>
-<p class="rvps2"><span class="rvts6">bytesOutput.writeByte(67)</span></p>
 <p></p>
-<p class="rvps4" style="clear: both;"><span class="rvts16">Created with the Personal Edition of HelpNDoc: </span><a class="rvts17" href="https://www.helpndoc.com">Free PDF documentation generator</a></p>
+<p class="rvps4" style="clear: both;"><span class="rvts16">Created with the Personal Edition of HelpNDoc: </span><a class="rvts17" href="https://www.helpndoc.com/feature-tour">Easily create CHM Help documents</a></p>
 
             </div>
             

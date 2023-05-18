@@ -192,24 +192,24 @@
 <table width="100%" border="1" cellpadding="1" cellspacing="2" style="border-color: #000000; border-style: solid; border-spacing: 2px;">
  <tr valign="top">
   <td style="border-color: #000000; border-style: solid; padding: 1px;">
-   <p class="rvps2"><span class="rvts6">Lib.Media.</span><span class="rvts19">Window.createSecondaryWindow</span><span class="rvts24">(</span><span class="rvts25">inWidth</span><span class="rvts24">, </span><span class="rvts25">inHeight</span><span class="rvts24">, </span><span class="rvts25">inTitle</span><span class="rvts24">, </span><span class="rvts25">inFlags</span><span class="rvts24">, </span><span class="rvts25">inColour</span><span class="rvts24">, </span><span class="rvts25">inFrameRate</span><span class="rvts24">, </span><span class="rvts25">inIcon</span><span class="rvts24">)</span></p>
+   <p class="rvps2"><span class="rvts6">Lib.Media.</span><span class="rvts19">Window.createSecondaryWindow</span><span class="rvts25">(</span><span class="rvts26">inWidth</span><span class="rvts25">, </span><span class="rvts26">inHeight</span><span class="rvts25">, </span><span class="rvts26">inTitle</span><span class="rvts25">, </span><span class="rvts26">inFlags</span><span class="rvts25">, </span><span class="rvts26">inColour</span><span class="rvts25">, </span><span class="rvts26">inFrameRate</span><span class="rvts25">, </span><span class="rvts26">inIcon</span><span class="rvts25">)</span></p>
   </td>
   <td style="border-color: #000000; border-style: solid; padding: 1px;">
    <p class="rvps2"><span class="rvts6">Creates secondary window on desktop targets.</span></p>
   </td>
   <td style="border-color: #000000; border-style: solid; padding: 1px;">
-   <p class="rvps2"><span class="rvts25">inWidth</span><span class="rvts24"> - width (int number)</span></p>
-   <p class="rvps2"><span class="rvts25">inHeight</span><span class="rvts24"> - height (int number)</span></p>
-   <p class="rvps2"><span class="rvts25">inTitle</span><span class="rvts24"> - title (string)</span></p>
-   <p class="rvps2"><span class="rvts25">inFlags</span><span class="rvts24"> - flags (int number) default - 0x0f, available:</span></p>
+   <p class="rvps2"><span class="rvts26">inWidth</span><span class="rvts25"> - width (int number)</span></p>
+   <p class="rvps2"><span class="rvts26">inHeight</span><span class="rvts25"> - height (int number)</span></p>
+   <p class="rvps2"><span class="rvts26">inTitle</span><span class="rvts25"> - title (string)</span></p>
+   <p class="rvps2"><span class="rvts26">inFlags</span><span class="rvts25"> - flags (int number) default - 0x0f, available:</span></p>
    <p class="rvps2"><span class="rvts6">Lib.Media.</span><span class="rvts18">Window.RESIZABLE</span></p>
    <p class="rvps2"><span class="rvts6">Lib.Media.</span><span class="rvts18">Window.BORDERLESS</span></p>
    <p class="rvps2"><span class="rvts6">Lib.Media.</span><span class="rvts18">Window.ALWAYS_ON_TOP</span></p>
    <p class="rvps2"><span class="rvts6">Lib.Media.</span><span class="rvts18">Window.FULLSCREEN</span></p>
    <p class="rvps2"><span class="rvts6">Lib.Media.</span><span class="rvts18">Window.VSYNC</span></p>
-   <p class="rvps2"><span class="rvts25">inColour</span><span class="rvts24"> - background color (int number) default - 0xffffff</span></p>
-   <p class="rvps2"><span class="rvts25">inFrameRate</span><span class="rvts24"> - frame rate (float number) default - 0.0</span></p>
-   <p class="rvps2"><span class="rvts25">inIcon</span><span class="rvts24"> - icon, currently not supported. default - nil</span></p>
+   <p class="rvps2"><span class="rvts26">inColour</span><span class="rvts25"> - background color (int number) default - 0xffffff</span></p>
+   <p class="rvps2"><span class="rvts26">inFrameRate</span><span class="rvts25"> - frame rate (float number) default - 0.0</span></p>
+   <p class="rvps2"><span class="rvts26">inIcon</span><span class="rvts25"> - icon, currently not supported. default - nil</span></p>
   </td>
  </tr>
 </table>
@@ -309,8 +309,8 @@
    <p class="rvps2"><span class="rvts6">set window position on screen</span></p>
   </td>
   <td style="border-color: #000000; border-style: solid; padding: 1px;">
-   <p class="rvps2"><span class="rvts25">x</span><span class="rvts24"> - </span><span class="rvts6">x window position (int number)</span></p>
-   <p class="rvps2"><span class="rvts25">y</span><span class="rvts24"> -&nbsp;</span><span class="rvts6"> window position (int number)</span></p>
+   <p class="rvps2"><span class="rvts26">x</span><span class="rvts25"> - </span><span class="rvts6">x window position (int number)</span></p>
+   <p class="rvps2"><span class="rvts26">y</span><span class="rvts25"> -&nbsp;</span><span class="rvts6"> window position (int number)</span></p>
   </td>
  </tr>
  <tr valign="top">
@@ -322,8 +322,8 @@
    <p class="rvps2"><span class="rvts12">NOTE</span><span class="rvts6">: resize method will not change window properties width and height instantly. Add to stage Lib.Media.Events.Event.RESIZE event function for capturing updated values.</span></p>
   </td>
   <td style="border-color: #000000; border-style: solid; padding: 1px;">
-   <p class="rvps2"><span class="rvts25">width</span><span class="rvts24"> - </span><span class="rvts6">window width (int number)</span></p>
-   <p class="rvps2"><span class="rvts25">height</span><span class="rvts24"> - </span><span class="rvts6">window height (int number)</span></p>
+   <p class="rvps2"><span class="rvts26">width</span><span class="rvts25"> - </span><span class="rvts6">window width (int number)</span></p>
+   <p class="rvps2"><span class="rvts26">height</span><span class="rvts25"> - </span><span class="rvts6">window height (int number)</span></p>
   </td>
  </tr>
  <tr valign="top">
@@ -334,7 +334,7 @@
    <p class="rvps2"><span class="rvts6">close window. Return false if window prevented from closing by using stage BEFORE_CLOSE event. true if closing request complete.</span></p>
   </td>
   <td style="border-color: #000000; border-style: solid; padding: 1px;">
-   <p class="rvps2"><span class="rvts25"><br/></span></p>
+   <p class="rvps2"><span class="rvts26"><br/></span></p>
   </td>
  </tr>
 </table>

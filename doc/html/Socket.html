@@ -223,7 +223,7 @@
    <p class="rvps2"><span class="rvts18">input</span></p>
   </td>
   <td style="border-color: #000000; border-style: solid; padding: 1px;">
-   <p class="rvps2"><span class="rvts52">The stream on which you can read available data. By default the stream is blocking until the requested data is available, use&nbsp;</span><span class="rvts55">setBlocking</span><span class="rvts54">(false)</span><span class="rvts52">&nbsp;or&nbsp;</span><span class="rvts55">setTimeout</span><span class="rvts52">&nbsp;to prevent infinite waiting.</span></p>
+   <p class="rvps2"><span class="rvts53">The stream on which you can read available data. By default the stream is blocking until the requested data is available, use&nbsp;</span><span class="rvts56">setBlocking</span><span class="rvts55">(false)</span><span class="rvts53">&nbsp;or&nbsp;</span><span class="rvts56">setTimeout</span><span class="rvts53">&nbsp;to prevent infinite waiting.</span></p>
   </td>
   <td style="border-color: #000000; border-style: solid; padding: 1px;">
    <p class="rvps2"><a class="rvts13" href="Input.html">Input</a><span class="rvts6"> Object, read-only</span></p>
@@ -234,7 +234,7 @@
    <p class="rvps2"><span class="rvts18">output</span></p>
   </td>
   <td style="border-color: #000000; border-style: solid; padding: 1px;">
-   <p class="rvps2"><span class="rvts52">The stream on which you can send data. Please note that in case the output buffer you will block while writing the data, use&nbsp;</span><span class="rvts55">setBlocking</span><span class="rvts54">(false)</span><span class="rvts52">&nbsp;or&nbsp;</span><span class="rvts55">setTimeout</span><span class="rvts52">&nbsp;to prevent that.</span></p>
+   <p class="rvps2"><span class="rvts53">The stream on which you can send data. Please note that in case the output buffer you will block while writing the data, use&nbsp;</span><span class="rvts56">setBlocking</span><span class="rvts55">(false)</span><span class="rvts53">&nbsp;or&nbsp;</span><span class="rvts56">setTimeout</span><span class="rvts53">&nbsp;to prevent that.</span></p>
   </td>
   <td style="border-color: #000000; border-style: solid; padding: 1px;">
    <p class="rvps2"><a class="rvts13" href="Output.html">Output</a><span class="rvts6"> object. read-only</span></p>
@@ -248,10 +248,10 @@
 <table width="100%" border="1" cellpadding="1" cellspacing="2" style="border-color: #000000; border-style: solid; border-spacing: 2px;">
  <tr valign="top">
   <td style="border-color: #000000; border-style: solid; padding: 1px;">
-   <p class="rvps2"><a class="rvts48" href="http://api.haxe.org/sys/net/Socket.html#accept">accept</a><span class="rvts37">()</span></p>
+   <p class="rvps2"><a class="rvts49" href="http://api.haxe.org/sys/net/Socket.html#accept">accept</a><span class="rvts38">()</span></p>
   </td>
   <td style="border-color: #000000; border-style: solid; padding: 1px;">
-   <p class="rvps2"><span class="rvts37">Accept a new connected client. This will return a connected socket on which you can read/write some data.</span></p>
+   <p class="rvps2"><span class="rvts38">Accept a new connected client. This will return a connected socket on which you can read/write some data.</span></p>
   </td>
   <td style="border-color: #000000; border-style: solid; padding: 1px;">
    <br/>
@@ -259,10 +259,10 @@
  </tr>
  <tr valign="top">
   <td style="border-color: #000000; border-style: solid; padding: 1px;">
-   <p class="rvps2"><a class="rvts48" href="http://api.haxe.org/sys/net/Socket.html#bind">bind</a><span class="rvts37">(</span><span class="rvts38">host</span><span class="rvts37">,&nbsp;</span><span class="rvts38">port</span><span class="rvts37">)</span></p>
+   <p class="rvps2"><a class="rvts49" href="http://api.haxe.org/sys/net/Socket.html#bind">bind</a><span class="rvts38">(</span><span class="rvts39">host</span><span class="rvts38">,&nbsp;</span><span class="rvts39">port</span><span class="rvts38">)</span></p>
   </td>
   <td style="border-color: #000000; border-style: solid; padding: 1px;">
-   <p class="rvps2"><span class="rvts37">Bind the socket to the given </span><span class="rvts38">host</span><span class="rvts37">/</span><span class="rvts38">port</span><span class="rvts37"> so it can afterwards listen for connections there.</span></p>
+   <p class="rvps2"><span class="rvts38">Bind the socket to the given </span><span class="rvts39">host</span><span class="rvts38">/</span><span class="rvts39">port</span><span class="rvts38"> so it can afterwards listen for connections there.</span></p>
   </td>
   <td style="border-color: #000000; border-style: solid; padding: 1px;">
    <p class="rvps2"><span class="rvts12">host</span><span class="rvts6"> - </span><a class="rvts13" href="Host.html">host</a><span class="rvts6"> object</span></p>
@@ -271,10 +271,10 @@
  </tr>
  <tr valign="top">
   <td style="border-color: #000000; border-style: solid; padding: 1px;">
-   <p class="rvps2"><a class="rvts48" href="http://api.haxe.org/sys/net/Socket.html#close">close</a><span class="rvts37">()</span></p>
+   <p class="rvps2"><a class="rvts49" href="http://api.haxe.org/sys/net/Socket.html#close">close</a><span class="rvts38">()</span></p>
   </td>
   <td style="border-color: #000000; border-style: solid; padding: 1px;">
-   <p class="rvps2"><span class="rvts37">Closes the socket : make sure to properly close all your sockets or you will crash when you run out of file descriptors.</span></p>
+   <p class="rvps2"><span class="rvts38">Closes the socket : make sure to properly close all your sockets or you will crash when you run out of file descriptors.</span></p>
   </td>
   <td style="border-color: #000000; border-style: solid; padding: 1px;">
    <br/>
@@ -282,10 +282,10 @@
  </tr>
  <tr valign="top">
   <td style="border-color: #000000; border-style: solid; padding: 1px;">
-   <p class="rvps2"><a class="rvts48" href="http://api.haxe.org/sys/net/Socket.html#connect">connect</a><span class="rvts37">(</span><span class="rvts38">host</span><span class="rvts37">,&nbsp;</span><span class="rvts38">port</span><span class="rvts37">)</span></p>
+   <p class="rvps2"><a class="rvts49" href="http://api.haxe.org/sys/net/Socket.html#connect">connect</a><span class="rvts38">(</span><span class="rvts39">host</span><span class="rvts38">,&nbsp;</span><span class="rvts39">port</span><span class="rvts38">)</span></p>
   </td>
   <td style="border-color: #000000; border-style: solid; padding: 1px;">
-   <p class="rvps2"><span class="rvts37">Connect to the given server </span><span class="rvts38">host</span><span class="rvts37">/</span><span class="rvts38">port</span><span class="rvts37">. Throw an exception in case we couldn't successfully connect.</span></p>
+   <p class="rvps2"><span class="rvts38">Connect to the given server </span><span class="rvts39">host</span><span class="rvts38">/</span><span class="rvts39">port</span><span class="rvts38">. Throw an exception in case we couldn't successfully connect.</span></p>
   </td>
   <td style="border-color: #000000; border-style: solid; padding: 1px;">
    <p class="rvps2"><span class="rvts12">host</span><span class="rvts6"> - </span><a class="rvts13" href="Host.html">host</a><span class="rvts6"> object</span></p>
@@ -294,11 +294,11 @@
  </tr>
  <tr valign="top">
   <td style="border-color: #000000; border-style: solid; padding: 1px;">
-   <p class="rvps2"><a class="rvts48" href="http://api.haxe.org/sys/net/Socket.html#host">host</a><span class="rvts37">()</span></p>
+   <p class="rvps2"><a class="rvts49" href="http://api.haxe.org/sys/net/Socket.html#host">host</a><span class="rvts38">()</span></p>
   </td>
   <td style="border-color: #000000; border-style: solid; padding: 1px;">
-   <p class="rvps2"><span class="rvts37">Return the information about our side of a connected socket. Info structure:</span></p>
-   <p class="rvps2"><span class="rvts37">{port:</span><a class="rvts58" href="http://api.haxe.org/Int.html">Int</a><span class="rvts37">, host:</span><a class="rvts58" href="http://api.haxe.org/sys/net/Host.html">Host</a><span class="rvts37">}</span></p>
+   <p class="rvps2"><span class="rvts38">Return the information about our side of a connected socket. Info structure:</span></p>
+   <p class="rvps2"><span class="rvts38">{port:</span><a class="rvts59" href="http://api.haxe.org/Int.html">Int</a><span class="rvts38">, host:</span><a class="rvts59" href="http://api.haxe.org/sys/net/Host.html">Host</a><span class="rvts38">}</span></p>
   </td>
   <td style="border-color: #000000; border-style: solid; padding: 1px;">
    <br/>
@@ -306,10 +306,10 @@
  </tr>
  <tr valign="top">
   <td style="border-color: #000000; border-style: solid; padding: 1px;">
-   <p class="rvps2"><a class="rvts48" href="http://api.haxe.org/sys/net/Socket.html#listen">listen</a><span class="rvts37">(</span><span class="rvts38">connections</span><span class="rvts37">)</span></p>
+   <p class="rvps2"><a class="rvts49" href="http://api.haxe.org/sys/net/Socket.html#listen">listen</a><span class="rvts38">(</span><span class="rvts39">connections</span><span class="rvts38">)</span></p>
   </td>
   <td style="border-color: #000000; border-style: solid; padding: 1px;">
-   <p class="rvps2"><span class="rvts37">Allow the socket to listen for incoming questions. The parameter tells how many pending </span><span class="rvts38">connections</span><span class="rvts37"> we can have until they get refused. Use&nbsp;</span><span class="rvts39">accept</span><span class="rvts37">()&nbsp;to accept incoming connections.</span></p>
+   <p class="rvps2"><span class="rvts38">Allow the socket to listen for incoming questions. The parameter tells how many pending </span><span class="rvts39">connections</span><span class="rvts38"> we can have until they get refused. Use&nbsp;</span><span class="rvts40">accept</span><span class="rvts38">()&nbsp;to accept incoming connections.</span></p>
   </td>
   <td style="border-color: #000000; border-style: solid; padding: 1px;">
    <p class="rvps2"><span class="rvts12">connections</span><span class="rvts6"> - number of connections</span></p>
@@ -317,22 +317,11 @@
  </tr>
  <tr valign="top">
   <td style="border-color: #000000; border-style: solid; padding: 1px;">
-   <p class="rvps2"><a class="rvts48" href="http://api.haxe.org/sys/net/Socket.html#peer">peer</a><span class="rvts37">()</span></p>
+   <p class="rvps2"><a class="rvts49" href="http://api.haxe.org/sys/net/Socket.html#peer">peer</a><span class="rvts38">()</span></p>
   </td>
   <td style="border-color: #000000; border-style: solid; padding: 1px;">
-   <p class="rvps2"><span class="rvts37">Return the information about the other side of a connected socket. Info structure:</span></p>
-   <p class="rvps2"><span class="rvts37">{port:</span><a class="rvts58" href="http://api.haxe.org/Int.html">Int</a><span class="rvts37">, host:</span><a class="rvts58" href="http://api.haxe.org/sys/net/Host.html">Host</a><span class="rvts37">}</span></p>
-  </td>
-  <td style="border-color: #000000; border-style: solid; padding: 1px;">
-   <br/>
-  </td>
- </tr>
- <tr valign="top">
-  <td style="border-color: #000000; border-style: solid; padding: 1px;">
-   <p class="rvps2"><a class="rvts48" href="http://api.haxe.org/sys/net/Socket.html#read">read</a><span class="rvts37">()</span></p>
-  </td>
-  <td style="border-color: #000000; border-style: solid; padding: 1px;">
-   <p class="rvps2"><span class="rvts37">Read the whole data available on the socket.</span></p>
+   <p class="rvps2"><span class="rvts38">Return the information about the other side of a connected socket. Info structure:</span></p>
+   <p class="rvps2"><span class="rvts38">{port:</span><a class="rvts59" href="http://api.haxe.org/Int.html">Int</a><span class="rvts38">, host:</span><a class="rvts59" href="http://api.haxe.org/sys/net/Host.html">Host</a><span class="rvts38">}</span></p>
   </td>
   <td style="border-color: #000000; border-style: solid; padding: 1px;">
    <br/>
@@ -340,10 +329,21 @@
  </tr>
  <tr valign="top">
   <td style="border-color: #000000; border-style: solid; padding: 1px;">
-   <p class="rvps2"><a class="rvts48" href="http://api.haxe.org/sys/net/Socket.html#setBlocking">setBlocking</a><span class="rvts37">(</span><span class="rvts38">b</span><span class="rvts37">)</span></p>
+   <p class="rvps2"><a class="rvts49" href="http://api.haxe.org/sys/net/Socket.html#read">read</a><span class="rvts38">()</span></p>
   </td>
   <td style="border-color: #000000; border-style: solid; padding: 1px;">
-   <p class="rvps2"><span class="rvts37">Change the blocking mode of the socket. A blocking socket is the default behavior. A non-blocking socket will abort blocking operations immediately by throwing a error.</span></p>
+   <p class="rvps2"><span class="rvts38">Read the whole data available on the socket.</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <br/>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><a class="rvts49" href="http://api.haxe.org/sys/net/Socket.html#setBlocking">setBlocking</a><span class="rvts38">(</span><span class="rvts39">b</span><span class="rvts38">)</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts38">Change the blocking mode of the socket. A blocking socket is the default behavior. A non-blocking socket will abort blocking operations immediately by throwing a error.</span></p>
   </td>
   <td style="border-color: #000000; border-style: solid; padding: 1px;">
    <p class="rvps2"><span class="rvts12">b</span><span class="rvts6"> - true/false</span></p>
@@ -351,10 +351,10 @@
  </tr>
  <tr valign="top">
   <td style="border-color: #000000; border-style: solid; padding: 1px;">
-   <p class="rvps2"><a class="rvts48" href="http://api.haxe.org/sys/net/Socket.html#setFastSend">setFastSend</a><span class="rvts37">(</span><span class="rvts38">b</span><span class="rvts37">)</span></p>
+   <p class="rvps2"><a class="rvts49" href="http://api.haxe.org/sys/net/Socket.html#setFastSend">setFastSend</a><span class="rvts38">(</span><span class="rvts39">b</span><span class="rvts38">)</span></p>
   </td>
   <td style="border-color: #000000; border-style: solid; padding: 1px;">
-   <p class="rvps2"><span class="rvts37">Allows the socket to immediately send the data when written to its output : this will cause less ping but might increase the number of packets / data size, especially when doing a lot of small writes.</span></p>
+   <p class="rvps2"><span class="rvts38">Allows the socket to immediately send the data when written to its output : this will cause less ping but might increase the number of packets / data size, especially when doing a lot of small writes.</span></p>
   </td>
   <td style="border-color: #000000; border-style: solid; padding: 1px;">
    <p class="rvps2"><span class="rvts12">b</span><span class="rvts6"> - true/false</span></p>
@@ -362,33 +362,33 @@
  </tr>
  <tr valign="top">
   <td style="border-color: #000000; border-style: solid; padding: 1px;">
-   <p class="rvps2"><a class="rvts48" href="http://api.haxe.org/sys/net/Socket.html#setTimeout">setTimeout</a><span class="rvts37">(</span><span class="rvts38">timeout</span><span class="rvts37">)</span></p>
+   <p class="rvps2"><a class="rvts49" href="http://api.haxe.org/sys/net/Socket.html#setTimeout">setTimeout</a><span class="rvts38">(</span><span class="rvts39">timeout</span><span class="rvts38">)</span></p>
   </td>
   <td style="border-color: #000000; border-style: solid; padding: 1px;">
-   <p class="rvps2"><span class="rvts37">Gives a </span><span class="rvts38">timeout</span><span class="rvts37"> after which blocking socket operations (such as reading and writing) will abort and throw an exception.</span></p>
+   <p class="rvps2"><span class="rvts38">Gives a </span><span class="rvts39">timeout</span><span class="rvts38"> after which blocking socket operations (such as reading and writing) will abort and throw an exception.</span></p>
   </td>
   <td style="border-color: #000000; border-style: solid; padding: 1px;">
-   <p class="rvps2"><span class="rvts38">timeout</span><span class="rvts37"> - time out value in seconds, float</span></p>
-  </td>
- </tr>
- <tr valign="top">
-  <td style="border-color: #000000; border-style: solid; padding: 1px;">
-   <p class="rvps2"><a class="rvts48" href="http://api.haxe.org/sys/net/Socket.html#shutdown">shutdown</a><span class="rvts37">(</span><span class="rvts38">read</span><span class="rvts37">,&nbsp;</span><span class="rvts38">write</span><span class="rvts37">)</span></p>
-  </td>
-  <td style="border-color: #000000; border-style: solid; padding: 1px;">
-   <p class="rvps2"><span class="rvts37">Shutdown the socket, either for reading or writing.</span></p>
-  </td>
-  <td style="border-color: #000000; border-style: solid; padding: 1px;">
-   <p class="rvps2"><span class="rvts38">read</span><span class="rvts37"> - true/false</span></p>
-   <p class="rvps2"><span class="rvts38">write</span><span class="rvts37"> - true/false</span></p>
+   <p class="rvps2"><span class="rvts39">timeout</span><span class="rvts38"> - time out value in seconds, float</span></p>
   </td>
  </tr>
  <tr valign="top">
   <td style="border-color: #000000; border-style: solid; padding: 1px;">
-   <p class="rvps2"><a class="rvts48" href="http://api.haxe.org/sys/net/Socket.html#waitForRead">waitForRead</a><span class="rvts37">()</span></p>
+   <p class="rvps2"><a class="rvts49" href="http://api.haxe.org/sys/net/Socket.html#shutdown">shutdown</a><span class="rvts38">(</span><span class="rvts39">read</span><span class="rvts38">,&nbsp;</span><span class="rvts39">write</span><span class="rvts38">)</span></p>
   </td>
   <td style="border-color: #000000; border-style: solid; padding: 1px;">
-   <p class="rvps2"><span class="rvts37">Block until some data is available for read on the socket.</span></p>
+   <p class="rvps2"><span class="rvts38">Shutdown the socket, either for reading or writing.</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts39">read</span><span class="rvts38"> - true/false</span></p>
+   <p class="rvps2"><span class="rvts39">write</span><span class="rvts38"> - true/false</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><a class="rvts49" href="http://api.haxe.org/sys/net/Socket.html#waitForRead">waitForRead</a><span class="rvts38">()</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts38">Block until some data is available for read on the socket.</span></p>
   </td>
   <td style="border-color: #000000; border-style: solid; padding: 1px;">
    <br/>
@@ -396,10 +396,10 @@
  </tr>
  <tr valign="top">
   <td style="border-color: #000000; border-style: solid; padding: 1px;">
-   <p class="rvps2"><a class="rvts48" href="http://api.haxe.org/sys/net/Socket.html#write">write</a><span class="rvts37">(</span><span class="rvts38">content</span><span class="rvts37">)</span></p>
+   <p class="rvps2"><a class="rvts49" href="http://api.haxe.org/sys/net/Socket.html#write">write</a><span class="rvts38">(</span><span class="rvts39">content</span><span class="rvts38">)</span></p>
   </td>
   <td style="border-color: #000000; border-style: solid; padding: 1px;">
-   <p class="rvps2"><span class="rvts37">Write the whole data to the socket output.</span></p>
+   <p class="rvps2"><span class="rvts38">Write the whole data to the socket output.</span></p>
   </td>
   <td style="border-color: #000000; border-style: solid; padding: 1px;">
    <p class="rvps2"><span class="rvts12">content</span><span class="rvts6"> - text content to write</span></p>
@@ -413,14 +413,14 @@
 <table width="100%" border="1" cellpadding="1" cellspacing="2" style="border-color: #000000; border-style: solid; border-spacing: 2px;">
  <tr valign="top">
   <td style="border-color: #000000; border-style: solid; padding: 1px;">
-   <p class="rvps2"><a class="rvts58" href="http://api.haxe.org/sys/net/Socket.html#select">Lib.Sys.Net.Socket.</a><a class="rvts48" href="http://api.haxe.org/sys/net/Socket.html#select">select</a><span class="rvts37">(</span><span class="rvts38">read</span><span class="rvts37">,&nbsp;</span><span class="rvts38">write</span><span class="rvts37">,&nbsp;</span><span class="rvts38">others</span><span class="rvts37">,&nbsp;</span><span class="rvts38">timeout</span><span class="rvts37">)</span></p>
+   <p class="rvps2"><a class="rvts59" href="http://api.haxe.org/sys/net/Socket.html#select">Lib.Sys.Net.Socket.</a><a class="rvts49" href="http://api.haxe.org/sys/net/Socket.html#select">select</a><span class="rvts38">(</span><span class="rvts39">read</span><span class="rvts38">,&nbsp;</span><span class="rvts39">write</span><span class="rvts38">,&nbsp;</span><span class="rvts39">others</span><span class="rvts38">,&nbsp;</span><span class="rvts39">timeout</span><span class="rvts38">)</span></p>
   </td>
   <td style="border-color: #000000; border-style: solid; padding: 1px;">
-   <p class="rvps2"><span class="rvts37">Wait until one of the sockets groups is ready for the given operation:</span></p>
-   <p class="rvps2"><span class="rvts37">-&nbsp;</span><span class="rvts38">read</span><span class="rvts37"> contains sockets on which we want to wait for available data to be read, -&nbsp;</span><span class="rvts38">write</span><span class="rvts37">&nbsp;contains sockets on which we want to wait until we are allowed to write some data to their output buffers,&nbsp;</span></p>
-   <p class="rvps2"><span class="rvts37">-&nbsp;</span><span class="rvts38">others</span><span class="rvts37">&nbsp;contains sockets on which we want to wait for exceptional conditions.</span></p>
-   <p class="rvps2"><span class="rvts39">select</span><span class="rvts37">&nbsp;will block until one of the condition is met, in which case it will return the sockets for which the condition was true.</span></p>
-   <p class="rvps2"><span class="rvts37">In case a </span><span class="rvts38">timeout</span><span class="rvts37"> (in seconds) is specified, </span><span class="rvts39">select</span><span class="rvts37"> might wait at worse until the timeout expires.</span></p>
+   <p class="rvps2"><span class="rvts38">Wait until one of the sockets groups is ready for the given operation:</span></p>
+   <p class="rvps2"><span class="rvts38">-&nbsp;</span><span class="rvts39">read</span><span class="rvts38"> contains sockets on which we want to wait for available data to be read, -&nbsp;</span><span class="rvts39">write</span><span class="rvts38">&nbsp;contains sockets on which we want to wait until we are allowed to write some data to their output buffers,&nbsp;</span></p>
+   <p class="rvps2"><span class="rvts38">-&nbsp;</span><span class="rvts39">others</span><span class="rvts38">&nbsp;contains sockets on which we want to wait for exceptional conditions.</span></p>
+   <p class="rvps2"><span class="rvts40">select</span><span class="rvts38">&nbsp;will block until one of the condition is met, in which case it will return the sockets for which the condition was true.</span></p>
+   <p class="rvps2"><span class="rvts38">In case a </span><span class="rvts39">timeout</span><span class="rvts38"> (in seconds) is specified, </span><span class="rvts40">select</span><span class="rvts38"> might wait at worse until the timeout expires.</span></p>
   </td>
   <td style="border-color: #000000; border-style: solid; padding: 1px;">
    <p class="rvps2"><span class="rvts12">read</span><span class="rvts6"> - array of sockets</span></p>

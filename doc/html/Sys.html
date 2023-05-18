@@ -239,14 +239,14 @@
  </tr>
  <tr valign="top">
   <td style="border-color: #000000; border-style: solid; padding: 1px;">
-   <p class="rvps2"><span class="rvts32">Lib.Sys.</span><span class="rvts44">throw</span><span class="rvts32">(</span><span class="rvts40">error</span><span class="rvts32">)</span></p>
+   <p class="rvps2"><span class="rvts33">Lib.Sys.</span><span class="rvts45">throw</span><span class="rvts33">(</span><span class="rvts41">error</span><span class="rvts33">)</span></p>
   </td>
   <td style="border-color: #000000; border-style: solid; padding: 1px;">
-   <p class="rvps2"><span class="rvts32">Throw Lib error. Current Lib binding implementation can't capture library errors using pcall function. Use callMethodSafe from Lib.</span><a class="rvts46" href="Reflect.html">Reflect</a><span class="rvts32"> for this.</span></p>
+   <p class="rvps2"><span class="rvts33">Throw Lib error. Current Lib binding implementation can't capture library errors using pcall function. Use callMethodSafe from Lib.</span><a class="rvts47" href="Reflect.html">Reflect</a><span class="rvts33"> for this.</span></p>
    <p class="rvps7"><span class="rvts6">REMOVED FROM LIB (use error())</span></p>
   </td>
   <td style="border-color: #000000; border-style: solid; padding: 1px;">
-   <p class="rvps2"><span class="rvts40">error</span><span class="rvts32"> - error message string</span></p>
+   <p class="rvps2"><span class="rvts41">error</span><span class="rvts33"> - error message string</span></p>
   </td>
  </tr>
  <tr valign="top">
@@ -277,25 +277,25 @@
 </table>
 </div>
 <p class="rvps2"><span class="rvts6"><br/></span></p>
-<p class="rvps2"><span class="rvts22">Examples:</span></p>
-<p class="rvps2"><span class="rvts22"><br/></span></p>
+<p class="rvps2"><span class="rvts23">Examples:</span></p>
+<p class="rvps2"><span class="rvts23"><br/></span></p>
 <p class="rvps2"><span class="rvts6">print("Lua Studio version: "..Lib.Sys.</span><span class="rvts18">version</span><span class="rvts6">)</span></p>
 <p class="rvps2"><span class="rvts6"><br/></span></p>
 <p class="rvps2"><span class="rvts6">local table = {a=5, v=8}</span></p>
-<p class="rvps2"><span class="rvts6">print(table) -- print something like: </span><span class="rvts22">table: 067B9AA0</span></p>
-<p class="rvps2"><span class="rvts6">Lib.Sys.</span><span class="rvts18">trace</span><span class="rvts6">(table) -- print: </span><span class="rvts22">{ a =&gt; 5, v =&gt; 8 }</span></p>
+<p class="rvps2"><span class="rvts6">print(table) -- print something like: </span><span class="rvts23">table: 067B9AA0</span></p>
+<p class="rvps2"><span class="rvts6">Lib.Sys.</span><span class="rvts18">trace</span><span class="rvts6">(table) -- print: </span><span class="rvts23">{ a =&gt; 5, v =&gt; 8 }</span></p>
 <p class="rvps2"><span class="rvts6"><br/></span></p>
 <p class="rvps2"><span class="rvts6">sys1 = Lib.Sys</span></p>
 <p class="rvps2"><span class="rvts6">sys2 = Lib.Sys</span></p>
-<p class="rvps2"><span class="rvts6">print(sys1 == sys2) -- result </span><span class="rvts22">true</span></p>
+<p class="rvps2"><span class="rvts6">print(sys1 == sys2) -- result </span><span class="rvts23">true</span></p>
 <p class="rvps2"><span class="rvts6">print(Lib.Sys.</span><span class="rvts18">sleep</span><span class="rvts6"> == Lib.Sys.</span><span class="rvts18">sleep</span><span class="rvts6">) -- result false (Lib methods uncomparable)</span></p>
 <p class="rvps2"><span class="rvts6"><br/></span></p>
 <p class="rvps2"><span class="rvts6">print(Lib.Sys.</span><span class="rvts18">getTime</span><span class="rvts6">()) -- get current time in milliseconds since January 1, 1970 (midnight)</span></p>
 <p class="rvps2"><span class="rvts6">Lib.Sys.</span><span class="rvts18">sleep</span><span class="rvts6">(10) -- sleep for 10 seconds</span></p>
 <p class="rvps2"><span class="rvts6"><br/></span></p>
-<p class="rvps2"><span class="rvts32">Lib.Sys.</span><span class="rvts44">throw</span><span class="rvts32">("My Error")</span></p>
-<p class="rvps2"><span class="rvts32"><br/></span></p>
-<p class="rvps2"><span class="rvts32">Lib.Reflect.callMethodSafe(Lib.Sys, "throw", {"My Error"}, function(err) print("ERROR: "..err) end)</span></p>
+<p class="rvps2"><span class="rvts33">Lib.Sys.</span><span class="rvts45">throw</span><span class="rvts33">("My Error")</span></p>
+<p class="rvps2"><span class="rvts33"><br/></span></p>
+<p class="rvps2"><span class="rvts33">Lib.Reflect.callMethodSafe(Lib.Sys, "throw", {"My Error"}, function(err) print("ERROR: "..err) end)</span></p>
 <p></p>
 <p class="rvps4" style="clear: both;"><span class="rvts16">Created with the Personal Edition of HelpNDoc: </span><a class="rvts17" href="https://www.helpndoc.com">Easy EBook and documentation generator</a></p>
 

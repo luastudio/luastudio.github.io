@@ -195,7 +195,7 @@
    <p class="rvps2"><span class="rvts6">Lib.Sys.</span><span class="rvts18">EReg.</span><span class="rvts19">new</span><span class="rvts6">(</span><span class="rvts12">r</span><span class="rvts6">, </span><span class="rvts12">opt</span><span class="rvts6">)</span></p>
   </td>
   <td style="border-color: #000000; border-style: solid; padding: 1px;">
-   <p class="rvps7"><span class="rvts37">Creates a new regular expression with pattern </span><span class="rvts38">r</span><span class="rvts37"> and modifiers </span><span class="rvts38">opt</span><span class="rvts37">.</span><br/><span class="rvts37">This is equivalent to the shorthand syntax ~/</span><span class="rvts38">r</span><span class="rvts37">/</span><span class="rvts38">opt</span><br/><span class="rvts37">If </span><span class="rvts38">r</span><span class="rvts37"> or </span><span class="rvts38">opt</span><span class="rvts37"> are nil, the result is unspecified.</span></p>
+   <p class="rvps7"><span class="rvts38">Creates a new regular expression with pattern </span><span class="rvts39">r</span><span class="rvts38"> and modifiers </span><span class="rvts39">opt</span><span class="rvts38">.</span><br/><span class="rvts38">This is equivalent to the shorthand syntax ~/</span><span class="rvts39">r</span><span class="rvts38">/</span><span class="rvts39">opt</span><br/><span class="rvts38">If </span><span class="rvts39">r</span><span class="rvts38"> or </span><span class="rvts39">opt</span><span class="rvts38"> are nil, the result is unspecified.</span></p>
   </td>
   <td style="border-color: #000000; border-style: solid; padding: 1px;">
    <p class="rvps2"><span class="rvts12">r</span><span class="rvts6"> - regular expression</span></p>
@@ -210,113 +210,113 @@
 <table width="100%" border="1" cellpadding="1" cellspacing="2" style="border-color: #000000; border-style: solid; border-spacing: 2px;">
  <tr valign="top">
   <td style="border-color: #000000; border-style: solid; padding: 1px;">
-   <p class="rvps7"><span class="rvts39">match</span><span class="rvts37">(</span><span class="rvts38">s</span><span class="rvts37">)</span></p>
+   <p class="rvps7"><span class="rvts40">match</span><span class="rvts38">(</span><span class="rvts39">s</span><span class="rvts38">)</span></p>
   </td>
   <td style="border-color: #000000; border-style: solid; padding: 1px;">
-   <p class="rvps7"><span class="rvts37">Tells if this regular expression matches string </span><span class="rvts38">s</span><span class="rvts37">.</span><br/><span class="rvts37">This method modifies the internal state.</span><br/><span class="rvts37">If </span><span class="rvts38">s</span><span class="rvts37"> is nil, the result is unspecified.</span></p>
+   <p class="rvps7"><span class="rvts38">Tells if this regular expression matches string </span><span class="rvts39">s</span><span class="rvts38">.</span><br/><span class="rvts38">This method modifies the internal state.</span><br/><span class="rvts38">If </span><span class="rvts39">s</span><span class="rvts38"> is nil, the result is unspecified.</span></p>
   </td>
   <td style="border-color: #000000; border-style: solid; padding: 1px;">
-   <p class="rvps2"><span class="rvts38">s</span><span class="rvts37"> - text for matching</span></p>
-  </td>
- </tr>
- <tr valign="top">
-  <td style="border-color: #000000; border-style: solid; padding: 1px;">
-   <p class="rvps7"><span class="rvts39">matched</span><span class="rvts37">(</span><span class="rvts38">n</span><span class="rvts37">)</span></p>
-  </td>
-  <td style="border-color: #000000; border-style: solid; padding: 1px;">
-   <p class="rvps7"><span class="rvts37">Returns the matched sub-group </span><span class="rvts38">n</span><span class="rvts37"> of EReg.</span><br/><span class="rvts37">This method should only be called after .</span><span class="rvts39">match</span><span class="rvts37"> or .</span><span class="rvts39">matchSub</span><span class="rvts37">, and then operates on the string of that operation.</span><br/><span class="rvts37">The index </span><span class="rvts38">n</span><span class="rvts37"> corresponds to the n-th set of parentheses in the pattern</span><br/><span class="rvts37">of this EReg. If no such sub-group exists, an exception is thrown.</span><br/><span class="rvts37">If </span><span class="rvts38">n</span><span class="rvts37"> equals 0, the whole matched substring is returned.</span></p>
-  </td>
-  <td style="border-color: #000000; border-style: solid; padding: 1px;">
-   <p class="rvps2"><span class="rvts38">n</span><span class="rvts37"> - sub-group number, index</span></p>
+   <p class="rvps2"><span class="rvts39">s</span><span class="rvts38"> - text for matching</span></p>
   </td>
  </tr>
  <tr valign="top">
   <td style="border-color: #000000; border-style: solid; padding: 1px;">
-   <p class="rvps7"><span class="rvts39">matchedLeft</span><span class="rvts37">()</span></p>
+   <p class="rvps7"><span class="rvts40">matched</span><span class="rvts38">(</span><span class="rvts39">n</span><span class="rvts38">)</span></p>
   </td>
   <td style="border-color: #000000; border-style: solid; padding: 1px;">
-   <p class="rvps7"><span class="rvts37">Returns the part to the left of the last matched substring.</span><br/><span class="rvts37">If the most recent call to .</span><span class="rvts39">match</span><span class="rvts37"> or .</span><span class="rvts39">matchSub</span><span class="rvts37"> did not match anything, the result is unspecified.</span><br/><span class="rvts37">If the global g modifier was in place for the matching, only the substring to the left of the leftmost match is returned.</span><br/><span class="rvts37">The result does not include the matched part.</span></p>
+   <p class="rvps7"><span class="rvts38">Returns the matched sub-group </span><span class="rvts39">n</span><span class="rvts38"> of EReg.</span><br/><span class="rvts38">This method should only be called after .</span><span class="rvts40">match</span><span class="rvts38"> or .</span><span class="rvts40">matchSub</span><span class="rvts38">, and then operates on the string of that operation.</span><br/><span class="rvts38">The index </span><span class="rvts39">n</span><span class="rvts38"> corresponds to the n-th set of parentheses in the pattern</span><br/><span class="rvts38">of this EReg. If no such sub-group exists, an exception is thrown.</span><br/><span class="rvts38">If </span><span class="rvts39">n</span><span class="rvts38"> equals 0, the whole matched substring is returned.</span></p>
   </td>
   <td style="border-color: #000000; border-style: solid; padding: 1px;">
-   <p class="rvps2"><span class="rvts37"><br/></span></p>
-  </td>
- </tr>
- <tr valign="top">
-  <td style="border-color: #000000; border-style: solid; padding: 1px;">
-   <p class="rvps7"><span class="rvts39">matchedRight</span><span class="rvts37">()</span></p>
-  </td>
-  <td style="border-color: #000000; border-style: solid; padding: 1px;">
-   <p class="rvps7"><span class="rvts37">Returns the part to the right of the last matched substring.</span><br/><span class="rvts37">If the most recent call to .</span><span class="rvts39">match</span><span class="rvts37"> or .</span><span class="rvts39">matchSub</span><span class="rvts37"> did not match anything, the result is unspecified.</span><br/><span class="rvts37">If the global g modifier was in place for the matching, only the substring to the right of the leftmost match is returned.</span><br/><span class="rvts37">The result does not include the matched part.</span></p>
-  </td>
-  <td style="border-color: #000000; border-style: solid; padding: 1px;">
-   <p class="rvps2"><span class="rvts37"><br/></span></p>
+   <p class="rvps2"><span class="rvts39">n</span><span class="rvts38"> - sub-group number, index</span></p>
   </td>
  </tr>
  <tr valign="top">
   <td style="border-color: #000000; border-style: solid; padding: 1px;">
-   <p class="rvps7"><span class="rvts39">matchedPos</span><span class="rvts37">()</span></p>
-   <p class="rvps7"><span class="rvts37"><br/></span></p>
+   <p class="rvps7"><span class="rvts40">matchedLeft</span><span class="rvts38">()</span></p>
   </td>
   <td style="border-color: #000000; border-style: solid; padding: 1px;">
-   <p class="rvps7"><span class="rvts37">Returns the position and length of the last matched substring, within</span><br/><span class="rvts37">the string which was last used as argument to .</span><span class="rvts39">match</span><span class="rvts37"> or</span><br/><span class="rvts39">.matchSub</span><span class="rvts37">.</span><br/><span class="rvts37">If the most recent call to </span><span class="rvts39">.match</span><span class="rvts37"> or </span><span class="rvts39">.matchSub</span><span class="rvts37"> did not match anything, the result is unspecified.</span><br/><span class="rvts37">If the global g modifier was in place for the matching, the position and</span><br/><span class="rvts37">length of the leftmost substring is returned.</span></p>
+   <p class="rvps7"><span class="rvts38">Returns the part to the left of the last matched substring.</span><br/><span class="rvts38">If the most recent call to .</span><span class="rvts40">match</span><span class="rvts38"> or .</span><span class="rvts40">matchSub</span><span class="rvts38"> did not match anything, the result is unspecified.</span><br/><span class="rvts38">If the global g modifier was in place for the matching, only the substring to the left of the leftmost match is returned.</span><br/><span class="rvts38">The result does not include the matched part.</span></p>
   </td>
   <td style="border-color: #000000; border-style: solid; padding: 1px;">
-   <p class="rvps2"><span class="rvts37"><br/></span></p>
-  </td>
- </tr>
- <tr valign="top">
-  <td style="border-color: #000000; border-style: solid; padding: 1px;">
-   <p class="rvps7"><span class="rvts39">matchSub</span><span class="rvts37">(</span><span class="rvts38">s</span><span class="rvts37">, </span><span class="rvts38">pos</span><span class="rvts37">, </span><span class="rvts38">len</span><span class="rvts37">)</span></p>
-  </td>
-  <td style="border-color: #000000; border-style: solid; padding: 1px;">
-   <p class="rvps7"><span class="rvts37">Tells if this regular expression matches a substring of String </span><span class="rvts38">s</span><span class="rvts37">.</span><br/><span class="rvts37">This function expects </span><span class="rvts38">pos</span><span class="rvts37"> and </span><span class="rvts38">len</span><span class="rvts37"> to describe a valid substring of</span><br/><span class="rvts38">s</span><span class="rvts37">, or else the result is unspecified. To get more robust behavior,</span><br/><span class="rvts37">.</span><span class="rvts39">match</span><span class="rvts37">(string.sub(s, pos, pos+len)) can be used instead.</span><br/><span class="rvts37">This method modifies the internal state.</span><br/><span class="rvts37">If </span><span class="rvts38">s</span><span class="rvts37"> is nil, the result is unspecified.</span></p>
-  </td>
-  <td style="border-color: #000000; border-style: solid; padding: 1px;">
-   <p class="rvps2"><span class="rvts38">s</span><span class="rvts37"> - text for matching</span></p>
-   <p class="rvps2"><span class="rvts38">pos</span><span class="rvts37"> - position for substring of </span><span class="rvts38">s</span></p>
-   <p class="rvps2"><span class="rvts38">len</span><span class="rvts37"> - size for substring of </span><span class="rvts38">s</span><span class="rvts37"> &nbsp;</span></p>
+   <p class="rvps2"><span class="rvts38"><br/></span></p>
   </td>
  </tr>
  <tr valign="top">
   <td style="border-color: #000000; border-style: solid; padding: 1px;">
-   <p class="rvps7"><span class="rvts39">split</span><span class="rvts37">(</span><span class="rvts38">s</span><span class="rvts37">)</span></p>
+   <p class="rvps7"><span class="rvts40">matchedRight</span><span class="rvts38">()</span></p>
   </td>
   <td style="border-color: #000000; border-style: solid; padding: 1px;">
-   <p class="rvps7"><span class="rvts37">Splits string </span><span class="rvts38">s</span><span class="rvts37"> at all substrings EReg matches.</span><br/><span class="rvts37">If a match is found at the start of </span><span class="rvts38">s</span><span class="rvts37">, the result contains a leading empty string "" entry.</span><br/><span class="rvts37">If a match is found at the end of </span><span class="rvts38">s</span><span class="rvts37">, the result contains a trailing empty string "" entry.</span><br/><span class="rvts37">If two matching substrings appear next to each other, the result contains the empty string "" between them.</span><br/><span class="rvts37">By default, this method splits </span><span class="rvts38">s</span><span class="rvts37"> into two parts at the first matched</span><br/><span class="rvts37">substring. If the global g modifier is in place, </span><span class="rvts38">s</span><span class="rvts37"> is split at each matched substring.</span><br/><span class="rvts37">If </span><span class="rvts38">s</span><span class="rvts37"> is nil, the result is unspecified.</span></p>
+   <p class="rvps7"><span class="rvts38">Returns the part to the right of the last matched substring.</span><br/><span class="rvts38">If the most recent call to .</span><span class="rvts40">match</span><span class="rvts38"> or .</span><span class="rvts40">matchSub</span><span class="rvts38"> did not match anything, the result is unspecified.</span><br/><span class="rvts38">If the global g modifier was in place for the matching, only the substring to the right of the leftmost match is returned.</span><br/><span class="rvts38">The result does not include the matched part.</span></p>
   </td>
   <td style="border-color: #000000; border-style: solid; padding: 1px;">
-   <p class="rvps2"><span class="rvts38">s</span><span class="rvts37"> - text for splitting</span></p>
-  </td>
- </tr>
- <tr valign="top">
-  <td style="border-color: #000000; border-style: solid; padding: 1px;">
-   <p class="rvps7"><span class="rvts39">replace</span><span class="rvts37">(</span><span class="rvts38">s</span><span class="rvts37">, </span><span class="rvts38">by</span><span class="rvts37">)</span></p>
-   <p class="rvps7"><span class="rvts37"><br/></span></p>
-  </td>
-  <td style="border-color: #000000; border-style: solid; padding: 1px;">
-   <p class="rvps7"><span class="rvts37">Replaces the first substring of </span><span class="rvts38">s</span><span class="rvts37"> which &nbsp;EReg matches with </span><span class="rvts38">by</span><span class="rvts37">.</span><br/><span class="rvts37">If EReg does not match any substring, the result is </span><span class="rvts38">s</span><span class="rvts37">.</span><br/><span class="rvts37">By default, this method replaces only the first matched substring. If</span><br/><span class="rvts37">the global g modifier is in place, all matched substrings are replaced.</span><br/><span class="rvts37">If </span><span class="rvts38">by</span><span class="rvts37"> contains </span><span class="rvts50">$1</span><span class="rvts37"> to </span><span class="rvts50">$9</span><span class="rvts37">, the digit corresponds to number of a</span><br/><span class="rvts37">matched sub-group and its value is used instead. If no such sub-group</span><br/><span class="rvts37">exists, the replacement is unspecified. The string </span><span class="rvts50">$$</span><span class="rvts37"> becomes </span><span class="rvts50">$</span><span class="rvts37">.</span><br/><span class="rvts37">If </span><span class="rvts38">s</span><span class="rvts37"> or </span><span class="rvts38">by</span><span class="rvts37"> are nil, the result is unspecified.</span></p>
-  </td>
-  <td style="border-color: #000000; border-style: solid; padding: 1px;">
-   <p class="rvps2"><span class="rvts38">s</span><span class="rvts37"> - replacing text</span></p>
-   <p class="rvps2"><span class="rvts38">by</span><span class="rvts37"> - matches text</span></p>
+   <p class="rvps2"><span class="rvts38"><br/></span></p>
   </td>
  </tr>
  <tr valign="top">
   <td style="border-color: #000000; border-style: solid; padding: 1px;">
-   <p class="rvps7"><span class="rvts39">map</span><span class="rvts37">(</span><span class="rvts38">s</span><span class="rvts37">, </span><span class="rvts38">f</span><span class="rvts37">)</span></p>
+   <p class="rvps7"><span class="rvts40">matchedPos</span><span class="rvts38">()</span></p>
+   <p class="rvps7"><span class="rvts38"><br/></span></p>
   </td>
   <td style="border-color: #000000; border-style: solid; padding: 1px;">
-   <p class="rvps7"><span class="rvts37">Calls the function </span><span class="rvts38">f</span><span class="rvts37"> for the substring of </span><span class="rvts38">s</span><span class="rvts37"> which EReg matches and replaces that substring with the result of </span><span class="rvts38">f</span><span class="rvts37"> call.</span><br/><span class="rvts37">The </span><span class="rvts38">f</span><span class="rvts37"> function takes EReg object as its first argument and should return a replacement string for the substring matched.</span><br/><span class="rvts37">If EReg does not match any substring, the result is </span><span class="rvts38">s</span><span class="rvts37">.</span><br/><span class="rvts37">By default, this method replaces only the first matched substring. If the global g modifier is in place, all matched substrings are replaced.</span><br/><span class="rvts37">If </span><span class="rvts38">s</span><span class="rvts37"> or </span><span class="rvts38">f</span><span class="rvts37"> are nil, the result is unspecified.</span></p>
+   <p class="rvps7"><span class="rvts38">Returns the position and length of the last matched substring, within</span><br/><span class="rvts38">the string which was last used as argument to .</span><span class="rvts40">match</span><span class="rvts38"> or</span><br/><span class="rvts40">.matchSub</span><span class="rvts38">.</span><br/><span class="rvts38">If the most recent call to </span><span class="rvts40">.match</span><span class="rvts38"> or </span><span class="rvts40">.matchSub</span><span class="rvts38"> did not match anything, the result is unspecified.</span><br/><span class="rvts38">If the global g modifier was in place for the matching, the position and</span><br/><span class="rvts38">length of the leftmost substring is returned.</span></p>
   </td>
   <td style="border-color: #000000; border-style: solid; padding: 1px;">
-   <p class="rvps2"><span class="rvts38">s</span><span class="rvts37"> - text for matching</span></p>
-   <p class="rvps2"><span class="rvts38">f</span><span class="rvts37"> - function with string result for replacement</span></p>
+   <p class="rvps2"><span class="rvts38"><br/></span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps7"><span class="rvts40">matchSub</span><span class="rvts38">(</span><span class="rvts39">s</span><span class="rvts38">, </span><span class="rvts39">pos</span><span class="rvts38">, </span><span class="rvts39">len</span><span class="rvts38">)</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps7"><span class="rvts38">Tells if this regular expression matches a substring of String </span><span class="rvts39">s</span><span class="rvts38">.</span><br/><span class="rvts38">This function expects </span><span class="rvts39">pos</span><span class="rvts38"> and </span><span class="rvts39">len</span><span class="rvts38"> to describe a valid substring of</span><br/><span class="rvts39">s</span><span class="rvts38">, or else the result is unspecified. To get more robust behavior,</span><br/><span class="rvts38">.</span><span class="rvts40">match</span><span class="rvts38">(string.sub(s, pos, pos+len)) can be used instead.</span><br/><span class="rvts38">This method modifies the internal state.</span><br/><span class="rvts38">If </span><span class="rvts39">s</span><span class="rvts38"> is nil, the result is unspecified.</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts39">s</span><span class="rvts38"> - text for matching</span></p>
+   <p class="rvps2"><span class="rvts39">pos</span><span class="rvts38"> - position for substring of </span><span class="rvts39">s</span></p>
+   <p class="rvps2"><span class="rvts39">len</span><span class="rvts38"> - size for substring of </span><span class="rvts39">s</span><span class="rvts38"> &nbsp;</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps7"><span class="rvts40">split</span><span class="rvts38">(</span><span class="rvts39">s</span><span class="rvts38">)</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps7"><span class="rvts38">Splits string </span><span class="rvts39">s</span><span class="rvts38"> at all substrings EReg matches.</span><br/><span class="rvts38">If a match is found at the start of </span><span class="rvts39">s</span><span class="rvts38">, the result contains a leading empty string "" entry.</span><br/><span class="rvts38">If a match is found at the end of </span><span class="rvts39">s</span><span class="rvts38">, the result contains a trailing empty string "" entry.</span><br/><span class="rvts38">If two matching substrings appear next to each other, the result contains the empty string "" between them.</span><br/><span class="rvts38">By default, this method splits </span><span class="rvts39">s</span><span class="rvts38"> into two parts at the first matched</span><br/><span class="rvts38">substring. If the global g modifier is in place, </span><span class="rvts39">s</span><span class="rvts38"> is split at each matched substring.</span><br/><span class="rvts38">If </span><span class="rvts39">s</span><span class="rvts38"> is nil, the result is unspecified.</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts39">s</span><span class="rvts38"> - text for splitting</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps7"><span class="rvts40">replace</span><span class="rvts38">(</span><span class="rvts39">s</span><span class="rvts38">, </span><span class="rvts39">by</span><span class="rvts38">)</span></p>
+   <p class="rvps7"><span class="rvts38"><br/></span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps7"><span class="rvts38">Replaces the first substring of </span><span class="rvts39">s</span><span class="rvts38"> which &nbsp;EReg matches with </span><span class="rvts39">by</span><span class="rvts38">.</span><br/><span class="rvts38">If EReg does not match any substring, the result is </span><span class="rvts39">s</span><span class="rvts38">.</span><br/><span class="rvts38">By default, this method replaces only the first matched substring. If</span><br/><span class="rvts38">the global g modifier is in place, all matched substrings are replaced.</span><br/><span class="rvts38">If </span><span class="rvts39">by</span><span class="rvts38"> contains </span><span class="rvts51">$1</span><span class="rvts38"> to </span><span class="rvts51">$9</span><span class="rvts38">, the digit corresponds to number of a</span><br/><span class="rvts38">matched sub-group and its value is used instead. If no such sub-group</span><br/><span class="rvts38">exists, the replacement is unspecified. The string </span><span class="rvts51">$$</span><span class="rvts38"> becomes </span><span class="rvts51">$</span><span class="rvts38">.</span><br/><span class="rvts38">If </span><span class="rvts39">s</span><span class="rvts38"> or </span><span class="rvts39">by</span><span class="rvts38"> are nil, the result is unspecified.</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts39">s</span><span class="rvts38"> - replacing text</span></p>
+   <p class="rvps2"><span class="rvts39">by</span><span class="rvts38"> - matches text</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps7"><span class="rvts40">map</span><span class="rvts38">(</span><span class="rvts39">s</span><span class="rvts38">, </span><span class="rvts39">f</span><span class="rvts38">)</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps7"><span class="rvts38">Calls the function </span><span class="rvts39">f</span><span class="rvts38"> for the substring of </span><span class="rvts39">s</span><span class="rvts38"> which EReg matches and replaces that substring with the result of </span><span class="rvts39">f</span><span class="rvts38"> call.</span><br/><span class="rvts38">The </span><span class="rvts39">f</span><span class="rvts38"> function takes EReg object as its first argument and should return a replacement string for the substring matched.</span><br/><span class="rvts38">If EReg does not match any substring, the result is </span><span class="rvts39">s</span><span class="rvts38">.</span><br/><span class="rvts38">By default, this method replaces only the first matched substring. If the global g modifier is in place, all matched substrings are replaced.</span><br/><span class="rvts38">If </span><span class="rvts39">s</span><span class="rvts38"> or </span><span class="rvts39">f</span><span class="rvts38"> are nil, the result is unspecified.</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts39">s</span><span class="rvts38"> - text for matching</span></p>
+   <p class="rvps2"><span class="rvts39">f</span><span class="rvts38"> - function with string result for replacement</span></p>
   </td>
  </tr>
 </table>
 </div>
 <p class="rvps2"><span class="rvts6"><br/></span></p>
-<p class="rvps2"><span class="rvts22">Examples:</span></p>
+<p class="rvps2"><span class="rvts23">Examples:</span></p>
 <p class="rvps2"><span class="rvts6"><br/></span></p>
 <p class="rvps2"><span class="rvts6">ereg = Lib.Sys.</span><span class="rvts18">EReg.</span><span class="rvts19">new</span><span class="rvts6">("('(?:\\\\.|[^\\\\\\n'])*')", "")</span></p>
 <p class="rvps2"><span class="rvts6">text = "123'test1' 456 'test2'end"</span></p>

@@ -185,12 +185,12 @@
             <div class="main-content">
                 
 <p></p>
-<p class="rvps2"><span class="rvts26">The Sound object lets you work with sound in an application. The Sound lets you create a Sound object, load and play an external audio file into that object, close the sound stream, and access data about the sound, such as information about the number of bytes in the stream and ID3 metadata. More detailed control of the sound is performed through the sound source - the </span><a class="rvts13" href="SoundChannel.html">SoundChannel</a><span class="rvts26"> object for the sound - and through the properties in the </span><a class="rvts13" href="SoundTransform.html">SoundTransform</a><span class="rvts26"> object that control the output of the sound to the device's speakers.</span></p>
-<p class="rvps6"><span class="rvts24">The sound is played as it is retrieved from a </span><a class="rvts13" href="ByteArray.html">ByteArray</a><span class="rvts24"> object that you populate with sound data.</span></p>
-<p class="rvps6"><span class="rvts24"><br/></span></p>
-<p class="rvps6"><span class="rvts24">Sound object inherited from </span><a class="rvts13" href="EventDispatcher.html">EventDispatcher</a></p>
-<p class="rvps6"><span class="rvts24"><br/></span></p>
-<p class="rvps6"><span class="rvts24">To create Sound object use </span><span class="rvts25">new</span><span class="rvts24"> method:</span></p>
+<p class="rvps2"><span class="rvts27">The Sound object lets you work with sound in an application. The Sound lets you create a Sound object, load and play an external audio file into that object, close the sound stream, and access data about the sound, such as information about the number of bytes in the stream and ID3 metadata. More detailed control of the sound is performed through the sound source - the </span><a class="rvts13" href="SoundChannel.html">SoundChannel</a><span class="rvts27"> object for the sound - and through the properties in the </span><a class="rvts13" href="SoundTransform.html">SoundTransform</a><span class="rvts27"> object that control the output of the sound to the device's speakers.</span></p>
+<p class="rvps6"><span class="rvts25">The sound is played as it is retrieved from a </span><a class="rvts13" href="ByteArray.html">ByteArray</a><span class="rvts25"> object that you populate with sound data.</span></p>
+<p class="rvps6"><span class="rvts25"><br/></span></p>
+<p class="rvps6"><span class="rvts25">Sound object inherited from </span><a class="rvts13" href="EventDispatcher.html">EventDispatcher</a></p>
+<p class="rvps6"><span class="rvts25"><br/></span></p>
+<p class="rvps6"><span class="rvts25">To create Sound object use </span><span class="rvts26">new</span><span class="rvts25"> method:</span></p>
 <div class="rvps6">
 <table width="100%" border="1" cellpadding="1" cellspacing="2" style="border-color: #000000; border-style: solid; border-spacing: 2px;">
  <tr valign="top">
@@ -198,14 +198,14 @@
    <p class="rvps2"><span class="rvts6">Lib.Media.Audio.</span><span class="rvts18">Sound.</span><span class="rvts19">new</span><span class="rvts6">(</span><span class="rvts12">stream</span><span class="rvts6">, </span><span class="rvts12">context</span><span class="rvts6">, </span><span class="rvts12">forcePlayAsMusic</span><span class="rvts6">, </span><span class="rvts12">inEngine</span><span class="rvts6">)</span></p>
   </td>
   <td style="border-color: #000000; border-style: solid; padding: 1px;">
-   <p class="rvps2"><span class="rvts26">Creates a new Sound object. If you pass a </span><span class="rvts29">stream</span><span class="rvts26"> valid </span><a class="rvts13" href="URLRequest.html">URLRequest</a><span class="rvts26"> object to the Sound constructor, the constructor automatically calls the&nbsp;</span><span class="rvts28">load</span><span class="rvts26">()&nbsp;function for the Sound object. If you do not pass a valid </span><a class="rvts13" href="URLRequest.html">URLRequest</a><span class="rvts26"> object to the Sound constructor, you must call the&nbsp;</span><span class="rvts28">load</span><span class="rvts26">()&nbsp;function for the Sound object yourself, or the stream will not load.</span></p>
-   <p class="rvps6"><span class="rvts24">Once&nbsp;</span><span class="rvts18">load</span><span class="rvts24">()&nbsp;is called on a Sound object, you can't later load a different sound file into that Sound object. To load a different sound file, create a new Sound object.</span></p>
-   <p class="rvps6"><span class="rvts24">Engines using for audio depending on platform:</span></p>
-   <p class="rvps6"><span class="rvts24">iOS and Mac - openal</span></p>
-   <p class="rvps6"><span class="rvts24">Windows - SDL audio</span></p>
-   <p class="rvps6"><span class="rvts24">Android - java access to native media player.</span></p>
-   <p class="rvps6"><span class="rvts24">Use .</span><span class="rvts18">getEngine</span><span class="rvts24">() method for more info</span></p>
-   <p class="rvps6"><span class="rvts24">Best practice is to load audio from </span><a class="rvts13" href="ByteArray.html">ByteArray</a><span class="rvts24"> object (check examples)</span></p>
+   <p class="rvps2"><span class="rvts27">Creates a new Sound object. If you pass a </span><span class="rvts30">stream</span><span class="rvts27"> valid </span><a class="rvts13" href="URLRequest.html">URLRequest</a><span class="rvts27"> object to the Sound constructor, the constructor automatically calls the&nbsp;</span><span class="rvts29">load</span><span class="rvts27">()&nbsp;function for the Sound object. If you do not pass a valid </span><a class="rvts13" href="URLRequest.html">URLRequest</a><span class="rvts27"> object to the Sound constructor, you must call the&nbsp;</span><span class="rvts29">load</span><span class="rvts27">()&nbsp;function for the Sound object yourself, or the stream will not load.</span></p>
+   <p class="rvps6"><span class="rvts25">Once&nbsp;</span><span class="rvts18">load</span><span class="rvts25">()&nbsp;is called on a Sound object, you can't later load a different sound file into that Sound object. To load a different sound file, create a new Sound object.</span></p>
+   <p class="rvps6"><span class="rvts25">Engines using for audio depending on platform:</span></p>
+   <p class="rvps6"><span class="rvts25">iOS and Mac - openal</span></p>
+   <p class="rvps6"><span class="rvts25">Windows - SDL audio</span></p>
+   <p class="rvps6"><span class="rvts25">Android - java access to native media player.</span></p>
+   <p class="rvps6"><span class="rvts25">Use .</span><span class="rvts18">getEngine</span><span class="rvts25">() method for more info</span></p>
+   <p class="rvps6"><span class="rvts25">Best practice is to load audio from </span><a class="rvts13" href="ByteArray.html">ByteArray</a><span class="rvts25"> object (check examples)</span></p>
   </td>
   <td style="border-color: #000000; border-style: solid; padding: 1px;">
    <p class="rvps2"><span class="rvts12">stream</span><span class="rvts6"> - </span><a class="rvts13" href="URLRequest.html">URLRequest</a><span class="rvts6"> object (can be nil)</span></p>
@@ -218,8 +218,8 @@
  </tr>
 </table>
 </div>
-<p class="rvps6"><span class="rvts24"><br/></span></p>
-<p class="rvps6"><span class="rvts24">Created Sound object has properties:</span></p>
+<p class="rvps6"><span class="rvts25"><br/></span></p>
+<p class="rvps6"><span class="rvts25">Created Sound object has properties:</span></p>
 <div class="rvps6">
 <table width="100%" border="1" cellpadding="1" cellspacing="2" style="border-color: #000000; border-style: solid; border-spacing: 2px;">
  <tr valign="top">
@@ -298,8 +298,8 @@
  </tr>
 </table>
 </div>
-<p class="rvps6"><span class="rvts24"><br/></span></p>
-<p class="rvps6"><span class="rvts24">and methods:</span></p>
+<p class="rvps6"><span class="rvts25"><br/></span></p>
+<p class="rvps6"><span class="rvts25">and methods:</span></p>
 <div class="rvps6">
 <table width="100%" border="1" cellpadding="1" cellspacing="2" style="border-color: #000000; border-style: solid; border-spacing: 2px;">
  <tr valign="top">
@@ -385,47 +385,47 @@
  </tr>
 </table>
 </div>
-<p class="rvps6"><span class="rvts24"><br/></span></p>
-<p class="rvps6"><span class="rvts27">Examples:</span></p>
-<p class="rvps6"><span class="rvts24"><br/></span></p>
-<p class="rvps6"><span class="rvts24">Audio = Lib.Media.Audio</span></p>
-<p class="rvps6"><span class="rvts24">Text = Lib.Media.Text</span></p>
-<p class="rvps6"><span class="rvts24">Events = Lib.Media.Events</span></p>
-<p class="rvps6"><span class="rvts24">Display = Lib.Media.Display</span></p>
-<p class="rvps6"><span class="rvts24">BitmapData = Display.BitmapData</span></p>
-<p class="rvps6"><span class="rvts24">Bitmap = Display.Bitmap</span></p>
-<p class="rvps6"><span class="rvts24">Geom = Lib.Media.Geom</span></p>
-<p class="rvps6"><span class="rvts24">stage = Display.stage</span></p>
-<p class="rvps6"><span class="rvts24"><br/></span></p>
-<p class="rvps6"><span class="rvts24">sysName = Lib.Media.System.systemName()</span></p>
-<p class="rvps6"><span class="rvts24">desktop = true</span></p>
-<p class="rvps6"><span class="rvts24">if sysName == "android" or sysName == "ios" then</span></p>
-<p class="rvps6"><span class="rvts24"></span><span class="rvts24"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts24">desktop = false</span></p>
-<p class="rvps6"><span class="rvts24">end</span></p>
-<p class="rvps6"><span class="rvts24"><br/></span></p>
-<p class="rvps6"><span class="rvts24">function playMusic(path)</span></p>
-<p class="rvps6"><span class="rvts24"></span><span class="rvts24"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts24">local bytes = Lib.Project.getBytes(path)</span></p>
-<p class="rvps6"><span class="rvts24"></span><span class="rvts24"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts24">local sound = Audio.</span><span class="rvts18">Sound.</span><span class="rvts19">new</span><span class="rvts24">(nil, nil, false, nil)</span></p>
-<p class="rvps6"><span class="rvts24"></span><span class="rvts24"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts24">sound.</span><span class="rvts18">loadCompressedDataFromByteArray</span><span class="rvts24">(bytes, bytes.length, true, nil)</span></p>
-<p class="rvps6"><span class="rvts24"></span><span class="rvts24"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts24">channel = sound.</span><span class="rvts18">play</span><span class="rvts24">(0, 1, nil)</span></p>
-<p class="rvps6"><span class="rvts24"></span><span class="rvts24"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts24">if channel == nil then</span></p>
-<p class="rvps6"><span class="rvts24"></span><span class="rvts24"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts24"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts24">print("Could not play '" .. path .. "' on this system.")</span></p>
-<p class="rvps6"><span class="rvts24"></span><span class="rvts24"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts24">else</span></p>
-<p class="rvps6"><span class="rvts24"></span><span class="rvts24"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts24"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts24">channel.addEventListener(Events.Event.SOUND_COMPLETE,&nbsp;</span></p>
-<p class="rvps6"><span class="rvts24"></span><span class="rvts24"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts24"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts24"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts24">function (e)</span></p>
-<p class="rvps6"><span class="rvts24"></span><span class="rvts24"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts24"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts24"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts24"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts24">print("Complete - play " .. path)</span></p>
-<p class="rvps6"><span class="rvts24"></span><span class="rvts24"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts24"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts24"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts24">end, false, 0, false)</span></p>
-<p class="rvps6"><span class="rvts24"></span><span class="rvts24"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts24">end</span></p>
-<p class="rvps6"><span class="rvts24">end</span></p>
-<p class="rvps6"><span class="rvts24"><br/></span></p>
-<p class="rvps6"><span class="rvts24">local bmp = Bitmap.new(BitmapData.loadFromBytes(Lib.Project.getBytes("/Sound/data/drum_kit.jpg"), nil), Display.PixelSnapping.AUTO, true)</span></p>
-<p class="rvps6"><span class="rvts24">stage.addChild(bmp)</span></p>
-<p class="rvps6"><span class="rvts24"><br/></span></p>
-<p class="rvps6"><span class="rvts24">if desktop then</span></p>
-<p class="rvps6"><span class="rvts24"></span><span class="rvts24"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts24">playMusic("/Sound/data/Party_Gu-Jeremy_S-8250_hifi.ogg")</span></p>
-<p class="rvps6"><span class="rvts24">else</span></p>
-<p class="rvps6"><span class="rvts24"></span><span class="rvts24"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts24">playMusic("/Sound/data/Party_Gu-Jeremy_S-8250_hifi.mp3")</span></p>
-<p class="rvps6"><span class="rvts24">end</span></p>
+<p class="rvps6"><span class="rvts25"><br/></span></p>
+<p class="rvps6"><span class="rvts28">Examples:</span></p>
+<p class="rvps6"><span class="rvts25"><br/></span></p>
+<p class="rvps6"><span class="rvts25">Audio = Lib.Media.Audio</span></p>
+<p class="rvps6"><span class="rvts25">Text = Lib.Media.Text</span></p>
+<p class="rvps6"><span class="rvts25">Events = Lib.Media.Events</span></p>
+<p class="rvps6"><span class="rvts25">Display = Lib.Media.Display</span></p>
+<p class="rvps6"><span class="rvts25">BitmapData = Display.BitmapData</span></p>
+<p class="rvps6"><span class="rvts25">Bitmap = Display.Bitmap</span></p>
+<p class="rvps6"><span class="rvts25">Geom = Lib.Media.Geom</span></p>
+<p class="rvps6"><span class="rvts25">stage = Display.stage</span></p>
+<p class="rvps6"><span class="rvts25"><br/></span></p>
+<p class="rvps6"><span class="rvts25">sysName = Lib.Media.System.systemName()</span></p>
+<p class="rvps6"><span class="rvts25">desktop = true</span></p>
+<p class="rvps6"><span class="rvts25">if sysName == "android" or sysName == "ios" then</span></p>
+<p class="rvps6"><span class="rvts25"></span><span class="rvts25"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts25">desktop = false</span></p>
+<p class="rvps6"><span class="rvts25">end</span></p>
+<p class="rvps6"><span class="rvts25"><br/></span></p>
+<p class="rvps6"><span class="rvts25">function playMusic(path)</span></p>
+<p class="rvps6"><span class="rvts25"></span><span class="rvts25"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts25">local bytes = Lib.Project.getBytes(path)</span></p>
+<p class="rvps6"><span class="rvts25"></span><span class="rvts25"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts25">local sound = Audio.</span><span class="rvts18">Sound.</span><span class="rvts19">new</span><span class="rvts25">(nil, nil, false, nil)</span></p>
+<p class="rvps6"><span class="rvts25"></span><span class="rvts25"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts25">sound.</span><span class="rvts18">loadCompressedDataFromByteArray</span><span class="rvts25">(bytes, bytes.length, true, nil)</span></p>
+<p class="rvps6"><span class="rvts25"></span><span class="rvts25"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts25">channel = sound.</span><span class="rvts18">play</span><span class="rvts25">(0, 1, nil)</span></p>
+<p class="rvps6"><span class="rvts25"></span><span class="rvts25"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts25">if channel == nil then</span></p>
+<p class="rvps6"><span class="rvts25"></span><span class="rvts25"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts25"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts25">print("Could not play '" .. path .. "' on this system.")</span></p>
+<p class="rvps6"><span class="rvts25"></span><span class="rvts25"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts25">else</span></p>
+<p class="rvps6"><span class="rvts25"></span><span class="rvts25"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts25"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts25">channel.addEventListener(Events.Event.SOUND_COMPLETE,&nbsp;</span></p>
+<p class="rvps6"><span class="rvts25"></span><span class="rvts25"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts25"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts25"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts25">function (e)</span></p>
+<p class="rvps6"><span class="rvts25"></span><span class="rvts25"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts25"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts25"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts25"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts25">print("Complete - play " .. path)</span></p>
+<p class="rvps6"><span class="rvts25"></span><span class="rvts25"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts25"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts25"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts25">end, false, 0, false)</span></p>
+<p class="rvps6"><span class="rvts25"></span><span class="rvts25"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts25">end</span></p>
+<p class="rvps6"><span class="rvts25">end</span></p>
+<p class="rvps6"><span class="rvts25"><br/></span></p>
+<p class="rvps6"><span class="rvts25">local bmp = Bitmap.new(BitmapData.loadFromBytes(Lib.Project.getBytes("/Sound/data/drum_kit.jpg"), nil), Display.PixelSnapping.AUTO, true)</span></p>
+<p class="rvps6"><span class="rvts25">stage.addChild(bmp)</span></p>
+<p class="rvps6"><span class="rvts25"><br/></span></p>
+<p class="rvps6"><span class="rvts25">if desktop then</span></p>
+<p class="rvps6"><span class="rvts25"></span><span class="rvts25"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts25">playMusic("/Sound/data/Party_Gu-Jeremy_S-8250_hifi.ogg")</span></p>
+<p class="rvps6"><span class="rvts25">else</span></p>
+<p class="rvps6"><span class="rvts25"></span><span class="rvts25"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts25">playMusic("/Sound/data/Party_Gu-Jeremy_S-8250_hifi.mp3")</span></p>
+<p class="rvps6"><span class="rvts25">end</span></p>
 <p></p>
 <p class="rvps4" style="clear: both;"><span class="rvts16">Created with the Personal Edition of HelpNDoc: </span><a class="rvts17" href="https://www.helpndoc.com/feature-tour">Full-featured Help generator</a></p>
 

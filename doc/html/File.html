@@ -191,102 +191,102 @@
 <table width="100%" border="1" cellpadding="1" cellspacing="2" style="border-color: #000000; border-style: solid; border-spacing: 2px;">
  <tr valign="top">
   <td style="border-color: #000000; border-style: solid; padding: 1px;">
-   <p class="rvps2"><span class="rvts37">Lib.Sys.IO.File.</span><span class="rvts39">getContent</span><span class="rvts37">(</span><span class="rvts38">path</span><span class="rvts37">)</span></p>
+   <p class="rvps2"><span class="rvts38">Lib.Sys.IO.File.</span><span class="rvts40">getContent</span><span class="rvts38">(</span><span class="rvts39">path</span><span class="rvts38">)</span></p>
   </td>
   <td style="border-color: #000000; border-style: solid; padding: 1px;">
-   <p class="rvps7"><span class="rvts37">Retrieves the content of the file specified by </span><span class="rvts38">path</span><span class="rvts37"> as a string.</span><br/><span class="rvts37">If the file does not exist or can not be read, an exception is thrown.</span><br/><span class="rvts37">Lib.Sys.FileSystem.exists can be used to check for existence.</span><br/><span class="rvts37">If </span><span class="rvts38">path</span><span class="rvts37"> is nil, the result is unspecified.</span></p>
+   <p class="rvps7"><span class="rvts38">Retrieves the content of the file specified by </span><span class="rvts39">path</span><span class="rvts38"> as a string.</span><br/><span class="rvts38">If the file does not exist or can not be read, an exception is thrown.</span><br/><span class="rvts38">Lib.Sys.FileSystem.exists can be used to check for existence.</span><br/><span class="rvts38">If </span><span class="rvts39">path</span><span class="rvts38"> is nil, the result is unspecified.</span></p>
   </td>
   <td style="border-color: #000000; border-style: solid; padding: 1px;">
-   <p class="rvps2"><span class="rvts38">path</span><span class="rvts37"> - file path location</span></p>
-  </td>
- </tr>
- <tr valign="top">
-  <td style="border-color: #000000; border-style: solid; padding: 1px;">
-   <p class="rvps2"><span class="rvts37">Lib.Sys.IO.File.</span><span class="rvts39">saveContent</span><span class="rvts37">(</span><span class="rvts38">path</span><span class="rvts37">, </span><span class="rvts38">content</span><span class="rvts37">)</span></p>
-  </td>
-  <td style="border-color: #000000; border-style: solid; padding: 1px;">
-   <p class="rvps7"><span class="rvts37">Stores </span><span class="rvts38">content</span><span class="rvts37"> in the file specified by </span><span class="rvts38">path</span><span class="rvts37">.</span><br/><span class="rvts37">If the file cannot be written to, an exception is thrown.</span><br/><span class="rvts37">If </span><span class="rvts38">path</span><span class="rvts37"> or </span><span class="rvts38">content</span><span class="rvts37"> are nil, the result is unspecified.</span></p>
-  </td>
-  <td style="border-color: #000000; border-style: solid; padding: 1px;">
-   <p class="rvps2"><span class="rvts38">path</span><span class="rvts37"> - file path location</span></p>
-   <p class="rvps2"><span class="rvts38">content</span><span class="rvts37"> - file text content</span></p>
+   <p class="rvps2"><span class="rvts39">path</span><span class="rvts38"> - file path location</span></p>
   </td>
  </tr>
  <tr valign="top">
   <td style="border-color: #000000; border-style: solid; padding: 1px;">
-   <p class="rvps2"><span class="rvts37">Lib.Sys.IO.File.</span><span class="rvts39">getBytes</span><span class="rvts37">(</span><span class="rvts38">path</span><span class="rvts37">)</span></p>
+   <p class="rvps2"><span class="rvts38">Lib.Sys.IO.File.</span><span class="rvts40">saveContent</span><span class="rvts38">(</span><span class="rvts39">path</span><span class="rvts38">, </span><span class="rvts39">content</span><span class="rvts38">)</span></p>
   </td>
   <td style="border-color: #000000; border-style: solid; padding: 1px;">
-   <p class="rvps7"><span class="rvts37">Retrieves the </span><a class="rvts47" href="Bytes.html">binary</a><span class="rvts37"> content of the file specified by </span><span class="rvts38">path</span><span class="rvts37">.</span><br/><span class="rvts37">If the file does not exist or can not be read, an exception is thrown.</span><br/><span class="rvts37">Lib.Sys.FileSystem.exists can be used to check for existence.</span><br/><span class="rvts37">If </span><span class="rvts38">path</span><span class="rvts37"> is nil, the result is unspecified.</span></p>
+   <p class="rvps7"><span class="rvts38">Stores </span><span class="rvts39">content</span><span class="rvts38"> in the file specified by </span><span class="rvts39">path</span><span class="rvts38">.</span><br/><span class="rvts38">If the file cannot be written to, an exception is thrown.</span><br/><span class="rvts38">If </span><span class="rvts39">path</span><span class="rvts38"> or </span><span class="rvts39">content</span><span class="rvts38"> are nil, the result is unspecified.</span></p>
   </td>
   <td style="border-color: #000000; border-style: solid; padding: 1px;">
-   <p class="rvps2"><span class="rvts38">path</span><span class="rvts37"> - file path location</span></p>
-  </td>
- </tr>
- <tr valign="top">
-  <td style="border-color: #000000; border-style: solid; padding: 1px;">
-   <p class="rvps2"><span class="rvts37">Lib.Sys.IO.File.</span><span class="rvts39">saveBytes</span><span class="rvts37">(</span><span class="rvts38">path</span><span class="rvts37">, </span><span class="rvts38">bytes</span><span class="rvts37">)</span></p>
-  </td>
-  <td style="border-color: #000000; border-style: solid; padding: 1px;">
-   <p class="rvps7"><span class="rvts37">Stores </span><a class="rvts47" href="Bytes.html">bytes</a><span class="rvts37"> in the file specified by </span><span class="rvts38">path</span><span class="rvts37"> in binary mode.</span><br/><span class="rvts37">If the file cannot be written to, an exception is thrown.</span><br/><span class="rvts37">If </span><span class="rvts38">path</span><span class="rvts37"> or </span><span class="rvts38">bytes</span><span class="rvts37"> are nil, the result is unspecified.</span></p>
-  </td>
-  <td style="border-color: #000000; border-style: solid; padding: 1px;">
-   <p class="rvps2"><span class="rvts38">path</span><span class="rvts37"> - file path location</span></p>
-   <p class="rvps2"><span class="rvts38">bytes</span><span class="rvts37"> - </span><a class="rvts47" href="Bytes.html">Bytes</a><span class="rvts37"> object</span></p>
+   <p class="rvps2"><span class="rvts39">path</span><span class="rvts38"> - file path location</span></p>
+   <p class="rvps2"><span class="rvts39">content</span><span class="rvts38"> - file text content</span></p>
   </td>
  </tr>
  <tr valign="top">
   <td style="border-color: #000000; border-style: solid; padding: 1px;">
-   <p class="rvps2"><span class="rvts37">Lib.Sys.IO.File.</span><span class="rvts39">read</span><span class="rvts37">(</span><span class="rvts38">path</span><span class="rvts37">, </span><span class="rvts38">binary</span><span class="rvts37">)</span></p>
+   <p class="rvps2"><span class="rvts38">Lib.Sys.IO.File.</span><span class="rvts40">getBytes</span><span class="rvts38">(</span><span class="rvts39">path</span><span class="rvts38">)</span></p>
   </td>
   <td style="border-color: #000000; border-style: solid; padding: 1px;">
-   <p class="rvps7"><span class="rvts37">Returns an </span><a class="rvts47" href="FileInput.html">FileInput</a><span class="rvts37"> handle to the file specified by </span><span class="rvts38">path</span><span class="rvts37">.</span><br/><span class="rvts37">If </span><span class="rvts38">binary</span><span class="rvts37"> is true, the file is opened in binary mode. Otherwise it is opened in non-binary mode.</span><br/><span class="rvts37">If the file does not exist or can not be read, an exception is thrown.</span><br/><span class="rvts37">Operations on the returned </span><a class="rvts47" href="FileInput.html">FileInput</a><span class="rvts37"> handle read on the opened file.</span><br/><span class="rvts37">File handles should be closed via FileInput.close once the operation is complete.</span><br/><span class="rvts37">If </span><span class="rvts38">path</span><span class="rvts37"> is nil, the result is unspecified.</span></p>
+   <p class="rvps7"><span class="rvts38">Retrieves the </span><a class="rvts48" href="Bytes.html">binary</a><span class="rvts38"> content of the file specified by </span><span class="rvts39">path</span><span class="rvts38">.</span><br/><span class="rvts38">If the file does not exist or can not be read, an exception is thrown.</span><br/><span class="rvts38">Lib.Sys.FileSystem.exists can be used to check for existence.</span><br/><span class="rvts38">If </span><span class="rvts39">path</span><span class="rvts38"> is nil, the result is unspecified.</span></p>
   </td>
   <td style="border-color: #000000; border-style: solid; padding: 1px;">
-   <p class="rvps2"><span class="rvts38">path</span><span class="rvts37"> - file path location</span></p>
-   <p class="rvps2"><span class="rvts38">binary</span><span class="rvts37"> - file type binary or not</span></p>
-  </td>
- </tr>
- <tr valign="top">
-  <td style="border-color: #000000; border-style: solid; padding: 1px;">
-   <p class="rvps2"><span class="rvts37">Lib.Sys.IO.File.</span><span class="rvts39">write</span><span class="rvts37">(</span><span class="rvts38">path</span><span class="rvts37">, </span><span class="rvts38">binary</span><span class="rvts37">)</span></p>
-  </td>
-  <td style="border-color: #000000; border-style: solid; padding: 1px;">
-   <p class="rvps7"><span class="rvts37">Returns an </span><a class="rvts47" href="FileOutput.html">FileOutput</a><span class="rvts37"> handle to the file specified by </span><span class="rvts38">path</span><span class="rvts37">.</span><br/><span class="rvts37">If </span><span class="rvts38">binary</span><span class="rvts37"> is true, the file is opened in binary mode. Otherwise it is opened in non-binary mode.</span><br/><span class="rvts37">If the file cannot be written to, an exception is thrown.</span><br/><span class="rvts37">Operations on the returned </span><a class="rvts47" href="FileOutput.html">FileOutput</a><span class="rvts37"> handle write to the opened file.</span><br/><span class="rvts37">If the file existed, its previous content is overwritten.</span><br/><span class="rvts37">File handles should be closed via FileOutput.close once the operation is complete.</span><br/><span class="rvts37">If </span><span class="rvts38">path</span><span class="rvts37"> is nil, the result is unspecified.</span></p>
-  </td>
-  <td style="border-color: #000000; border-style: solid; padding: 1px;">
-   <p class="rvps2"><span class="rvts38">path</span><span class="rvts37"> - file path location</span></p>
-   <p class="rvps2"><span class="rvts38">binary</span><span class="rvts37"> - file type binary or not</span></p>
+   <p class="rvps2"><span class="rvts39">path</span><span class="rvts38"> - file path location</span></p>
   </td>
  </tr>
  <tr valign="top">
   <td style="border-color: #000000; border-style: solid; padding: 1px;">
-   <p class="rvps2"><span class="rvts37">Lib.Sys.IO.File.</span><span class="rvts39">append</span><span class="rvts37">(</span><span class="rvts38">path</span><span class="rvts37">, </span><span class="rvts38">binary</span><span class="rvts37">)</span></p>
+   <p class="rvps2"><span class="rvts38">Lib.Sys.IO.File.</span><span class="rvts40">saveBytes</span><span class="rvts38">(</span><span class="rvts39">path</span><span class="rvts38">, </span><span class="rvts39">bytes</span><span class="rvts38">)</span></p>
   </td>
   <td style="border-color: #000000; border-style: solid; padding: 1px;">
-   <p class="rvps7"><span class="rvts37">Similar to Lib.Sys.IO.File.</span><span class="rvts39">write</span><span class="rvts37">, but appends to the file if it exists instead of overwriting its contents.</span></p>
+   <p class="rvps7"><span class="rvts38">Stores </span><a class="rvts48" href="Bytes.html">bytes</a><span class="rvts38"> in the file specified by </span><span class="rvts39">path</span><span class="rvts38"> in binary mode.</span><br/><span class="rvts38">If the file cannot be written to, an exception is thrown.</span><br/><span class="rvts38">If </span><span class="rvts39">path</span><span class="rvts38"> or </span><span class="rvts39">bytes</span><span class="rvts38"> are nil, the result is unspecified.</span></p>
   </td>
   <td style="border-color: #000000; border-style: solid; padding: 1px;">
-   <p class="rvps2"><span class="rvts38">path</span><span class="rvts37"> - file path location</span></p>
-   <p class="rvps2"><span class="rvts38">binary</span><span class="rvts37"> - file type binary or not</span></p>
+   <p class="rvps2"><span class="rvts39">path</span><span class="rvts38"> - file path location</span></p>
+   <p class="rvps2"><span class="rvts39">bytes</span><span class="rvts38"> - </span><a class="rvts48" href="Bytes.html">Bytes</a><span class="rvts38"> object</span></p>
   </td>
  </tr>
  <tr valign="top">
   <td style="border-color: #000000; border-style: solid; padding: 1px;">
-   <p class="rvps2"><span class="rvts37">Lib.Sys.IO.File.</span><span class="rvts39">copy</span><span class="rvts37">(</span><span class="rvts38">srcPath</span><span class="rvts37">, </span><span class="rvts38">dstPath</span><span class="rvts37">)</span></p>
+   <p class="rvps2"><span class="rvts38">Lib.Sys.IO.File.</span><span class="rvts40">read</span><span class="rvts38">(</span><span class="rvts39">path</span><span class="rvts38">, </span><span class="rvts39">binary</span><span class="rvts38">)</span></p>
   </td>
   <td style="border-color: #000000; border-style: solid; padding: 1px;">
-   <p class="rvps7"><span class="rvts37">Copies the contents of the file specified by </span><span class="rvts38">srcPath</span><span class="rvts37"> to the file specified by </span><span class="rvts38">dstPath</span><span class="rvts37">.</span><br/><span class="rvts37">If the </span><span class="rvts38">srcPath</span><span class="rvts37"> does not exist or cannot be read, or if the </span><span class="rvts38">dstPath</span><span class="rvts37"> file cannot be written to, an exception is thrown.</span><br/><span class="rvts37">If the file at </span><span class="rvts38">dstPath</span><span class="rvts37"> exists, its contents are overwritten.</span><br/><span class="rvts37">If </span><span class="rvts38">srcPath</span><span class="rvts37"> or </span><span class="rvts38">dstPath</span><span class="rvts37"> are nil, the result is unspecified.</span></p>
+   <p class="rvps7"><span class="rvts38">Returns an </span><a class="rvts48" href="FileInput.html">FileInput</a><span class="rvts38"> handle to the file specified by </span><span class="rvts39">path</span><span class="rvts38">.</span><br/><span class="rvts38">If </span><span class="rvts39">binary</span><span class="rvts38"> is true, the file is opened in binary mode. Otherwise it is opened in non-binary mode.</span><br/><span class="rvts38">If the file does not exist or can not be read, an exception is thrown.</span><br/><span class="rvts38">Operations on the returned </span><a class="rvts48" href="FileInput.html">FileInput</a><span class="rvts38"> handle read on the opened file.</span><br/><span class="rvts38">File handles should be closed via FileInput.close once the operation is complete.</span><br/><span class="rvts38">If </span><span class="rvts39">path</span><span class="rvts38"> is nil, the result is unspecified.</span></p>
   </td>
   <td style="border-color: #000000; border-style: solid; padding: 1px;">
-   <p class="rvps2"><span class="rvts38">srcPath</span><span class="rvts37"> - source file path location</span></p>
-   <p class="rvps2"><span class="rvts38">dstPath</span><span class="rvts37"> - destination file path location</span></p>
+   <p class="rvps2"><span class="rvts39">path</span><span class="rvts38"> - file path location</span></p>
+   <p class="rvps2"><span class="rvts39">binary</span><span class="rvts38"> - file type binary or not</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts38">Lib.Sys.IO.File.</span><span class="rvts40">write</span><span class="rvts38">(</span><span class="rvts39">path</span><span class="rvts38">, </span><span class="rvts39">binary</span><span class="rvts38">)</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps7"><span class="rvts38">Returns an </span><a class="rvts48" href="FileOutput.html">FileOutput</a><span class="rvts38"> handle to the file specified by </span><span class="rvts39">path</span><span class="rvts38">.</span><br/><span class="rvts38">If </span><span class="rvts39">binary</span><span class="rvts38"> is true, the file is opened in binary mode. Otherwise it is opened in non-binary mode.</span><br/><span class="rvts38">If the file cannot be written to, an exception is thrown.</span><br/><span class="rvts38">Operations on the returned </span><a class="rvts48" href="FileOutput.html">FileOutput</a><span class="rvts38"> handle write to the opened file.</span><br/><span class="rvts38">If the file existed, its previous content is overwritten.</span><br/><span class="rvts38">File handles should be closed via FileOutput.close once the operation is complete.</span><br/><span class="rvts38">If </span><span class="rvts39">path</span><span class="rvts38"> is nil, the result is unspecified.</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts39">path</span><span class="rvts38"> - file path location</span></p>
+   <p class="rvps2"><span class="rvts39">binary</span><span class="rvts38"> - file type binary or not</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts38">Lib.Sys.IO.File.</span><span class="rvts40">append</span><span class="rvts38">(</span><span class="rvts39">path</span><span class="rvts38">, </span><span class="rvts39">binary</span><span class="rvts38">)</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps7"><span class="rvts38">Similar to Lib.Sys.IO.File.</span><span class="rvts40">write</span><span class="rvts38">, but appends to the file if it exists instead of overwriting its contents.</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts39">path</span><span class="rvts38"> - file path location</span></p>
+   <p class="rvps2"><span class="rvts39">binary</span><span class="rvts38"> - file type binary or not</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts38">Lib.Sys.IO.File.</span><span class="rvts40">copy</span><span class="rvts38">(</span><span class="rvts39">srcPath</span><span class="rvts38">, </span><span class="rvts39">dstPath</span><span class="rvts38">)</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps7"><span class="rvts38">Copies the contents of the file specified by </span><span class="rvts39">srcPath</span><span class="rvts38"> to the file specified by </span><span class="rvts39">dstPath</span><span class="rvts38">.</span><br/><span class="rvts38">If the </span><span class="rvts39">srcPath</span><span class="rvts38"> does not exist or cannot be read, or if the </span><span class="rvts39">dstPath</span><span class="rvts38"> file cannot be written to, an exception is thrown.</span><br/><span class="rvts38">If the file at </span><span class="rvts39">dstPath</span><span class="rvts38"> exists, its contents are overwritten.</span><br/><span class="rvts38">If </span><span class="rvts39">srcPath</span><span class="rvts38"> or </span><span class="rvts39">dstPath</span><span class="rvts38"> are nil, the result is unspecified.</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts39">srcPath</span><span class="rvts38"> - source file path location</span></p>
+   <p class="rvps2"><span class="rvts39">dstPath</span><span class="rvts38"> - destination file path location</span></p>
   </td>
  </tr>
 </table>
 </div>
 <p class="rvps2"><span class="rvts6"><br/></span></p>
-<p class="rvps2"><span class="rvts22">Examples:</span></p>
+<p class="rvps2"><span class="rvts23">Examples:</span></p>
 <p class="rvps2"><span class="rvts6"><br/></span></p>
 <p class="rvps2"><span class="rvts6">root = Lib.Media.FileSystem.File.applicationStorageDirectory.nativePath</span></p>
 <p class="rvps2"><span class="rvts6">if not Lib.Sys.FileSystem.exists(root) then</span></p>

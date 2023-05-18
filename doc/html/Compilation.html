@@ -11,7 +11,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="icon" href="favicon.ico"/>
 
-  <title>BytesOutput</title>
+  <title>Compilation</title>
   <meta name="description" content="" /> 
   <meta name="keywords" content="">
 
@@ -21,11 +21,11 @@
 
   <!-- Twitter Card data -->
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="BytesOutput">
+  <meta name="twitter:title" content="Compilation">
   <meta name="twitter:description" content="">
 
   <!-- Open Graph data -->
-  <meta property="og:title" content="BytesOutput" />
+  <meta property="og:title" content="Compilation" />
   <meta property="og:type" content="article" />
   <meta property="og:description" content="" />
   <meta property="og:site_name" content="LuaStudio API documentation" /> 
@@ -163,86 +163,30 @@
 
     <article>
         <div id="topic-content" class="container-fluid" 
-		  data-hnd-id="BytesOutput"
-		  data-hnd-context="26"
-		  data-hnd-title="BytesOutput"
+		  data-hnd-id="Compilation"
+		  data-hnd-context="444"
+		  data-hnd-title="Compilation"
 		>
             
                 <div class="navigation">
                     <ol class="breadcrumb">
-                        <li><a href="Librarystructure.html">Library structure</a></li><li><a href="Sys.html">Sys</a></li><li><a href="IO.html">IO</a></li>
+                        <li><a href="Librarystructure.html">Library structure</a></li><li><a href="Away3D.html">Away3D</a></li><li><a href="Materials.html">Materials</a></li>
                     </ol>
                     <div class="nav-arrows">
-                        <div class="btn-group btn-group-xs" role="group"><a class="btn btn-default" href="IO.html" title="IO" role="button"><span class="glyphicon glyphicon-menu-up" aria-hidden="true"></span></a><a class="btn btn-default" href="BytesInput.html" title="BytesInput" role="button"><span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span></a><a class="btn btn-default" href="File.html" title="File" role="button"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span></a></div>
+                        <div class="btn-group btn-group-xs" role="group"><a class="btn btn-default" href="Materials.html" title="Materials" role="button"><span class="glyphicon glyphicon-menu-up" aria-hidden="true"></span></a><a class="btn btn-default" href="ColorMaterial.html" title="ColorMaterial" role="button"><span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span></a><a class="btn btn-default" href="ShaderRegisterCache1.html" title="ShaderRegisterCache" role="button"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span></a></div>
                     </div>
                 </div> 
             
 
             <a id="main-content"></a>
 
-            <h2>BytesOutput</h2>
+            <h2>Compilation</h2>
 
             <div class="main-content">
                 
 <p></p>
-<p class="rvps2"><span class="rvts6">BytesOutput object for writing bytes as stream, inherited from </span><a class="rvts13" href="Output.html">Output</a></p>
-<p class="rvps2"><span class="rvts6"><br/></span></p>
-<p class="rvps2"><span class="rvts6">Can be created using method </span><span class="rvts12">new</span><span class="rvts6">:</span></p>
-<div class="rvps2">
-<table width="100%" border="1" cellpadding="1" cellspacing="2" style="border-color: #000000; border-style: solid; border-spacing: 2px;">
- <tr valign="top">
-  <td style="border-color: #000000; border-style: solid; padding: 1px;">
-   <p class="rvps2"><span class="rvts6">Lib.Sys.IO.</span><span class="rvts18">BytesOutput.</span><span class="rvts19">new</span><span class="rvts6">()</span></p>
-  </td>
-  <td style="border-color: #000000; border-style: solid; padding: 1px;">
-   <p class="rvps2"><span class="rvts6">create BytesOutput object</span></p>
-  </td>
-  <td style="border-color: #000000; border-style: solid; padding: 1px;">
-   <p class="rvps2"><span class="rvts12"><br/></span></p>
-  </td>
- </tr>
-</table>
-</div>
-<p class="rvps2"><span class="rvts6"><br/></span></p>
-<p class="rvps2"><span class="rvts6">Created BytesOutput object has properties:</span></p>
-<div class="rvps2">
-<table width="100%" border="1" cellpadding="1" cellspacing="2" style="border-color: #000000; border-style: solid; border-spacing: 2px;">
- <tr valign="top">
-  <td width="229" style="border-color: #000000; border-style: solid; padding: 1px;">
-   <p class="rvps2"><span class="rvts18">length</span></p>
-  </td>
-  <td width="468" style="border-color: #000000; border-style: solid; padding: 1px;">
-   <p class="rvps2"><span class="rvts6">length of the stream. read-only.</span></p>
-  </td>
- </tr>
-</table>
-</div>
-<p class="rvps2"><span class="rvts6"><br/></span></p>
-<p class="rvps2"><span class="rvts6">and methods:</span></p>
-<div class="rvps2">
-<table width="100%" border="1" cellpadding="1" cellspacing="2" style="border-color: #000000; border-style: solid; border-spacing: 2px;">
- <tr valign="top">
-  <td style="border-color: #000000; border-style: solid; padding: 1px;">
-   <p class="rvps7"><span class="rvts40">getBytes</span><span class="rvts38">()</span></p>
-  </td>
-  <td style="border-color: #000000; border-style: solid; padding: 1px;">
-   <p class="rvps7"><span class="rvts6">Returns the </span><a class="rvts13" href="Bytes.html">Bytes</a><span class="rvts6"> of this output.</span><br/><span class="rvts6">This function should not be called more than once on a given BytesOutput instance.</span></p>
-  </td>
-  <td style="border-color: #000000; border-style: solid; padding: 1px;">
-   <br/>
-  </td>
- </tr>
-</table>
-</div>
-<p class="rvps2"><span class="rvts6"><br/></span></p>
-<p class="rvps2"><span class="rvts6">check other available methods in </span><a class="rvts13" href="Output.html">Output</a></p>
-<p class="rvps2"><span class="rvts6"><br/></span></p>
-<p class="rvps2"><span class="rvts23">Examples:</span></p>
-<p class="rvps2"><span class="rvts6"><br/></span></p>
-<p class="rvps2"><span class="rvts6">bytesOutput = Lib.Sys.IO.</span><span class="rvts18">BytesOutput.</span><span class="rvts19">new</span><span class="rvts6">()</span></p>
-<p class="rvps2"><span class="rvts6">bytesOutput.writeByte(67)</span></p>
 <p></p>
-<p class="rvps4" style="clear: both;"><span class="rvts16">Created with the Personal Edition of HelpNDoc: </span><a class="rvts17" href="https://www.helpndoc.com">Free PDF documentation generator</a></p>
+<p class="rvps4" style="clear: both;"><span class="rvts16">Created with the Personal Edition of HelpNDoc: </span><a class="rvts17" href="https://www.helpndoc.com/feature-tour/iphone-website-generation">Free iPhone documentation generator</a></p>
 
             </div>
             

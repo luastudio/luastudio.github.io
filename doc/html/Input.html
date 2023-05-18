@@ -193,10 +193,10 @@
 <table width="100%" border="1" cellpadding="1" cellspacing="2" style="border-color: #000000; border-style: solid; border-spacing: 2px;">
  <tr valign="top">
   <td width="229" style="border-color: #000000; border-style: solid; padding: 1px;">
-   <p class="rvps7"><span class="rvts39">bigEndian</span></p>
+   <p class="rvps7"><span class="rvts40">bigEndian</span></p>
   </td>
   <td width="468" style="border-color: #000000; border-style: solid; padding: 1px;">
-   <p class="rvps7"><span class="rvts37">Endianness (word byte order) used when reading numbers.</span><br/><span class="rvts37">If </span><span class="rvts38">true</span><span class="rvts37">, big-endian is used, otherwise little-endian is used. </span><span class="rvts6">read and write property.</span></p>
+   <p class="rvps7"><span class="rvts38">Endianness (word byte order) used when reading numbers.</span><br/><span class="rvts38">If </span><span class="rvts39">true</span><span class="rvts38">, big-endian is used, otherwise little-endian is used. </span><span class="rvts6">read and write property.</span></p>
   </td>
  </tr>
 </table>
@@ -207,198 +207,198 @@
 <table width="100%" border="1" cellpadding="1" cellspacing="2" style="border-color: #000000; border-style: solid; border-spacing: 2px;">
  <tr valign="top">
   <td style="border-color: #000000; border-style: solid; padding: 1px;">
-   <p class="rvps2"><span class="rvts39">readByte</span><span class="rvts37">()</span></p>
+   <p class="rvps2"><span class="rvts40">readByte</span><span class="rvts38">()</span></p>
   </td>
   <td style="border-color: #000000; border-style: solid; padding: 1px;">
-   <p class="rvps2"><span class="rvts37">read byte from current position</span></p>
+   <p class="rvps2"><span class="rvts38">read byte from current position</span></p>
   </td>
   <td style="border-color: #000000; border-style: solid; padding: 1px;">
-   <p class="rvps2"><span class="rvts37"><br/></span></p>
-  </td>
- </tr>
- <tr valign="top">
-  <td style="border-color: #000000; border-style: solid; padding: 1px;">
-   <p class="rvps2"><span class="rvts39">readBytes</span><span class="rvts37">(</span><span class="rvts38">bytes</span><span class="rvts37">, </span><span class="rvts38">pos</span><span class="rvts37">, </span><span class="rvts38">len</span><span class="rvts37">)</span></p>
-  </td>
-  <td style="border-color: #000000; border-style: solid; padding: 1px;">
-   <p class="rvps7"><span class="rvts37">Read </span><span class="rvts38">len</span><span class="rvts37"> bytes and write them into </span><span class="rvts38">bytes</span><span class="rvts37"> to the position specified by </span><span class="rvts38">pos</span><span class="rvts37">.</span><br/><span class="rvts37">Returns the actual length of read data that can be smaller than </span><span class="rvts38">len</span><span class="rvts37">.</span></p>
-  </td>
-  <td style="border-color: #000000; border-style: solid; padding: 1px;">
-   <p class="rvps2"><span class="rvts38">bytes</span><span class="rvts37"> - </span><a class="rvts47" href="Bytes.html">Bytes</a><span class="rvts37"> object</span></p>
-   <p class="rvps2"><span class="rvts38">pos</span><span class="rvts37"> - write to position</span></p>
-   <p class="rvps2"><span class="rvts38">len</span><span class="rvts37"> &nbsp;- actual length</span></p>
+   <p class="rvps2"><span class="rvts38"><br/></span></p>
   </td>
  </tr>
  <tr valign="top">
   <td style="border-color: #000000; border-style: solid; padding: 1px;">
-   <p class="rvps2"><span class="rvts39">close</span><span class="rvts37">()</span></p>
+   <p class="rvps2"><span class="rvts40">readBytes</span><span class="rvts38">(</span><span class="rvts39">bytes</span><span class="rvts38">, </span><span class="rvts39">pos</span><span class="rvts38">, </span><span class="rvts39">len</span><span class="rvts38">)</span></p>
   </td>
   <td style="border-color: #000000; border-style: solid; padding: 1px;">
-   <p class="rvps7"><span class="rvts37">Close the input source.</span><br/><span class="rvts37">Behavior while reading after calling this method is unspecified.</span></p>
+   <p class="rvps7"><span class="rvts38">Read </span><span class="rvts39">len</span><span class="rvts38"> bytes and write them into </span><span class="rvts39">bytes</span><span class="rvts38"> to the position specified by </span><span class="rvts39">pos</span><span class="rvts38">.</span><br/><span class="rvts38">Returns the actual length of read data that can be smaller than </span><span class="rvts39">len</span><span class="rvts38">.</span></p>
   </td>
   <td style="border-color: #000000; border-style: solid; padding: 1px;">
-   <p class="rvps2"><span class="rvts37"><br/></span></p>
-  </td>
- </tr>
- <tr valign="top">
-  <td style="border-color: #000000; border-style: solid; padding: 1px;">
-   <p class="rvps2"><span class="rvts39">readAll</span><span class="rvts37">(</span><span class="rvts38">bufSize</span><span class="rvts37">)</span></p>
-  </td>
-  <td style="border-color: #000000; border-style: solid; padding: 1px;">
-   <p class="rvps7"><span class="rvts37">Read and return all available data.</span><br/><span class="rvts37">The </span><span class="rvts38">bufSize</span><span class="rvts37"> argument specifies the size of chunks by which data is read.</span></p>
-  </td>
-  <td style="border-color: #000000; border-style: solid; padding: 1px;">
-   <p class="rvps2"><span class="rvts37">bufSize - size of chunks</span></p>
+   <p class="rvps2"><span class="rvts39">bytes</span><span class="rvts38"> - </span><a class="rvts48" href="Bytes.html">Bytes</a><span class="rvts38"> object</span></p>
+   <p class="rvps2"><span class="rvts39">pos</span><span class="rvts38"> - write to position</span></p>
+   <p class="rvps2"><span class="rvts39">len</span><span class="rvts38"> &nbsp;- actual length</span></p>
   </td>
  </tr>
  <tr valign="top">
   <td style="border-color: #000000; border-style: solid; padding: 1px;">
-   <p class="rvps7"><span class="rvts39">readFullBytes</span><span class="rvts37">(</span><span class="rvts38">bytes</span><span class="rvts37">, </span><span class="rvts38">pos</span><span class="rvts37">, </span><span class="rvts38">len</span><span class="rvts37">)</span></p>
+   <p class="rvps2"><span class="rvts40">close</span><span class="rvts38">()</span></p>
   </td>
   <td style="border-color: #000000; border-style: solid; padding: 1px;">
-   <p class="rvps7"><span class="rvts37">Read </span><span class="rvts38">len</span><span class="rvts37"> bytes and write them into </span><span class="rvts38">bytes</span><span class="rvts37"> to the position specified by </span><span class="rvts38">pos</span><span class="rvts37">.</span><br/><span class="rvts37">Unlike readBytes, this method tries to read the exact </span><span class="rvts38">len</span><span class="rvts37"> amount of bytes.</span></p>
+   <p class="rvps7"><span class="rvts38">Close the input source.</span><br/><span class="rvts38">Behavior while reading after calling this method is unspecified.</span></p>
   </td>
   <td style="border-color: #000000; border-style: solid; padding: 1px;">
-   <p class="rvps2"><span class="rvts38">bytes</span><span class="rvts37"> - </span><a class="rvts47" href="Bytes.html">Bytes</a><span class="rvts37"> object</span></p>
-   <p class="rvps2"><span class="rvts38">pos</span><span class="rvts37"> - write to position</span></p>
-   <p class="rvps2"><span class="rvts38">len</span><span class="rvts37"> &nbsp;- actual length</span></p>
+   <p class="rvps2"><span class="rvts38"><br/></span></p>
   </td>
  </tr>
  <tr valign="top">
   <td style="border-color: #000000; border-style: solid; padding: 1px;">
-   <p class="rvps7"><span class="rvts39">read</span><span class="rvts37">(</span><span class="rvts38">nbytes</span><span class="rvts37">)</span></p>
+   <p class="rvps2"><span class="rvts40">readAll</span><span class="rvts38">(</span><span class="rvts39">bufSize</span><span class="rvts38">)</span></p>
   </td>
   <td style="border-color: #000000; border-style: solid; padding: 1px;">
-   <p class="rvps7"><span class="rvts37">Read and return </span><span class="rvts38">nbytes</span><span class="rvts37"> bytes.</span></p>
+   <p class="rvps7"><span class="rvts38">Read and return all available data.</span><br/><span class="rvts38">The </span><span class="rvts39">bufSize</span><span class="rvts38"> argument specifies the size of chunks by which data is read.</span></p>
   </td>
   <td style="border-color: #000000; border-style: solid; padding: 1px;">
-   <p class="rvps2"><span class="rvts38">nbytes</span><span class="rvts37"> - requested size</span></p>
-  </td>
- </tr>
- <tr valign="top">
-  <td style="border-color: #000000; border-style: solid; padding: 1px;">
-   <p class="rvps7"><span class="rvts39">readUntil</span><span class="rvts37">(</span><span class="rvts38">end</span><span class="rvts37">)</span></p>
-  </td>
-  <td style="border-color: #000000; border-style: solid; padding: 1px;">
-   <p class="rvps7"><span class="rvts37">Read a string until a character code specified by </span><span class="rvts38">end</span><span class="rvts37"> is occurred.</span><br/><span class="rvts37">The final character is not included in the resulting string.</span></p>
-  </td>
-  <td style="border-color: #000000; border-style: solid; padding: 1px;">
-   <p class="rvps2"><span class="rvts38">end</span><span class="rvts37"> - character code</span></p>
+   <p class="rvps2"><span class="rvts38">bufSize - size of chunks</span></p>
   </td>
  </tr>
  <tr valign="top">
   <td style="border-color: #000000; border-style: solid; padding: 1px;">
-   <p class="rvps7"><span class="rvts39">readLine</span><span class="rvts37">()</span></p>
+   <p class="rvps7"><span class="rvts40">readFullBytes</span><span class="rvts38">(</span><span class="rvts39">bytes</span><span class="rvts38">, </span><span class="rvts39">pos</span><span class="rvts38">, </span><span class="rvts39">len</span><span class="rvts38">)</span></p>
   </td>
   <td style="border-color: #000000; border-style: solid; padding: 1px;">
-   <p class="rvps7"><span class="rvts37">Read a line of text separated by CR and/or LF bytes.</span><br/><span class="rvts37">The CR/LF characters are not included in the resulting string.</span></p>
+   <p class="rvps7"><span class="rvts38">Read </span><span class="rvts39">len</span><span class="rvts38"> bytes and write them into </span><span class="rvts39">bytes</span><span class="rvts38"> to the position specified by </span><span class="rvts39">pos</span><span class="rvts38">.</span><br/><span class="rvts38">Unlike readBytes, this method tries to read the exact </span><span class="rvts39">len</span><span class="rvts38"> amount of bytes.</span></p>
   </td>
   <td style="border-color: #000000; border-style: solid; padding: 1px;">
-   <p class="rvps2"><span class="rvts37"><br/></span></p>
-  </td>
- </tr>
- <tr valign="top">
-  <td style="border-color: #000000; border-style: solid; padding: 1px;">
-   <p class="rvps7"><span class="rvts39">readString</span><span class="rvts37">(</span><span class="rvts38">len</span><span class="rvts37">)</span></p>
-  </td>
-  <td style="border-color: #000000; border-style: solid; padding: 1px;">
-   <p class="rvps7"><span class="rvts37">Read and </span><span class="rvts38">len</span><span class="rvts37"> bytes as a string.</span></p>
-  </td>
-  <td style="border-color: #000000; border-style: solid; padding: 1px;">
-   <p class="rvps2"><span class="rvts38">len</span><span class="rvts37"> - requested size</span></p>
+   <p class="rvps2"><span class="rvts39">bytes</span><span class="rvts38"> - </span><a class="rvts48" href="Bytes.html">Bytes</a><span class="rvts38"> object</span></p>
+   <p class="rvps2"><span class="rvts39">pos</span><span class="rvts38"> - write to position</span></p>
+   <p class="rvps2"><span class="rvts39">len</span><span class="rvts38"> &nbsp;- actual length</span></p>
   </td>
  </tr>
  <tr valign="top">
   <td style="border-color: #000000; border-style: solid; padding: 1px;">
-   <p class="rvps7"><span class="rvts39">readFloat</span><span class="rvts37">()</span></p>
+   <p class="rvps7"><span class="rvts40">read</span><span class="rvts38">(</span><span class="rvts39">nbytes</span><span class="rvts38">)</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps7"><span class="rvts38">Read and return </span><span class="rvts39">nbytes</span><span class="rvts38"> bytes.</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts39">nbytes</span><span class="rvts38"> - requested size</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps7"><span class="rvts40">readUntil</span><span class="rvts38">(</span><span class="rvts39">end</span><span class="rvts38">)</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps7"><span class="rvts38">Read a string until a character code specified by </span><span class="rvts39">end</span><span class="rvts38"> is occurred.</span><br/><span class="rvts38">The final character is not included in the resulting string.</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts39">end</span><span class="rvts38"> - character code</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps7"><span class="rvts40">readLine</span><span class="rvts38">()</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps7"><span class="rvts38">Read a line of text separated by CR and/or LF bytes.</span><br/><span class="rvts38">The CR/LF characters are not included in the resulting string.</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts38"><br/></span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps7"><span class="rvts40">readString</span><span class="rvts38">(</span><span class="rvts39">len</span><span class="rvts38">)</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps7"><span class="rvts38">Read and </span><span class="rvts39">len</span><span class="rvts38"> bytes as a string.</span></p>
+  </td>
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps2"><span class="rvts39">len</span><span class="rvts38"> - requested size</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td style="border-color: #000000; border-style: solid; padding: 1px;">
+   <p class="rvps7"><span class="rvts40">readFloat</span><span class="rvts38">()</span></p>
   </td>
   <td style="border-color: #000000; border-style: solid; padding: 1px;">
    <p class="rvps7"><span class="rvts6">Read a 32-bit floating point number.</span><br/><span class="rvts6">Endianness is specified by the bigEndian property.</span></p>
   </td>
   <td style="border-color: #000000; border-style: solid; padding: 1px;">
-   <p class="rvps2"><span class="rvts38"><br/></span></p>
+   <p class="rvps2"><span class="rvts39"><br/></span></p>
   </td>
  </tr>
  <tr valign="top">
   <td style="border-color: #000000; border-style: solid; padding: 1px;">
-   <p class="rvps7"><span class="rvts39">readDouble</span><span class="rvts37">()</span></p>
+   <p class="rvps7"><span class="rvts40">readDouble</span><span class="rvts38">()</span></p>
   </td>
   <td style="border-color: #000000; border-style: solid; padding: 1px;">
    <p class="rvps7"><span class="rvts6">Read a 64-bit double-precision floating point number.</span><br/><span class="rvts6">Endianness is specified by the bigEndian property.</span></p>
   </td>
   <td style="border-color: #000000; border-style: solid; padding: 1px;">
-   <p class="rvps2"><span class="rvts38"><br/></span></p>
+   <p class="rvps2"><span class="rvts39"><br/></span></p>
   </td>
  </tr>
  <tr valign="top">
   <td style="border-color: #000000; border-style: solid; padding: 1px;">
-   <p class="rvps7"><span class="rvts39">readInt8</span><span class="rvts37">()</span></p>
+   <p class="rvps7"><span class="rvts40">readInt8</span><span class="rvts38">()</span></p>
   </td>
   <td style="border-color: #000000; border-style: solid; padding: 1px;">
    <p class="rvps7"><span class="rvts6">Read a 8-bit signed integer.</span></p>
   </td>
   <td style="border-color: #000000; border-style: solid; padding: 1px;">
-   <p class="rvps2"><span class="rvts38"><br/></span></p>
+   <p class="rvps2"><span class="rvts39"><br/></span></p>
   </td>
  </tr>
  <tr valign="top">
   <td style="border-color: #000000; border-style: solid; padding: 1px;">
-   <p class="rvps7"><span class="rvts39">readInt16</span><span class="rvts37">()</span></p>
+   <p class="rvps7"><span class="rvts40">readInt16</span><span class="rvts38">()</span></p>
   </td>
   <td style="border-color: #000000; border-style: solid; padding: 1px;">
    <p class="rvps7"><span class="rvts6">Read a 16-bit signed integer.</span><br/><span class="rvts6">Endianness is specified by the bigEndian property.</span></p>
   </td>
   <td style="border-color: #000000; border-style: solid; padding: 1px;">
-   <p class="rvps2"><span class="rvts38"><br/></span></p>
+   <p class="rvps2"><span class="rvts39"><br/></span></p>
   </td>
  </tr>
  <tr valign="top">
   <td style="border-color: #000000; border-style: solid; padding: 1px;">
-   <p class="rvps7"><span class="rvts39">readUInt16</span><span class="rvts37">()</span></p>
+   <p class="rvps7"><span class="rvts40">readUInt16</span><span class="rvts38">()</span></p>
   </td>
   <td style="border-color: #000000; border-style: solid; padding: 1px;">
    <p class="rvps7"><span class="rvts6">Read a 16-bit unsigned integer.</span><br/><span class="rvts6">Endianness is specified by the bigEndian property.</span></p>
   </td>
   <td style="border-color: #000000; border-style: solid; padding: 1px;">
-   <p class="rvps2"><span class="rvts38"><br/></span></p>
+   <p class="rvps2"><span class="rvts39"><br/></span></p>
   </td>
  </tr>
  <tr valign="top">
   <td style="border-color: #000000; border-style: solid; padding: 1px;">
-   <p class="rvps7"><span class="rvts39">readInt24</span><span class="rvts37">()</span></p>
+   <p class="rvps7"><span class="rvts40">readInt24</span><span class="rvts38">()</span></p>
   </td>
   <td style="border-color: #000000; border-style: solid; padding: 1px;">
    <p class="rvps7"><span class="rvts6">Read a 24-bit signed integer.</span><br/><span class="rvts6">Endianness is specified by the bigEndian property.</span></p>
   </td>
   <td style="border-color: #000000; border-style: solid; padding: 1px;">
-   <p class="rvps2"><span class="rvts38"><br/></span></p>
+   <p class="rvps2"><span class="rvts39"><br/></span></p>
   </td>
  </tr>
  <tr valign="top">
   <td style="border-color: #000000; border-style: solid; padding: 1px;">
-   <p class="rvps7"><span class="rvts39">readUInt24</span><span class="rvts37">()</span></p>
+   <p class="rvps7"><span class="rvts40">readUInt24</span><span class="rvts38">()</span></p>
   </td>
   <td style="border-color: #000000; border-style: solid; padding: 1px;">
    <p class="rvps7"><span class="rvts6">Read a 24-bit unsigned integer.</span><br/><span class="rvts6">Endianness is specified by the bigEndian property.</span></p>
   </td>
   <td style="border-color: #000000; border-style: solid; padding: 1px;">
-   <p class="rvps2"><span class="rvts38"><br/></span></p>
+   <p class="rvps2"><span class="rvts39"><br/></span></p>
   </td>
  </tr>
  <tr valign="top">
   <td style="border-color: #000000; border-style: solid; padding: 1px;">
-   <p class="rvps7"><span class="rvts39">readInt32</span><span class="rvts37">()</span></p>
+   <p class="rvps7"><span class="rvts40">readInt32</span><span class="rvts38">()</span></p>
   </td>
   <td style="border-color: #000000; border-style: solid; padding: 1px;">
    <p class="rvps7"><span class="rvts6">Read a 32-bit signed integer.</span><br/><span class="rvts6">Endianness is specified by the bigEndian property.</span></p>
   </td>
   <td style="border-color: #000000; border-style: solid; padding: 1px;">
-   <p class="rvps2"><span class="rvts38"><br/></span></p>
+   <p class="rvps2"><span class="rvts39"><br/></span></p>
   </td>
  </tr>
 </table>
 </div>
-<p class="rvps2"><span class="rvts37"><br/></span></p>
+<p class="rvps2"><span class="rvts38"><br/></span></p>
 <p></p>
 <p class="rvps4" style="clear: both;"><span class="rvts16">Created with the Personal Edition of HelpNDoc: </span><a class="rvts17" href="https://www.helpndoc.com/create-epub-ebooks">Full-featured EPub generator</a></p>
 
